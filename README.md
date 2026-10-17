@@ -15,7 +15,9 @@ It never calls Higgsfield's backend and does not contain their implementation, b
 - Modal backend: one GPU container maximum, zero warm GPU containers, no automatic generation retries, no persistent volumes.
 - Optional local NVIDIA Docker backend using the same inference code.
 
-The region is **manual and linear, not AI tracking**. Both modes remain experimental; motion tests can show color/background artifacts. Realistic footage, multiple subjects and long-term identity consistency have not been benchmarked.
+The region uses a manual rectangle with linear interpolation. Both modes remain experimental. The [validation study](evaluation/FINDINGS.md) includes eight development/held-out synthetic and realistic clips, paired controls, and retained failures. Mirrored motion can produce duplicate arms; reference color, shading, and real-footage motion remain unreliable. Multiple subjects and long-term identity consistency are unvalidated.
+
+The [evaluation harness](evaluation/README.md) records exact model/workflow provenance, raw versus composited outputs, resource use and a blinded review packet. The only production repair in that study honors display-rotation metadata before sizing frames and mapping masks.
 
 ## Actual generation evidence
 

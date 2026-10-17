@@ -51,6 +51,23 @@ def validate_payload(data):
             "video_b64":data["video_b64"],"reference_b64":data["reference_b64"]}
 
 
+def display_geometry(stream):
+    """Match ffmpeg/browser display orientation rather than encoded pixel order."""
+    width,height=stream["width"],stream["height"]
+    rotation=0.0
+    for side in stream.get("side_data_list",[]):
+        if "rotation" in side:
+            rotation=float(side["rotation"])
+            break
+    else:
+        rotation=float(stream.get("tags",{}).get("rotate",0))
+    if not math.isfinite(rotation) or abs(rotation/90-round(rotation/90))>0.001:
+        raise ValueError("Use a video with a standard 90-degree display rotation")
+    if round(rotation/90)%2:
+        width,height=height,width
+    return width,height
+
+
 def prepare_media(data):
     import shutil
     import subprocess
@@ -66,12 +83,12 @@ def prepare_media(data):
     reference = root/"uploaded-reference"
     reference.write_bytes(base64.b64decode(data["reference_b64"],validate=True))
     probe = subprocess.run(["ffprobe","-v","error","-select_streams","v:0",
-                            "-show_entries","stream=width,height","-of","json",str(video)],
+                            "-show_entries","stream=width,height:stream_tags=rotate:stream_side_data=rotation","-of","json",str(video)],
                            capture_output=True,text=True,timeout=15,check=True)
     streams = json.loads(probe.stdout).get("streams",[])
     if not streams:
         raise ValueError("The video contains no readable video stream")
-    original_w,original_h = streams[0]["width"],streams[0]["height"]
+    original_w,original_h = display_geometry(streams[0])
     if original_w*original_h > 16_777_216 or min(original_w,original_h) <16:
         raise ValueError("Use a video up to 4K for this prototype")
     scale = min(480/original_w,480/original_h)
@@ -107,7 +124,8 @@ def prepare_media(data):
                                             min(height-1,round(pad_y+(y+h)*fitted_h))),fill=255)
         mask.save(root/"masks"/f"{i:04d}.png")
     (root/"settings.json").write_text(json.dumps({"mode":data["mode"],"frames":frames,
-                                                "width":width,"height":height}))
+                                                "width":width,"height":height,
+                                                "display_width":original_w,"display_height":original_h}))
     return {**data,"width":width,"height":height,"root":str(root)}
 
 

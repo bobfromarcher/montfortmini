@@ -1,0 +1,109 @@
+{
+  "case": {
+    "id": "dev-synthetic-motion",
+    "split": "development",
+    "kind": "synthetic-motion",
+    "mode": "motion-transfer",
+    "video": "dev-synthetic-motion/input.mp4",
+    "reference": "dev-synthetic-motion/reference.png",
+    "frames": 17,
+    "prompt": "An illustrated orange-haired character in a blue shirt follows the arm movement in the source clip. Full body, stable appearance.",
+    "bbox": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "end_bbox": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "rotation_metadata": false,
+    "annotations": {
+      "moving_endpoint": [
+        [
+          0.7416914031005144,
+          0.5428889509182907
+        ],
+        [
+          0.7563063254800699,
+          0.5193567073504608
+        ],
+        [
+          0.7675578113521839,
+          0.49404334113484805
+        ],
+        [
+          0.7752334722510997,
+          0.4674266795624238
+        ],
+        [
+          0.7791884187052823,
+          0.44000915155494924
+        ],
+        [
+          0.7793479952408593,
+          0.4123083035746906
+        ],
+        [
+          0.775709189614297,
+          0.3848470301681604
+        ],
+        [
+          0.7683406896729604,
+          0.35814370355684416
+        ],
+        [
+          0.7573815867702278,
+          0.33270238859351287
+        ],
+        [
+          0.7430387502101217,
+          0.3090033277913168
+        ],
+        [
+          0.7255829222827027,
+          0.28749387603483434
+        ],
+        [
+          0.7053436076022199,
+          0.268580056093836
+        ],
+        [
+          0.6827028532193313,
+          0.25261889434195195
+        ],
+        [
+          0.65808803691699,
+          0.23991168135490773
+        ],
+        [
+          0.6319637998216007,
+          0.23069828460452352
+        ],
+        [
+          0.6048232756133565,
+          0.22515262060480157
+        ],
+        [
+          0.5771787818974111,
+          0.22337937198005395
+        ]
+      ],
+      "target_color": "blue"
+    },
+    "notes": [],
+    "source_provenance": "dev-synthetic-motion/source-provenance.json"
+  },
+  "profile": "baseline",
+  "variant": "baseline",
+  "started_utc": "2026-10-17T17:37:45.932183+00:00",
+  "ended_utc": "2026-10-17T17:40:05.496631+00:00",
+  "worker_elapsed_seconds": 139.56444721199998,
+  "seed": 42,
+  "gpu_monitor_samples": 136,
+  "input_video_sha256": "efc29f9e000d5ba814c2169242bfbe6d47a4df972394d4f5b94a224bb35f8482",
+  "input_reference_sha256": "4f3764e899b6313be4246e0ead13c5c5891f6dd43315760207d4597da1606109"
+}

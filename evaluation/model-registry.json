@@ -1,0 +1,79 @@
+[
+  {
+    "repo": "Comfy-Org/Wan_2.1_ComfyUI_repackaged",
+    "revision": "123acf1cc74bccbb9bfff8ac1ee72edc08c2341d",
+    "registry_sha": "123acf1cc74bccbb9bfff8ac1ee72edc08c2341d",
+    "files": [
+      {
+        "file": "split_files/clip_vision/clip_vision_h.safetensors",
+        "bytes": 1264219396,
+        "lfs": {
+          "sha256": "64a7ef761bfccbadbaa3da77366aac4185a6c58fa5de5f589b42a65bcc21f161",
+          "size": 1264219396,
+          "pointerSize": 135
+        }
+      },
+      {
+        "file": "split_files/diffusion_models/wan2.1_vace_1.3B_fp16.safetensors",
+        "bytes": 4309519800,
+        "lfs": {
+          "sha256": "640ccc0577e6a5d4bb15cd91b11b699ef914fc55f126c5a1c544e152130784f2",
+          "size": 4309519800,
+          "pointerSize": 135
+        }
+      },
+      {
+        "file": "split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+        "bytes": 6735906897,
+        "lfs": {
+          "sha256": "c3355d30191f1f066b26d93fba017ae9809dce6c627dda5f6a66eaa651204f68",
+          "size": 6735906897,
+          "pointerSize": 135
+        }
+      },
+      {
+        "file": "split_files/vae/wan_2.1_vae.safetensors",
+        "bytes": 253815318,
+        "lfs": {
+          "sha256": "2fc39d31359a4b0a64f55876d8ff7fa8d780956ae2cb13463b0223e15148976b",
+          "size": 253815318,
+          "pointerSize": 134
+        }
+      }
+    ]
+  },
+  {
+    "repo": "Comfy-Org/Wan-Animate-2",
+    "revision": "e7181fe1896b7f2ce34120d1a3663413548240d7",
+    "registry_sha": "e7181fe1896b7f2ce34120d1a3663413548240d7",
+    "files": [
+      {
+        "file": "clip_vision/clip_vision_h.safetensors",
+        "bytes": 1264219396,
+        "lfs": {
+          "sha256": "64a7ef761bfccbadbaa3da77366aac4185a6c58fa5de5f589b42a65bcc21f161",
+          "size": 1264219396,
+          "pointerSize": 135
+        }
+      },
+      {
+        "file": "diffusion_models/wan_animate_2_distill_int8_convrot.safetensors",
+        "bytes": 16653175528,
+        "lfs": {
+          "sha256": "d2e566ecac3f164cb1a6b63dc7d868d6678c9affa49fbceb3abe4f9458f89c8a",
+          "size": 16653175528,
+          "pointerSize": 136
+        }
+      },
+      {
+        "file": "text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+        "bytes": 6735906897,
+        "lfs": {
+          "sha256": "c3355d30191f1f066b26d93fba017ae9809dce6c627dda5f6a66eaa651204f68",
+          "size": 6735906897,
+          "pointerSize": 135
+        }
+      }
+    ]
+  }
+]

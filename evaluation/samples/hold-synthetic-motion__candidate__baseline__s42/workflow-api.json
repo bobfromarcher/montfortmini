@@ -1,0 +1,207 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "wan_animate_2_distill_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+      "type": "wan",
+      "device": "default"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "wan_2.1_vae.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "text": "An illustrated orange-haired character in a purple shirt follows the lowering arm movement in the source clip. Full body, stable appearance."
+    }
+  },
+  "5": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "text": "text, watermark, flicker, distorted shapes, extra limbs, duplicate subjects"
+    }
+  },
+  "6": {
+    "class_type": "OpenJutsuMediaInputs",
+    "inputs": {}
+  },
+  "7": {
+    "class_type": "WanAnimate2ToVideo",
+    "inputs": {
+      "positive": [
+        "4",
+        0
+      ],
+      "negative": [
+        "5",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "width": 480,
+      "height": 480,
+      "length": 17,
+      "batch_size": 1,
+      "video_frame_offset": 0,
+      "pose_strength": 1.0,
+      "pose_start_percent": 0.0,
+      "pose_end_percent": 1.0,
+      "reference_image_strength": 1.0,
+      "reference_image": [
+        "6",
+        2
+      ],
+      "pose_video": [
+        "6",
+        0
+      ],
+      "clip_vision_output": [
+        "14",
+        0
+      ],
+      "clip_vision_output_pose": [
+        "16",
+        0
+      ]
+    }
+  },
+  "8": {
+    "class_type": "ModelSamplingSD3",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "shift": 5.0
+    }
+  },
+  "9": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "8",
+        0
+      ],
+      "seed": 42,
+      "steps": 10,
+      "cfg": 1.0,
+      "sampler_name": "lcm",
+      "scheduler": "simple",
+      "positive": [
+        "7",
+        0
+      ],
+      "negative": [
+        "7",
+        1
+      ],
+      "latent_image": [
+        "7",
+        2
+      ],
+      "denoise": 1.0
+    }
+  },
+  "10": {
+    "class_type": "TrimVideoLatent",
+    "inputs": {
+      "samples": [
+        "9",
+        0
+      ],
+      "trim_amount": [
+        "7",
+        3
+      ]
+    }
+  },
+  "11": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "10",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "12": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "11",
+        0
+      ],
+      "filename_prefix": "openjutsu-proof/raw"
+    }
+  },
+  "13": {
+    "class_type": "CLIPVisionLoader",
+    "inputs": {
+      "clip_name": "clip_vision_h.safetensors"
+    }
+  },
+  "14": {
+    "class_type": "CLIPVisionEncode",
+    "inputs": {
+      "clip_vision": [
+        "13",
+        0
+      ],
+      "image": [
+        "6",
+        2
+      ],
+      "crop": "none"
+    }
+  },
+  "15": {
+    "class_type": "ImageFromBatch",
+    "inputs": {
+      "image": [
+        "6",
+        0
+      ],
+      "batch_index": 0,
+      "length": 1
+    }
+  },
+  "16": {
+    "class_type": "CLIPVisionEncode",
+    "inputs": {
+      "clip_vision": [
+        "13",
+        0
+      ],
+      "image": [
+        "15",
+        0
+      ],
+      "crop": "none"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "file": "diffusion_models/wan2.1_vace_1.3B_fp16.safetensors",
+    "registry_sha256": "640ccc0577e6a5d4bb15cd91b11b699ef914fc55f126c5a1c544e152130784f2",
+    "actual_sha256": "640ccc0577e6a5d4bb15cd91b11b699ef914fc55f126c5a1c544e152130784f2",
+    "matches": true
+  },
+  {
+    "file": "text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+    "registry_sha256": "c3355d30191f1f066b26d93fba017ae9809dce6c627dda5f6a66eaa651204f68",
+    "actual_sha256": "c3355d30191f1f066b26d93fba017ae9809dce6c627dda5f6a66eaa651204f68",
+    "matches": true
+  },
+  {
+    "file": "vae/wan_2.1_vae.safetensors",
+    "registry_sha256": "2fc39d31359a4b0a64f55876d8ff7fa8d780956ae2cb13463b0223e15148976b",
+    "actual_sha256": "2fc39d31359a4b0a64f55876d8ff7fa8d780956ae2cb13463b0223e15148976b",
+    "matches": true
+  },
+  {
+    "file": "diffusion_models/wan_animate_2_distill_int8_convrot.safetensors",
+    "registry_sha256": "d2e566ecac3f164cb1a6b63dc7d868d6678c9affa49fbceb3abe4f9458f89c8a",
+    "actual_sha256": "d2e566ecac3f164cb1a6b63dc7d868d6678c9affa49fbceb3abe4f9458f89c8a",
+    "matches": true
+  },
+  {
+    "file": "clip_vision/clip_vision_h.safetensors",
+    "registry_sha256": "64a7ef761bfccbadbaa3da77366aac4185a6c58fa5de5f589b42a65bcc21f161",
+    "actual_sha256": "64a7ef761bfccbadbaa3da77366aac4185a6c58fa5de5f589b42a65bcc21f161",
+    "matches": true
+  }
+]

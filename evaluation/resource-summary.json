@@ -1,0 +1,31 @@
+{
+  "successful_generations_including_rejected_fixture": 23,
+  "analyzed_runs": 22,
+  "worker_seconds_all_successful": 1313.165621642,
+  "worker_seconds_analyzed": 1273.7875046699999,
+  "client_wall_seconds_all_successful": 1492.4394096999977,
+  "startup_failures_before_sampling": 1,
+  "total_attempts_including_startup_failure": 24,
+  "model_hash_audit_cpu_seconds": 43.875813198,
+  "peak_sampled_vram_MiB": 27287.0,
+  "all_analyzed_technical_gates_pass": true,
+  "all_object_composite_png_outside_mask_max_255": 0.0,
+  "runtime_ranges_seconds": {
+    "object": {
+      "min": 29.713459961,
+      "median": 46.74334749,
+      "max": 59.997768847
+    },
+    "motion": {
+      "min": 61.494349636,
+      "median": 75.71618153,
+      "max": 139.56444721199998
+    }
+  },
+  "measurement_limits": [
+    "Worker time excludes some container allocation/image startup and is not billed GPU seconds.",
+    "GPU samples are 1 Hz; transient peaks may be missed.",
+    "CPU and system RAM peak usage were not sampled; allocation was 2 CPU / 32 GiB.",
+    "Account billing is rounded/delayed, not an exact per-run cost allocation."
+  ]
+}
