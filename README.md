@@ -19,6 +19,10 @@ The region uses a manual rectangle with linear interpolation. Both modes remain 
 
 The [evaluation harness](evaluation/README.md) records exact model/workflow provenance, raw versus composited outputs, resource use and a blinded review packet. The only production repair in that study honors display-rotation metadata before sizing frames and mapping masks.
 
+The [quality follow-up](evaluation/quality/FINDINGS.md) adds controlled reference/framing experiments and four new prospective cases. The realistic fidelity/motion target remains unmet: object scale/lighting and side-view body motion still fail. Global center-cover fitting was rejected because it crops full-body references. The shipped follow-up repair saves confirmed SDK job receipts and allows bounded longer status reads, without automatic generation retries. [Reproduce the follow-up](evaluation/QUALITY.md), inspect its label-blinded packet, or watch the [108-second demonstration](submission/montfortmini-demo.mp4).
+
+Use one clear reference view with framing suited to the intended performance. Contact sheets can animate as multiple panels; tested headshots did not recover the source hand performance. Reference fitting and source framing are material limitations, not automatic subject tracking or pose reconstruction guarantees.
+
 ## Actual generation evidence
 
 Original procedural fixtures and real generated clips are in [webapp/public/examples](webapp/public/examples). They are labeled as recorded proofs in the interface.
@@ -55,7 +59,7 @@ cd webapp
 npm install
 ```
 
-Copy `.dev.vars.example` to ignored `.dev.vars`. Set `OPENJUTSU_BACKEND_URL` to the URL printed by Modal, and `OPENJUTSU_API_KEY` to the same random key. Never prefix it with `NEXT_PUBLIC_` or commit it.
+Copy `.dev.vars.example` to ignored `.dev.vars`. Set `OPENJUTSU_BACKEND_URL` to the URL printed by Modal, and `OPENJUTSU_API_KEY` to the same random key. For `npm run dev`, also copy those two settings into ignored `.env.local` before starting the server; Vinext's Node development runtime reads this file. `.dev.vars` supplies the Worker preview. Restart after changes. Never prefix secrets with `NEXT_PUBLIC_` or commit either file.
 
 ```sh
 npm run dev
@@ -79,7 +83,7 @@ docker build -f Dockerfile.local -t openjutsu-local .
 docker run --rm --gpus all -p 127.0.0.1:8000:8000 -e OPENJUTSU_API_KEY openjutsu-local
 ```
 
-Set the webapp's ignored `.dev.vars` backend URL to `http://127.0.0.1:8000` and its matching key, then run `npm install` and `npm run dev`. Loopback HTTP is allowed only in development. The local API permits one render at a time and keeps four results in memory. No Modal token or cloud inference is needed. Building downloads ComfyUI and model weights from official upstream repositories.
+Set the webapp's ignored `.env.local` (and `.dev.vars` for Worker preview) backend URL to `http://127.0.0.1:8000` and its matching key, then run `npm install` and `npm run dev`. Loopback HTTP is allowed only in development. The local API permits one render at a time and keeps four results in memory. No Modal token or cloud inference is needed. Building downloads ComfyUI and model weights from official upstream repositories.
 
 ## Workflows and validation
 
@@ -102,7 +106,7 @@ python -m modal run motion_probe.py --confirm-credits-only
 
 These save full source/raw/composite videos, frames, graph, manifest, package versions and execution log under ignored `results/`.
 
-Six local checks cover workload bounds, masks, reference-latent trimming, input validation and target erasure. Live checks verified authorization, invalid workloads, signed job identifiers and real-upload inference. Browser QA verified motion generation and MP4/workflow/provenance downloads.
+Ten production tests cover workload bounds, masks, reference-latent trimming, rotation, input validation, target erasure and receipt retention without resubmission on a polling failure. One separately labeled experimental-reference test covers the rejected crop candidate. Live checks verified authorization, invalid workloads, signed job identifiers and real-upload inference. Browser QA verified motion generation and MP4/workflow/provenance downloads; a later clean checkout verified installation, build, local sign-in and authenticated backend status.
 
 ## Licensing and provenance
 

@@ -1,0 +1,25 @@
+{
+  "successful_generations": 14,
+  "recorded_attempts": 15,
+  "reserved_additional_modal_runner_failure": 1,
+  "phase_attempt_ceiling": 16,
+  "successful_worker_seconds": 1279.118772828,
+  "failed_client_seconds": 65.12366910000128,
+  "peak_sampled_gpu_memory_MiB": 28862.0,
+  "peak_summed_process_tree_rss_MiB": 56763.06,
+  "allocation": {
+    "gpu": "L40S",
+    "cpu": 2,
+    "memory_MiB": 32768,
+    "min_containers": 0,
+    "max_containers": 1,
+    "retries": 0
+  },
+  "vae_cpu_audit_seconds": 11.717512192,
+  "limits": [
+    "Worker times exclude image provisioning/build and some allocation overhead.",
+    "RSS sums double-count shared pages and are not physical RAM consumption. CPU utilization/physical peak RAM were not measured.",
+    "One runner warning has unmeasured worker cost; duplicate CLI ready text was not a second platform log event.",
+    "Billing UI is rounded, delayed and internally inconsistent; observed credit delta is not a settled per-run bill."
+  ]
+}

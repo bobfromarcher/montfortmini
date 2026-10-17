@@ -1,0 +1,133 @@
+{
+  "case": {
+    "id": "new-real-object",
+    "split": "prospective-held-out",
+    "kind": "real-object",
+    "mode": "object-swap",
+    "video": "new-tests/new-real-object/input.mp4",
+    "reference": "new-tests/new-real-object/reference.png",
+    "frames": 17,
+    "prompt": "Replace only the yellow ball inside the selected region with the single smooth solid green sphere in the reference. Keep the scene lighting, size, and position. Fixed camera.",
+    "bbox": [
+      0.28,
+      0.32,
+      0.22,
+      0.43
+    ],
+    "end_bbox": [
+      0.28,
+      0.32,
+      0.22,
+      0.43
+    ],
+    "annotations": {
+      "target_color": "green",
+      "expected_centers": [
+        [
+          0.3665351284432064,
+          0.5761397113610051
+        ],
+        [
+          0.36267269481527475,
+          0.5782986650108661
+        ],
+        [
+          0.35868248814677384,
+          0.5780824114157447
+        ],
+        [
+          0.3561247688039458,
+          0.5748595698040828
+        ],
+        [
+          0.35067550311574214,
+          0.5730945165208113
+        ],
+        [
+          0.3469539527302363,
+          0.5763877569501041
+        ],
+        [
+          0.3405420577253002,
+          0.5812774021372266
+        ],
+        [
+          0.33650841649027313,
+          0.586077792337242
+        ],
+        [
+          0.334635101010101,
+          0.5858035914702581
+        ],
+        [
+          0.33294014440068664,
+          0.5804369046416911
+        ],
+        [
+          0.3330578098386935,
+          0.5785125070968172
+        ],
+        [
+          0.3335139261245159,
+          0.5803153168062313
+        ],
+        [
+          0.33561323079956623,
+          0.5823644111428791
+        ],
+        [
+          0.33788575667655785,
+          0.5852643147598637
+        ],
+        [
+          0.34134563643479116,
+          0.5870604093967757
+        ],
+        [
+          0.34400353373995546,
+          0.5872322802035261
+        ],
+        [
+          0.345674851841057,
+          0.5869879205932834
+        ]
+      ],
+      "centroid_method": "Largest yellow/orange component inside preselected ROI; source-only overlay retained. Diagnostic annotation, not an independent human label."
+    },
+    "notes": [
+      "Independent original recording bee; source interval 2..4.125s; filter fps=8,scale=480:-2; audio removed.",
+      "Stationary target with nearby independently moving bee; assesses fidelity and preservation, not a moving-object trajectory."
+    ],
+    "sha256": {
+      "video": "837e81474df9d7058ac1165735bcaa1c874ceec7eb45092484b29a7e1d00fb8e",
+      "reference": "334a4aaf1a643b201062a0be3bfd9aacdc3b78812f83eb7891cdd7cc8e93fd54"
+    },
+    "_client_runner_sha256": "f161390ae82bf3f45b3d66b0cbae336ca0e107d4a5b08b0d0eafad1c6c0d84fb"
+  },
+  "profile": "candidate",
+  "seed": 42,
+  "started_utc": "2026-10-17T21:56:49.417838+00:00",
+  "status": "succeeded",
+  "failure": null,
+  "ended_utc": "2026-10-17T21:57:27.130493+00:00",
+  "worker_elapsed_seconds": 37.712686678000004,
+  "input_video_sha256": "837e81474df9d7058ac1165735bcaa1c874ceec7eb45092484b29a7e1d00fb8e",
+  "input_reference_sha256": "334a4aaf1a643b201062a0be3bfd9aacdc3b78812f83eb7891cdd7cc8e93fd54",
+  "source_sha256": {
+    "media_pipeline.py": "59e55b3640c7efc4cc88774e087ec554164d319f40b2051ca24a54ad82b7ba39",
+    "motion_workflow.py": "43adfab664bd3d637aba96b87c5cc9e25c812623e93c5553fce0820e7b1ae0de",
+    "service.py": "f53f0402c8063424cbd49c57d6a002e4112ce016ea9b667a819ceae633af2f0e",
+    "sdk_runner.py": "d76f20f0bdf4af242d9f6b03b499097ea2775198356acb6572e0ee59d5ad1f72",
+    "fidelity_baseline_media_pipeline.py": "1b205eea634e7831b5cff266ecbeb53771e5b8f79177bc5aaa4b6d8c11c9aaa3",
+    "fidelity_baseline_motion_workflow.py": "43adfab664bd3d637aba96b87c5cc9e25c812623e93c5553fce0820e7b1ae0de",
+    "fidelity_precover_media_pipeline.py": "d00b2d0841cbe922ab73e73222d3a4cdcc47787ac91dc7abc157496f793b815a",
+    "fidelity_runner.py": "f161390ae82bf3f45b3d66b0cbae336ca0e107d4a5b08b0d0eafad1c6c0d84fb",
+    "model_config.py": "c7467de0c834698f25b78cfc69d000de40f4d93ecd2c26cdd764ed10ec4ba5a1",
+    "motion_model_config.py": "1a41713ecfea0ea848ca231e1e8d6376935e660746c06bcb27a559abf1d75e9d"
+  },
+  "client_runner_sha256": "f161390ae82bf3f45b3d66b0cbae336ca0e107d4a5b08b0d0eafad1c6c0d84fb",
+  "limits": [
+    "Agent visual assessment, not an independent professional score.",
+    "Process-tree RSS sums may count shared pages twice; GPU peaks are sampled at 1 Hz."
+  ]
+}

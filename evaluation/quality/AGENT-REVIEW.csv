@@ -1,0 +1,29 @@
+run,stage,reviewer,fidelity_0_4,motion_0_4,stability_0_4,anatomy_0_4,photorealism_0_4_or_NA,reference_attribute_frames_of_17,coarse_plausible_glasses_frames_or_unscored,catastrophic_frames,agent_visual_pass,notes
+portrait__sheet__s42,raw,Codex agent; not independent,1,1,3,1,2,0,,all 17: multiple reference panels,False,Contact sheet is animated as several people/panels.
+portrait__sheet__s42,finished,Codex agent; not independent,1,1,3,1,2,0,,all 17: multiple reference panels,False,Contact sheet is animated as several people/panels.
+portrait__crop__s42,raw,Codex agent; not independent,3,1,2,2,3,17,14,,False,"One face; missing source hands, padded-border contamination at frames 0 and 16."
+portrait__crop__s42,finished,Codex agent; not independent,3,1,2,2,3,17,14,,False,"One face; missing source hands, padded-border contamination at frames 0 and 16."
+portrait__describe__s42,raw,Codex agent; not independent,3,1,2,2,3,17,14,,False,Detailed prompt does not recover source setting or hands; shirt/neck intrudes into padding.
+portrait__describe__s42,finished,Codex agent; not independent,3,1,2,2,3,17,14,,False,Detailed prompt does not recover source setting or hands; shirt/neck intrudes into padding.
+portrait__separate__s42,raw,Codex agent; not independent,3,1,2,2,3,17,14,,False,Separate driving caption does not solve framing or border artifacts.
+portrait__separate__s42,finished,Codex agent; not independent,3,1,2,2,3,17,14,,False,Separate driving caption does not solve framing or border artifacts.
+portrait__native__s42,raw,Codex agent; not independent,3,1,3,3,3,17,17,,False,Fine face detail improves; source hand performance is still absent.
+portrait__native__s42,finished,Codex agent; not independent,3,1,3,3,3,17,17,,False,Fine face detail improves; source hand performance is still absent.
+portrait__cover__s42,raw,Codex agent; not independent,3,1,3,3,3,17,14,,False,Bands removed; lens clipping at left edge in initial frames; no source hands.
+portrait__cover__s42,finished,Codex agent; not independent,3,1,3,3,3,17,14,,False,Bands removed; lens clipping at left edge in initial frames; no source hands.
+portrait__fullbody__s42,raw,Codex agent; not independent,3,2,3,2,2,17,,,False,"More arm motion, but standing pose differs from seated source; hand/fine face detail unreliable."
+portrait__fullbody__s42,finished,Codex agent; not independent,3,2,3,2,2,17,,,False,"More arm motion, but standing pose differs from seated source; hand/fine face detail unreliable."
+portrait__production__s42,raw,Codex agent; not independent,3,1,3,3,3,17,14,,False,"Historical name means default-prompt cover experiment, not shipped production. Cleaner portrait, missing hands/setting."
+portrait__production__s42,finished,Codex agent; not independent,3,1,3,3,3,17,14,,False,"Historical name means default-prompt cover experiment, not shipped production. Cleaner portrait, missing hands/setting."
+walk__candidate__s42,raw,Codex agent; not independent,3,1,3,2,,17,,,False,"Late background ghosting reduced, but frontal figure does not match rear-facing gait; feet cropped early."
+walk__candidate__s42,finished,Codex agent; not independent,3,1,3,2,,17,,,False,"Late background ghosting reduced, but frontal figure does not match rear-facing gait; feet cropped early."
+new-synthetic-object__candidate__s42,raw,Codex agent; not independent,4,3,4,4,,17,,,True,Clear green sphere follows downward trajectory; all registered technical/preservation diagnostics pass.
+new-synthetic-object__candidate__s42,finished,Codex agent; not independent,4,3,4,4,,17,,,True,Clear green sphere follows downward trajectory; all registered technical/preservation diagnostics pass.
+new-real-object__candidate__s42,raw,Codex agent; not independent,2,2,3,4,,17,,,False,Green shape is too large and lighting does not match. Passing centroid/color/background numbers do not establish a successful replacement.
+new-real-object__candidate__s42,finished,Codex agent; not independent,2,2,3,4,,17,,,False,Green shape is too large and lighting does not match. Passing centroid/color/background numbers do not establish a successful replacement.
+new-synthetic-motion__candidate__s42,raw,Codex agent; not independent,3,3,3,3,,17,,,True,Two-arm rise/lower timing recognizable; no duplicated limb observed. Exploratory fixture-specific endpoints support inspection.
+new-synthetic-motion__candidate__s42,finished,Codex agent; not independent,3,3,3,3,,17,,,True,Two-arm rise/lower timing recognizable; no duplicated limb observed. Exploratory fixture-specific endpoints support inspection.
+new-real-motion__baseline__s42,raw,Codex agent; not independent,3,1,3,3,,17,,,False,Upright figure nods/bends slightly; horizontal push-up motion absent.
+new-real-motion__baseline__s42,finished,Codex agent; not independent,3,1,3,3,,17,,,False,Upright figure nods/bends slightly; horizontal push-up motion absent.
+new-real-motion__candidate__s42,raw,Codex agent; not independent,2,1,2,2,,14,,,False,Reference feet cropped and later framing shifts; push-up absent. Reject as a global fitting default.
+new-real-motion__candidate__s42,finished,Codex agent; not independent,2,1,2,2,,14,,,False,Reference feet cropped and later framing shifts; push-up absent. Reject as a global fitting default.

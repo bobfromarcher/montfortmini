@@ -1,0 +1,51 @@
+# montfortmini — entry materials
+
+Status: prepared experimental entry; not formally submitted. Realistic quality
+target remains unmet. No award or organizer acceptance is claimed.
+
+**Repository:** https://github.com/bobfromarcher/montfortmini/tree/codex/validation
+
+**Review:** https://github.com/bobfromarcher/montfortmini/pull/1
+
+**Demo:** `montfortmini-demo.mp4`, 108 seconds, captioned, no soundtrack.
+Public repository path after publication:
+https://github.com/bobfromarcher/montfortmini/blob/codex/validation/submission/montfortmini-demo.mp4
+
+**Suggested description:**
+
+montfortmini is an independent open-source workbench for reference-guided
+object replacement and character motion transfer. It runs pinned VACE 1.3B and
+Wan Animate2 workflows through the official Comfy SDK and a self-hosted Comfy
+API proxy. Users upload a short clip and reference, draw a manual edit region
+for object replacement, and download MP4, the executed workflow and run details.
+The MIT repository includes setup instructions, original demonstrations,
+evaluation commands and retained failures. Simple illustrated/object examples
+work; realistic pose, identity, scale and lighting remain inconsistent. The demo
+shows actual outputs and a failure rather than claiming Genjutsu parity.
+
+**Models/tools:** ComfyUI; official comfy-sdk 0.5.0 and comfy-api-proxy 0.1.6;
+Wan2.1 VACE 1.3B and Wan Animate2 distilled int8; FFmpeg/Pillow/NumPy/OpenCV
+for preparation/evaluation; Modal L40S; React/Vinext frontend and private Sites
+hosting. No Higgsfield backend or closed generation API is used.
+
+**Categories:** Best Overall consideration follows the published rules.
+Open Weights Only appears relevant because inference uses open weights without
+partner-generation APIs; organizers make that determination. No LTX/FLUX/H3
+bonus is claimed because those are not core inference models here.
+
+**Local setup:** follow the repository README. GPU inference requires sufficient
+hardware or the entrant's own included/authorized cloud credits. The fully local
+GPU Docker path is documented but not independently executed on this laptop.
+
+**Try link:** an owner-private deployment exists, but anonymous/judge access is
+not established. Do not present it as an anonymously accessible demo. The
+published rules make a hosted link optional; repository/demo are the review path.
+
+**Still needed from the entrant:** verify registration, publish the prepared
+social demo post and retain its URL, review all submitted representations and
+terms, submit through the official form, and retain the receipt. Submitter name,
+email and a social-post URL have not been invented or prefilled.
+
+Official registration: https://form.typeform.com/to/Ayn9Cwfj
+Official submission: https://form.typeform.com/to/V1dSQrkS
+Rules: https://comfy.org/open-source-higgsfield

@@ -1,0 +1,103 @@
+{
+  "duration_seconds": 108.0,
+  "sha256": "a389c5a573773f7139f334dd11f051a35478f335f9d2b1d2a0adfa55711c9f13",
+  "assets": [
+    {
+      "asset": "workbench screenshot",
+      "sha256": "14c766a782ff5bce74d04dde621b8465fee68f263bbd6a9052877e4ac093a582",
+      "rights": "Original app interface and original procedural example"
+    },
+    {
+      "case": "dev-synthetic-object__baseline__baseline__s42",
+      "file": "source.mp4",
+      "sha256": "491941f44aa3976a6dd6a8a1c2b68587e682d287943620ba8aa8e8554fbd199d",
+      "rights": "Original MIT procedural fixtures; model output retains upstream model terms"
+    },
+    {
+      "case": "dev-synthetic-object__baseline__baseline__s42",
+      "file": "generated.mp4",
+      "sha256": "69b34db7be66644c60daac540d653a350dad0509a80dca9ac751ca8cd0d63fed",
+      "rights": "Original MIT procedural fixtures; model output retains upstream model terms"
+    },
+    {
+      "case": "dev-synthetic-object__baseline__baseline__s42",
+      "file": "composite.mp4",
+      "sha256": "4207169b475aada320f45d7a7ea99996cb72fca377d2636550c59a944d070f61",
+      "rights": "Original MIT procedural fixtures; model output retains upstream model terms"
+    },
+    {
+      "case": "dev-synthetic-object__baseline__baseline__s42",
+      "file": "manifest.json",
+      "sha256": "6bd2110bebff11c134b41e7a178c6aeed0a1aa04449342170d9f9d82f6f75a77",
+      "rights": "Original MIT procedural fixtures; model output retains upstream model terms"
+    },
+    {
+      "case": "dev-synthetic-object__baseline__baseline__s42",
+      "file": "workflow-api.json",
+      "sha256": "18a61c2d559b3949a63f6a39f0d39e79f6c5c32291891263037a2870ce94393f",
+      "rights": "Original MIT procedural fixtures; model output retains upstream model terms"
+    },
+    {
+      "case": "dev-synthetic-motion__baseline__baseline__s42",
+      "file": "source.mp4",
+      "sha256": "39143fd18930245bcaa241e74735508efeb0673a45ab0db86d822e3e366b7294",
+      "rights": "Original MIT procedural fixtures; model output retains upstream model terms"
+    },
+    {
+      "case": "dev-synthetic-motion__baseline__baseline__s42",
+      "file": "generated.mp4",
+      "sha256": "fbd444d7600b32958ffe00cc5b9e7a2f952e54003ec36ced3b04bd4ac1c43df2",
+      "rights": "Original MIT procedural fixtures; model output retains upstream model terms"
+    },
+    {
+      "case": "dev-synthetic-motion__baseline__baseline__s42",
+      "file": "composite.mp4",
+      "sha256": "fbd444d7600b32958ffe00cc5b9e7a2f952e54003ec36ced3b04bd4ac1c43df2",
+      "rights": "Original MIT procedural fixtures; model output retains upstream model terms"
+    },
+    {
+      "case": "dev-synthetic-motion__baseline__baseline__s42",
+      "file": "manifest.json",
+      "sha256": "6bf59b1237e0fd9765890a8189e5f76144666f346e0e97c90f6ff9346484262e",
+      "rights": "Original MIT procedural fixtures; model output retains upstream model terms"
+    },
+    {
+      "case": "dev-synthetic-motion__baseline__baseline__s42",
+      "file": "workflow-api.json",
+      "sha256": "dd0b7306d383a241d842ae71b52596c1c957a3a52768689d8dd45cf3de697e39",
+      "rights": "Original MIT procedural fixtures; model output retains upstream model terms"
+    },
+    {
+      "case": "hold-synthetic-motion__candidate__baseline__s42",
+      "file": "source.mp4",
+      "sha256": "03c25d0af72274ef786b8a732e513c530b8d978d1d2d878410acf0b4beaf345c",
+      "rights": "Original MIT procedural fixtures; model output retains upstream model terms"
+    },
+    {
+      "case": "hold-synthetic-motion__candidate__baseline__s42",
+      "file": "generated.mp4",
+      "sha256": "ab15df65ed5e2ec5821972b000e840aba4d85d3ffc5dd332cb00edf953156bcc",
+      "rights": "Original MIT procedural fixtures; model output retains upstream model terms"
+    },
+    {
+      "case": "hold-synthetic-motion__candidate__baseline__s42",
+      "file": "composite.mp4",
+      "sha256": "ab15df65ed5e2ec5821972b000e840aba4d85d3ffc5dd332cb00edf953156bcc",
+      "rights": "Original MIT procedural fixtures; model output retains upstream model terms"
+    },
+    {
+      "case": "hold-synthetic-motion__candidate__baseline__s42",
+      "file": "manifest.json",
+      "sha256": "9e83875dacedcd2811128d8567a08cb9281b261f10668b3613a5a76b36bab6a2",
+      "rights": "Original MIT procedural fixtures; model output retains upstream model terms"
+    },
+    {
+      "case": "hold-synthetic-motion__candidate__baseline__s42",
+      "file": "workflow-api.json",
+      "sha256": "c1f329bec72cb597d65d0e708a54741e5cae0297e79bc8273cfc28b1fa07c76a",
+      "rights": "Original MIT procedural fixtures; model output retains upstream model terms"
+    }
+  ],
+  "audio": "none; captioned",
+  "processing": "Layout, contain resizing, repeated playback and H264 encoding only. Actual model clips remain 8fps."
+}

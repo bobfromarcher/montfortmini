@@ -1,0 +1,6 @@
+{
+  "files_scanned": 580,
+  "issues": [],
+  "documented_exception": "The original MIT illustrated reference is shared with the private motion test; its verified renderer/input hash is allowed.",
+  "limits": "Exact known credential/media hashes plus private-URL/config checks; not a universal privacy or security audit."
+}
