@@ -39,7 +39,8 @@ def encode_still(path,duration,out):
 def main(samples,ui,output):
     samples=Path(samples);output=Path(output);output.mkdir(parents=True,exist_ok=True);assets=output/'demo-assets';assets.mkdir(exist_ok=True)
     segments=[];provenance=[]
-    specs=[('object','dev-synthetic-object__baseline__baseline__s42'),('motion','dev-synthetic-motion__baseline__baseline__s42'),('failure','hold-synthetic-motion__candidate__baseline__s42')]
+    quality=samples.parent/'quality/samples'
+    specs=[('object',quality/'new-synthetic-object__candidate__s42'),('motion',quality/'new-synthetic-motion__candidate__s42'),('failure',samples/'hold-synthetic-motion__candidate__baseline__s42')]
     intro=base('Two open video workflows','Reference-guided object replacement and character motion transfer.')
     d=ImageDraw.Draw(intro);text(d,(72,245),'A working prototype with real inference results.\nThis demo shows successes, a retained failure, and how to inspect the evidence.',33,width=62)
     text(d,(72,515),'MIT app code • pinned Comfy workflows • open weights',25,fill=ACCENT)
@@ -50,9 +51,9 @@ def main(samples,ui,output):
         image.save(assets/'workbench.png')
     d=ImageDraw.Draw(interface);text(d,(957,208),'Upload video\nand one reference.\n\nDraw an object region, or choose motion.\n\nDownload MP4, graph and run details.',24,width=20)
     interface.save(assets/'01.png');encode_still(assets/'01.png',12,assets/'01.mp4');segments.append(assets/'01.mp4')
-    for index,(kind,name) in enumerate(specs,2):
-        run=samples/name;title={'object':'Object replacement — simple-case success','motion':'Motion transfer — arm-wave development case','failure':'Retained failure — lowering-arm test'}[kind]
-        subtitle={'object':'Wan2.1 VACE 1.3B • seed 42 • original procedural input','motion':'Wan Animate2 distilled int8 • seed 42 • original procedural input','failure':'Extra arm and incomplete source motion. This case fails the quality gate.'}[kind]
+    for index,(kind,run) in enumerate(specs,2):
+        name=run.name;title={'object':'Object replacement — frozen vertical test','motion':'Motion transfer — frozen two-arm test','failure':'Retained failure — lowering-arm test'}[kind]
+        subtitle={'object':'Wan2.1 VACE 1.3B • seed 42 • new original synthetic test','motion':'Wan Animate2 distilled int8 • seed 42 • new original synthetic test','failure':'Extra arm and incomplete source motion. This case fails the quality gate.'}[kind]
         im=base(title,subtitle);d=ImageDraw.Draw(im)
         for col,label in enumerate(['Reference','Source','Raw model output','Finished']):text(d,(45+col*306,202),label,22)
         im.paste(ImageOps.pad(Image.open(run/'reference.png' if (run/'reference.png').exists() else run/'inputs/reference.png').convert('RGB'),(280,300),color='#292b33'),(45,245))
