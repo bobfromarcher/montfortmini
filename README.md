@@ -25,6 +25,8 @@ The [reference-preparation recovery study](evaluation/RECOVERY.md) implements an
 
 The [focused correction cycle](evaluation/detail-cycle/FINDINGS.md) fixes loss of original reference detail in an optional research helper. Paired stills restore facial attributes but fail identity/clothing/pose gates. Both failures are retained; no new video claim or production promotion follows.
 
+A subsequent [pose-only alternative](evaluation/pose-reference/FINDINGS.md) removes the two-editor cascade and source-person appearance from reference preparation. Native Qwen editing receives an estimated skeleton and the original identity. Its reference still loses required clothing and posture, so it also stops before video and remains research-only. The documented next conditioning experiment is untested.
+
 Use one clear reference view with framing suited to the intended performance. Contact sheets can animate as multiple panels; tested headshots did not recover the source hand performance. Reference fitting and source framing are material limitations, not automatic subject tracking or pose reconstruction guarantees.
 
 ## Actual generation evidence

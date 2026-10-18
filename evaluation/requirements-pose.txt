@@ -1,0 +1,4 @@
+# Optional appearance-free pose preprocessing. Separate Python3.11 environment
+# used in the recorded run; does not alter the GPU runtime dependencies.
+mediapipe==0.10.35
+Pillow==13.0.0

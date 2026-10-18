@@ -1,0 +1,10 @@
+{
+  "output": "outputs\\pose-reference\\keypoint-anchor",
+  "kind": "reference",
+  "status": "dispatched",
+  "ceiling_seconds": 660,
+  "started_utc": "2026-10-18T19:19:19.977651+00:00",
+  "observed_usage": 6.17,
+  "observed_remaining": 23.83,
+  "call_id": "fc-01M5878KP8B91N42GQPC8J8A04"
+}
