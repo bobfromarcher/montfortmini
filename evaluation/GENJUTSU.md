@@ -1,5 +1,13 @@
 # Observable comparator evidence
 
+Historical phase1 record. The private Genjutsu source/reference/output files
+were later recovered; see [quality findings](quality/FINDINGS.md). Their unknown
+backend/settings and our changed crops/fps/durations prevent a matched superiority
+claim. [October18 client/runtime findings](GENJUTSU-RECONSTRUCTION.md) also show
+that generic draft-tool readiness can disagree with the visible Genjutsu form;
+earlier tool-reported readiness/settings are not independently verified receipts.
+The original observations below remain preserved within that scope.
+
 Observed in the authenticated Genjutsu editor on October 17, 2026: Motion
 transfer and Objects swap tabs, reference video duration 4–30 seconds, up to
 30 reference images, optional prompt, 720p quality, and an available free
