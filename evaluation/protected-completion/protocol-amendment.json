@@ -1,0 +1,9 @@
+{
+  "written_utc": "2026-10-18T22:49:10.516152+00:00",
+  "original_reference_gate_pass": false,
+  "observed_failure": "Two continuous primary legs plus unrelated enlarged image2-like fragment in lower-right edited area",
+  "deviation": "Original no-amendments/stop rule would stop. Allow one CPU-only existing-model primary-subject isolation; no new GPU reference, seed/model/prompt changes. This is exploratory development, not preregistered reference success.",
+  "scope": "Reference pixels only; outside original edit mask exact, raw video still wholly model-generated.",
+  "stop": "If isolation still fails original body/anatomy/one-subject gate, no video. If video fails any frozen gate, stop without amendment.",
+  "budget_unchanged": "At most3GPUcalls2220reservedseconds2includedcredits; reserve third900s call for independent confirmation."
+}

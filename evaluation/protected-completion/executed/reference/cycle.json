@@ -1,0 +1,11 @@
+{
+  "status": "succeeded",
+  "failure": null,
+  "kind": "protected reference",
+  "worker_elapsed_seconds": 388.823912141,
+  "ended_utc": "2026-10-18T22:46:37.710283+00:00",
+  "source_sha256": {
+    "protected_reference.py": "e446ea890e1bfc01361b1b38cb16f1183e80ec6209b9485b8953c3e573558899",
+    "protected_candidate.py": "15be5c07f872e99d3ebddf1f15f9bec2401803197eb3b1229657c6829c47eb8e"
+  }
+}

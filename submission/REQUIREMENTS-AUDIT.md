@@ -1,11 +1,10 @@
 # Submission checklist — checked October 18, 2026
 
-Latest focused review: [identity-first continuation](../evaluation/identity-first/FINDINGS.md).
-Three development GPU calls tested reference ordering, depth conditioning, and
-original-pixel CPU preparation followed by actual animation. Appearance improved,
-but the new video has a missing lower body and unverified motion timing. Two
-exploratory protocol amendments are disclosed. No independent-source run or
-production promotion followed. The realistic quality target remains unmet.
+Latest focused review: [protected reference completion](../evaluation/protected-completion/FINDINGS.md).
+Two development GPU calls and a disclosed CPU-isolation amendment fix the
+missing body in33/33actual raw-video frames. The motion criterion still fails
+at2/4clear events. No independent-source run or production promotion follows.
+The realistic quality target remains unmet; earlier failures remain retained.
 
 Sources: [official rules](https://comfy.org/open-source-higgsfield) and
 [original announcement](https://blog.comfy.org/p/higgsfield-promised-to-open-source).

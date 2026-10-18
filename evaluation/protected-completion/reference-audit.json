@@ -1,0 +1,47 @@
+{
+  "technical_gate": true,
+  "checks": {
+    "generation_status": true,
+    "exact_protected_reference_pixels": true,
+    "binary_mask": true,
+    "lower_body_region_only": true,
+    "body_region_changed": true,
+    "mask_input_is_explicit": true,
+    "latent_mask_is_connected": true,
+    "sampler_uses_masked_latent": true,
+    "seed_and_sampler_retained": true,
+    "sdk_success_receipt": true,
+    "recorded_base_hash": true,
+    "recorded_mask_hash": true
+  },
+  "outside_reference_max_error": 0,
+  "editable_fraction": 0.24,
+  "source_sha256": "c84ced9efec67ca63d27dcca4230e3a8628feedcb3581aed5d6b3c58c69161fd",
+  "identity_sha256": "8eca434015252d1403214e2faf2f88a1147db884b0a0ecc1758db243c36bfc96",
+  "model_files": [
+    [
+      "Comfy-Org/Qwen-Image-Edit_ComfyUI",
+      "f68ace85e60b4a02a323e394253731947657b7d2",
+      "split_files/diffusion_models/qwen_image_edit_2511_int8_convrot.safetensors",
+      "diffusion_models/qwen_image_edit_2511_int8_convrot.safetensors",
+      "11b5af5ac601821d73930c84846c9a158e67177356daf927ce1c8d10f3963829"
+    ],
+    [
+      "Comfy-Org/Qwen-Image_ComfyUI",
+      "1f12b17be14c89b026c51a91d67c32f84bb047bc",
+      "split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors",
+      "text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors",
+      "cb5636d852a0ea6a9075ab1bef496c0db7aef13c02350571e388aea959c5c0b4"
+    ],
+    [
+      "Comfy-Org/Qwen-Image_ComfyUI",
+      "1f12b17be14c89b026c51a91d67c32f84bb047bc",
+      "split_files/vae/qwen_image_vae.safetensors",
+      "vae/qwen_image_vae.safetensors",
+      "a70580f0213e67967ee9c95f05bb400e8fb08307e017a924bf3441223e023d1f"
+    ]
+  ],
+  "sdk_job_id": "98a015f6-0d15-479c-9cf4-669ee07b1644",
+  "quality_gate": "NOT established. Inspect raw Qwen, protected reference, and subsequent raw video separately.",
+  "limits": "Exact reference protection does not prove video identity, plausible completion, source motion or scene preservation."
+}

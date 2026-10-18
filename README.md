@@ -33,6 +33,8 @@ Use one clear reference view with framing suited to the intended performance. Co
 
 ## Actual generation evidence
 
+The [protected completion study](evaluation/protected-completion/FINDINGS.md) fixes the missing lower body in all33 frames of a new actual raw video while retaining the defining reference appearance. It still fails the frozen motion criterion at2/4 source events. One exploratory CPU-isolation amendment and all failures are disclosed; this research path is not promoted to production or claimed submission-ready.
+
 Original procedural fixtures and real generated clips are in [webapp/public/examples](webapp/public/examples). They are labeled as recorded proofs in the interface.
 
 | Run | Size / frames | Inference-wrapper elapsed | Result |

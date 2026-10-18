@@ -1,0 +1,259 @@
+{
+  "assessor": "Coding agent; provisional manual all33frame review, not independent professional scoring",
+  "reviewed_utc": "2026-10-18T22:58:35.702535+00:00",
+  "gate_pass": false,
+  "whole_clip_scores_0_4": {
+    "reference_fidelity": 3,
+    "motion": 2,
+    "temporal_stability": 3,
+    "anatomy_major_shape": 3,
+    "photorealism": 3
+  },
+  "frames_reviewed": 33,
+  "continuous_body_to_lower_frame_edge": 33,
+  "abrupt_thigh_truncation": 0,
+  "attribute_retention_conservative": {
+    "clear": 31,
+    "uncertain_motion_blur_frames": [
+      1,
+      2
+    ],
+    "total": 33,
+    "blue_blazer_light_shirt": 33
+  },
+  "timing": {
+    "required_matches": 3,
+    "tolerance_frames": 2,
+    "observed_clear_matches": 2,
+    "events": [
+      {
+        "source_frame": 8,
+        "pass": false,
+        "reason": "Two-arm cross-torso arrangement not clearly reproduced at6..10"
+      },
+      {
+        "source_frame": 16,
+        "pass": "provisional",
+        "candidate_frame": 14,
+        "reason": "Raised shoulder hand/other near waist recognizable at-2frames"
+      },
+      {
+        "source_frame": 24,
+        "pass": "provisional",
+        "candidate_frame": 23,
+        "reason": "Both hands lowered near hips at-1frame"
+      },
+      {
+        "source_frame": 28,
+        "pass": false,
+        "reason": "Hand remains nearer throat/chest than source mouth event at26..30"
+      }
+    ]
+  },
+  "raw_decision": "FAIL: frozen recognizable-motion timing criterion",
+  "composite_decision": "FAIL: same pixels as raw under full-frame mask",
+  "normal_speed_independent_review": "Outstanding; all-frame agent review is not a professional playback review",
+  "background_preservation": "Not established; full-frame motion mask",
+  "inference_limit": "Complete reference body fixes truncation but does not fix source gestures in this tested Animate2 recipe. No universal model ceiling or Genjutsu-backend attribution follows.",
+  "stop": "No third GPU call, no unseen recording, no model switch or further amendment in this cycle. Existing object failures remain.",
+  "per_frame": [
+    {
+      "frame": 0,
+      "continuous_body": true,
+      "blue_blazer_light_shirt": true,
+      "defining_attributes": "recognizable"
+    },
+    {
+      "frame": 1,
+      "continuous_body": true,
+      "blue_blazer_light_shirt": true,
+      "defining_attributes": "uncertain"
+    },
+    {
+      "frame": 2,
+      "continuous_body": true,
+      "blue_blazer_light_shirt": true,
+      "defining_attributes": "uncertain"
+    },
+    {
+      "frame": 3,
+      "continuous_body": true,
+      "blue_blazer_light_shirt": true,
+      "defining_attributes": "recognizable"
+    },
+    {
+      "frame": 4,
+      "continuous_body": true,
+      "blue_blazer_light_shirt": true,
+      "defining_attributes": "recognizable"
+    },
+    {
+      "frame": 5,
+      "continuous_body": true,
+      "blue_blazer_light_shirt": true,
+      "defining_attributes": "recognizable"
+    },
+    {
+      "frame": 6,
+      "continuous_body": true,
+      "blue_blazer_light_shirt": true,
+      "defining_attributes": "recognizable"
+    },
+    {
+      "frame": 7,
+      "continuous_body": true,
+      "blue_blazer_light_shirt": true,
+      "defining_attributes": "recognizable"
+    },
+    {
+      "frame": 8,
+      "continuous_body": true,
+      "blue_blazer_light_shirt": true,
+      "defining_attributes": "recognizable"
+    },
+    {
+      "frame": 9,
+      "continuous_body": true,
+      "blue_blazer_light_shirt": true,
+      "defining_attributes": "recognizable"
+    },
+    {
+      "frame": 10,
+      "continuous_body": true,
+      "blue_blazer_light_shirt": true,
+      "defining_attributes": "recognizable"
+    },
+    {
+      "frame": 11,
+      "continuous_body": true,
+      "blue_blazer_light_shirt": true,
+      "defining_attributes": "recognizable"
+    },
+    {
+      "frame": 12,
+      "continuous_body": true,
+      "blue_blazer_light_shirt": true,
+      "defining_attributes": "recognizable"
+    },
+    {
+      "frame": 13,
+      "continuous_body": true,
+      "blue_blazer_light_shirt": true,
+      "defining_attributes": "recognizable"
+    },
+    {
+      "frame": 14,
+      "continuous_body": true,
+      "blue_blazer_light_shirt": true,
+      "defining_attributes": "recognizable"
+    },
+    {
+      "frame": 15,
+      "continuous_body": true,
+      "blue_blazer_light_shirt": true,
+      "defining_attributes": "recognizable"
+    },
+    {
+      "frame": 16,
+      "continuous_body": true,
+      "blue_blazer_light_shirt": true,
+      "defining_attributes": "recognizable"
+    },
+    {
+      "frame": 17,
+      "continuous_body": true,
+      "blue_blazer_light_shirt": true,
+      "defining_attributes": "recognizable"
+    },
+    {
+      "frame": 18,
+      "continuous_body": true,
+      "blue_blazer_light_shirt": true,
+      "defining_attributes": "recognizable"
+    },
+    {
+      "frame": 19,
+      "continuous_body": true,
+      "blue_blazer_light_shirt": true,
+      "defining_attributes": "recognizable"
+    },
+    {
+      "frame": 20,
+      "continuous_body": true,
+      "blue_blazer_light_shirt": true,
+      "defining_attributes": "recognizable"
+    },
+    {
+      "frame": 21,
+      "continuous_body": true,
+      "blue_blazer_light_shirt": true,
+      "defining_attributes": "recognizable"
+    },
+    {
+      "frame": 22,
+      "continuous_body": true,
+      "blue_blazer_light_shirt": true,
+      "defining_attributes": "recognizable"
+    },
+    {
+      "frame": 23,
+      "continuous_body": true,
+      "blue_blazer_light_shirt": true,
+      "defining_attributes": "recognizable"
+    },
+    {
+      "frame": 24,
+      "continuous_body": true,
+      "blue_blazer_light_shirt": true,
+      "defining_attributes": "recognizable"
+    },
+    {
+      "frame": 25,
+      "continuous_body": true,
+      "blue_blazer_light_shirt": true,
+      "defining_attributes": "recognizable"
+    },
+    {
+      "frame": 26,
+      "continuous_body": true,
+      "blue_blazer_light_shirt": true,
+      "defining_attributes": "recognizable"
+    },
+    {
+      "frame": 27,
+      "continuous_body": true,
+      "blue_blazer_light_shirt": true,
+      "defining_attributes": "recognizable"
+    },
+    {
+      "frame": 28,
+      "continuous_body": true,
+      "blue_blazer_light_shirt": true,
+      "defining_attributes": "recognizable"
+    },
+    {
+      "frame": 29,
+      "continuous_body": true,
+      "blue_blazer_light_shirt": true,
+      "defining_attributes": "recognizable"
+    },
+    {
+      "frame": 30,
+      "continuous_body": true,
+      "blue_blazer_light_shirt": true,
+      "defining_attributes": "recognizable"
+    },
+    {
+      "frame": 31,
+      "continuous_body": true,
+      "blue_blazer_light_shirt": true,
+      "defining_attributes": "recognizable"
+    },
+    {
+      "frame": 32,
+      "continuous_body": true,
+      "blue_blazer_light_shirt": true,
+      "defining_attributes": "recognizable"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "reviewed_utc": "2026-10-18T22:52:46.390718+00:00",
+  "assessor": "Coding agent, not independent professional",
+  "original_generated_reference_gate_pass": false,
+  "original_failure": "Unrelated enlarged clothing/body fragment in lower-right region",
+  "CPU_isolation_gate_pass": true,
+  "gate_pass": true,
+  "observations": [
+    "One primary figure with continuous plausible charcoal trouser legs through lower frame edge",
+    "Unrelated panel removed by existing-model one-person CPU segmentation",
+    "Original face, glasses, curls, beard, blazer and ivory shirt preserved exactly outside lower-body mask",
+    "Upper neutral pose remains; not a still-pose or video-motion pass"
+  ],
+  "protocol_deviation": "protocol-amendment.json permits one CPU repair of newly observed reference fragment; exploratory, no new reference generation",
+  "stop": "Any frozen video gate failure stops without further amendment"
+}

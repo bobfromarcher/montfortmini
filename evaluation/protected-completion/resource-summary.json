@@ -1,0 +1,25 @@
+{
+  "gpu_calls": 2,
+  "worker_wrapper_seconds_total": 526.477269752,
+  "reserved_worker_ceiling_seconds": 1320,
+  "declared_max_seconds": 2220,
+  "declared_max_calls": 3,
+  "declared_credit_cap": 2,
+  "reference_worker_seconds": 388.823912141,
+  "video_worker_seconds": 137.516074086,
+  "sampled_peak_vram_MiB": {
+    "reference": 30654.0,
+    "video": 28444.0
+  },
+  "allocated_RAM_MiB": 65536,
+  "physical_RAM_peak_measured": false,
+  "usage_before_displayed": 7.21,
+  "usage_after_displayed": 7.59,
+  "remaining_before_displayed": 22.79,
+  "remaining_after_displayed": 22.41,
+  "displayed_credit_delta": 0.38,
+  "cash_displayed": 0,
+  "cash_cap_displayed": 0,
+  "active_containers": [],
+  "limits": "Asynchronous account summaries, not per-job settled invoices. Animated breakdown7.939916610717773 differs from cost summary7.59. CPU setup/build/idle overhead may contribute. Cached video latency excludes reference generation/local CPU isolation."
+}

@@ -1,0 +1,25 @@
+{
+  "status": "generated-unreviewed",
+  "model": "Comfy-Org/Wan-Animate-2",
+  "model_revision": "e7181fe1896b7f2ce34120d1a3663413548240d7",
+  "mode": "motion-transfer",
+  "comfy_commit": "5cc4b870094c89090db54bd8d12649dcaf89f2ba",
+  "gpu": "L40S",
+  "elapsed_seconds": 132.76,
+  "comfy_sdk": "0.5.0",
+  "comfy_api_proxy": "0.1.6",
+  "sdk_job_id": "3fb3f989-4a97-4c99-b98a-7df03777c9d9",
+  "frames": 33,
+  "fps": 8,
+  "width": 480,
+  "height": 560,
+  "seed": 42,
+  "steps": 10,
+  "input_provenance": "user-selected video and reference image",
+  "target_erased_in_control": false,
+  "limitations": [
+    "Feasibility test; visual quality has not yet been reviewed.",
+    "Outside-mask pixel preservation in composite.mp4 comes from explicit compositing.",
+    "Does not prove general input quality or Genjutsu parity."
+  ]
+}
