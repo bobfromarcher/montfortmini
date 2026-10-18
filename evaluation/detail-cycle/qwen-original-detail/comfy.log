@@ -1,0 +1,82 @@
+[32m[INFO][0m setup plugin alembic.autogenerate.schemas
+[32m[INFO][0m setup plugin alembic.autogenerate.tables
+[32m[INFO][0m setup plugin alembic.autogenerate.types
+[32m[INFO][0m setup plugin alembic.autogenerate.constraints
+[32m[INFO][0m setup plugin alembic.autogenerate.defaults
+[32m[INFO][0m setup plugin alembic.autogenerate.comments
+[32m[INFO][0m setup plugin alembic.ext.checkconstraint_byname
+[1m[33m[WARNING][0m WARNING: You need pytorch with cu130 or higher to use optimized CUDA operations.
+WARNING WARNING WARNING
+If you are on nvidia 20 series and above it is required that you update your pytorch to cu130 or higher.
+
+[32m[INFO][0m Found comfy_kitchen backend triton: {'available': True, 'disabled': True, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'int8_linear', 'na3d', 'quantize_and_rotate_rowwise', 'quantize_int8_rowwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'rms_adaln', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'w4a8_int8_linear']}
+[32m[INFO][0m Found comfy_kitchen backend eager: {'available': True, 'disabled': False, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'convrot_w4a4_linear', 'dequantize_convrot_w4a4_weight', 'dequantize_int8_convrot_weight', 'dequantize_int8_convrot_weight_dtype', 'dequantize_int8_embedding', 'dequantize_int8_simple', 'dequantize_int8_simple_dtype', 'dequantize_mxfp8', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'dequantize_w4a8_int8_weight', 'fp16_conv3d', 'fp16_conv3d_out', 'fp16_linear', 'gemv_awq_w4a16', 'group_norm_silu_pad3d', 'group_norm_silu_pad3d_out', 'int8_linear', 'na3d', 'prepare_int4_weight_for_int8_linear', 'quantize_and_rotate_rowwise', 'quantize_convrot_w4a4_weight', 'quantize_int8_convrot_weight', 'quantize_int8_rowwise', 'quantize_int8_tensorwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'quantize_svdquant_w4a4', 'quantize_w4a8_int8_weight', 'rms_adaln', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'rotate_int8_convrot_weight', 'scaled_mm_mxfp8', 'scaled_mm_nvfp4', 'scaled_mm_svdquant_w4a4', 'sol_attn', 'stochastic_rounding_fp8', 'w4a8_int8_linear', 'w4a8_packed_linear']}
+[32m[INFO][0m Found comfy_kitchen backend ascend: {'available': False, 'disabled': False, 'unavailable_reason': "torch-npu is not installed: No module named 'torch_npu'", 'capabilities': []}
+[32m[INFO][0m Found comfy_kitchen backend cuda: {'available': True, 'disabled': True, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'closest_point_on_mesh', 'connected_components', 'convrot_w4a4_linear', 'delaunay3d', 'dequantize_convrot_w4a4_weight', 'dequantize_int8_convrot_weight', 'dequantize_int8_convrot_weight_dtype', 'dequantize_int8_simple', 'dequantize_int8_simple_dtype', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'dequantize_w4a8_int8_weight', 'edge_collapse_checks', 'fp16_conv3d', 'fp16_conv3d_out', 'fp16_linear', 'gemv_awq_w4a16', 'group_norm_silu_pad3d', 'group_norm_silu_pad3d_out', 'mesh_bvh', 'min_cut', 'na3d', 'prepare_int4_weight_for_int8_linear', 'quantize_and_rotate_rowwise', 'quantize_convrot_w4a4_weight', 'quantize_int8_convrot_weight', 'quantize_int8_rowwise', 'quantize_int8_tensorwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'quantize_svdquant_w4a4', 'quantize_w4a8_int8_weight', 'rms_adaln', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'rotate_int8_convrot_weight', 'scaled_mm_svdquant_w4a4', 'sol_attn', 'stochastic_rounding_fp8', 'w4a8_int8_linear', 'w4a8_packed_linear']}
+[32m[INFO][0m Found comfy_kitchen backend hip: {'available': False, 'disabled': False, 'unavailable_reason': 'PyTorch ROCm/HIP runtime not available', 'capabilities': []}
+[32m[INFO][0m Checkpoint files will always be loaded safely.
+[32m[INFO][0m Total VRAM 48540 MB, total RAM 928000 MB
+[32m[INFO][0m pytorch version: 2.9.1+cu128
+[32m[INFO][0m Set vram state to: NORMAL_VRAM
+[32m[INFO][0m Device: cuda:0 NVIDIA L40S : cudaMallocAsync
+[32m[INFO][0m Using async weight offloading with 2 streams
+[32m[INFO][0m Enabled pinned memory 835199.0
+[32m[INFO][0m working around nvidia conv3d memory bug.
+[32m[INFO][0m Using pytorch attention
+[32m[INFO][0m aimdo: /project/src/control.c:283:INFO:comfy-aimdo inited for GPU: NVIDIA L40S (VRAM: 48540 MB)
+[32m[INFO][0m DynamicVRAM support detected and enabled
+[32m[INFO][0m Python version: 3.12.10 (main, May 21 2025, 23:34:56) [GCC 12.2.0]
+[32m[INFO][0m ComfyUI version: 0.41.0
+[32m[INFO][0m comfy-aimdo version: 0.5.6
+[32m[INFO][0m comfy-kitchen version: 0.2.38
+[1m[33m[WARNING][0m ****** User settings have been changed to be stored on the server instead of browser storage. ******
+[1m[33m[WARNING][0m ****** For multi-user setups add the --multi-user CLI argument to enable multiple user profiles. ******
+[32m[INFO][0m comfyui-frontend-package version: 1.55.17
+[32m[INFO][0m comfyui-workflow-templates version: 0.11.87
+[32m[INFO][0m comfyui-embedded-docs version: 0.5.14
+[32m[INFO][0m comfy-kitchen version: 0.2.38
+[32m[INFO][0m comfy-aimdo version: 0.5.6
+[32m[INFO][0m [Prompt Server] web root: /usr/local/lib/python3.12/site-packages/comfyui_frontend_package/static
+[32m[INFO][0m Asset seeder disabled
+[32m[INFO][0m No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+[32m[INFO][0m 
+Import times for custom nodes:
+[32m[INFO][0m    0.0 seconds: /opt/ComfyUI/custom_nodes/websocket_image_save.py
+[32m[INFO][0m    0.0 seconds: /opt/ComfyUI/custom_nodes/openjutsu_media.py
+[32m[INFO][0m 
+[32m[INFO][0m Using RAM pressure cache.
+[32m[INFO][0m Starting server
+
+[32m[INFO][0m To see the GUI go to: http://127.0.0.1:8188
+[32m[INFO][0m got prompt
+[32m[INFO][0m Model storage policy: fast_disk=False paths=['/opt/ComfyUI/models/vae/qwen_image_vae.safetensors']
+[32m[INFO][0m Using pytorch attention in VAE
+[32m[INFO][0m Using pytorch attention in VAE
+[32m[INFO][0m VAE load device: cuda:0, offload device: cpu, dtype: torch.bfloat16
+[32m[INFO][0m Requested to load WanVAE
+[32m[INFO][0m Model WanVAE prepared for dynamic VRAM loading. 241MB Staged. 0 patches attached. Force pre-loaded 60 weights: 61 KB.
+[32m[INFO][0m Found quantization metadata version 1
+[32m[INFO][0m Using MixedPrecisionOps for text encoder
+[32m[INFO][0m Model storage policy: fast_disk=False paths=['/opt/ComfyUI/models/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors']
+[32m[INFO][0m CLIP/text encoder model load device: cuda:0, offload device: cpu, current: cpu, dtype: torch.float16
+[32m[INFO][0m Model WanVAE prepared for dynamic VRAM loading. 241MB Staged. 0 patches attached. Force pre-loaded 60 weights: 61 KB.
+[32m[INFO][0m Model WanVAE prepared for dynamic VRAM loading. 241MB Staged. 0 patches attached. Force pre-loaded 60 weights: 61 KB.
+[32m[INFO][0m Requested to load QwenImageTEModel_
+[32m[INFO][0m Model QwenImageTEModel_ prepared for dynamic VRAM loading. 7910MB Staged. 0 patches attached. Force pre-loaded 122 weights: 561 KB.
+[32m[INFO][0m Model WanVAE prepared for dynamic VRAM loading. 241MB Staged. 0 patches attached. Force pre-loaded 60 weights: 61 KB.
+[32m[INFO][0m Model WanVAE prepared for dynamic VRAM loading. 241MB Staged. 0 patches attached. Force pre-loaded 60 weights: 61 KB.
+[32m[INFO][0m Model QwenImageTEModel_ prepared for dynamic VRAM loading. 7910MB Staged. 0 patches attached. Force pre-loaded 122 weights: 561 KB.
+[32m[INFO][0m Found quantization metadata version 1
+[32m[INFO][0m Detected mixed precision quantization
+[32m[INFO][0m Using mixed precision operations
+[32m[INFO][0m Native ops: float8_e4m3fn, int8_tensorwise, convrot_w4a4, w6a8_int8, float8_e5m2, asym_w4a8_int8 , emulated ops: nvfp4, mxfp8
+[32m[INFO][0m model weight dtype torch.bfloat16, manual cast: torch.bfloat16
+[32m[INFO][0m model_type FLUX
+[32m[INFO][0m Model storage policy: fast_disk=False paths=['/opt/ComfyUI/models/diffusion_models/qwen_image_edit_2511_int8_convrot.safetensors']
+[32m[INFO][0m Requested to load QwenImage
+[32m[INFO][0m Model QwenImage prepared for dynamic VRAM loading. 19548MB Staged. 0 patches attached. Force pre-loaded 241 weights: 70 KB.
+  0%|          | 0/40 [00:00<?, ?it/s]  0%|          | 0/40 [00:00<?, ?it/s,   Model Initializing ...  ]  0%|          | 0/40 [00:23<?, ?it/s,  Model Initialization complete!  ]  2%|▎         | 1/40 [00:23<15:31, 23.90s/it,  Model Initialization complete!  ]  2%|▎         | 1/40 [00:15<15:31, 23.90s/it]                                     5%|▌         | 2/40 [00:15<04:49,  7.61s/it]  8%|▊         | 3/40 [00:22<04:42,  7.63s/it] 10%|█         | 4/40 [00:30<04:35,  7.64s/it] 12%|█▎        | 5/40 [00:38<04:28,  7.66s/it] 15%|█▌        | 6/40 [00:45<04:20,  7.67s/it] 18%|█▊        | 7/40 [00:53<04:13,  7.68s/it] 20%|██        | 8/40 [01:01<04:06,  7.70s/it] 22%|██▎       | 9/40 [01:08<03:58,  7.70s/it] 25%|██▌       | 10/40 [01:16<03:51,  7.71s/it] 28%|██▊       | 11/40 [01:24<03:43,  7.72s/it] 30%|███       | 12/40 [01:32<03:36,  7.73s/it] 32%|███▎      | 13/40 [01:40<03:37,  8.06s/it] 35%|███▌      | 14/40 [01:47<03:21,  7.76s/it] 38%|███▊      | 15/40 [01:55<03:14,  7.77s/it] 40%|████      | 16/40 [02:03<03:06,  7.78s/it] 42%|████▎     | 17/40 [02:11<02:58,  7.78s/it] 45%|████▌     | 18/40 [02:18<02:51,  7.78s/it] 48%|████▊     | 19/40 [02:26<02:43,  7.78s/it] 50%|█████     | 20/40 [02:34<02:35,  7.79s/it] 52%|█████▎    | 21/40 [02:42<02:28,  7.80s/it] 55%|█████▌    | 22/40 [02:50<02:20,  7.80s/it] 57%|█████▊    | 23/40 [02:57<02:12,  7.80s/it] 60%|██████    | 24/40 [03:05<02:04,  7.80s/it] 62%|██████▎   | 25/40 [03:13<01:57,  7.80s/it] 65%|██████▌   | 26/40 [03:21<01:49,  7.80s/it] 68%|██████▊   | 27/40 [03:29<01:41,  7.80s/it] 70%|███████   | 28/40 [03:36<01:33,  7.80s/it] 72%|███████▎  | 29/40 [03:44<01:25,  7.80s/it] 75%|███████▌  | 30/40 [03:52<01:18,  7.80s/it] 78%|███████▊  | 31/40 [04:00<01:10,  7.81s/it] 80%|████████  | 32/40 [04:08<01:02,  7.81s/it] 82%|████████▎ | 33/40 [04:16<00:54,  7.81s/it] 85%|████████▌ | 34/40 [04:23<00:46,  7.81s/it] 88%|████████▊ | 35/40 [04:31<00:39,  7.81s/it] 90%|█████████ | 36/40 [04:39<00:31,  7.81s/it] 92%|█████████▎| 37/40 [04:47<00:23,  7.80s/it] 95%|█████████▌| 38/40 [04:55<00:15,  7.81s/it] 98%|█████████▊| 39/40 [05:02<00:07,  7.80s/it]100%|██████████| 40/40 [05:10<00:00,  7.80s/it]100%|██████████| 40/40 [05:10<00:00,  7.77s/it]
+[32m[INFO][0m Model WanVAE prepared for dynamic VRAM loading. 241MB Staged. 0 patches attached. Force pre-loaded 60 weights: 61 KB.
+[32m[INFO][0m [32mPrompt executed in 338.68 seconds[0m
+======== Running on http://127.0.0.1:8189 ========
+(Press CTRL+C to quit)

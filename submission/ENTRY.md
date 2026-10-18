@@ -3,6 +3,11 @@
 Status: prepared experimental entry; not formally submitted. Realistic quality
 target remains unmet. No award or organizer acceptance is claimed.
 
+Latest [focused correction cycle](../evaluation/detail-cycle/FINDINGS.md):
+original-detail input handling improved facial attributes in reference stills
+but failed the frozen identity/clothing/pose gate. It remains an optional research
+helper, not the production app or a new demonstrated video capability.
+
 **Repository:** https://github.com/bobfromarcher/montfortmini/tree/codex/validation
 
 **Review:** https://github.com/bobfromarcher/montfortmini/pull/1

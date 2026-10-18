@@ -1,0 +1,22 @@
+{
+  "gpu_attempts": 2,
+  "worker_elapsed_seconds": 767.570028937,
+  "gpu": "Modal L40S, 2 CPU / 64GiB allocated RAM; physical RAM peak unavailable",
+  "sampled_peak_vram_MiB": {
+    "qwen-original-detail": 30718.0,
+    "both-original-detail": 30713.0
+  },
+  "modal_dashboard_before": {
+    "usage": 5.62,
+    "included_remaining": 24.38
+  },
+  "modal_dashboard_after": {
+    "usage": 6.17,
+    "included_remaining": 23.83,
+    "cash_spend": 0,
+    "cash_cap": 0
+  },
+  "displayed_credit_delta": 0.55,
+  "limits": "Displayed dashboard delta is not an exact per-job invoice; billing updates are asynchronous and animated breakdown disagreed (6.616841). Runtime excludes build/startup/idle/storage; those may consume credits. No more inference queued.",
+  "stop_reason": "Both candidates failed predeclared reference gate; video/new independent source gates not reached."
+}

@@ -1,0 +1,19 @@
+{
+  "checked_utc": "2026-10-18T18:04:11.235451+00:00",
+  "all_frozen_sources_unchanged": true,
+  "files": {
+    "identity_detail.py": true,
+    "detail_reference_alignment.py": true,
+    "detail_cycle.py": true,
+    "reference_alignment.py": true,
+    "qwen_reference_alignment.py": true,
+    "cascade_reference_alignment.py": true,
+    "cascade_candidate.py": true,
+    "anchor_workflow.py": true,
+    "qwen_anchor_workflow.py": true,
+    "motion_workflow.py": true,
+    "media_pipeline.py": true,
+    "service.py": true,
+    "sdk_runner.py": true
+  }
+}

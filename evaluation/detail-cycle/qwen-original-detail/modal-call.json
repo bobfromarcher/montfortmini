@@ -1,0 +1,9 @@
+{
+  "output": "outputs\\adversarial-cycle\\qwen-original-detail",
+  "kind": "reference",
+  "placement": "qwen",
+  "ceiling_seconds": 660,
+  "status": "dispatched",
+  "started_utc": "2026-10-18T17:54:42.462995+00:00",
+  "call_id": "fc-01M582DP2ZBH7NZRTDVFRFFTXT"
+}

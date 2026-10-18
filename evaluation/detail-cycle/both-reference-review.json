@@ -1,0 +1,12 @@
+{
+  "assessor": "coding agent; independent professional review outstanding",
+  "scope": "reference still only, not video",
+  "observations": [
+    "Target curls, beard and two-lens glasses visible; face more realistic",
+    "Required blue blazer/ivory shirt absent; source T-shirt retained",
+    "Head direction and hands differ from source performance frame"
+  ],
+  "correction_to_initial_description": "Source already contains bicycle wheel. Do not claim bicycle invention.",
+  "reference_gate_pass": false,
+  "decision": "Stop GPU work; no video, new-source test or production promotion."
+}

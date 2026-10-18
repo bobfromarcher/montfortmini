@@ -1,5 +1,16 @@
 # Reference and motion recovery study — October 18, 2026
 
+**October18 follow-up/erratum:** the earlier higher-resolution control enlarged
+an already reduced image with nearest-neighbor interpolation. Its failure does
+not rule out retaining detail from the original reference. A registered paired
+test now directly preserves original pixels at the same native Qwen geometry.
+It restores visible glasses/beard and realism but still fails the reference
+gate; the both-editor placement ablation loses required clothing and posture.
+Neither was promoted. See [the focused cycle report](detail-cycle/FINDINGS.md)
+for both retained failures, exact provenance, stopping rule and accounting.
+The former independent signer is development material in this follow-up; it is
+not new held-out evidence. Historical frozen files/results remain unchanged.
+
 The frozen experimental cascade improved a difficult development recording but
 **failed the new independent-recording identity test**. It is not the deployed
 app path. The realistic quality target remains unmet. The previous VACE object

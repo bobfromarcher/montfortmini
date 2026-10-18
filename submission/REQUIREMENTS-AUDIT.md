@@ -1,5 +1,10 @@
 # Submission checklist — checked October 18, 2026
 
+Latest focused review: [detail-cycle findings](../evaluation/detail-cycle/FINDINGS.md).
+Both original-detail reference candidates failed the predeclared clothing/pose
+or identity gate. No new video or independent-source run followed; no production
+change was made. This leaves the realistic quality target unmet.
+
 Sources: [official rules](https://comfy.org/open-source-higgsfield) and
 [original announcement](https://blog.comfy.org/p/higgsfield-promised-to-open-source).
 This is a judged competition; the $10,000 Best Overall prize is not a guaranteed
