@@ -1,0 +1,39 @@
+{
+  "tested_source_commit": "a162f86b01bddc359a88a6724d7e3de33b7dd692",
+  "clean_checkout": true,
+  "new_venv": true,
+  "requirements_install": "passed",
+  "cpu_tests": {
+    "production_and_detail": 13,
+    "legacy_geometry": 2,
+    "all_passed": true
+  },
+  "frozen_source_hashes": {
+    "identity_detail.py": true,
+    "detail_reference_alignment.py": true,
+    "detail_cycle.py": true,
+    "reference_alignment.py": true,
+    "qwen_reference_alignment.py": true,
+    "cascade_reference_alignment.py": true,
+    "cascade_candidate.py": true,
+    "anchor_workflow.py": true,
+    "qwen_anchor_workflow.py": true,
+    "motion_workflow.py": true,
+    "media_pipeline.py": true,
+    "service.py": true,
+    "sdk_runner.py": true
+  },
+  "production_bytes_equal_to_baseline": {
+    "service.py": true,
+    "media_pipeline.py": true,
+    "workflow.py": true,
+    "model_config.py": true,
+    "modal_probe.py": true,
+    "motion_workflow.py": true,
+    "sdk_runner.py": true
+  },
+  "offline_paired_audit_pass": true,
+  "demo_unchanged_sha256": "a8f48e5bd01d09101067741f225573944b54e77c13bed04a7a1b748d5ad63230",
+  "modal_active_containers": 0,
+  "limits": "Local Windows CPU verification, not independent GPU reproduction. Frontend/demonstration are unchanged. GPU quality gates failed before video. Private original media is required to repeat offline paired pixel audit."
+}

@@ -1,0 +1,45 @@
+{
+  "technical_pair_pass": true,
+  "checks": {
+    "source_original_bytes_equal": true,
+    "source_conditioning_pixels_equal": true,
+    "identity_original_bytes_equal": true,
+    "workflow_equal": true,
+    "prompt_equal": true,
+    "seed_equal": true,
+    "models_equal": true,
+    "native_conditioning_geometry_equal": true,
+    "candidate_is_direct_original_resample": true
+  },
+  "control_identity_dimensions": [
+    336,
+    512
+  ],
+  "candidate_identity_dimensions": [
+    672,
+    1024
+  ],
+  "control_native_geometry": {
+    "vision": [
+      311,
+      474
+    ],
+    "vae": [
+      832,
+      1264
+    ]
+  },
+  "candidate_native_geometry": {
+    "vision": [
+      311,
+      474
+    ],
+    "vae": [
+      832,
+      1264
+    ]
+  },
+  "original_identity_sha256": "8eca434015252d1403214e2faf2f88a1147db884b0a0ecc1758db243c36bfc96",
+  "worker_seconds": 360.053109729,
+  "limits": "Checks one registered input-policy ablation. No perceptual pass, causal generalization or independent review is inferred from input-detail retention."
+}

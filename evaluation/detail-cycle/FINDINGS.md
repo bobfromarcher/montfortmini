@@ -96,3 +96,16 @@ confirmation, social publication and formal receipt remain outstanding. Organize
 interpretation of the self-hosted SDK path has not been pre-approved. Required
 materials do not substitute for the unmet realistic quality target. No formal
 submission, social publication, prize assertion or production deployment occurred.
+
+
+## Final verification
+
+A fresh Git clone at a162f86b01bddc359a88a6724d7e3de33b7dd692 and newly
+created virtual environment installed both declared requirements files. All13
+production/detail CPU tests plus2 legacy-geometry tests passed. All13 frozen
+runtime-source hashes match the clean checkout; seven production files match
+the prior baseline byte for byte. The offline original-pixel paired audit passed.
+The108-second demo is byte-identical to the already decoded/verified artifact.
+Known-secret/private-media publication scan:801 files/ZIP entries,zero issues.
+Final Modal container inventory:empty. These checks support reproducibility and
+noninterference; they do not turn the failed video-quality target into a pass.
