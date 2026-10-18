@@ -1,0 +1,286 @@
+{
+  "assessor": "Coding agent; provisional manual visual review, not independent professional scoring",
+  "split": "Development only: same previously inspected signer recording and fictional reference",
+  "scope": "All 33 source/raw frame pairs and 33 face crops inspected; raw/composite PNG equality independently checked. Normal-speed professional playback review remains pending.",
+  "per_frame": [
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "defining_attributes": "recognizable glasses/curls/beard/face",
+      "blue_blazer_and_light_shirt": true,
+      "floating_thigh_truncation": true
+    },
+    {
+      "frame": 1,
+      "time_seconds": 0.125,
+      "defining_attributes": "uncertain: motion blur",
+      "blue_blazer_and_light_shirt": true,
+      "floating_thigh_truncation": true
+    },
+    {
+      "frame": 2,
+      "time_seconds": 0.25,
+      "defining_attributes": "uncertain: motion blur",
+      "blue_blazer_and_light_shirt": true,
+      "floating_thigh_truncation": true
+    },
+    {
+      "frame": 3,
+      "time_seconds": 0.375,
+      "defining_attributes": "recognizable glasses/curls/beard/face",
+      "blue_blazer_and_light_shirt": true,
+      "floating_thigh_truncation": true
+    },
+    {
+      "frame": 4,
+      "time_seconds": 0.5,
+      "defining_attributes": "recognizable glasses/curls/beard/face",
+      "blue_blazer_and_light_shirt": true,
+      "floating_thigh_truncation": true
+    },
+    {
+      "frame": 5,
+      "time_seconds": 0.625,
+      "defining_attributes": "recognizable glasses/curls/beard/face",
+      "blue_blazer_and_light_shirt": true,
+      "floating_thigh_truncation": true
+    },
+    {
+      "frame": 6,
+      "time_seconds": 0.75,
+      "defining_attributes": "recognizable glasses/curls/beard/face",
+      "blue_blazer_and_light_shirt": true,
+      "floating_thigh_truncation": true
+    },
+    {
+      "frame": 7,
+      "time_seconds": 0.875,
+      "defining_attributes": "recognizable glasses/curls/beard/face",
+      "blue_blazer_and_light_shirt": true,
+      "floating_thigh_truncation": true
+    },
+    {
+      "frame": 8,
+      "time_seconds": 1.0,
+      "defining_attributes": "recognizable glasses/curls/beard/face",
+      "blue_blazer_and_light_shirt": true,
+      "floating_thigh_truncation": true
+    },
+    {
+      "frame": 9,
+      "time_seconds": 1.125,
+      "defining_attributes": "recognizable glasses/curls/beard/face",
+      "blue_blazer_and_light_shirt": true,
+      "floating_thigh_truncation": true
+    },
+    {
+      "frame": 10,
+      "time_seconds": 1.25,
+      "defining_attributes": "recognizable glasses/curls/beard/face",
+      "blue_blazer_and_light_shirt": true,
+      "floating_thigh_truncation": true
+    },
+    {
+      "frame": 11,
+      "time_seconds": 1.375,
+      "defining_attributes": "recognizable glasses/curls/beard/face",
+      "blue_blazer_and_light_shirt": true,
+      "floating_thigh_truncation": true
+    },
+    {
+      "frame": 12,
+      "time_seconds": 1.5,
+      "defining_attributes": "recognizable glasses/curls/beard/face",
+      "blue_blazer_and_light_shirt": true,
+      "floating_thigh_truncation": true
+    },
+    {
+      "frame": 13,
+      "time_seconds": 1.625,
+      "defining_attributes": "recognizable glasses/curls/beard/face",
+      "blue_blazer_and_light_shirt": true,
+      "floating_thigh_truncation": true
+    },
+    {
+      "frame": 14,
+      "time_seconds": 1.75,
+      "defining_attributes": "recognizable glasses/curls/beard/face",
+      "blue_blazer_and_light_shirt": true,
+      "floating_thigh_truncation": true
+    },
+    {
+      "frame": 15,
+      "time_seconds": 1.875,
+      "defining_attributes": "recognizable glasses/curls/beard/face",
+      "blue_blazer_and_light_shirt": true,
+      "floating_thigh_truncation": true
+    },
+    {
+      "frame": 16,
+      "time_seconds": 2.0,
+      "defining_attributes": "recognizable glasses/curls/beard/face",
+      "blue_blazer_and_light_shirt": true,
+      "floating_thigh_truncation": true
+    },
+    {
+      "frame": 17,
+      "time_seconds": 2.125,
+      "defining_attributes": "recognizable glasses/curls/beard/face",
+      "blue_blazer_and_light_shirt": true,
+      "floating_thigh_truncation": true
+    },
+    {
+      "frame": 18,
+      "time_seconds": 2.25,
+      "defining_attributes": "recognizable glasses/curls/beard/face",
+      "blue_blazer_and_light_shirt": true,
+      "floating_thigh_truncation": true
+    },
+    {
+      "frame": 19,
+      "time_seconds": 2.375,
+      "defining_attributes": "recognizable glasses/curls/beard/face",
+      "blue_blazer_and_light_shirt": true,
+      "floating_thigh_truncation": true
+    },
+    {
+      "frame": 20,
+      "time_seconds": 2.5,
+      "defining_attributes": "recognizable glasses/curls/beard/face",
+      "blue_blazer_and_light_shirt": true,
+      "floating_thigh_truncation": true
+    },
+    {
+      "frame": 21,
+      "time_seconds": 2.625,
+      "defining_attributes": "recognizable glasses/curls/beard/face",
+      "blue_blazer_and_light_shirt": true,
+      "floating_thigh_truncation": true
+    },
+    {
+      "frame": 22,
+      "time_seconds": 2.75,
+      "defining_attributes": "recognizable glasses/curls/beard/face",
+      "blue_blazer_and_light_shirt": true,
+      "floating_thigh_truncation": true
+    },
+    {
+      "frame": 23,
+      "time_seconds": 2.875,
+      "defining_attributes": "recognizable glasses/curls/beard/face",
+      "blue_blazer_and_light_shirt": true,
+      "floating_thigh_truncation": true
+    },
+    {
+      "frame": 24,
+      "time_seconds": 3.0,
+      "defining_attributes": "recognizable glasses/curls/beard/face",
+      "blue_blazer_and_light_shirt": true,
+      "floating_thigh_truncation": true
+    },
+    {
+      "frame": 25,
+      "time_seconds": 3.125,
+      "defining_attributes": "recognizable glasses/curls/beard/face",
+      "blue_blazer_and_light_shirt": true,
+      "floating_thigh_truncation": true
+    },
+    {
+      "frame": 26,
+      "time_seconds": 3.25,
+      "defining_attributes": "recognizable glasses/curls/beard/face",
+      "blue_blazer_and_light_shirt": true,
+      "floating_thigh_truncation": true
+    },
+    {
+      "frame": 27,
+      "time_seconds": 3.375,
+      "defining_attributes": "recognizable glasses/curls/beard/face",
+      "blue_blazer_and_light_shirt": true,
+      "floating_thigh_truncation": true
+    },
+    {
+      "frame": 28,
+      "time_seconds": 3.5,
+      "defining_attributes": "recognizable glasses/curls/beard/face",
+      "blue_blazer_and_light_shirt": true,
+      "floating_thigh_truncation": true
+    },
+    {
+      "frame": 29,
+      "time_seconds": 3.625,
+      "defining_attributes": "recognizable glasses/curls/beard/face",
+      "blue_blazer_and_light_shirt": true,
+      "floating_thigh_truncation": true
+    },
+    {
+      "frame": 30,
+      "time_seconds": 3.75,
+      "defining_attributes": "recognizable glasses/curls/beard/face",
+      "blue_blazer_and_light_shirt": true,
+      "floating_thigh_truncation": true
+    },
+    {
+      "frame": 31,
+      "time_seconds": 3.875,
+      "defining_attributes": "recognizable glasses/curls/beard/face",
+      "blue_blazer_and_light_shirt": true,
+      "floating_thigh_truncation": true
+    },
+    {
+      "frame": 32,
+      "time_seconds": 4.0,
+      "defining_attributes": "recognizable glasses/curls/beard/face",
+      "blue_blazer_and_light_shirt": true,
+      "floating_thigh_truncation": true
+    }
+  ],
+  "attribute_count_conservative": {
+    "clear": 31,
+    "uncertain": 2,
+    "total": 33,
+    "required": 28
+  },
+  "ordinal_scores_provisional": {
+    "reference_fidelity": 3,
+    "motion": 2,
+    "temporal_stability": 3,
+    "anatomy_shape": 1,
+    "photorealism_scene": 2
+  },
+  "timing": {
+    "source_anchors": "development-timing-anchors.json",
+    "tolerance_frames": 2,
+    "required_clear_matches": 3,
+    "observations": [
+      {
+        "source_frame": 8,
+        "match": "not established",
+        "reason": "Cross-torso two-arm arrangement is not clearly reproduced within the frozen window."
+      },
+      {
+        "source_frame": 16,
+        "match": "provisionally recognizable",
+        "candidate_frame": 14
+      },
+      {
+        "source_frame": 24,
+        "match": "provisionally recognizable",
+        "candidate_frame": 23
+      },
+      {
+        "source_frame": 28,
+        "match": "not established",
+        "reason": "Raised hand stays nearer throat/upper chest than source mouth event."
+      }
+    ],
+    "clear_matches_provisional": 2,
+    "pass_established": false,
+    "limits": "Manual event interpretation, no biomechanical ground truth. Broad correlated arm movement cannot replace the frozen timing criterion."
+  },
+  "raw_decision": "FAIL: lower body absent in every frame; motion/timing gate not established",
+  "composite_decision": "FAIL: identical pixels to raw output under full-frame mask",
+  "preservation": "Not established. Entire frame is editable; no source-background preservation evidence.",
+  "causal_limits": "Video graph, models, source and mask arrays match historical control; prepared reference alone differs. Registration, segmentation, backdrop and original-pixel retention form a bundled preparation method, not isolated effects.",
+  "decision": "Reject production promotion. Stop GPU work under amendment 2; no unseen recording, seed reroll or fourth call."
+}

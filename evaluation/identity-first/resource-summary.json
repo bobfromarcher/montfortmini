@@ -1,0 +1,25 @@
+{
+  "gpu_calls": 3,
+  "worker_wrapper_seconds_total": 1053.313635786,
+  "reserved_worker_ceiling_seconds": 1980,
+  "video_worker_seconds": 136.046893172,
+  "gpu": "L40S",
+  "allocated_memory_MiB": 65536,
+  "physical_RAM_peak_measured": false,
+  "sampled_peak_vram_MiB": {
+    "identity_first_reference": 30841.0,
+    "depth_reference": 31417.0,
+    "registered_motion": 28604.0
+  },
+  "usage_before_displayed": 6.45,
+  "usage_after_displayed": 7.21,
+  "included_remaining_before": 23.55,
+  "included_remaining_after_displayed": 22.79,
+  "displayed_credit_delta": 0.76,
+  "cash_spent_displayed": 0,
+  "cash_cap_displayed": 0,
+  "active_containers": [],
+  "stopping_decision": "Quality failure, not budget exhaustion. Do not use the remaining fourth slot.",
+  "billing_limits": "Asynchronous account snapshots, not settled per-job invoices. Animated usage breakdown shows 7.535791873931885 while cost summary shows 7.21. CPU preprocessing/build/queue/idle overhead may contribute; source snapshots retained.",
+  "time_limits": "Worker scopes exclude some image builds, client wait and queue overhead. Video is cached-reference-only, not end-to-end preparation latency."
+}

@@ -27,6 +27,8 @@ The [focused correction cycle](evaluation/detail-cycle/FINDINGS.md) fixes loss o
 
 A subsequent [pose-only alternative](evaluation/pose-reference/FINDINGS.md) removes the two-editor cascade and source-person appearance from reference preparation. Native Qwen editing receives an estimated skeleton and the original identity. Its reference still loses required clothing and posture, so it also stops before video and remains research-only. The documented next conditioning experiment is untested.
 
+The [identity-first continuation](evaluation/identity-first/FINDINGS.md) tests reference ordering, depth conditioning and CPU registration of the original subject pixels. A new actual video retains defining appearance in conservatively31/33 frames, but remains a floating, truncated figure with unverified motion timing. It fails the frozen video criteria; three GPU calls are retained, two exploratory protocol deviations are disclosed, and no production promotion or unseen-test success is claimed.
+
 Use one clear reference view with framing suited to the intended performance. Contact sheets can animate as multiple panels; tested headshots did not recover the source hand performance. Reference fitting and source framing are material limitations, not automatic subject tracking or pose reconstruction guarantees.
 
 ## Actual generation evidence

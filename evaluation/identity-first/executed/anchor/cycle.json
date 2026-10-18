@@ -1,0 +1,15 @@
+{
+  "status": "succeeded",
+  "failure": null,
+  "kind": "identity-first reference",
+  "worker_elapsed_seconds": 391.840650651,
+  "ended_utc": "2026-10-18T20:13:44.790881+00:00",
+  "source_sha256": {
+    "pose_reference_candidate.py": "1dcb57dbe5cf5a925583c6748ee6fd3cc0cd5276fbe4f7f992df05d86776300d",
+    "pose_reference_alignment.py": "12f1a1d500e02072ca63b9edbab3e288f59aa0569ff5cb72195486dc682ed0ca",
+    "identity_detail.py": "90468f78d5bd04f17786195df558382514587649522a693fe68cdb83184a5cf5",
+    "detail_reference_alignment.py": "3b8b2e64c8d37533618fdef1df8813f9e2542a444e0f81d60db5ff7b1378d6db",
+    "identity_first_candidate.py": "a3b7aca5d198d7217f30cde0fc3252e63bc795144851c8df2b8cf1aa11ed8c05",
+    "identity_first_alignment.py": "0958495d6919c416e86255a07f0eb49f21e00d94e7d3c38cb443665d3a164da4"
+  }
+}

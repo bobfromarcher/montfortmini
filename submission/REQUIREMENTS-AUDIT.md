@@ -1,9 +1,11 @@
 # Submission checklist — checked October 18, 2026
 
-Latest focused review: [detail-cycle findings](../evaluation/detail-cycle/FINDINGS.md).
-Both original-detail reference candidates failed the predeclared clothing/pose
-or identity gate. No new video or independent-source run followed; no production
-change was made. This leaves the realistic quality target unmet.
+Latest focused review: [identity-first continuation](../evaluation/identity-first/FINDINGS.md).
+Three development GPU calls tested reference ordering, depth conditioning, and
+original-pixel CPU preparation followed by actual animation. Appearance improved,
+but the new video has a missing lower body and unverified motion timing. Two
+exploratory protocol amendments are disclosed. No independent-source run or
+production promotion followed. The realistic quality target remains unmet.
 
 Sources: [official rules](https://comfy.org/open-source-higgsfield) and
 [original announcement](https://blog.comfy.org/p/higgsfield-promised-to-open-source).

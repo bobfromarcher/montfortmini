@@ -1,0 +1,25 @@
+{
+  "technical_ablation_pass": true,
+  "checks": {
+    "control_technical_pass": true,
+    "candidate_technical_pass": true,
+    "graph_other_than_third_input_and_description_equal": true,
+    "prior_prompt_preserved_as_prefix": true,
+    "third_input_links": true,
+    "third_image_loader": true,
+    "models_and_seed_equal": true,
+    "original_source_equal": true,
+    "depth_original_digest": true,
+    "depth_pixels_match_recorded_resize": true,
+    "depth_canvas_matches_guide": true,
+    "depth_model_sha": true,
+    "source-conditioning.png_unchanged": true,
+    "identity-conditioning.png_unchanged": true
+  },
+  "changed_graph_nodes": [
+    "18",
+    "6",
+    "7"
+  ],
+  "limits": "Exploratory protocol amendment. Added estimated depth and its textual role; not a depth-only causal effect. No video, identity, pose or anatomy pass is assigned."
+}
