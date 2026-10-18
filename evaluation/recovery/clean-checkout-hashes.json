@@ -1,0 +1,17 @@
+{
+  "checkout_commit": "e7d7444e9de8e31420e4643cd831cfd0424e1c3c",
+  "frozen_runtime_hashes": {
+    "cascade_candidate.py": true,
+    "cascade_reference_alignment.py": true,
+    "reference_alignment.py": true,
+    "qwen_reference_alignment.py": true,
+    "anchor_workflow.py": true,
+    "qwen_anchor_workflow.py": true,
+    "service.py": true,
+    "media_pipeline.py": true,
+    "motion_workflow.py": true,
+    "sdk_runner.py": true,
+    "evaluation/fidelity_precover_media_pipeline.py": true
+  },
+  "all_match": true
+}

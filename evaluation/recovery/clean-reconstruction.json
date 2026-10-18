@@ -1,0 +1,8 @@
+{
+  "original_sha256": "18f87711400868da0c7e82ac43f63292036476f4960942a2f13090ac9c2a937d",
+  "reference_sha256": "8eca434015252d1403214e2faf2f88a1147db884b0a0ecc1758db243c36bfc96",
+  "derived_video_sha256": "f0a536c347ec25117cf271d375844e0497577d9e429290850969dc3ed36cc24a",
+  "registered_video_sha256": "f0a536c347ec25117cf271d375844e0497577d9e429290850969dc3ed36cc24a",
+  "encoded_bytes_match_registered": true,
+  "split": "Already observed research case, not a new holdout."
+}

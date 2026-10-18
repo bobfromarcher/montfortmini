@@ -60,3 +60,5 @@ media and private development portraits are excluded from public submission
 media. The updated108-second demo and social/form drafts represent the failure
 honestly. Registration, social publication and formal submission remain pending;
 no guaranteed eligibility or prize is claimed.
+
+Fresh checkout verification:10 production tests+2 geometry tests passed; all11 frozen runtime-source hashes matched. Offline audit passed and input reconstruction matched byte for byte. See SETUP-CHECK.md for the tested commit and practical limits.

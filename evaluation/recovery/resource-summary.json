@@ -75,6 +75,9 @@
     "conservative_upper_delta": 2.8196,
     "out_of_pocket": 0,
     "cash_cap": 0,
-    "limitations": "Rounded/delayed UI totals disagree; not a settled invoice or exact per-run charge. Breakdown is recorded conservatively."
+    "limitations": "Rounded/delayed UI totals disagree; not a settled invoice or exact per-run charge. Breakdown is recorded conservatively.",
+    "followup_summary_total_used": 5.62,
+    "followup_breakdown_total_used": 5.9618635177612305,
+    "conservative_policy": "Retain highest observed breakdown6.199567 for budgeting; raw UI snapshots retained privately. Cause of transient readout differences not established."
   }
 }
