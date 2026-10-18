@@ -21,3 +21,5 @@ evaluation/QUALITY.md, verify input/model hashes, and use your own included
 credits or sufficient local hardware. A second checkout on the same laptop is
 not independent GPU reproduction. Report deviations in libraries/hardware and
 do not expect cross-machine bitwise determinism.
+
+The recovery study is in `evaluation/RECOVERY.md`; its public label-blinded synthetic packet is in `evaluation/recovery/review-packet-public/`. Do not inspect its separate key before scoring. A separate v2 private packet adds the development cascade and new research recording; its human media must not be republished. Review source timing at native8fps, both raw and finished, and original uploaded references rather than only prepared reference frames. No completed independent review is claimed.

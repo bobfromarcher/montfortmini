@@ -7,7 +7,7 @@ target remains unmet. No award or organizer acceptance is claimed.
 
 **Review:** https://github.com/bobfromarcher/montfortmini/pull/1
 
-**Demo:** `montfortmini-demo.mp4`, 108 seconds, captioned, no soundtrack.
+**Demo:** `montfortmini-demo.mp4`, updated October18,108 seconds,2592 decoded frames, captioned, no soundtrack. It includes the frozen synthetic regression and reports the failed fresh identity test; human research footage is excluded.
 Public repository path after publication:
 https://github.com/bobfromarcher/montfortmini/blob/codex/validation/submission/montfortmini-demo.mp4
 
@@ -49,3 +49,5 @@ email and a social-post URL have not been invented or prefilled.
 Official registration: https://form.typeform.com/to/Ayn9Cwfj
 Official submission: https://form.typeform.com/to/V1dSQrkS
 Rules: https://comfy.org/open-source-higgsfield
+
+**Recovery validation:** `evaluation/RECOVERY.md` documents the rejected Klein→Qwen→Animate2 candidate, eight final-phase GPU attempts, the unchanged production path, a new independent-recording identity failure, retained regressions and reproducible offline audits. The realistic quality target remains unmet.

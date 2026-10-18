@@ -1,0 +1,7 @@
+{
+  "call_id": "fc-01M5726HQNPJYQ5RM1YJB0FZ9H",
+  "timeout_seconds": 660,
+  "runner_sha256": "34dfb947b2296b406b7f71d4e0c1621ff4d3bdd82e9203adbf77b05b1f415af9",
+  "inference_wrapper_sha256": "fb6199be1fff9a00f270a75c4e7c99f2dff73b8038898cb6b93b94410e244ff4",
+  "note": "Same frozen render function with a tighter execution ceiling. No inference parameter changed."
+}

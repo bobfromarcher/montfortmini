@@ -1,0 +1,29 @@
+{
+  "assessor": "coding agent, framewise visual inspection; not independent professional review",
+  "reviewed_utc": "2026-10-18T08:37:56.193488+00:00",
+  "case": "signer",
+  "candidate": "cascade-v1",
+  "raw": {
+    "reference_face": 1,
+    "reference_attributes": 2,
+    "motion": 2,
+    "temporal_stability": 3,
+    "major_anatomy": 3,
+    "photorealism": 2,
+    "defining_glasses_present_frames": 0,
+    "target_curls_present_frames": 0,
+    "total_frames": 33,
+    "required_attribute_frames": 28,
+    "pass": false
+  },
+  "composite": "Same scores: all33 raw/composite PNG arrays match exactly; full-frame mask, no compositing benefit. Encoded MP4s separately decode successfully.",
+  "observations": [
+    "Blue blazer/ivory shirt broadly present, but target glasses, salt-and-pepper curls/beard and facial identity missing.",
+    "Headwrap retained in Klein output; Qwen refinement stylizes face and omits glasses before animation.",
+    "Major source gestures recognizable broadly; source/output frame8 and16 show different arm/hand phase. No formal timing pass claimed.",
+    "No obvious duplicated major limbs in frame-contact review; fine hands soft. This is not a normal-speed independent review."
+  ],
+  "motion_timing_gate": "Not established: four fully timestamped source landmarks were not frozen. Do not invent retrospective timing success.",
+  "technical_audit": "signer-audit.json",
+  "decision": "Reject production promotion; no tuning on this recording."
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "label": "clip-A",
+    "condition": "shipped-previous-synthetic-result",
+    "original_sha256": "33ede5d786fbd98559c9240398be45e9c51a5a5bbdeff80a7d1026631356838b",
+    "review_sha256": "180f9af9e1d40276113dcc573ea5cfa52a89dfd42b59669f877536654fa11240",
+    "standardization": "First17frames,8fps,aspect-fit(576, 480),H264CRF18,no audio/metadata/interpolation/repair."
+  },
+  {
+    "label": "clip-B",
+    "condition": "frozen-cascade-synthetic-regression",
+    "original_sha256": "972bf42abf80d318833a2be4a261780910fd8cbdfa75cb91f38f8e899c5beb61",
+    "review_sha256": "568b27a6dfd7b0c28ddfb73a453ce3a8d6e8b0e276b509e1215a84aa6d6b19a4",
+    "standardization": "First17frames,8fps,aspect-fit(576, 480),H264CRF18,no audio/metadata/interpolation/repair."
+  }
+]

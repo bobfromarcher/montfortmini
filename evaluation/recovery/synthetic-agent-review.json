@@ -1,0 +1,19 @@
+{
+  "assessor": "coding agent; framewise review, not independent professional review",
+  "case": "synthetic-regression, previously observed",
+  "reference_face_and_style": 2,
+  "reference_attributes": 3,
+  "motion": 2,
+  "temporal_stability": 3,
+  "major_anatomy": 3,
+  "photorealism": "not applicable to illustrated reference",
+  "raw_pass": false,
+  "composite_pass": false,
+  "observations": [
+    "Reference blue shirt/brown hair broadly remain. Flat illustration was changed into a3D-like rendering; room/bed invented.",
+    "Frame8 broad arms-out maximum recognizable; frame12 still high while source is lowering; frame16 not fully down.",
+    "Full-mask raw and composite PNGs identical.",
+    "Not isolated causality: geometry/conditioning and graph change together."
+  ],
+  "independent_normal_speed_review": "pending"
+}
