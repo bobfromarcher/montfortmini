@@ -1,0 +1,96 @@
+{
+  "gate_pass": true,
+  "scope": "App integration regression on previously scored recording; not additional held-out evidence.",
+  "reviewer": "Agent provisional all-frame visual review; independent professional and normal-speed human review outstanding.",
+  "reviewed_raw_frames": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "dimensions_0_to_4": {
+    "reference_attributes": 3,
+    "recognizable_motion": 3,
+    "temporal_stability": 3,
+    "anatomy": 3,
+    "photorealism": 3
+  },
+  "clear_reference_attributes_frames": 33,
+  "reference_attributes": [
+    "short curls",
+    "beard",
+    "two-lens eyeglasses with bridge",
+    "blue blazer",
+    "white crewneck shirt",
+    "dark trousers"
+  ],
+  "events": [
+    {
+      "source_frame": 4,
+      "recognized_output_frame": 4,
+      "pass": true,
+      "event": "arms rising outward"
+    },
+    {
+      "source_frame": 8,
+      "recognized_output_frame": 8,
+      "pass": true,
+      "event": "arms reach shoulder height"
+    },
+    {
+      "source_frame": 16,
+      "recognized_output_frame": 16,
+      "pass": true,
+      "event": "arms out through circle phase"
+    },
+    {
+      "source_frame": 24,
+      "recognized_output_frame": 24,
+      "pass": true,
+      "event": "arms remain out through returning circle phase"
+    }
+  ],
+  "hard_failures_observed": [],
+  "fine_detail_failures": [
+    "Malformed/merged fingers persist during arm extension, especially frames8-32.",
+    "Glasses/face proportions are recognizable but do not exactly match the reference."
+  ],
+  "limitations": [
+    "Last two event silhouettes are similar; cannot establish accurate3D circle phase.",
+    "Native480x560,8fps,4.125seconds only.",
+    "Full-frame transfer; source-background preservation is not applicable.",
+    "Reference was prepared/completed before this test; arbitrary portrait preparation not validated.",
+    "Frame review supports provisional pass; normal-speed human/professional review remains outstanding."
+  ],
+  "raw_composite_equal_frames": 33,
+  "technical_audit": "technical-audit.json"
+}

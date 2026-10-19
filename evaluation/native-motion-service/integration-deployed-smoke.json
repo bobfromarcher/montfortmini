@@ -1,0 +1,31 @@
+{
+  "unauthorized_status": {
+    "status": 401,
+    "body": {
+      "error": "Unauthorized"
+    }
+  },
+  "authorized_status": {
+    "status": 200,
+    "body": {
+      "configured": true,
+      "features": {
+        "objectSwap": true,
+        "motionTransfer": true
+      },
+      "limits": {
+        "maxVideoBytes": 12582912,
+        "maxImageBytes": 4194304,
+        "maxFrames": 33,
+        "maxSide": 560
+      }
+    }
+  },
+  "invalid_workload": {
+    "status": 400,
+    "body": {
+      "detail": "Choose Object swap or Motion transfer"
+    }
+  },
+  "gpu_job_submitted": false
+}

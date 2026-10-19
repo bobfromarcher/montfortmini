@@ -68,7 +68,7 @@ def display_geometry(stream):
     return width,height
 
 
-def prepare_media(data):
+def prepare_media(data, *, native_motion=False):
     import shutil
     import subprocess
     from PIL import Image, ImageDraw, ImageOps
@@ -91,9 +91,10 @@ def prepare_media(data):
     original_w,original_h = display_geometry(streams[0])
     if original_w*original_h > 16_777_216 or min(original_w,original_h) <16:
         raise ValueError("Use a video up to 4K for this prototype")
-    scale = min(480/original_w,480/original_h)
+    max_height = 560 if native_motion and data['mode']=='motion-transfer' else 480
+    scale = min(480/original_w,max_height/original_h)
     width = min(480,max(128,round(original_w*scale/16)*16))
-    height = min(480,max(128,round(original_h*scale/16)*16))
+    height = min(max_height,max(128,round(original_h*scale/16)*16))
     frames = data["frames"]
     fit = min(width/original_w,height/original_h)
     fitted_w = max(2,int(original_w*fit)//2*2)

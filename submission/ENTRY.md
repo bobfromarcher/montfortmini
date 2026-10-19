@@ -3,6 +3,13 @@
 Status: prepared experimental entry; not formally submitted. Realistic quality
 target remains unmet. No award or organizer acceptance is claimed.
 
+Current October19 update: [native motion](../evaluation/native-motion-service/FINDINGS.md)
+is integrated and deployed after a successful independent-recording recovery and
+app-path regression. Frame ratings remain provisional; fingers are malformed,
+exact likeness is not established, and realistic object quality still fails.
+The public108-second demo predates this update and needs refreshed cleared media.
+Earlier diagnostics below remain retained historical decisions.
+
 October19:[precision and upstream-control comparisons](../evaluation/upstream-motion/FINDINGS.md)
 both fail the visual gate. No candidate promotion or unseen verification follows.
 
@@ -23,7 +30,7 @@ https://github.com/bobfromarcher/montfortmini/blob/codex/validation/submission/m
 
 montfortmini is an independent open-source workbench for reference-guided
 object replacement and character motion transfer. It runs pinned VACE 1.3B and
-Wan Animate2 workflows through the official Comfy SDK and a self-hosted Comfy
+native Wan2.2-Animate workflows through the official Comfy SDK and a self-hosted Comfy
 API proxy. Users upload a short clip and reference, draw a manual edit region
 for object replacement, and download MP4, the executed workflow and run details.
 The MIT repository includes setup instructions, original demonstrations,
@@ -32,7 +39,8 @@ work; realistic pose, identity, scale and lighting remain inconsistent. The demo
 shows actual outputs and a failure rather than claiming Genjutsu parity.
 
 **Models/tools:** ComfyUI; official comfy-sdk 0.5.0 and comfy-api-proxy 0.1.6;
-Wan2.1 VACE 1.3B and Wan Animate2 distilled int8; FFmpeg/Pillow/NumPy/OpenCV
+Wan2.1 VACE1.3B and native Wan2.2-Animate14B with pinned converted weights,
+Lightx2v acceleration/relighting adapters and ViTPose133 controls; FFmpeg/Pillow/NumPy/OpenCV
 for preparation/evaluation; Modal L40S; React/Vinext frontend and private Sites
 hosting. No Higgsfield backend or closed generation API is used.
 

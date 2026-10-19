@@ -1,4 +1,17 @@
-# Submission checklist — checked October 18, 2026
+# Submission checklist — checked October19,2026
+
+Current: [native motion recovery and app integration](../evaluation/native-motion-service/FINDINGS.md)
+provisionally retain reference attributes and4/4 principal events on the
+independent recording, then repeat through the app. Native motion is deployed;
+all36 CPU tests pass. Fine fingers, broader generalization and realistic object
+quality remain inadequate or unverified. Exact local native GPU reproduction,
+independent normal-speed/professional review and an updated cleared public demo
+remain pending. Earlier diagnostic decisions below are historical.
+
+Official app/submission accordions were expanded again October19. The required
+SDK, license, workflows and local instructions remain in scope. The existing
+108-second demo predates the native app and must not be presented as showing
+its current quality. Social/form publication has not been performed.
 
 October19 diagnostic:[precision and whole-body controls](../evaluation/upstream-motion/FINDINGS.md).
 Both paired video candidates fail. No quality promotion or unseen verification.

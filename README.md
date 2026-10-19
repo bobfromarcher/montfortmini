@@ -7,13 +7,13 @@ It never calls Higgsfield's backend and does not contain their implementation, b
 ## Features and limits
 
 - **Object swap:** Wan2.1 VACE 1.3B, reference-guided inpainting, a drawn rectangle, and optional first/end rectangles interpolated along a straight path.
-- **Motion transfer:** Wan Animate2 distilled int8 with source motion and a character reference.
+- **Motion transfer:** native Wan2.2-Animate14B with pinned whole-body/hand pose and face controls, converted checkpoint, Lightx2v acceleration and relighting adapters. Use single-person footage and a complete character reference. Portrait completion is not automatic.
 - File uploads, prompt and seed controls, synchronized comparison, MP4 and exact workflow downloads.
-- 17/33 frames at 8fps (2.125/4.125 seconds), up to 480px, one reference. Audio is omitted.
+- 17/33 frames at 8fps (2.125/4.125 seconds), motion up to480×560, objects up to480×480, one reference. Audio is omitted.
 - 12MiB video, 4MiB reference, 16 megapixels per decoded image/frame. Short videos repeat their last frame.
 - Official `comfy-sdk==0.5.0` workflow execution through `comfy-api-proxy==0.1.6` beside self-hosted ComfyUI.
 - Modal backend: one GPU container maximum, zero warm GPU containers, no automatic generation retries, no persistent volumes.
-- Optional local NVIDIA Docker backend using the same inference code.
+- Optional local NVIDIA Docker recipes, including a native-motion extension; full local GPU execution remains unverified.
 
 The region uses a manual rectangle with linear interpolation. Both modes remain experimental. The [validation study](evaluation/FINDINGS.md) includes eight development/held-out synthetic and realistic clips, paired controls, and retained failures. Mirrored motion can produce duplicate arms; reference color, shading, and real-footage motion remain unreliable. Multiple subjects and long-term identity consistency are unvalidated.
 
@@ -33,14 +33,20 @@ Use one clear reference view with framing suited to the intended performance. Co
 
 ## Actual generation evidence
 
-The [native recipe diagnostic](evaluation/native-recipe/FINDINGS.md) produces a
-substantially better actual development recast:4/4 source events and30/33 clearly
-retained reference frames provisionally. Its independent-recording inference
-finished but packaging failed because our fixture omitted compositor mask PNGs;
-the unseen video was not retained and has no quality verdict. Preflight and
-failure-image retention are corrected with30CPU tests passing. This research
-candidate is not integrated into the workbench or claimed submission-ready.
-The deployed motion path above remains unchanged.
+The [native motion integration](evaluation/native-motion-service/FINDINGS.md)
+recovers the previously unscored independent-recording test:4/4 principal events,
+33/33 recognizable reference-attribute frames, provisionally. The app's actual
+upload/preparation/orchestration path repeats that result and is now deployed.
+Raw/composite frames are identical under the full-frame mask; returned videos
+match retained artifacts byte for byte. Fingers remain malformed, exact facial
+likeness is not established, and normal-speed independent human/professional
+review is outstanding. This is one recording and one fictional reference,
+not population generalization or Genjutsu parity. Realistic object-swap quality
+still fails. The earlier [diagnostic](evaluation/native-recipe/FINDINGS.md)
+and all technical failures remain retained.
+
+The studies below describe earlier decisions at their dates; the native release
+above supersedes their former production-status statements.
 
 The [precision and upstream-control diagnostic](evaluation/upstream-motion/FINDINGS.md) rejects both a BF16-only correction and pinned whole-body/hand/face preprocessing. Exact paired inputs isolate the precision contrast; both actual videos retain severe defects. GPU telemetry now works despite unavailable cgroup readings. These research paths remain outside production; no passing candidate or unseen verification is claimed.
 
@@ -98,13 +104,30 @@ The backend requires its bearer key. `POST /jobs` accepts `mode`, `video_b64`, `
 
 Use Linux, or Windows with WSL2/Docker and NVIDIA Container Toolkit. Allow at least 60GB free disk, 32GB system RAM, and a 48GB GPU for the tested class of workload. Smaller cards may need changes; a 4GB laptop GPU is insufficient.
 
-This Docker path is provided but **has not been executed on the available laptop**. Modal inference uses the same Python preparation and graph code.
+These Docker paths **have not been executed on the available laptop**. The base
+image retains the older Animate2 motion recipe. Add the native extension below
+to use the same native preparation and graph functions as the current Modal app.
+Allow additional disk space for approximately23GB of native/pose weights,
+their download cache and image layers, and64GB system RAM for the measured
+cloud allocation; local hardware requirements are not independently established.
 
 ```sh
 docker build -f Dockerfile.local -t openjutsu-local .
 # Set OPENJUTSU_API_KEY to your own random key in this shell first.
 docker run --rm --gpus all -p 127.0.0.1:8000:8000 -e OPENJUTSU_API_KEY openjutsu-local
 ```
+
+For the native motion recipe, after building `openjutsu-local`:
+
+```sh
+docker build -f Dockerfile.native -t montfortmini-native .
+docker run --rm --gpus all -p 127.0.0.1:8000:8000 -e OPENJUTSU_API_KEY montfortmini-native
+```
+
+The extension installs pinned ONNX preprocessing dependencies, verifies native
+model downloads, and installs the explicit pose/face input node. Local execution
+uses `.local()` calls and requires no Modal account. This is a provided
+reproduction path, not a claimed independently tested GPU installation.
 
 Set the webapp's ignored `.env.local` (and `.dev.vars` for Worker preview) backend URL to `http://127.0.0.1:8000` and its matching key, then run `npm install` and `npm run dev`. Loopback HTTP is allowed only in development. The local API permits one render at a time and keeps four results in memory. No Modal token or cloud inference is needed. Building downloads ComfyUI and model weights from official upstream repositories.
 
@@ -118,7 +141,7 @@ npx tsc --noEmit
 npm run build
 ```
 
-Exports are Comfy API graphs, not standalone drag-and-drop UI workflows. They use bundled custom input nodes. Install the relevant `proof_inputs.py`, `motion_inputs.py`, or `media_pipeline.py` under ComfyUI `custom_nodes/` and provide the fixture folder described in their source to reuse them. The app downloads the exact graph with each generated result.
+Exports are Comfy API graphs, not standalone drag-and-drop UI workflows. They use bundled custom input nodes. Native motion needs `explicit_motion_inputs.py` and its prepared `conditioning.npz` containing source, mask, reference, pose and face arrays; raw RGB is not its pose input. Other recipes use `proof_inputs.py`, `motion_inputs.py`, or `media_pipeline.py`. The app downloads the exact graph with each result. See the native findings for executable offline audits and controlled replay.
 
 Standalone procedural proofs, after verifying credit/billing limits:
 
@@ -139,6 +162,7 @@ Original application code and procedural fixtures: **MIT**, see [LICENSE](LICENS
 - [VACE weights](https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged), revision `123acf1cc74bccbb9bfff8ac1ee72edc08c2341d`.
 - [Wan Animate2 weights](https://huggingface.co/Comfy-Org/Wan-Animate-2), revision `e7181fe1896b7f2ce34120d1a3663413548240d7`.
 - Model filenames are pinned in `model_config.py` and `motion_model_config.py`. No weights are bundled. Review upstream Apache-2.0 notices and component terms.
+- Current native-motion model revisions, sizes and SHA256 are in `native_recipe_models.py`; pinned pose source/weights and Apache notices are in `vendor/wan_animate/provenance.json`. The converted checkpoint card declares Apache2; the generic conversion repository lacks a global license declaration. The adapter README attributes its Apache upstreams; this declaration gap remains disclosed. No converted weights are redistributed.
 - PyTorch/CUDA and SDK versions are pinned. Upstream Comfy requirements are resolved at build; full dependency locking remains future work.
 
 Built toward the [Comfy open-source challenge](https://comfy.org/open-source-higgsfield). This app uses the official SDK's documented self-hosted integration. Organizer acceptance and prize eligibility are not guaranteed. A public social post and formal entry submission are separate steps.

@@ -1,0 +1,27 @@
+{
+  "scope": "Artifact and exact app-path verification; not independent perceptual proof.",
+  "invariants_pass": true,
+  "checks": {
+    "runtime_sources_match_freeze": true,
+    "graph_matches_frozen_candidate": true,
+    "response_graph_matches_execution": true,
+    "app_and_retained_sdk_job_match": true,
+    "technical_success": true,
+    "one_orchestrated_attempt": true,
+    "original_request_matches_freeze": true,
+    "all_raw_and_composite_frames_equal": true,
+    "app_video_bytes_match_retained_videos": true
+  },
+  "raw_composite_equal_frames": 33,
+  "worker_seconds": 96.468664018,
+  "graph_seconds": 69.59,
+  "cpu_controls_seconds": 23.236230734000003,
+  "gpu_sample_count": 92,
+  "peak_sampled_gpu_MiB": 29109.0,
+  "calls": {
+    "prepare_call_id": "fc-01M5ARFSHY1A02ES3W7JD2ZAQP",
+    "render_call_id": "fc-01M5ARH6SYTWPRWGAP27TTVRV6",
+    "service_sha256": "10711b79c6358cdd9c336662cfa525bf223ede85c88850ea8286e680a81a893c"
+  },
+  "sdk_job_id": "fb6a50a6-94b9-4993-be36-83281cb8770a"
+}

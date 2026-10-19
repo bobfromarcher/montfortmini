@@ -7,8 +7,8 @@ from explicit_motion_workflow import build_graph as prior_graph
 from native_recipe_models import ASSETS
 
 
-def build_graph():
-    graph = prior_graph()
+def build_graph(width=480, height=560, frames=33):
+    graph = prior_graph(width=width, height=height, frames=frames)
     graph['1']['inputs']['unet_name'] = ASSETS[0]['file'].split('/')[-1]
     graph['4']['inputs']['text'] = (
         'The person in the reference image performs the movements from the source video. '

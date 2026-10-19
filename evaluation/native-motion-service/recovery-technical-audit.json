@@ -1,0 +1,27 @@
+{
+  "scope": "Artifact invariants only; independent quality review remains necessary.",
+  "invariants_pass": true,
+  "checks": {
+    "runtime_source_matches_freeze": true,
+    "graph_matches_freeze": true,
+    "retained_artifacts_match_freeze": true,
+    "worker_input_matches_freeze": true,
+    "technical_success": true,
+    "one_attempt": true,
+    "raw_composite_full_mask_equality": true
+  },
+  "artifact_checks": {
+    "inputs.zip": true,
+    "candidate-pass.json": true,
+    "events.json": true,
+    "original-candidate-freeze.json": true,
+    "fixture-repair.json": true,
+    "billing-before.txt": true
+  },
+  "raw_composite_equal_frames": 33,
+  "worker_seconds": 86.128782455,
+  "graph_seconds": 58.89,
+  "gpu_sample_count": 83,
+  "peak_sampled_gpu_MiB": 29109.0,
+  "sdk_job_id": "b2e39644-3ae0-4a54-9ada-3898d13bc1ad"
+}

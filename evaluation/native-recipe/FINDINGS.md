@@ -1,5 +1,9 @@
 # Native recipe diagnostic — October 19, 2026
 
+Follow-on: [separately budgeted recovery and app integration](../native-motion-service/FINDINGS.md)
+now retains and provisionally scores the independent recording. The original
+three-call diagnostic below remains closed, with its failure unmodified.
+
 **Decision: development improvement demonstrated; generalization unverified;
 not promoted to the app and not submission-ready.**
 

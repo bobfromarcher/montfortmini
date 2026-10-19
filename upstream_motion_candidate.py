@@ -10,12 +10,13 @@ app=modal.App('montfortmini-upstream-controls')
 image=(baseline.image.add_local_file(HERE/'upstream_motion_candidate.py','/root/upstream_motion_candidate.py')
        .add_local_file(HERE/'upstream_motion_controls.py','/root/upstream_motion_controls.py')
        .add_local_dir(HERE/'vendor/wan_animate','/root/vendor/wan_animate'))
-cpu_image=(modal.Image.debian_slim(python_version='3.12')
+cpu_base_image=(modal.Image.debian_slim(python_version='3.12')
  .uv_pip_install('torch==2.9.1',index_url='https://download.pytorch.org/whl/cpu')
  .uv_pip_install('onnxruntime==1.23.2','matplotlib==3.10.7','opencv-python-headless==4.13.0.92','numpy==2.4.6','Pillow==13.0.0','huggingface_hub==0.36.0')
  .add_local_dir(HERE/'vendor/wan_animate','/root/vendor/wan_animate',copy=True)
  .add_local_file(HERE/'upstream_motion_controls.py','/root/upstream_motion_controls.py',copy=True)
  .run_commands('timeout 900 python /root/upstream_motion_controls.py'))
+cpu_image=cpu_base_image
 # Module hydration needs local image-construction dependencies, not their models.
 for n in ('upstream_motion_candidate.py','explicit_motion_candidate.py','explicit_motion_workflow.py','motion_probe.py','modal_probe.py','workflow.py','model_config.py','motion_workflow.py','motion_model_config.py','sdk_runner.py','download_models.py','download_motion_models.py','proof_inputs.py','motion_inputs.py','explicit_motion_inputs.py'):
     cpu_image=cpu_image.add_local_file(HERE/n,'/root/'+n)

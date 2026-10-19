@@ -1,0 +1,26 @@
+{
+  "same_frozen_model_graph": true,
+  "source_difference_reason": "App uploaded H264 source.mp4, decoded at8fps; prior fixture contained PNG frames. This is integration regression, not single-factor model comparison.",
+  "tensors": {
+    "source": {
+      "exact_equal": false,
+      "mae_255": 1.6864556074142456
+    },
+    "reference": {
+      "exact_equal": true,
+      "mae_255": 0.0
+    },
+    "mask": {
+      "exact_equal": true,
+      "mae_255": 0.0
+    },
+    "pose": {
+      "exact_equal": false,
+      "mae_255": 0.24021469056606293
+    },
+    "face": {
+      "exact_equal": false,
+      "mae_255": 3.3116531372070312
+    }
+  }
+}
