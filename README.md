@@ -48,7 +48,7 @@ and all technical failures remain retained.
 The studies below describe earlier decisions at their dates; the native release
 above supersedes their former production-status statements.
 
-The [object conditioning correction cycle](evaluation/object-reference/FINDINGS.md) rejects reference registration and a descriptive-prompt-only video. Registration loses green in17/17 frames; the descriptive prompt retains green but regresses scale to2.83x the source color-area proxy and adds a hole-like shape defect. Both raw/composited outputs and bounded replay commands are retained. A source-luma geometry-control node is implemented and CPU-tested only; it is not deployed or video-validated.
+The [object conditioning correction cycle](evaluation/object-reference/FINDINGS.md) rejects reference registration and a descriptive-prompt-only video. Registration loses green in17/17 frames; the descriptive prompt retains green but regresses scale to2.83x the source color-area proxy and adds a hole-like shape defect. Both raw/composited outputs and bounded replay commands are retained. The [source-luma follow-up](evaluation/object-luminance/FINDINGS.md) now produces green in17/17 frames at1.11x the source area proxy with accurate trajectory and passing numerical gates. Material/lighting remains below the frozen visual threshold; this actual video improvement is research-only.
 
 The [object-mask oracle](evaluation/object-mask/FINDINGS.md) tests tighter
 source-annotated masks with the model/reference/graph fixed. It loses the green

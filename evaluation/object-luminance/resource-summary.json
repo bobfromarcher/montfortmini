@@ -1,0 +1,8 @@
+{
+  "worker_seconds": 52.481410362,
+  "comfy_seconds": 27.3,
+  "gpu_samples": 51,
+  "peak_sampled_vram_MiB": 11906.0,
+  "monitor_error_count": 51,
+  "host_peak_memory_available": false
+}

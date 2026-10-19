@@ -41,7 +41,12 @@ class OpenJutsuLuminanceInputs:
         if settings['mode']!='object-swap':raise ValueError('Object-only diagnostic')
         _,mask,reference=OpenJutsuMediaInputs().load()
         source=np.stack([np.asarray(Image.open(root/'source'/f'{i:04d}.png').convert('RGB'),dtype=np.float32)/255 for i in range(settings['frames'])])
-        return torch.from_numpy(luminance_control(source,mask.numpy())),mask,reference
+        control=luminance_control(source,mask.numpy())
+        # Retain the exact tensors returned by the executed Comfy node, rather
+        # than relying only on a matching offline preparation script.
+        np.savez_compressed(root/'runtime-conditioning.npz',source=control,
+                            mask=mask.numpy(),reference=reference.numpy()[0])
+        return torch.from_numpy(control),mask,reference
 
 
 NODE_CLASS_MAPPINGS={'OpenJutsuLuminanceInputs':OpenJutsuLuminanceInputs}

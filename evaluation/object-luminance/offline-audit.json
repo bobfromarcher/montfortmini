@@ -1,0 +1,407 @@
+{
+  "contrast": "luminance",
+  "invariants_pass": true,
+  "checks": {
+    "technical_success": true,
+    "paired_archive_changes_exact": true,
+    "conditioning_change_exact": true,
+    "reference_tensor_matches_png": true,
+    "paired_graph_changes_exact": true,
+    "worker_input_matches_freeze": true,
+    "frozen_inputs_exact": true,
+    "runtime_source_matches_freeze": true,
+    "size_frames_fps": true,
+    "executed_node_tensors_match_prepared": true,
+    "executed_control_matches_original_source_luma": true,
+    "outside_control_rgb_exact": true,
+    "source_snapshot_matches_freeze": true
+  },
+  "diagnostic_gates": {
+    "reference_color": false,
+    "scale_proxy": false,
+    "centroid": false,
+    "raw_preservation": true,
+    "encoded_preservation": true,
+    "composite_preservation": true
+  },
+  "diagnostic_gates_pass": false,
+  "raw_green_reference_frames": 0,
+  "composite_green_reference_frames": 0,
+  "median_area_ratio": null,
+  "mean_centroid_error_diagonal": null,
+  "raw_preservation": {
+    "mae_255": 1.9523396492004395,
+    "p95_255": 7.0,
+    "max_255": 112.0
+  },
+  "encoded_preservation": {
+    "mae_255": 1.7686711549758911,
+    "p95_255": 4.0,
+    "max_255": 46.0
+  },
+  "composite_preservation": {
+    "mae_255": 0.0,
+    "p95_255": 0.0,
+    "max_255": 0.0
+  },
+  "rows": [
+    {
+      "frame": 0,
+      "source_yellow": {
+        "center": [
+          175.99660493827162,
+          156.3972222222222
+        ],
+        "area": 3240
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "raw_yellow": {
+        "center": [
+          176.66345441067458,
+          162.3202372127502
+        ],
+        "area": 4047
+      },
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    },
+    {
+      "frame": 1,
+      "source_yellow": {
+        "center": [
+          174.16129032258064,
+          156.8991935483871
+        ],
+        "area": 3224
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "raw_yellow": {
+        "center": [
+          175.09547365817463,
+          162.73880781597825
+        ],
+        "area": 4043
+      },
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    },
+    {
+      "frame": 2,
+      "source_yellow": {
+        "center": [
+          172.21232665639445,
+          156.88875192604007
+        ],
+        "area": 3245
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "raw_yellow": {
+        "center": [
+          173.20132580407562,
+          162.35084704149276
+        ],
+        "area": 4073
+      },
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    },
+    {
+      "frame": 3,
+      "source_yellow": {
+        "center": [
+          170.87711213517665,
+          156.01566820276497
+        ],
+        "area": 3255
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "raw_yellow": {
+        "center": [
+          171.8522699386503,
+          161.24711656441718
+        ],
+        "area": 4075
+      },
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    },
+    {
+      "frame": 4,
+      "source_yellow": {
+        "center": [
+          168.28256205945448,
+          155.75635917866992
+        ],
+        "area": 3263
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "raw_yellow": {
+        "center": [
+          169.56731707317073,
+          160.37219512195122
+        ],
+        "area": 4100
+      },
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    },
+    {
+      "frame": 5,
+      "source_yellow": {
+        "center": [
+          166.53794369645044,
+          156.33231334149326
+        ],
+        "area": 3268
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "raw_yellow": {
+        "center": [
+          166.6194602624412,
+          161.22654122307503
+        ],
+        "area": 4039
+      },
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    },
+    {
+      "frame": 6,
+      "source_yellow": {
+        "center": [
+          163.43886198547216,
+          157.84594430992735
+        ],
+        "area": 3304
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "raw_yellow": {
+        "center": [
+          164.0932668329177,
+          162.06184538653366
+        ],
+        "area": 4010
+      },
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    },
+    {
+      "frame": 7,
+      "source_yellow": {
+        "center": [
+          161.53472222222223,
+          159.11805555555554
+        ],
+        "area": 3312
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "raw_yellow": {
+        "center": [
+          162.60361923648983,
+          162.85498264749629
+        ],
+        "area": 4034
+      },
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    },
+    {
+      "frame": 8,
+      "source_yellow": {
+        "center": [
+          160.68902991840434,
+          159.12269567845271
+        ],
+        "area": 3309
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "raw_yellow": {
+        "center": [
+          162.04820766378245,
+          162.99110012360939
+        ],
+        "area": 4045
+      },
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    },
+    {
+      "frame": 9,
+      "source_yellow": {
+        "center": [
+          159.77452460006037,
+          157.56746151524297
+        ],
+        "area": 3313
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "raw_yellow": {
+        "center": [
+          161.3288409703504,
+          162.0186228865474
+        ],
+        "area": 4081
+      },
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    },
+    {
+      "frame": 10,
+      "source_yellow": {
+        "center": [
+          159.9135248354279,
+          157.1244763614602
+        ],
+        "area": 3342
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "raw_yellow": {
+        "center": [
+          161.07057387057387,
+          161.66349206349207
+        ],
+        "area": 4095
+      },
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    },
+    {
+      "frame": 11,
+      "source_yellow": {
+        "center": [
+          160.11666666666667,
+          157.3982142857143
+        ],
+        "area": 3360
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "raw_yellow": {
+        "center": [
+          161.37344701583436,
+          161.75468940316688
+        ],
+        "area": 4105
+      },
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    },
+    {
+      "frame": 12,
+      "source_yellow": {
+        "center": [
+          161.18669847897405,
+          158.12585744109754
+        ],
+        "area": 3353
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "raw_yellow": {
+        "center": [
+          162.20767163449793,
+          162.28903005130712
+        ],
+        "area": 4093
+      },
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    },
+    {
+      "frame": 13,
+      "source_yellow": {
+        "center": [
+          162.0790255496138,
+          158.7192513368984
+        ],
+        "area": 3366
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "raw_yellow": {
+        "center": [
+          163.28031227128568,
+          163.16028299585264
+        ],
+        "area": 4099
+      },
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    },
+    {
+      "frame": 14,
+      "source_yellow": {
+        "center": [
+          163.8500441046751,
+          159.1646574536901
+        ],
+        "area": 3401
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "raw_yellow": {
+        "center": [
+          164.23628895868566,
+          163.20826286542643
+        ],
+        "area": 4139
+      },
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    },
+    {
+      "frame": 15,
+      "source_yellow": {
+        "center": [
+          165.14515186915887,
+          159.20940420560748
+        ],
+        "area": 3424
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "raw_yellow": {
+        "center": [
+          165.3164314757235,
+          163.1104998804114
+        ],
+        "area": 4181
+      },
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    },
+    {
+      "frame": 16,
+      "source_yellow": {
+        "center": [
+          165.9831737742965,
+          159.30954453147663
+        ],
+        "area": 3447
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "raw_yellow": {
+        "center": [
+          166.00909308446998,
+          163.10409188801148
+        ],
+        "area": 4179
+      },
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    }
+  ],
+  "limits": "Known development footage. Color/area heuristics cannot certify reference likeness, motion or plausible scene lighting. Agent visual scores and independent review remain separate."
+}

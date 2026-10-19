@@ -1,0 +1,313 @@
+{
+  "source_color_frames": 17,
+  "median_yellow_area_ratio": 1.220610456331218,
+  "limits": "Secondary same-color component proxy, different illumination/glow changes area. This is not the frozen green-reference scale gate and cannot pass fidelity.",
+  "rows": [
+    {
+      "frame": 0,
+      "source_yellow": {
+        "center": [
+          175.99660493827162,
+          156.3972222222222
+        ],
+        "area": 3240
+      },
+      "output_yellow": {
+        "center": [
+          176.66345441067458,
+          162.3202372127502
+        ],
+        "area": 4047
+      },
+      "yellow_area_ratio": 1.249074074074074
+    },
+    {
+      "frame": 1,
+      "source_yellow": {
+        "center": [
+          174.16129032258064,
+          156.8991935483871
+        ],
+        "area": 3224
+      },
+      "output_yellow": {
+        "center": [
+          175.09547365817463,
+          162.73880781597825
+        ],
+        "area": 4043
+      },
+      "yellow_area_ratio": 1.2540322580645162
+    },
+    {
+      "frame": 2,
+      "source_yellow": {
+        "center": [
+          172.21232665639445,
+          156.88875192604007
+        ],
+        "area": 3245
+      },
+      "output_yellow": {
+        "center": [
+          173.20132580407562,
+          162.35084704149276
+        ],
+        "area": 4073
+      },
+      "yellow_area_ratio": 1.2551617873651773
+    },
+    {
+      "frame": 3,
+      "source_yellow": {
+        "center": [
+          170.87711213517665,
+          156.01566820276497
+        ],
+        "area": 3255
+      },
+      "output_yellow": {
+        "center": [
+          171.8522699386503,
+          161.24711656441718
+        ],
+        "area": 4075
+      },
+      "yellow_area_ratio": 1.251920122887865
+    },
+    {
+      "frame": 4,
+      "source_yellow": {
+        "center": [
+          168.28256205945448,
+          155.75635917866992
+        ],
+        "area": 3263
+      },
+      "output_yellow": {
+        "center": [
+          169.56731707317073,
+          160.37219512195122
+        ],
+        "area": 4100
+      },
+      "yellow_area_ratio": 1.256512411890898
+    },
+    {
+      "frame": 5,
+      "source_yellow": {
+        "center": [
+          166.53794369645044,
+          156.33231334149326
+        ],
+        "area": 3268
+      },
+      "output_yellow": {
+        "center": [
+          166.6194602624412,
+          161.22654122307503
+        ],
+        "area": 4039
+      },
+      "yellow_area_ratio": 1.2359241126070992
+    },
+    {
+      "frame": 6,
+      "source_yellow": {
+        "center": [
+          163.43886198547216,
+          157.84594430992735
+        ],
+        "area": 3304
+      },
+      "output_yellow": {
+        "center": [
+          164.0932668329177,
+          162.06184538653366
+        ],
+        "area": 4010
+      },
+      "yellow_area_ratio": 1.213680387409201
+    },
+    {
+      "frame": 7,
+      "source_yellow": {
+        "center": [
+          161.53472222222223,
+          159.11805555555554
+        ],
+        "area": 3312
+      },
+      "output_yellow": {
+        "center": [
+          162.60361923648983,
+          162.85498264749629
+        ],
+        "area": 4034
+      },
+      "yellow_area_ratio": 1.2179951690821256
+    },
+    {
+      "frame": 8,
+      "source_yellow": {
+        "center": [
+          160.68902991840434,
+          159.12269567845271
+        ],
+        "area": 3309
+      },
+      "output_yellow": {
+        "center": [
+          162.09135924733846,
+          163.01114137162665
+        ],
+        "area": 4039
+      },
+      "yellow_area_ratio": 1.220610456331218
+    },
+    {
+      "frame": 9,
+      "source_yellow": {
+        "center": [
+          159.77452460006037,
+          157.56746151524297
+        ],
+        "area": 3313
+      },
+      "output_yellow": {
+        "center": [
+          161.47660098522167,
+          162.08793103448275
+        ],
+        "area": 4060
+      },
+      "yellow_area_ratio": 1.2254753999396317
+    },
+    {
+      "frame": 10,
+      "source_yellow": {
+        "center": [
+          159.9135248354279,
+          157.1244763614602
+        ],
+        "area": 3342
+      },
+      "output_yellow": {
+        "center": [
+          161.27348745696017,
+          161.7587309394983
+        ],
+        "area": 4066
+      },
+      "yellow_area_ratio": 1.2166367444643926
+    },
+    {
+      "frame": 11,
+      "source_yellow": {
+        "center": [
+          160.11666666666667,
+          157.3982142857143
+        ],
+        "area": 3360
+      },
+      "output_yellow": {
+        "center": [
+          161.52779818760715,
+          161.826108253735
+        ],
+        "area": 4083
+      },
+      "yellow_area_ratio": 1.2151785714285714
+    },
+    {
+      "frame": 12,
+      "source_yellow": {
+        "center": [
+          161.18669847897405,
+          158.12585744109754
+        ],
+        "area": 3353
+      },
+      "output_yellow": {
+        "center": [
+          162.25770925110132,
+          162.31350954478708
+        ],
+        "area": 4086
+      },
+      "yellow_area_ratio": 1.2186101998210557
+    },
+    {
+      "frame": 13,
+      "source_yellow": {
+        "center": [
+          162.0790255496138,
+          158.7192513368984
+        ],
+        "area": 3366
+      },
+      "output_yellow": {
+        "center": [
+          163.28031227128568,
+          163.16028299585264
+        ],
+        "area": 4099
+      },
+      "yellow_area_ratio": 1.2177658942364824
+    },
+    {
+      "frame": 14,
+      "source_yellow": {
+        "center": [
+          163.8500441046751,
+          159.1646574536901
+        ],
+        "area": 3401
+      },
+      "output_yellow": {
+        "center": [
+          164.23628895868566,
+          163.20826286542643
+        ],
+        "area": 4139
+      },
+      "yellow_area_ratio": 1.2169950014701558
+    },
+    {
+      "frame": 15,
+      "source_yellow": {
+        "center": [
+          165.14515186915887,
+          159.20940420560748
+        ],
+        "area": 3424
+      },
+      "output_yellow": {
+        "center": [
+          165.3164314757235,
+          163.1104998804114
+        ],
+        "area": 4181
+      },
+      "yellow_area_ratio": 1.2210864485981308
+    },
+    {
+      "frame": 16,
+      "source_yellow": {
+        "center": [
+          165.9831737742965,
+          159.30954453147663
+        ],
+        "area": 3447
+      },
+      "output_yellow": {
+        "center": [
+          166.00909308446998,
+          163.10409188801148
+        ],
+        "area": 4179
+      },
+      "yellow_area_ratio": 1.2123585726718886
+    }
+  ]
+}

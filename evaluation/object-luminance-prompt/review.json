@@ -1,0 +1,29 @@
+{
+  "gate_pass": false,
+  "automated_gate_pass": true,
+  "raw": {
+    "reference_attributes_coarse": 3,
+    "source_motion_timing": 3,
+    "temporal_stability": 3,
+    "closed_spherical_shape": 3,
+    "scene_lighting_and_material": 2,
+    "reference_attribute_frames": 17,
+    "notes": "Green closed round target and source planar drift persist. Target is excessively saturated/bright with a soft green edge/contact halo relative to supplied shaded reference and surrounding balls. Conservative provisional agent ratings; independent normal-speed scoring pending."
+  },
+  "composite": {
+    "reference_attributes_coarse": 3,
+    "source_motion_timing": 3,
+    "temporal_stability": 3,
+    "closed_spherical_shape": 3,
+    "scene_lighting_and_material": 2,
+    "reference_attribute_frames": 17,
+    "notes": "Green closed round target and source planar drift persist. Target is excessively saturated/bright with a soft green edge/contact halo relative to supplied shaded reference and surrounding balls. Conservative provisional agent ratings; independent normal-speed scoring pending."
+  },
+  "decision": "Retain as a meaningful color/scale improvement; do not promote to production or claim full quality pass. Lighting/material score2 fails frozen>=3 gate.",
+  "raw_and_composite_object_pixels_exact": true,
+  "remaining_blocker": "Reference appearance and scene material/lighting despite correct color, scale and trajectory.",
+  "next_hypothesis": "Achromatic source luma retains source brightness/albedo as well as geometry. Test a source-object-only luma normalization anchored to reference appearance, with outside control unchanged, under a future separate fixed protocol. It is not yet shown to cause or fix the visual mismatch.",
+  "candidate_frozen_for_review": true,
+  "eligible_for_heldout_quality_verification": false,
+  "limit": "No independent reviewer, held-out verification or population/generalization claim. Numerical gates cannot establish lifelike material or exact identity."
+}

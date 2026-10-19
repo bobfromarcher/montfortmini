@@ -16,3 +16,6 @@ evaluation/object-mask/*.json -text
 
 evaluation/object-reference/*.json -text
 evaluation/object-prompt/*.json -text
+
+evaluation/object-luminance/*.json -text
+evaluation/object-luminance-prompt/*.json -text

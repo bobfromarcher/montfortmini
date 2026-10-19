@@ -1,0 +1,371 @@
+{
+  "reference": {
+    "median_rgb_255": [
+      34.0,
+      145.0,
+      49.0
+    ],
+    "median_encoded_rgb_luma": 0.4489027450980392,
+    "area": 13936
+  },
+  "frames": [
+    {
+      "frame": 0,
+      "source_yellow": {
+        "median_rgb_255": [
+          221.0,
+          146.0,
+          30.0
+        ],
+        "median_encoded_rgb_luma": 0.6038125490196078,
+        "area": 2281
+      },
+      "output_green": {
+        "median_rgb_255": [
+          7.0,
+          222.0,
+          2.0
+        ],
+        "median_encoded_rgb_luma": 0.6403066666666667,
+        "area": 3169
+      }
+    },
+    {
+      "frame": 1,
+      "source_yellow": {
+        "median_rgb_255": [
+          221.0,
+          146.0,
+          31.0
+        ],
+        "median_encoded_rgb_luma": 0.604012156862745,
+        "area": 2274
+      },
+      "output_green": {
+        "median_rgb_255": [
+          7.0,
+          218.0,
+          0.0
+        ],
+        "median_encoded_rgb_luma": 0.6310588235294117,
+        "area": 3144
+      }
+    },
+    {
+      "frame": 2,
+      "source_yellow": {
+        "median_rgb_255": [
+          221.0,
+          146.0,
+          32.0
+        ],
+        "median_encoded_rgb_luma": 0.6064454901960784,
+        "area": 2277
+      },
+      "output_green": {
+        "median_rgb_255": [
+          4.0,
+          218.0,
+          0.0
+        ],
+        "median_encoded_rgb_luma": 0.6299215686274509,
+        "area": 3113
+      }
+    },
+    {
+      "frame": 3,
+      "source_yellow": {
+        "median_rgb_255": [
+          220.0,
+          146.0,
+          31.0
+        ],
+        "median_encoded_rgb_luma": 0.6038356862745098,
+        "area": 2286
+      },
+      "output_green": {
+        "median_rgb_255": [
+          7.0,
+          215.0,
+          0.0
+        ],
+        "median_encoded_rgb_luma": 0.6248423529411764,
+        "area": 3110
+      }
+    },
+    {
+      "frame": 4,
+      "source_yellow": {
+        "median_rgb_255": [
+          221.0,
+          146.0,
+          30.0
+        ],
+        "median_encoded_rgb_luma": 0.6031262745098039,
+        "area": 2313
+      },
+      "output_green": {
+        "median_rgb_255": [
+          8.0,
+          217.0,
+          0.0
+        ],
+        "median_encoded_rgb_luma": 0.6310549019607843,
+        "area": 3104
+      }
+    },
+    {
+      "frame": 5,
+      "source_yellow": {
+        "median_rgb_255": [
+          221.0,
+          146.0,
+          32.0
+        ],
+        "median_encoded_rgb_luma": 0.6042886274509803,
+        "area": 2287
+      },
+      "output_green": {
+        "median_rgb_255": [
+          5.0,
+          213.0,
+          0.0
+        ],
+        "median_encoded_rgb_luma": 0.6173682352941177,
+        "area": 3124
+      }
+    },
+    {
+      "frame": 6,
+      "source_yellow": {
+        "median_rgb_255": [
+          221.0,
+          146.0,
+          31.0
+        ],
+        "median_encoded_rgb_luma": 0.6050439215686274,
+        "area": 2323
+      },
+      "output_green": {
+        "median_rgb_255": [
+          4.0,
+          211.0,
+          0.0
+        ],
+        "median_encoded_rgb_luma": 0.6127494117647059,
+        "area": 3134
+      }
+    },
+    {
+      "frame": 7,
+      "source_yellow": {
+        "median_rgb_255": [
+          221.0,
+          146.0,
+          32.0
+        ],
+        "median_encoded_rgb_luma": 0.6039913725490196,
+        "area": 2327
+      },
+      "output_green": {
+        "median_rgb_255": [
+          4.0,
+          208.0,
+          0.0
+        ],
+        "median_encoded_rgb_luma": 0.6066501960784314,
+        "area": 3129
+      }
+    },
+    {
+      "frame": 8,
+      "source_yellow": {
+        "median_rgb_255": [
+          221.0,
+          146.0,
+          30.0
+        ],
+        "median_encoded_rgb_luma": 0.6032462745098038,
+        "area": 2307
+      },
+      "output_green": {
+        "median_rgb_255": [
+          3.0,
+          207.0,
+          0.0
+        ],
+        "median_encoded_rgb_luma": 0.6030117647058824,
+        "area": 3130
+      }
+    },
+    {
+      "frame": 9,
+      "source_yellow": {
+        "median_rgb_255": [
+          221.0,
+          146.0,
+          32.0
+        ],
+        "median_encoded_rgb_luma": 0.6034564705882353,
+        "area": 2345
+      },
+      "output_green": {
+        "median_rgb_255": [
+          2.0,
+          208.0,
+          0.0
+        ],
+        "median_encoded_rgb_luma": 0.6074227450980393,
+        "area": 3167
+      }
+    },
+    {
+      "frame": 10,
+      "source_yellow": {
+        "median_rgb_255": [
+          221.0,
+          146.0,
+          31.0
+        ],
+        "median_encoded_rgb_luma": 0.6034219607843138,
+        "area": 2354
+      },
+      "output_green": {
+        "median_rgb_255": [
+          3.0,
+          209.0,
+          0.0
+        ],
+        "median_encoded_rgb_luma": 0.6105843137254902,
+        "area": 3189
+      }
+    },
+    {
+      "frame": 11,
+      "source_yellow": {
+        "median_rgb_255": [
+          221.0,
+          146.0,
+          32.0
+        ],
+        "median_encoded_rgb_luma": 0.6047466666666667,
+        "area": 2380
+      },
+      "output_green": {
+        "median_rgb_255": [
+          4.0,
+          208.0,
+          0.0
+        ],
+        "median_encoded_rgb_luma": 0.6081733333333332,
+        "area": 3185
+      }
+    },
+    {
+      "frame": 12,
+      "source_yellow": {
+        "median_rgb_255": [
+          222.0,
+          147.0,
+          32.0
+        ],
+        "median_encoded_rgb_luma": 0.6068556862745098,
+        "area": 2390
+      },
+      "output_green": {
+        "median_rgb_255": [
+          4.0,
+          208.0,
+          0.0
+        ],
+        "median_encoded_rgb_luma": 0.6058164705882353,
+        "area": 3172
+      }
+    },
+    {
+      "frame": 13,
+      "source_yellow": {
+        "median_rgb_255": [
+          221.0,
+          147.0,
+          31.0
+        ],
+        "median_encoded_rgb_luma": 0.6069270588235294,
+        "area": 2370
+      },
+      "output_green": {
+        "median_rgb_255": [
+          3.0,
+          208.0,
+          0.0
+        ],
+        "median_encoded_rgb_luma": 0.606043137254902,
+        "area": 3183
+      }
+    },
+    {
+      "frame": 14,
+      "source_yellow": {
+        "median_rgb_255": [
+          222.0,
+          147.0,
+          32.0
+        ],
+        "median_encoded_rgb_luma": 0.6075827450980392,
+        "area": 2417
+      },
+      "output_green": {
+        "median_rgb_255": [
+          3.0,
+          209.0,
+          0.0
+        ],
+        "median_encoded_rgb_luma": 0.6074635294117646,
+        "area": 3213
+      }
+    },
+    {
+      "frame": 15,
+      "source_yellow": {
+        "median_rgb_255": [
+          222.0,
+          147.0,
+          32.0
+        ],
+        "median_encoded_rgb_luma": 0.6071105882352941,
+        "area": 2399
+      },
+      "output_green": {
+        "median_rgb_255": [
+          3.0,
+          207.0,
+          0.0
+        ],
+        "median_encoded_rgb_luma": 0.6042596078431371,
+        "area": 3223
+      }
+    },
+    {
+      "frame": 16,
+      "source_yellow": {
+        "median_rgb_255": [
+          221.0,
+          147.0,
+          31.0
+        ],
+        "median_encoded_rgb_luma": 0.6060462745098039,
+        "area": 2430
+      },
+      "output_green": {
+        "median_rgb_255": [
+          4.0,
+          207.0,
+          0.0
+        ],
+        "median_encoded_rgb_luma": 0.6030117647058824,
+        "area": 3221
+      }
+    }
+  ],
+  "limits": "Exploratory luma summaries on source/target high-saturation components, different illumination and segmentation. These are not calibrated reflectance measures or a newly introduced acceptance gate. Source yellow luma may constrain gray colorization; causal attribution remains untested."
+}

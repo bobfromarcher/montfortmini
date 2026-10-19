@@ -40,16 +40,33 @@ def audit(root,contrast='reference'):
                      'area_ratio':green['area']/src['area'] if src and green else None,
                      'centroid_error_diagonal':float(np.linalg.norm(np.asarray(green['center'])-src['center'])/np.hypot(480,272)) if src and green else None})
     expected_graph=read(baseline/'workflow-api.json')
-    if contrast=='prompt':expected_graph['4']['inputs']['text']=read(root/'mask-annotation.json')['after']
+    is_luminance=contrast in ('luminance','luminance-prompt')
+    if contrast in ('prompt','luminance-prompt'):expected_graph['4']['inputs']['text']=read(root/'mask-annotation.json')['after']
+    if is_luminance:expected_graph['6']['class_type']='OpenJutsuLuminanceInputs'
+    archive_changes={'reference':{'reference.png','conditioning.npz'},'prompt':set(),'luminance':{'conditioning.npz'},'luminance-prompt':{'conditioning.npz'}}[contrast]
     checks={'technical_success':record['status']=='succeeded',
-            'paired_archive_changes_exact':set(changed)==({'reference.png','conditioning.npz'} if contrast=='reference' else set()),
-            'conditioning_change_exact':tensor_same=={'source':True,'mask':True,'reference':contrast=='prompt'},
+            'paired_archive_changes_exact':set(changed)==archive_changes,
+            'conditioning_change_exact':tensor_same=={'source':not is_luminance,'mask':True,'reference':contrast!='reference'},
             'reference_tensor_matches_png':ref_tensor_matches,
             'paired_graph_changes_exact':read(root/'workflow-api.json')==expected_graph,
             'worker_input_matches_freeze':record['input_archive_sha256']==frozen['artifact_sha256']['inputs.zip'],
             'frozen_inputs_exact':all(hashlib.sha256((root/n).read_bytes()).hexdigest()==h for n,h in frozen['artifact_sha256'].items()),
             'runtime_source_matches_freeze':runtime['source_sha256']==frozen['source_sha256'],
             'size_frames_fps':raw.shape==source.shape==comp.shape==encoded.shape==(17,272,480,3) and fps==8}
+    if is_luminance:
+        with np.load(root/'inputs/runtime-conditioning.npz') as actual:
+            checks['executed_node_tensors_match_prepared']=all(np.array_equal(actual[k],new[k]) for k in ('source','mask','reference'))
+            rgb=source.astype(np.float32)/255
+            luma=(rgb*np.asarray([.2126,.7152,.0722],dtype=np.float32)).sum(axis=-1,keepdims=True)
+            expected=np.where(masks[...,None],luma,rgb)
+            checks['executed_control_matches_original_source_luma']=bool(np.array_equal(actual['source'],expected))
+            checks['outside_control_rgb_exact']=bool(np.array_equal(actual['source'][~masks],rgb[~masks]))
+        if contrast=='luminance-prompt':
+            with zipfile.ZipFile(root.parent/'object-luminance/inputs.zip') as other,zipfile.ZipFile(root/'inputs.zip') as current:
+                checks['input_entries_exact_vs_luma_only']=all(other.read(n)==current.read(n) for n in current.namelist())
+            paired_graph=read(root.parent/'object-luminance/workflow-api.json')
+            paired_graph['4']['inputs']['text']=read(root/'mask-annotation.json')['after']
+            checks['prompt_only_graph_contrast_vs_luma_only']=read(root/'workflow-api.json')==paired_graph
     with zipfile.ZipFile(root/'executed-source.zip') as archive:
         checks['source_snapshot_matches_freeze']=all(hashlib.sha256(archive.read(n)).hexdigest()==h for n,h in frozen['source_sha256'].items())
     green=sum(r['raw_green'] is not None for r in rows)
@@ -74,5 +91,6 @@ def audit(root,contrast='reference'):
 
 
 if __name__=='__main__':
-    result=audit(Path(sys.argv[1]),'prompt' if '--prompt-only' in sys.argv else 'reference');print(json.dumps(result,indent=2))
+    contrast='luminance-prompt' if '--luminance-prompt' in sys.argv else 'luminance' if '--luminance' in sys.argv else 'prompt' if '--prompt-only' in sys.argv else 'reference'
+    result=audit(Path(sys.argv[1]),contrast);print(json.dumps(result,indent=2))
     raise SystemExit(0 if result['invariants_pass'] and result['diagnostic_gates_pass'] else 1)
