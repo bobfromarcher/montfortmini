@@ -49,11 +49,13 @@ def request_json(path, data=None):
 @app.function(image=image, gpu="L40S", cpu=2, memory=16384,
               timeout=600, startup_timeout=180, max_containers=1,
               min_containers=0, scaledown_window=2, retries=0)
-def masked_replacement(graph_override=None, model_info=None):
+def masked_replacement(graph_override=None, model_info=None, deadline_seconds=560):
     import subprocess
     import time
     from PIL import Image, ImageDraw
 
+    if type(deadline_seconds) is not int or not 60 <= deadline_seconds <= 840:
+        raise ValueError('SDK worker deadline must stay within60–840seconds')
     start = time.monotonic()
     import shutil
     for old_output in ("/tmp/openjutsu-result","/tmp/openjutsu-sdk-output"):
@@ -70,7 +72,7 @@ def masked_replacement(graph_override=None, model_info=None):
                             stdout=log, stderr=subprocess.STDOUT)
     proxy = None
     try:
-        deadline = start + 560
+        deadline = start + deadline_seconds
         while True:
             if proc.poll() is not None:
                 raise RuntimeError("Comfy startup failed:\n" + log_path.read_text()[-7000:])

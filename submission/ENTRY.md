@@ -3,10 +3,10 @@
 Status: prepared experimental entry; not formally submitted. Realistic quality
 target remains unmet. No award or organizer acceptance is claimed.
 
-Latest [focused correction cycle](../evaluation/detail-cycle/FINDINGS.md):
-original-detail input handling improved facial attributes in reference stills
-but failed the frozen identity/clothing/pose gate. It remains an optional research
-helper, not the production app or a new demonstrated video capability.
+Latest [explicit-motion experiment](../evaluation/explicit-motion/FINDINGS.md)
+completed an actual33-frame paired video with the corrected reference fixed.
+It regresses appearance/anatomy and fails motion. The candidate is rejected;
+the existing production workflows and108-second cleared demo remain unchanged.
 
 **Repository:** https://github.com/bobfromarcher/montfortmini/tree/codex/validation
 

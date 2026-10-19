@@ -1,0 +1,78 @@
+{
+  "status": "technical-audit-only",
+  "paired_conditioning_tensors": {
+    "source": true,
+    "mask": true,
+    "reference": true
+  },
+  "actual_raw_frames": 33,
+  "raw_composite_png_exact_equal": true,
+  "raw_sizes": [
+    [
+      480,
+      560
+    ]
+  ],
+  "changed_graph_nodes": [
+    "1",
+    "15",
+    "16",
+    "17",
+    "6",
+    "7",
+    "9"
+  ],
+  "new_control_shape": {
+    "pose": [
+      33,
+      560,
+      480,
+      3
+    ],
+    "face": [
+      33,
+      256,
+      256,
+      3
+    ]
+  },
+  "worker_elapsed_seconds": 118.779576558,
+  "sampled_peak_vram_MiB": null,
+  "resource_sample_count": 0,
+  "raw_sha256": {
+    "0000.png": "980d3d8ac544c65eb7cb199c4d1d581b3ab22e8ad5762969f0e25c14de4d5451",
+    "0001.png": "4ca3687654b339f3a9a981bab465c0980b4def2e031ffafb25bd700601a197cb",
+    "0002.png": "b5523770b65b6933fb51e79ad0a2b22712af68ba54d3821ca903c2157bcb1c14",
+    "0003.png": "5b5da273f8cec996ecdf0a752b3e21a2fe90b3c53b86567d13c77f897f4819ae",
+    "0004.png": "26bc6d7943d7969ed03ed7dfe227e14e08f9a3b93c6d591009b70945ec1ab9d2",
+    "0005.png": "b242cb49c2247f3f4003fb7b6b052c4155fb99499ed707d9b64b162a4b93aea6",
+    "0006.png": "1ebcd07ab7ebf4c3b22e9ebe723adc2255581ab1939abe1bc40ee7cc01cb452f",
+    "0007.png": "7ad683fc3daa11fa787d0ca21614703aa957639ea0679850e52f43e80621b1e0",
+    "0008.png": "759e402e5b7a8c8502c455bb4d3a182f0318cd4524aa5ed96e04e42b5b4cee5b",
+    "0009.png": "ac2ce47b00c4e23feee3d87342ae78aadd0c0a83258518fbc76d6eed68a4bfbf",
+    "0010.png": "f6421eb16c750bd719a9c9df0386e45d269e0ae21d5bd84f29e913d08e558afb",
+    "0011.png": "7307bd7ad7ed5c3ed5c4c6aa024942eabb6fb4214fbcdf3fadaf3ee04067510c",
+    "0012.png": "ed31ee41463326939598730f7b4f8cb2aa3a98c82f25d219f3f7ea10cb95f056",
+    "0013.png": "2cac495dc4854a5b20f855434b2565b5d1b79e3574e4d06ed7e5dbe385ba5548",
+    "0014.png": "6c2047efaf714705ad879bf49c99f11c989d30b73abc79d0bcd3a68aee27d2d9",
+    "0015.png": "781fba80d67314cf4af40e547443aa0006854d2de9fd7b16f21b0749a5f5751d",
+    "0016.png": "1380e6d1c754406410b4db082b15369c8ea29fb295d04ba0eef298a6e4797c80",
+    "0017.png": "77613e04f7af7fd8415df44dbec1b4d5799c51f5953d53a00f76d6ee6e6482f8",
+    "0018.png": "c796aa93078d10d2e20fa6ca4f099d4adff2e19c39c8d814051e97b03f1dd2f7",
+    "0019.png": "77ad2128870a344c9763bdc4d4791b850c12b9ac1f2782ac10c28cc4e4cb910c",
+    "0020.png": "af68a11836171697a909d65f88ed1e1fd22b1ba6de998f7b9b8678f54c9a02e3",
+    "0021.png": "041561286aa9957cdb2eb6786e1b2896d283e19d63044276de4b1770f6c24c3d",
+    "0022.png": "f02456b7bf0dbcddf406d7326696ff6a22346ecb54c8dbadb93fbb7f55392ac9",
+    "0023.png": "f71acf73b36613c67ac1fc75f14d32bb80e1da4d7f3b7b458530d790e652d5c6",
+    "0024.png": "4d521ae69451e1f600e98bcf89e088c64dc6e6a2ba97658cc885e08039834421",
+    "0025.png": "4fba744377b1f320638ea6f910d51b57e3f03bfaee7a3649fad3febe1183030c",
+    "0026.png": "00a5ee123b2865c8abc83ab207d73bc52475cd6495e24e0d90e3918ff331c73d",
+    "0027.png": "de4d9cf346242c2ab9f4074cdfabe8ac6e8a4d6f96bb79cd00e13753b76e8fba",
+    "0028.png": "590057ef987d227d40b96c3da39a50234ef1fda6107debaca09d3dfdbebc9829",
+    "0029.png": "b08c953b652966e9cf6a096421b9f305e4504cef5de970f7980d43fb1327fdee",
+    "0030.png": "4f838d6eee603a2c5ace10fc72b2e7a023e11cb21489180cc30cf33f83365e05",
+    "0031.png": "2039ce3bead2518e2cb452704e5bcfc1313ce88fc75d46eac3bec980a7ad19f7",
+    "0032.png": "d5bbac51d77a6ccf597e78508eb794ad0841e004fbff41da9d4db1a0e8b29148"
+  },
+  "limits": "Model+conditioning+solver bundle changed deliberately. Paired inputs do not isolate a single component. Full motion mask means no outside-preservation assertion. Agent visual and normal-speed review required; independent professional scoring pending."
+}

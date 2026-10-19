@@ -1,0 +1,9 @@
+{
+  "git_tree": "f62d8c50ee23f1c1fcd894e374f60a67993295c4",
+  "source_archive_sha256": "7fd3c54f89044e98cc602a88e65ac6566ad800b9401d1fd15dde5083e97cf71a",
+  "zip_crc_pass": true,
+  "all16_executed_source_hashes_preserved_in_study_zip": true,
+  "cpu_tests_exit_code": 0,
+  "cpu_test_wall_seconds": 26.117544200009434,
+  "limits": "Fresh Git extraction using existing dependencies on same Windows machine. Not independent clean-machine install or GPU reproduction. Archived study runner preserves original telemetry bug; current runner fixes it without another inference."
+}

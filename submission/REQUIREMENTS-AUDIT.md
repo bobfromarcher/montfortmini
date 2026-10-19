@@ -1,6 +1,12 @@
 # Submission checklist — checked October 18, 2026
 
-Latest focused review: [protected reference completion](../evaluation/protected-completion/FINDINGS.md).
+Latest focused review: [explicit motion controls](../evaluation/explicit-motion/FINDINGS.md).
+One new development video regresses reference appearance and anatomy;only1/4
+events provisionally match. Candidate rejected,no unseen run or production
+promotion. Measured118.78worker seconds,$0.13 displayed included-credit delta,
+$0cash. Independent professional/GPU reproduction and formal entry remain pending.
+
+Preceding review: [protected reference completion](../evaluation/protected-completion/FINDINGS.md).
 Two development GPU calls and a disclosed CPU-isolation amendment fix the
 missing body in33/33actual raw-video frames. The motion criterion still fails
 at2/4clear events. No independent-source run or production promotion follows.

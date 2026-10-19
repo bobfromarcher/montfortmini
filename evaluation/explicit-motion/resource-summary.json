@@ -1,0 +1,20 @@
+{
+  "gpu_calls": 1,
+  "reserved_worker_ceiling_seconds": 900,
+  "measured_worker_seconds": 118.779576558,
+  "comfy_graph_seconds": 96.19,
+  "cpu_controls_seconds": 28.577999999994063,
+  "sampled_peak_vram_MiB": null,
+  "gpu_monitor_samples": 0,
+  "gpu_monitor_limitation": "Executed monitoring loop swallowed exceptions before appending samples; exact exception unavailable. Peak VRAM and cgroup usage unmeasured. Fixed future logger to retain GPU readings separately from optional cgroup failure. No rerun for telemetry.",
+  "gpu": "L40S",
+  "allocated_cpu": 2,
+  "allocated_memory_MiB": 65536,
+  "baseline_usage_displayed": 7.59,
+  "after_usage_displayed": 7.72,
+  "after_remaining_displayed": 22.28,
+  "included_credit_delta_displayed": 0.13,
+  "cash_spend_displayed": 0,
+  "cash_cap": 0,
+  "billing_limit": "UI aggregates are rounded and asynchronous; delta includes CPU build/preflight and account activity, not an isolated GPU invoice."
+}

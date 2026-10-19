@@ -1,0 +1,93 @@
+{
+  "gate_pass": false,
+  "motion_pass": false,
+  "identity_leak_demonstrated": false,
+  "raw_scores_0_to_4": {
+    "reference_fidelity": 1,
+    "motion": 2,
+    "temporal_stability": 1,
+    "anatomy": 1,
+    "photorealism": 1
+  },
+  "composite_scores_0_to_4": {
+    "reference_fidelity": 1,
+    "motion": 2,
+    "temporal_stability": 1,
+    "anatomy": 1,
+    "photorealism": 1
+  },
+  "raw_composite_png_arrays_exact_equal": true,
+  "clearly_retained_fine_reference_attribute_frames": 0,
+  "motion_events": [
+    {
+      "source_frame": 8,
+      "match": false,
+      "reason": "No two-arm cross-torso pose within6..10; generated hands alternate near upper chest/waist."
+    },
+    {
+      "source_frame": 16,
+      "match": "provisional broad match",
+      "generated_frame": 16,
+      "reason": "One hand raised toward shoulder, other near waist. Fine hand anatomy degraded."
+    },
+    {
+      "source_frame": 24,
+      "match": "unclear; not counted",
+      "reason": "Hands merge into blazer/waist; cannot establish both down posture within22..26. Blue head extrusion also fails anatomy."
+    },
+    {
+      "source_frame": 28,
+      "match": false,
+      "reason": "Raised hand remains near chest rather than mouth within26..30."
+    }
+  ],
+  "clear_or_provisional_motion_matches": 1,
+  "required_matches": 3,
+  "major_blue_head_extrusion_frames": [
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "reviewed_every_native_frame": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "methods": "All11 source/control/candidate contact sheets inspected at native480x560. Perceptual scores are provisional agent judgments. Fine identity threshold not established in any clearly assessable frame. No independent professional or normal-speed human review.",
+  "limits": "This failed model/control/solver bundle does not prove incapacity of the checkpoint, explicit controls generally, or the prior raw-video model. Source-face identity leakage not established; face-off branch disallowed. No new unseen recording or synthetic verification because no development pass.",
+  "decision": "Reject candidate; cycle stopped after one GPUcall. Keep prior control. No production promotion/submission or newGPUcalls in this cycle."
+}

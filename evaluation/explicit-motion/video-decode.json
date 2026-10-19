@@ -1,0 +1,32 @@
+{
+  "generated": {
+    "decoded_frames": 33,
+    "reported_fps": 8.0,
+    "sizes": [
+      [
+        480,
+        560
+      ]
+    ]
+  },
+  "composite": {
+    "decoded_frames": 33,
+    "reported_fps": 8.0,
+    "sizes": [
+      [
+        480,
+        560
+      ]
+    ]
+  },
+  "source": {
+    "decoded_frames": 33,
+    "reported_fps": 8.0,
+    "sizes": [
+      [
+        480,
+        560
+      ]
+    ]
+  }
+}

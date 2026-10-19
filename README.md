@@ -33,6 +33,8 @@ Use one clear reference view with framing suited to the intended performance. Co
 
 ## Actual generation evidence
 
+The latest [explicit-motion experiment](evaluation/explicit-motion/FINDINGS.md) keeps the corrected reference fixed and tests a pinned Wan2.2-Animate model with CPU body/face controls. Its actual33-frame video regresses appearance and anatomy and matches only1/4 source events provisionally. It is rejected. The source, paired audit and retained failure are research evidence; the production model and realistic-quality limitation remain unchanged.
+
 The [protected completion study](evaluation/protected-completion/FINDINGS.md) fixes the missing lower body in all33 frames of a new actual raw video while retaining the defining reference appearance. It still fails the frozen motion criterion at2/4 source events. One exploratory CPU-isolation amendment and all failures are disclosed; this research path is not promoted to production or claimed submission-ready.
 
 Original procedural fixtures and real generated clips are in [webapp/public/examples](webapp/public/examples). They are labeled as recorded proofs in the interface.

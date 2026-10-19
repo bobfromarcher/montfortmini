@@ -1,0 +1,19 @@
+{
+  "paired_control_tensors": {
+    "source": true,
+    "mask": true,
+    "reference": true
+  },
+  "frames": 33,
+  "width": 480,
+  "height": 560,
+  "reviewed_motion_anchor_frames": [
+    8,
+    16,
+    24,
+    28
+  ],
+  "upper_body_detected_all_frames": true,
+  "face_crops": "source face and some headwear visible; dark source lighting limits face-control detail",
+  "limitations": "Approximate OpenPose18 body map; no 21-joint fingers or face mesh; not official DWpose preprocessor. Model and control mechanism bundled, no isolated backbone-causal claim. PNG re-encoding changes file hashes but exact conditioning tensors match."
+}
