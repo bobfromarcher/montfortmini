@@ -75,7 +75,7 @@ def evaluate(payload,case_info,profile='baseline',variant='baseline'):
             return archive
     service.masked_replacement=Capture()
     try:
-        service.generate.local(payload)
+        service.generate_legacy.local(payload)
     finally:
         stop.set();monitor.join(timeout=6)
         service.masked_replacement=original

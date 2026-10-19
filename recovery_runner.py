@@ -103,7 +103,7 @@ def render(payload,case,profile):
             return captured['archive']
     service.masked_replacement=Capture()
     failure=None
-    try:service.generate.local(payload)
+    try:service.generate_legacy.local(payload)
     except Exception as exc:
         failure={'type':type(exc).__name__,'message':str(exc)}
         failed=io.BytesIO()

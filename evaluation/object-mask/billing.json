@@ -1,0 +1,10 @@
+{
+  "baseline_usage": 8.29,
+  "final_usage": 8.33,
+  "baseline_remaining": 21.71,
+  "final_remaining": 21.67,
+  "displayed_account_delta": 0.04,
+  "cash_spend": 0,
+  "cash_cap": 0,
+  "scope": "Rounded account-level observation, not isolated invoice."
+}

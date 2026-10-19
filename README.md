@@ -48,6 +48,12 @@ and all technical failures remain retained.
 The studies below describe earlier decisions at their dates; the native release
 above supersedes their former production-status statements.
 
+The [object-mask oracle](evaluation/object-mask/FINDINGS.md) tests tighter
+source-annotated masks with the model/reference/graph fixed. It loses the green
+reference in17/17 frames, so it is rejected. Public licensed inputs, raw results
+and a fresh-budget replay initializer are retained. Historical evaluator hooks
+are explicitly kept on local legacy recipes rather than the new orchestrator.
+
 The [precision and upstream-control diagnostic](evaluation/upstream-motion/FINDINGS.md) rejects both a BF16-only correction and pinned whole-body/hand/face preprocessing. Exact paired inputs isolate the precision contrast; both actual videos retain severe defects. GPU telemetry now works despite unavailable cgroup readings. These research paths remain outside production; no passing candidate or unseen verification is claimed.
 
 The latest [explicit-motion experiment](evaluation/explicit-motion/FINDINGS.md) keeps the corrected reference fixed and tests a pinned Wan2.2-Animate model with CPU body/face controls. Its actual33-frame video regresses appearance and anatomy and matches only1/4 source events provisionally. It is rejected. The source, paired audit and retained failure are research evidence; the production model and realistic-quality limitation remain unchanged.

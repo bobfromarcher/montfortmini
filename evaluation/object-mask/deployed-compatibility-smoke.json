@@ -1,0 +1,29 @@
+{
+  "status_checks": [
+    {
+      "authenticated": false,
+      "status": 401,
+      "body": {
+        "error": "Unauthorized"
+      }
+    },
+    {
+      "authenticated": true,
+      "status": 200,
+      "body": {
+        "configured": true,
+        "features": {
+          "objectSwap": true,
+          "motionTransfer": true
+        },
+        "limits": {
+          "maxVideoBytes": 12582912,
+          "maxImageBytes": 4194304,
+          "maxFrames": 33,
+          "maxSide": 560
+        }
+      }
+    }
+  ],
+  "gpu_job_submitted": false
+}

@@ -15,6 +15,21 @@ def request(mode):
 
 
 class NativeRoutingTests(unittest.TestCase):
+    def test_historical_runner_capture_stays_local_and_is_restored(self):
+        import legacy_local_inference
+        from unittest.mock import Mock
+        original=legacy_local_inference.masked_replacement
+        capture=SimpleNamespace(local=Mock(return_value='captured'))
+        def old_recipe(data):
+            return legacy_local_inference.masked_replacement.local({'old':'graph'},{'mode':data['mode']})
+        with patch.object(service,'masked_replacement',capture), \
+             patch.object(legacy_local_inference,'generate',side_effect=old_recipe), \
+             patch.object(service.native_motion_backend.prepare,'spawn') as new_prepare:
+            self.assertEqual(service.generate_legacy.local({'mode':'object-swap'}),'captured')
+        capture.local.assert_called_once()
+        new_prepare.assert_not_called()
+        self.assertIs(legacy_local_inference.masked_replacement,original)
+
     def test_nested_native_wrapper_forwards_the_precision_argument(self):
         from unittest.mock import Mock
         stream=io.BytesIO()

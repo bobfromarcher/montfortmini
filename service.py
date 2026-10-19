@@ -24,6 +24,7 @@ for name in ("model_config.py","workflow.py","sdk_runner.py","modal_probe.py","m
              "download_models.py","download_motion_models.py","media_pipeline.py"):
     gpu_image = gpu_image.add_local_file(HERE/name,"/root/"+name)
 gpu_image = gpu_image.add_local_file(HERE/"media_pipeline.py","/opt/ComfyUI/custom_nodes/openjutsu_media.py")
+gpu_image = gpu_image.add_local_file(HERE/'legacy_local_inference.py', '/root/legacy_local_inference.py')
 for name in native_motion_backend.SOURCE_NAMES:
     if name not in ("model_config.py","workflow.py","sdk_runner.py","modal_probe.py","motion_probe.py",
                     "proof_inputs.py","motion_inputs.py","motion_workflow.py","motion_model_config.py",
@@ -70,6 +71,20 @@ def generate_object(data):
         }
 
 
+@app.function(image=gpu_image,gpu='L40S',cpu=2,memory=32768,
+              timeout=660,startup_timeout=180,max_containers=1,min_containers=0,
+              scaledown_window=2,retries=0,single_use_containers=True)
+def generate_legacy(data):
+    """Keep historical evaluation capture hooks local to their old recipes."""
+    import legacy_local_inference
+    previous = legacy_local_inference.masked_replacement
+    legacy_local_inference.masked_replacement = masked_replacement
+    try:
+        return legacy_local_inference.generate(data)
+    finally:
+        legacy_local_inference.masked_replacement = previous
+
+
 cpu_image = (modal.Image.debian_slim(python_version="3.12")
              .pip_install("fastapi[standard]", "Pillow==13.0.0"))
 for name in ("model_config.py","workflow.py","sdk_runner.py","modal_probe.py","motion_probe.py",
@@ -82,6 +97,7 @@ for name in native_motion_backend.SOURCE_NAMES:
                     "download_models.py","download_motion_models.py","media_pipeline.py"):
         cpu_image = cpu_image.add_local_file(HERE/name,"/root/"+name)
 cpu_image = cpu_image.add_local_dir(HERE/'vendor/wan_animate', '/root/vendor/wan_animate')
+cpu_image = cpu_image.add_local_file(HERE/'legacy_local_inference.py', '/root/legacy_local_inference.py')
 
 
 @app.function(image=cpu_image, cpu=.25, memory=1024, timeout=1800,

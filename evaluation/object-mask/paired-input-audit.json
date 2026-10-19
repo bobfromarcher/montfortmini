@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "all_original_source_png_bytes_equal": true,
+    "reference_png_bytes_equal": true,
+    "settings_bytes_equal": true,
+    "graph_equal": true,
+    "masks_changed": true
+  },
+  "paired_controls_pass": true,
+  "source_npz_changed_by_expected_mask_erasure": true,
+  "limitation": "Mask geometry/center/timing change together; this oracle does not separately identify each property or prove an automatic tracker."
+}

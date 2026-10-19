@@ -1,0 +1,346 @@
+{
+  "method": "Source-only framewise largest high-saturation yellow component within old mask; bbox plus6px margin. Initial source-union proposal retained, not executed; higher saturation excludes broad cast shadow. No generated output viewed for either proposal. Diagnostic annotations, not production tracking.",
+  "rows": [
+    {
+      "frame": 0,
+      "source_color_area": 2281,
+      "source_center": [
+        176.32047347654537,
+        149.94344585708023
+      ],
+      "source_color_bbox": [
+        151,
+        122,
+        51,
+        57
+      ],
+      "diagnostic_mask_bbox": [
+        145,
+        116,
+        63,
+        69
+      ]
+    },
+    {
+      "frame": 1,
+      "source_color_area": 2274,
+      "source_center": [
+        174.5452946350044,
+        150.70448548812664
+      ],
+      "source_color_bbox": [
+        150,
+        123,
+        50,
+        58
+      ],
+      "diagnostic_mask_bbox": [
+        144,
+        117,
+        62,
+        70
+      ]
+    },
+    {
+      "frame": 2,
+      "source_color_area": 2277,
+      "source_center": [
+        172.66578831796224,
+        150.5669740887132
+      ],
+      "source_color_bbox": [
+        148,
+        123,
+        50,
+        58
+      ],
+      "diagnostic_mask_bbox": [
+        142,
+        117,
+        62,
+        70
+      ]
+    },
+    {
+      "frame": 3,
+      "source_color_area": 2286,
+      "source_center": [
+        171.18635170603673,
+        149.80358705161854
+      ],
+      "source_color_bbox": [
+        146,
+        121,
+        50,
+        58
+      ],
+      "diagnostic_mask_bbox": [
+        140,
+        115,
+        62,
+        70
+      ]
+    },
+    {
+      "frame": 4,
+      "source_color_area": 2313,
+      "source_center": [
+        168.77129269347168,
+        149.37267617812364
+      ],
+      "source_color_bbox": [
+        144,
+        121,
+        50,
+        58
+      ],
+      "diagnostic_mask_bbox": [
+        138,
+        115,
+        62,
+        70
+      ]
+    },
+    {
+      "frame": 5,
+      "source_color_area": 2287,
+      "source_center": [
+        166.92260603410583,
+        150.24180148666375
+      ],
+      "source_color_bbox": [
+        142,
+        123,
+        50,
+        56
+      ],
+      "diagnostic_mask_bbox": [
+        136,
+        117,
+        62,
+        68
+      ]
+    },
+    {
+      "frame": 6,
+      "source_color_area": 2323,
+      "source_center": [
+        163.74687903572965,
+        151.38226431338785
+      ],
+      "source_color_bbox": [
+        138,
+        123,
+        52,
+        58
+      ],
+      "diagnostic_mask_bbox": [
+        132,
+        117,
+        64,
+        70
+      ]
+    },
+    {
+      "frame": 7,
+      "source_color_area": 2327,
+      "source_center": [
+        161.8654920498496,
+        152.88697894284488
+      ],
+      "source_color_bbox": [
+        136,
+        125,
+        52,
+        58
+      ],
+      "diagnostic_mask_bbox": [
+        130,
+        119,
+        64,
+        70
+      ]
+    },
+    {
+      "frame": 8,
+      "source_color_area": 2307,
+      "source_center": [
+        160.95882097962723,
+        152.7420892934547
+      ],
+      "source_color_bbox": [
+        136,
+        125,
+        50,
+        57
+      ],
+      "diagnostic_mask_bbox": [
+        130,
+        119,
+        62,
+        69
+      ]
+    },
+    {
+      "frame": 9,
+      "source_color_area": 2345,
+      "source_center": [
+        159.92110874200426,
+        151.26652452025587
+      ],
+      "source_color_bbox": [
+        134,
+        123,
+        52,
+        58
+      ],
+      "diagnostic_mask_bbox": [
+        128,
+        117,
+        64,
+        70
+      ]
+    },
+    {
+      "frame": 10,
+      "source_color_area": 2354,
+      "source_center": [
+        160.09940526762958,
+        150.5305862361937
+      ],
+      "source_color_bbox": [
+        134,
+        123,
+        52,
+        57
+      ],
+      "diagnostic_mask_bbox": [
+        128,
+        117,
+        64,
+        69
+      ]
+    },
+    {
+      "frame": 11,
+      "source_color_area": 2380,
+      "source_center": [
+        160.4394957983193,
+        151.17016806722688
+      ],
+      "source_color_bbox": [
+        134,
+        123,
+        52,
+        58
+      ],
+      "diagnostic_mask_bbox": [
+        128,
+        117,
+        64,
+        70
+      ]
+    },
+    {
+      "frame": 12,
+      "source_color_area": 2390,
+      "source_center": [
+        161.49163179916317,
+        151.66861924686194
+      ],
+      "source_color_bbox": [
+        136,
+        123,
+        52,
+        58
+      ],
+      "diagnostic_mask_bbox": [
+        130,
+        117,
+        64,
+        70
+      ]
+    },
+    {
+      "frame": 13,
+      "source_color_area": 2370,
+      "source_center": [
+        162.63670886075948,
+        152.45105485232068
+      ],
+      "source_color_bbox": [
+        136,
+        124,
+        53,
+        59
+      ],
+      "diagnostic_mask_bbox": [
+        130,
+        118,
+        65,
+        71
+      ]
+    },
+    {
+      "frame": 14,
+      "source_color_area": 2417,
+      "source_center": [
+        164.46917666528753,
+        152.97931319817957
+      ],
+      "source_color_bbox": [
+        138,
+        125,
+        54,
+        58
+      ],
+      "diagnostic_mask_bbox": [
+        132,
+        119,
+        66,
+        70
+      ]
+    },
+    {
+      "frame": 15,
+      "source_color_area": 2399,
+      "source_center": [
+        165.61817423926635,
+        153.02959566486035
+      ],
+      "source_color_bbox": [
+        140,
+        125,
+        52,
+        58
+      ],
+      "diagnostic_mask_bbox": [
+        134,
+        119,
+        64,
+        70
+      ]
+    },
+    {
+      "frame": 16,
+      "source_color_area": 2430,
+      "source_center": [
+        166.48683127572016,
+        152.99876543209876
+      ],
+      "source_color_bbox": [
+        140,
+        125,
+        54,
+        58
+      ],
+      "diagnostic_mask_bbox": [
+        134,
+        119,
+        66,
+        70
+      ]
+    }
+  ],
+  "masks_change_bbox_size_center_and_timing_together": true
+}

@@ -65,7 +65,7 @@ def render(payload,frozen_reference_archive=None):
    np.savez_compressed(root/'conditioning.npz',source=source,mask=mask,reference=ref)
    captured['archive']=saved_runner.local(graph,info);return captured['archive']
  service.masked_replacement=Capture()
- try:service.generate.local(payload)
+ try:service.generate_legacy.local(payload)
  except Exception as e:failure={'type':type(e).__name__,'message':str(e)}
  finally:
   stop.set();thread.join(timeout=6);media_pipeline.prepare_media=saved_prepare;service.masked_replacement=saved_runner

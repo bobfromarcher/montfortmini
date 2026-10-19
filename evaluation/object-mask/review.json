@@ -1,0 +1,380 @@
+{
+  "gate_pass": false,
+  "decision": "Reject mask-only oracle; no production change or unseen run.",
+  "technical_status": "succeeded",
+  "reference_green_frames": 0,
+  "source_colored_yellow_frames": 17,
+  "reference_attributes_score_0_to_4": 0,
+  "other_visual_dimensions": "Not used to pass: reference color hard failure in every frame. Shape/motion appear broadly coherent; no aggregate visual pass.",
+  "raw_preservation": {
+    "mae_255": 1.784458041191101,
+    "p95_255": 6.0,
+    "max_255": 118.0
+  },
+  "encoded_preservation": {
+    "mae_255": 1.7711538076400757,
+    "p95_255": 4.0,
+    "max_255": 52.0
+  },
+  "composite_preservation": {
+    "mae_255": 0.0,
+    "p95_255": 0.0,
+    "max_255": 0.0
+  },
+  "worker_seconds": 59.260376896,
+  "comfy_seconds": 43.52,
+  "gpu_samples": 58,
+  "peak_sampled_gpu_MiB": 11906.0,
+  "source_hashes_match_freeze": true,
+  "input_archive_matches_freeze": true,
+  "graph_matches_control": true,
+  "rows": [
+    {
+      "frame": 0,
+      "green": null,
+      "yellow": {
+        "center": [
+          175.78134556574923,
+          155.408002038736
+        ],
+        "area": 3924
+      },
+      "source_yellow": {
+        "center": [
+          175.99660493827162,
+          156.3972222222222
+        ],
+        "area": 3240
+      },
+      "yellow_ratio": 1.211111111111111,
+      "high_saturation_source_yellow_pixels_outside_mask_in_old_roi": 0
+    },
+    {
+      "frame": 1,
+      "green": null,
+      "yellow": {
+        "center": [
+          173.79447929736511,
+          156.2175658720201
+        ],
+        "area": 3985
+      },
+      "source_yellow": {
+        "center": [
+          174.16129032258064,
+          156.8991935483871
+        ],
+        "area": 3224
+      },
+      "yellow_ratio": 1.2360421836228288,
+      "high_saturation_source_yellow_pixels_outside_mask_in_old_roi": 0
+    },
+    {
+      "frame": 2,
+      "green": null,
+      "yellow": {
+        "center": [
+          171.6846959122632,
+          155.5904785643071
+        ],
+        "area": 4012
+      },
+      "source_yellow": {
+        "center": [
+          172.21232665639445,
+          156.88875192604007
+        ],
+        "area": 3245
+      },
+      "yellow_ratio": 1.2363636363636363,
+      "high_saturation_source_yellow_pixels_outside_mask_in_old_roi": 0
+    },
+    {
+      "frame": 3,
+      "green": null,
+      "yellow": {
+        "center": [
+          170.27705735660848,
+          154.70024937655862
+        ],
+        "area": 4010
+      },
+      "source_yellow": {
+        "center": [
+          170.87711213517665,
+          156.01566820276497
+        ],
+        "area": 3255
+      },
+      "yellow_ratio": 1.2319508448540706,
+      "high_saturation_source_yellow_pixels_outside_mask_in_old_roi": 0
+    },
+    {
+      "frame": 4,
+      "green": null,
+      "yellow": {
+        "center": [
+          167.608846058809,
+          154.09216703731158
+        ],
+        "area": 4047
+      },
+      "source_yellow": {
+        "center": [
+          168.28256205945448,
+          155.75635917866992
+        ],
+        "area": 3263
+      },
+      "yellow_ratio": 1.2402696904688937,
+      "high_saturation_source_yellow_pixels_outside_mask_in_old_roi": 0
+    },
+    {
+      "frame": 5,
+      "green": null,
+      "yellow": {
+        "center": [
+          165.3618027888446,
+          155.04083665338646
+        ],
+        "area": 4016
+      },
+      "source_yellow": {
+        "center": [
+          166.53794369645044,
+          156.33231334149326
+        ],
+        "area": 3268
+      },
+      "yellow_ratio": 1.2288861689106487,
+      "high_saturation_source_yellow_pixels_outside_mask_in_old_roi": 0
+    },
+    {
+      "frame": 6,
+      "green": null,
+      "yellow": {
+        "center": [
+          162.87342709104368,
+          156.42363681223785
+        ],
+        "area": 4053
+      },
+      "source_yellow": {
+        "center": [
+          163.43886198547216,
+          157.84594430992735
+        ],
+        "area": 3304
+      },
+      "yellow_ratio": 1.2266949152542372,
+      "high_saturation_source_yellow_pixels_outside_mask_in_old_roi": 0
+    },
+    {
+      "frame": 7,
+      "green": null,
+      "yellow": {
+        "center": [
+          161.0113664442797,
+          157.72003953545837
+        ],
+        "area": 4047
+      },
+      "source_yellow": {
+        "center": [
+          161.53472222222223,
+          159.11805555555554
+        ],
+        "area": 3312
+      },
+      "yellow_ratio": 1.2219202898550725,
+      "high_saturation_source_yellow_pixels_outside_mask_in_old_roi": 0
+    },
+    {
+      "frame": 8,
+      "green": null,
+      "yellow": {
+        "center": [
+          160.33647408876766,
+          157.68608975948425
+        ],
+        "area": 4033
+      },
+      "source_yellow": {
+        "center": [
+          160.71134020618555,
+          158.99969678593087
+        ],
+        "area": 3298
+      },
+      "yellow_ratio": 1.2228623408126138,
+      "high_saturation_source_yellow_pixels_outside_mask_in_old_roi": 0
+    },
+    {
+      "frame": 9,
+      "green": null,
+      "yellow": {
+        "center": [
+          159.62938435123866,
+          156.6149129261712
+        ],
+        "area": 4077
+      },
+      "source_yellow": {
+        "center": [
+          159.59490254872563,
+          157.51784107946028
+        ],
+        "area": 3335
+      },
+      "yellow_ratio": 1.2224887556221888,
+      "high_saturation_source_yellow_pixels_outside_mask_in_old_roi": 0
+    },
+    {
+      "frame": 10,
+      "green": null,
+      "yellow": {
+        "center": [
+          159.44484936831876,
+          155.80709426627794
+        ],
+        "area": 4116
+      },
+      "source_yellow": {
+        "center": [
+          159.7529832935561,
+          156.9278042959427
+        ],
+        "area": 3352
+      },
+      "yellow_ratio": 1.227923627684964,
+      "high_saturation_source_yellow_pixels_outside_mask_in_old_roi": 0
+    },
+    {
+      "frame": 11,
+      "green": null,
+      "yellow": {
+        "center": [
+          159.71981611420276,
+          156.1410597628841
+        ],
+        "area": 4133
+      },
+      "source_yellow": {
+        "center": [
+          159.94557823129253,
+          157.35137533274178
+        ],
+        "area": 3381
+      },
+      "yellow_ratio": 1.2224194025436261,
+      "high_saturation_source_yellow_pixels_outside_mask_in_old_roi": 0
+    },
+    {
+      "frame": 12,
+      "green": null,
+      "yellow": {
+        "center": [
+          160.6951160541586,
+          156.6071083172147
+        ],
+        "area": 4136
+      },
+      "source_yellow": {
+        "center": [
+          161.2065152420801,
+          158.0478182904961
+        ],
+        "area": 3346
+      },
+      "yellow_ratio": 1.2361028093245667,
+      "high_saturation_source_yellow_pixels_outside_mask_in_old_roi": 0
+    },
+    {
+      "frame": 13,
+      "green": null,
+      "yellow": {
+        "center": [
+          161.37249761677788,
+          157.82006673021925
+        ],
+        "area": 4196
+      },
+      "source_yellow": {
+        "center": [
+          162.0790255496138,
+          158.7192513368984
+        ],
+        "area": 3366
+      },
+      "yellow_ratio": 1.2465834818775996,
+      "high_saturation_source_yellow_pixels_outside_mask_in_old_roi": 0
+    },
+    {
+      "frame": 14,
+      "green": null,
+      "yellow": {
+        "center": [
+          162.46745843230403,
+          158.05700712589075
+        ],
+        "area": 4210
+      },
+      "source_yellow": {
+        "center": [
+          163.8500441046751,
+          159.1646574536901
+        ],
+        "area": 3401
+      },
+      "yellow_ratio": 1.237871214348721,
+      "high_saturation_source_yellow_pixels_outside_mask_in_old_roi": 60
+    },
+    {
+      "frame": 15,
+      "green": null,
+      "yellow": {
+        "center": [
+          163.53634204275534,
+          158.0874109263658
+        ],
+        "area": 4210
+      },
+      "source_yellow": {
+        "center": [
+          165.14515186915887,
+          159.20940420560748
+        ],
+        "area": 3424
+      },
+      "yellow_ratio": 1.2295560747663552,
+      "high_saturation_source_yellow_pixels_outside_mask_in_old_roi": 78
+    },
+    {
+      "frame": 16,
+      "green": null,
+      "yellow": {
+        "center": [
+          164.36707663197728,
+          158.10004730368968
+        ],
+        "area": 4228
+      },
+      "source_yellow": {
+        "center": [
+          166.0029078220413,
+          159.220703692934
+        ],
+        "area": 3439
+      },
+      "yellow_ratio": 1.2294271590578656,
+      "high_saturation_source_yellow_pixels_outside_mask_in_old_roi": 90
+    }
+  ],
+  "limits": [
+    "Source-derived rectangles are oracle annotations, not production tracking.",
+    "Mask size, center and timing change together; not separately isolated.",
+    "Context/color reconstruction dominance is a hypothesis. No server-model identification or general VACE incapacity is established."
+  ],
+  "median_output_yellow_to_source_color_area_ratio": 1.2294271590578656,
+  "interpretation": "Scale proxy approaches source, but green reference fidelity collapses0/17. Tightening masks alone is insufficient. High-chroma source yellow outside masks is zero in14frames and60/78/90pixels inlast3; that does not identify the source-color mechanism."
+}
