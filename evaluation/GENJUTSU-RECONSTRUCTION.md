@@ -1,6 +1,7 @@
 # Genjutsu reconstruction: what is known and what is missing
 
-Checked2026-10-18. This is a browser-client and public-interface investigation,
+Checked2026-10-18; [deeper client trace added October19](GENJUTSU-CLIENT-TRACE-20261019.md).
+This is a browser-client and public-interface investigation,
 not recovery of Higgsfield's server source or model weights. No GPU job, paid
 API call or generation submission was made for this investigation.
 
@@ -51,8 +52,9 @@ up to30reference images and720p default. Official API playgrounds expose separat
 [motion-transfer](https://open.higgsfield.ai/models/higgsfield/genjutsu/motion-transfer/v1.0/playground)
 and[object-swap](https://open.higgsfield.ai/models/higgsfield/genjutsu/object-swap/v1.0/playground)
 models accepting video_url,image_urls,prompt and resolution. These docs expose
-the service contract, not a downloadable model or inference graph. Their linked
-full API reference redirects to API-account sign-in. No API account was created.
+the service contract, not a downloadable model or inference graph. On the original
+inspection their linked full API reference redirected to API-account sign-in;
+the October19 follow-up could read it without that redirect. No API account was created.
 The[marketing page](https://higgsfield.ai/genjutsu) and older
 [official guide](https://higgsfield.ai/blog/higgsfield-genjutsu) disagree on some
 duration/reference limits; do not silently combine their numbers as one build.
@@ -101,13 +103,14 @@ same hidden weights. Identifying those weights would help, but an observed
 functional equivalent can use a different licensed open pipeline. Browser/API
 inspection alone does not reconstruct undisclosed neural weights or training.
 
-Keep the two-feature scope. The next motion implementation must produce a
-complete, pose-compatible reference while protecting identity/wardrobe, then
-pass the unchanged raw-video gates. A full-body reference or protected lower-body
-outpainting is a specific unrun candidate, not an established Genjutsu stage or
-proven fix. Retain the source-first-frame oracle as a diagnostic control; its
-success does not prove identity replacement. Object work needs target scale,
-lighting and occlusion integration, not a broader UI.
+Keep the two-feature scope. Subsequent protected lower-body completion repaired
+reference truncation but still failed the motion gate. Precision-only and
+official whole-body-control contrasts also failed; these are not established
+Genjutsu stages or proven fixes. See the retained experiment reports. The next
+independent diagnostic tests the official native checkpoint/adapter/sampler
+recipe bundle, beginning with a source-character oracle; its success alone
+would not establish identity replacement. Object work still needs target scale,
+lighting and occlusion integration.
 
 No model replacement, dependency installation, default change or new GPU
 experiment follows from a branded client routing string. The previous phase

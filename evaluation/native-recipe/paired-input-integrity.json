@@ -1,0 +1,12 @@
+{
+  "unchanged_tensor_names": [
+    "source",
+    "mask",
+    "pose",
+    "face"
+  ],
+  "reference_equals_source_frame0": true,
+  "reference_changed": true,
+  "nonreference_archive_files_equal": true,
+  "frozen_graph_matches": true
+}

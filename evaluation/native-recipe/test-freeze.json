@@ -1,0 +1,15 @@
+{
+  "frozen_utc": "2026-10-19T17:00:29.854668+00:00",
+  "input_archive_sha256": "7c9bd6e47bbda5f2a4556170e55f5dfd9bade48f18b7913713c067cc55482b44",
+  "original_sha256": "b44f9ea5707c091863755a9c65231e06a3a790219bbaa41eb0be04c1b622a3e2",
+  "unchanged_source_mask_reference": {
+    "source": true,
+    "mask": true,
+    "reference": true
+  },
+  "control_code_sha256": "efa6fb91463d4c40b19d5fa2ea417b50da52bf57e14c738ce2a8885acf28d84a",
+  "source_selection_sha256": "1ea5624a51386d61d113d4d92dd23b8e68e4a8afbf6d0a80abe480e50ae4818b",
+  "event_freeze_sha256": "c2979866415890bad97aae9e6bb908face20516250dfe2ad30b6f45d6ee267e5",
+  "no_generated_test_output_seen": true,
+  "preparation": "pinned upstream ViTPose133 CPU/full-image detector=None; official v2 body+hands renderer and face-landmark crop; no retargeting"
+}

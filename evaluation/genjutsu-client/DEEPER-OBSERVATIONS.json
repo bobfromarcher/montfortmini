@@ -1,0 +1,129 @@
+{
+  "created_at": "2026-10-19T16:40:21.084889+00:00",
+  "claims": [
+    {
+      "id": "community-helper",
+      "confidence": "observed-static",
+      "source": "modules-browser-agent/868a8dba-tTLIooIHIiI8L9qS.js",
+      "source_sha256": "570d562851b11f64f1c2242c4f9194b137b934610648314924f9041df8c33029",
+      "source_url": "https://assets.higgsfield.ai/tanstack/assets/868a8dba-tTLIooIHIiI8L9qS.js",
+      "byte_offset": 300464,
+      "matched_bytes": 14,
+      "observation": "The Ua helper used by the builders serializes community-preset attribution.",
+      "limitation": "This helper does not reveal server-side preprocessing."
+    },
+    {
+      "id": "object-serializer",
+      "confidence": "observed-static",
+      "source": "deeper/868a8dba-7KKf-xf_puZjOt2o.js",
+      "source_sha256": "09177407030c3c429e022db7e22ef82fd608472d453ed2ebf99501c80338dec5",
+      "source_url": "https://assets.higgsfield.ai/tanstack/assets/868a8dba-7KKf-xf_puZjOt2o.js",
+      "byte_offset": 1567,
+      "matched_bytes": 13,
+      "observation": "The final object serializer whitelists resolution, attribution, batch size, optional width/height, role/id/type media, optional prompt and folder. No explicit mask or inference checkpoint field is serialized here.",
+      "limitation": "A server can derive masks or conditioning from the referenced media. This is the inspected client path, not every endpoint."
+    },
+    {
+      "id": "motion-serializer",
+      "confidence": "observed-static",
+      "source": "deeper/868a8dba-wKCCCPY-8K6gPMK3.js",
+      "source_sha256": "3ab4190cc528015db721f83ccc5591f7f5c5eb9841bc161eb54e340fc57267b2",
+      "source_url": "https://assets.higgsfield.ai/tanstack/assets/868a8dba-wKCCCPY-8K6gPMK3.js",
+      "byte_offset": 778,
+      "matched_bytes": 13,
+      "observation": "The final motion serializer sends reference asset IDs, prompt, resolution, aspect ratio, optional dimensions, scene mode and selected character asset ID. It does not send a generated first frame, skeleton or explicit model checkpoint.",
+      "limitation": "The referenced assets and server processing remain opaque."
+    },
+    {
+      "id": "scene-validation",
+      "confidence": "observed-static",
+      "source": "deeper/868a8dba-wKCCCPY-8K6gPMK3.js",
+      "source_sha256": "3ab4190cc528015db721f83ccc5591f7f5c5eb9841bc161eb54e340fc57267b2",
+      "source_url": "https://assets.higgsfield.ai/tanstack/assets/868a8dba-wKCCCPY-8K6gPMK3.js",
+      "byte_offset": 1455,
+      "matched_bytes": 15,
+      "observation": "The motion validator distinguishes scene modes, permits at most one location role, checks the selected character belongs to the image references, and rejects duplicate media IDs.",
+      "limitation": "Static client validation is not proof of server enforcement or exact scene-mode model behavior."
+    },
+    {
+      "id": "submission-envelope",
+      "confidence": "observed-static",
+      "source": "deeper/868a8dba-OiPEhxvxWYuV6OU8.js",
+      "source_sha256": "66b02a1f35ba000cdc465e280cd63ed5d6a84d50693dbb681098a129a13e0458",
+      "source_url": "https://assets.higgsfield.ai/tanstack/assets/868a8dba-OiPEhxvxWYuV6OU8.js",
+      "byte_offset": 4165,
+      "matched_bytes": 40,
+      "observation": "Motion submission wraps the serialized params with free-generation flags and client metadata, then selects the motion job type.",
+      "limitation": "No generation was submitted during this investigation; these flags alone do not guarantee a free job."
+    },
+    {
+      "id": "job-http",
+      "confidence": "observed-static",
+      "source": "deeper/868a8dba-OrJJX3EiOHFn3yw5.js",
+      "source_sha256": "31fd9b3f96b7715fc2e84054b76b68edaa122428260d236533b41575012b70b7",
+      "source_url": "https://assets.higgsfield.ai/tanstack/assets/868a8dba-OrJJX3EiOHFn3yw5.js",
+      "byte_offset": 4604,
+      "matched_bytes": 24,
+      "observation": "The shared client transport posts JSON to /jobs/v2/{jobType}, with token-derived headers and an optional workspace header.",
+      "limitation": "This is static transport recovery, not a captured generation request."
+    },
+    {
+      "id": "gateway",
+      "confidence": "observed-static",
+      "source": "modules-browser-agent/868a8dba-8Mmzl1wta_y23q6S.js",
+      "source_sha256": "d29c9544fd19e4fa65c3138cb4ca73e2fc862f888ae4b460670b537059d353ad",
+      "source_url": "https://assets.higgsfield.ai/tanstack/assets/868a8dba-8Mmzl1wta_y23q6S.js",
+      "byte_offset": 261420,
+      "matched_bytes": 36,
+      "observation": "The inspected production gateway base is https://fnf-api-gw.higgsfield.ai/fnf.",
+      "limitation": "An endpoint hostname does not identify its model provider. No direct authenticated endpoint calls were made."
+    },
+    {
+      "id": "crop-export",
+      "confidence": "observed-static",
+      "source": "media-preparation/868a8dba-Xj6d2z4UCUFF6Uo7.js",
+      "source_sha256": "51709e1e85ea4f35c15b74f482d4e54ff8e9bd36f41dfa1e6f4f3c9cc16ffd99",
+      "source_url": "https://assets.higgsfield.ai/tanstack/assets/868a8dba-Xj6d2z4UCUFF6Uo7.js",
+      "byte_offset": 2078,
+      "matched_bytes": 47,
+      "observation": "The optional browser crop path draws decoded frames into a crop-sized canvas and exports AVC MP4; it can skip unchanged local files and attempts to retain audio.",
+      "limitation": "The exporter is lazy-loaded. This does not establish that the retained completed job used it, and does not identify server preprocessing."
+    },
+    {
+      "id": "duration-normalization",
+      "confidence": "observed-static",
+      "source": "deeper/868a8dba-H99V0e2XX25wbrIq.js",
+      "source_sha256": "05f04edd00dd01df8ce018f993958e51b56bc90e88d8ea0f1b283c9459a49fee",
+      "source_url": "https://assets.higgsfield.ai/tanstack/assets/868a8dba-H99V0e2XX25wbrIq.js",
+      "byte_offset": 1009,
+      "matched_bytes": 17,
+      "observation": "Client duration validation combines the original minimum check with a normalized duration maximum check.",
+      "limitation": "The imported normalizer floors duration with epsilon 0.01 in this build. Do not equate this with an API trimming rule."
+    }
+  ],
+  "source_map_scan": {
+    "files": 139,
+    "explicit_source_mapping_directives": [],
+    "limitation": "Only retained files were scanned. Unlinked maps were not guessed or requested."
+  },
+  "rea": [
+    {
+      "parent_evidence_id": "ev_612b41d958815aba3ffd2c302dc17bdeb82b042bdda130037a3d7600bbf04a50",
+      "parsed_javascript_files": 11,
+      "parse_failures": 0,
+      "semantic_unknowns": 2281
+    },
+    {
+      "parent_evidence_id": "ev_4b1f1e09fa469a404c900060877996264118a1e03edd314ac7bb467ac6480f57",
+      "parsed_javascript_files": 3,
+      "parse_failures": 0,
+      "semantic_coverage": "unknown"
+    }
+  ],
+  "decision": "Client contract recovered further; server inference source, weights and training remain unidentified. No model substitution or quality improvement is established by this investigation.",
+  "spending": {
+    "generation_jobs": 0,
+    "gpu_jobs": 0,
+    "out_of_pocket_usd": 0
+  }
+}

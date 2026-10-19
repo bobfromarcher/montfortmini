@@ -7,3 +7,7 @@
 
 # Preserve byte-exact line endings in runtime-hashed Python evidence sources.
 *.py -text
+
+# These files cross-reference hashes of their original frozen bytes.
+evaluation/native-recipe/*.json -text
+evaluation/native-recipe/PROTOCOL.md -text

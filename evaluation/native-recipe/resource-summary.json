@@ -1,0 +1,17 @@
+{
+  "gpu_calls": 3,
+  "worker_seconds": 241.482290229,
+  "graph_seconds": 163.76,
+  "peak_sampled_gpu_MiB": 29114.0,
+  "final_usage_observed": 8.14,
+  "final_credits_observed": 21.86,
+  "cash_spend_observed": 0,
+  "cash_cap_observed": 0,
+  "baseline_usage_observed": 7.93,
+  "displayed_account_delta": 0.21,
+  "cost_limit": 2,
+  "cost_limit_exceeded": false,
+  "billing_limitations": "Displayed account-level change; not an isolated invoice or a guarantee of billing finality. Includes CPU/account activity.",
+  "cycle": "closed after third-call technical failure; no corrected-fixture GPU retry",
+  "active_containers": 0
+}

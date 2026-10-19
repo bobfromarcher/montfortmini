@@ -33,6 +33,15 @@ Use one clear reference view with framing suited to the intended performance. Co
 
 ## Actual generation evidence
 
+The [native recipe diagnostic](evaluation/native-recipe/FINDINGS.md) produces a
+substantially better actual development recast:4/4 source events and30/33 clearly
+retained reference frames provisionally. Its independent-recording inference
+finished but packaging failed because our fixture omitted compositor mask PNGs;
+the unseen video was not retained and has no quality verdict. Preflight and
+failure-image retention are corrected with30CPU tests passing. This research
+candidate is not integrated into the workbench or claimed submission-ready.
+The deployed motion path above remains unchanged.
+
 The [precision and upstream-control diagnostic](evaluation/upstream-motion/FINDINGS.md) rejects both a BF16-only correction and pinned whole-body/hand/face preprocessing. Exact paired inputs isolate the precision contrast; both actual videos retain severe defects. GPU telemetry now works despite unavailable cgroup readings. These research paths remain outside production; no passing candidate or unseen verification is claimed.
 
 The latest [explicit-motion experiment](evaluation/explicit-motion/FINDINGS.md) keeps the corrected reference fixed and tests a pinned Wan2.2-Animate model with CPU body/face controls. Its actual33-frame video regresses appearance and anatomy and matches only1/4 source events provisionally. It is rejected. The source, paired audit and retained failure are research evidence; the production model and realistic-quality limitation remain unchanged.

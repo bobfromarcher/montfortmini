@@ -1,0 +1,29 @@
+{
+  "frozen_utc": "2026-10-19T16:59:42.425877+00:00",
+  "reviewed_source_only": true,
+  "timing_tolerance_frames": 2,
+  "minimum_event_matches": 3,
+  "events": [
+    {
+      "source_frame": 4,
+      "event": "both arms rising outward from the sides"
+    },
+    {
+      "source_frame": 8,
+      "event": "both arms reach shoulder-level extension"
+    },
+    {
+      "source_frame": 16,
+      "event": "both arms held out through the first circular movement phase"
+    },
+    {
+      "source_frame": 24,
+      "event": "outstretched arms return through the circular movement phase"
+    }
+  ],
+  "limits": [
+    "The last two events have similar silhouettes. This short test strongly checks the arm raise and reference/pose adaptation; it is weak evidence for precise3D circular-motion phase.",
+    "Hand extremities approach crop boundaries; do not count a source-cropped hand as generated anatomical collapse."
+  ],
+  "quality_gate": "same>=3/4 dimensions,>=28/33 clear reference attributes,no collapse/duplicated major parts; no scoring changes after output"
+}
