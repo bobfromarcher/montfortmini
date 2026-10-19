@@ -1,5 +1,10 @@
 # Submission checklist — checked October 18, 2026
 
+October19 diagnostic:[precision and whole-body controls](../evaluation/upstream-motion/FINDINGS.md).
+Both paired video candidates fail. No quality promotion or unseen verification.
+Comfy SDK execution is retained;vendor preprocessing source includes Apache2
+licensing and exact model provenance. Submission readiness remains unmet.
+
 Latest focused review: [explicit motion controls](../evaluation/explicit-motion/FINDINGS.md).
 One new development video regresses reference appearance and anatomy;only1/4
 events provisionally match. Candidate rejected,no unseen run or production

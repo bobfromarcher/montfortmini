@@ -3,6 +3,9 @@
 Status: prepared experimental entry; not formally submitted. Realistic quality
 target remains unmet. No award or organizer acceptance is claimed.
 
+October19:[precision and upstream-control comparisons](../evaluation/upstream-motion/FINDINGS.md)
+both fail the visual gate. No candidate promotion or unseen verification follows.
+
 Latest [explicit-motion experiment](../evaluation/explicit-motion/FINDINGS.md)
 completed an actual33-frame paired video with the corrected reference fixed.
 It regresses appearance/anatomy and fails motion. The candidate is rejected;

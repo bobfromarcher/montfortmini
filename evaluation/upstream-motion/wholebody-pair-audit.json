@@ -1,0 +1,25 @@
+{
+  "source_mask_reference_pairing": {
+    "source": true,
+    "mask": true,
+    "reference": true
+  },
+  "graph_exact": true,
+  "gpu_samples": 120,
+  "peak_MiB": 44217.0,
+  "pose_changed": true,
+  "face_shape_change": [
+    [
+      33,
+      256,
+      256,
+      3
+    ],
+    [
+      33,
+      512,
+      512,
+      3
+    ]
+  ]
+}

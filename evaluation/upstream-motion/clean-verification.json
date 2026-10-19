@@ -1,0 +1,6 @@
+{
+  "git_tree": "7845ac5a5f3de338bba757e3c3f4b61d415e649b",
+  "cpu_tests_exit_code": 0,
+  "seconds": 20.018026500009,
+  "limits": "Fresh Git extraction,existing dependencies,same machine. Not independent GPU reproduction or clean dependency installation."
+}

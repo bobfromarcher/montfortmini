@@ -1,0 +1,24 @@
+{
+  "precision-v2": {
+    "worker_seconds": 135.376586488,
+    "samples": 131,
+    "peak_vram_MiB": 44382.0,
+    "monitor_error_stages": [
+      "cgroup-memory"
+    ],
+    "actual_dtype": "torch.bfloat16",
+    "sdk_job_id": "a941ca7c-eabf-4f72-ac8d-bd838de62e3e"
+  },
+  "wholebody": {
+    "worker_seconds": 123.794094168,
+    "samples": 120,
+    "peak_vram_MiB": 44217.0,
+    "monitor_error_stages": [
+      "cgroup-memory"
+    ],
+    "actual_dtype": "torch.bfloat16",
+    "sdk_job_id": "1eb6b5eb-d3ab-4896-97ed-9cfc8b5fa7fc"
+  },
+  "total_worker_seconds": 259.170680656,
+  "cpu_pose_seconds": 112.512189577
+}

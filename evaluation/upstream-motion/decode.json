@@ -1,0 +1,14 @@
+{
+  "precision-v2": {
+    "decoded_frames": 33,
+    "fps": 8.0,
+    "width": 480.0,
+    "height": 560.0
+  },
+  "wholebody": {
+    "decoded_frames": 33,
+    "fps": 8.0,
+    "width": 480.0,
+    "height": 560.0
+  }
+}
