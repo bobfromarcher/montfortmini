@@ -1,0 +1,18 @@
+{
+  "gate_pass": false,
+  "decision": "Reject output-description prompt candidate; no production promotion or held-out generation.",
+  "observation": "Green17/17 raw and composite frames; target remains oversized, with visible top hole-like mark in every inspected frame. Area ratio2.833 versus original2.531, a scale-proxy regression. Difference is descriptive scene prompt only versus original baseline, NOT versus small-reference run.",
+  "reference_attributes_0_4": 2,
+  "shape_0_4": 2,
+  "other_dimensions": "Not scored to pass after hard geometry/shape failure. Independent normal-speed review outstanding.",
+  "worker_seconds": 66.573788851,
+  "comfy_graph_seconds": 45.25,
+  "account_credit_delta": 0.05,
+  "cash_spent": 0,
+  "hypotheses_not_proven": [
+    "Neutral erasure removes source geometry needed for scale and shape",
+    "Reference appearance and textual semantics dominate source geometry",
+    "Resolution or model capacity may limit fine control"
+  ],
+  "stop": "No additional GPU inference in this cycle. Both attempts and their failures retained. Do not run held-out media until a passing frozen candidate."
+}

@@ -1,0 +1,16 @@
+{
+  "decision": "Both candidates rejected; current object quality target unmet. Native motion deployment unchanged.",
+  "usage_before": 8.33,
+  "usage_after": 8.41,
+  "credits_remaining": 21.59,
+  "cash_spent": 0,
+  "cash_cap": 0,
+  "rounded_account_delta": 0.08,
+  "limits": "Account change includes related compute and rounding, not isolated invoice. CPU/build charges are not attributed per run.",
+  "attempts": 2,
+  "max_included_budget": 1.5,
+  "gpu_ceiling_seconds_per_attempt": 660,
+  "worker_seconds_total": 102.611476873,
+  "cycle_closed": true,
+  "next_unvalidated_technical_change": "object_luminance_inputs.py retains source luma inside the same masks, removes RGB chroma, and leaves outside RGB exact; CPU-tested only, not production-mounted or video-validated."
+}

@@ -1,0 +1,9 @@
+{
+  "worker_seconds": 66.573788851,
+  "gpu_samples": 65,
+  "peak_sampled_vram_MiB": 11908.0,
+  "sdk_job": "40cd6199-c489-4167-90f9-1c93fb876de2",
+  "monitor_error_count": 65,
+  "host_memory_available": false,
+  "limit": "Missing cgroup memory file; GPU sampling remains valid, host peak RAM unavailable."
+}

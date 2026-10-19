@@ -13,3 +13,6 @@ evaluation/native-recipe/*.json -text
 evaluation/native-recipe/PROTOCOL.md -text
 evaluation/native-motion-service/*.json -text
 evaluation/object-mask/*.json -text
+
+evaluation/object-reference/*.json -text
+evaluation/object-prompt/*.json -text

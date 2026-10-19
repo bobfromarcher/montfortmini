@@ -1,0 +1,22 @@
+{
+  "git_tree": "4fbb856dc73804abb7a934d97a8cb5e454444404",
+  "cpu_tests_exit": 0,
+  "elapsed_seconds": 27.034028599999147,
+  "audits": {
+    "object-reference": {
+      "artifact_invariants_pass": true,
+      "quality_gates_pass": false,
+      "inventory_bytes_exact": true
+    },
+    "object-prompt": {
+      "artifact_invariants_pass": true,
+      "quality_gates_pass": false,
+      "inventory_bytes_exact": true
+    }
+  },
+  "limits": "Fresh Git source extraction using same machine and existing dependencies; not independent reproduction, clean installation or local GPU validation.",
+  "post_check_amendment": {
+    "file": "evaluation/prepare_object_prompt.py",
+    "change": "Fresh replay budget follows supplied live observations rather than the historical cycle ceiling. Offline initializer executed, expected thresholds checked, no GPU dispatched. Tests and inference code unchanged."
+  }
+}

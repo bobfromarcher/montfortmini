@@ -1,0 +1,7 @@
+{
+  "observed_utc": "2026-10-19T22:20:02.853599+00:00",
+  "usage": 8.33,
+  "remaining": 21.67,
+  "cash_cap": 0,
+  "source": "Operator-read Modal live billing UI; rounded, not invoice attribution"
+}

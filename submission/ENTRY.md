@@ -8,7 +8,7 @@ is integrated and deployed after a successful independent-recording recovery and
 app-path regression. Frame ratings remain provisional; fingers are malformed,
 exact likeness is not established, and realistic object quality still fails.
 The public108-second demo predates this update and needs refreshed cleared media.
-Earlier diagnostics below remain retained historical decisions.
+The new [object conditioning cycle](../evaluation/object-reference/FINDINGS.md) rejects both reference registration and a descriptive prompt; scale/shape remain inadequate. Earlier diagnostics below remain retained historical decisions.
 
 October19:[precision and upstream-control comparisons](../evaluation/upstream-motion/FINDINGS.md)
 both fail the visual gate. No candidate promotion or unseen verification follows.

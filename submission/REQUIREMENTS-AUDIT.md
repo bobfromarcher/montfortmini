@@ -3,10 +3,10 @@
 Current: [native motion recovery and app integration](../evaluation/native-motion-service/FINDINGS.md)
 provisionally retain reference attributes and4/4 principal events on the
 independent recording, then repeat through the app. Native motion is deployed;
-all36 CPU tests pass. Fine fingers, broader generalization and realistic object
+the prior38 CPU tests pass. Fine fingers, broader generalization and realistic object
 quality remain inadequate or unverified. Exact local native GPU reproduction,
 independent normal-speed/professional review and an updated cleared public demo
-remain pending. Earlier diagnostic decisions below are historical.
+remain pending. The [object reference/prompt cycle](../evaluation/object-reference/FINDINGS.md) rejects both new videos; no quality promotion follows. Earlier diagnostic decisions below are historical.
 
 Official app/submission accordions were expanded again October19. The required
 SDK, license, workflows and local instructions remain in scope. The existing

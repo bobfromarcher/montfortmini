@@ -1,0 +1,17 @@
+{
+  "gate_pass": false,
+  "decision": "Reject reference placement/scale diagnostic; original production unchanged. No held-out run.",
+  "observation": "All17 raw and composited frames contain a large yellow target instead of green. No source RGB copied into reference. Paired input and graph/source provenance checks pass.",
+  "reference_score_0_4": 0,
+  "other_visual_scores": "Not used to pass; hard reference-color failure. All17 frames inspected, fine timing not independently reviewed.",
+  "hypotheses_not_proven": [
+    "Small reference subject weakens reference signal",
+    "Source context and positive prompt favor the original yellow ball",
+    "Model capacity or low inference resolution limits control"
+  ],
+  "worker_seconds": 36.037688022,
+  "comfy_graph_seconds": 19.46,
+  "account_credit_delta": 0.03,
+  "cash_spent": 0,
+  "limit": "Rounded account delta includes associated compute, not isolated provider invoice."
+}
