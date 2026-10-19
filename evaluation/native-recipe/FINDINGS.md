@@ -65,6 +65,11 @@ the complete CPU suite passes30tests. The actual three runs used the original
 17-module source snapshot; repaired source is a later revision, not retroactively
 claimed as executed.
 
+A clean Git-source extraction also passes30tests in20.612seconds using the
+existing environment on the same machine. All106 Python files match the
+metadata-preserving archive; frozen protocol/JSON original bytes were checked.
+This is not independent GPU reproduction or a fresh dependency installation.
+
 ## Reproduction, spending and release limits
 
 Exact model repositories, revisions, sizes and hashes are in
