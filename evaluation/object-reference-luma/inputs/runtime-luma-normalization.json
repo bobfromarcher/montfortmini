@@ -1,0 +1,9 @@
+{
+  "gain": 0.7415660134430985,
+  "source_first_frame_median_luma": 0.605344295501709,
+  "reference_median_luma": 0.44890275597572327,
+  "feather_kernel": 5,
+  "feather_sigma": 1.0,
+  "method": "One fixed reference/source foreground encoded-RGB-luma gain;5x5 sigma1 feather inside the original edit mask. Source geometry and relative shading retained. No generated pixels consulted.",
+  "limits": "Encoded RGB is not linear-light luminance or calibrated reflectance. Foreground annotations are required; their automatic estimation is not validated."
+}

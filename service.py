@@ -235,7 +235,11 @@ def api():
             result = await modal.FunctionCall.from_id(call_id).get.aio(timeout=0)
         except TimeoutError:
             return {"status":"running"}
-        except Exception:
-            return {"status":"failed","error":"The render could not complete. Try a shorter clip or a different reference; no automatic retry was started."}
+        except Exception as exc:
+            return {"status":"failed","error":render_failure_message(exc)}
         return {"status":"succeeded","result":result}
     return service
+def render_failure_message(error):
+    if 'No module named' in str(error):
+        return 'The render worker is missing a software dependency. This is a server configuration error; no automatic retry was started.'
+    return 'The render could not complete. Try a shorter clip or a different reference; no automatic retry was started.'

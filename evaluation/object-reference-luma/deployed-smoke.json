@@ -1,0 +1,9 @@
+{
+  "status_codes": {
+    "unauthenticated": 401,
+    "authenticated": 200,
+    "invalid_request": 400
+  },
+  "gpu_generation_submitted": false,
+  "scope": "Auth/status/validation after error-reporting-only deploy; classification unit-tested, no deliberate live failed generation."
+}

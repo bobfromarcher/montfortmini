@@ -1,0 +1,23 @@
+{
+  "gate_pass": false,
+  "numerical_gate_pass": true,
+  "reference_attribute_frames": 17,
+  "raw_scores_0_to_4": {
+    "coarse_reference_attributes": 3,
+    "motion": 3,
+    "temporal_stability": 3,
+    "shape": 3,
+    "scene_material_lighting": 2
+  },
+  "composite_scores_0_to_4": {
+    "coarse_reference_attributes": 3,
+    "motion": 3,
+    "temporal_stability": 3,
+    "shape": 3,
+    "scene_material_lighting": 2
+  },
+  "observations": "Target shade is less bright than prior candidate; first-frame median encoded luma0.536 versus0.640, reference0.449. Persistent highly saturated green/material mismatch remains. All17 frames inspected; no independent professional/normal-speed assessment.",
+  "decision": "Retain actual improvement; full quality target remains unmet. Stop inference under this cycle. No held-out test or generic production promotion.",
+  "product_limit": "Foreground masks in this study use a fixture-specific source/reference color oracle; generic segmentation and arbitrary shape replacement unvalidated.",
+  "raw_and_composite_target_pixels_identical": true
+}

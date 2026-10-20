@@ -1,0 +1,32 @@
+{
+  "gain": 0.7415660134430985,
+  "source_first_frame_median_luma": 0.605344295501709,
+  "reference_median_luma": 0.44890275597572327,
+  "feather_kernel": 5,
+  "feather_sigma": 1.0,
+  "method": "One fixed reference/source foreground encoded-RGB-luma gain;5x5 sigma1 feather inside the original edit mask. Source geometry and relative shading retained. No generated pixels consulted.",
+  "limits": "Encoded RGB is not linear-light luminance or calibrated reflectance. Foreground annotations are required; their automatic estimation is not validated.",
+  "foreground_method": "Known fixture oracle: largest high-saturation yellow source component within unchanged edit mask, external contour fill; largest green reference component. HSV10..35 or35..85,s>=160,v>=60. Source/ref only, no generated pixels.",
+  "intervention": "Foreground-only fixed brightness gain; original source/reference/edit masks/positive prompt/sampling fixed versus luma+description.",
+  "foreground_areas": [
+    2315,
+    2306,
+    2308,
+    2320,
+    2350,
+    2322,
+    2358,
+    2362,
+    2342,
+    2382,
+    2385,
+    2414,
+    2424,
+    2405,
+    2450,
+    2439,
+    2464
+  ],
+  "reference_foreground_area": 13936,
+  "product_limit": "This annotation oracle is not generic segmentation and cannot be silently promoted to the app."
+}

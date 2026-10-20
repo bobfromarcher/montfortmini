@@ -23,7 +23,8 @@ def audit(root,contrast='reference'):
     with zipfile.ZipFile(root/'inputs.zip') as archive:
         source=np.stack([np.asarray(Image.open(io.BytesIO(archive.read(f'source/{i:04d}.png'))).convert('RGB')) for i in range(17)])
         masks=np.stack([np.asarray(Image.open(io.BytesIO(archive.read(f'masks/{i:04d}.png'))).convert('L'))>0 for i in range(17)])
-        changed=[n for n in archive.namelist() if archive.read(n)!=(baseline/'inputs'/n).read_bytes()]
+        added={n for n in archive.namelist() if not (baseline/'inputs'/n).is_file()}
+        changed=[n for n in archive.namelist() if n not in added and archive.read(n)!=(baseline/'inputs'/n).read_bytes()]
         old=np.load(baseline/'inputs/conditioning.npz');new=np.load(io.BytesIO(archive.read('conditioning.npz')))
         tensor_same={k:bool(np.array_equal(old[k],new[k])) for k in old.files}
         reference=np.asarray(Image.open(io.BytesIO(archive.read('reference.png'))).convert('RGB'),dtype=np.float32)/255
@@ -40,10 +41,13 @@ def audit(root,contrast='reference'):
                      'area_ratio':green['area']/src['area'] if src and green else None,
                      'centroid_error_diagonal':float(np.linalg.norm(np.asarray(green['center'])-src['center'])/np.hypot(480,272)) if src and green else None})
     expected_graph=read(baseline/'workflow-api.json')
-    is_luminance=contrast in ('luminance','luminance-prompt')
+    is_luminance=contrast in ('luminance','luminance-prompt','reference-luma')
     if contrast in ('prompt','luminance-prompt'):expected_graph['4']['inputs']['text']=read(root/'mask-annotation.json')['after']
     if is_luminance:expected_graph['6']['class_type']='OpenJutsuLuminanceInputs'
-    archive_changes={'reference':{'reference.png','conditioning.npz'},'prompt':set(),'luminance':{'conditioning.npz'},'luminance-prompt':{'conditioning.npz'}}[contrast]
+    if contrast=='reference-luma':
+        expected_graph=read(root.parent/'object-luminance-prompt/workflow-api.json')
+        expected_graph['6']['class_type']='OpenJutsuReferenceLumaInputs'
+    archive_changes={'reference':{'reference.png','conditioning.npz'},'prompt':set(),'luminance':{'conditioning.npz'},'luminance-prompt':{'conditioning.npz'},'reference-luma':{'conditioning.npz'}}[contrast]
     checks={'technical_success':record['status']=='succeeded',
             'paired_archive_changes_exact':set(changed)==archive_changes,
             'conditioning_change_exact':tensor_same=={'source':not is_luminance,'mask':True,'reference':contrast!='reference'},
@@ -53,13 +57,26 @@ def audit(root,contrast='reference'):
             'frozen_inputs_exact':all(hashlib.sha256((root/n).read_bytes()).hexdigest()==h for n,h in frozen['artifact_sha256'].items()),
             'runtime_source_matches_freeze':runtime['source_sha256']==frozen['source_sha256'],
             'size_frames_fps':raw.shape==source.shape==comp.shape==encoded.shape==(17,272,480,3) and fps==8}
+    expected_additions=({'reference-foreground.png'}|{f'foreground/{i:04d}.png' for i in range(17)}) if contrast=='reference-luma' else set()
+    checks['only_expected_annotation_entries_added']=added==expected_additions
     if is_luminance:
         with np.load(root/'inputs/runtime-conditioning.npz') as actual:
-            checks['executed_node_tensors_match_prepared']=all(np.array_equal(actual[k],new[k]) for k in ('source','mask','reference'))
+            source_delta=float(np.abs(actual['source']-new['source']).max())
+            checks['executed_node_tensors_match_prepared']=all(np.array_equal(actual[k],new[k]) for k in ('mask','reference')) and source_delta<=(2e-7 if contrast=='reference-luma' else 0)
             rgb=source.astype(np.float32)/255
             luma=(rgb*np.asarray([.2126,.7152,.0722],dtype=np.float32)).sum(axis=-1,keepdims=True)
             expected=np.where(masks[...,None],luma,rgb)
-            checks['executed_control_matches_original_source_luma']=bool(np.array_equal(actual['source'],expected))
+            if contrast=='reference-luma':
+                sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+                from object_reference_luma_inputs import reference_luma_control
+                with zipfile.ZipFile(root/'inputs.zip') as z:
+                    fg=np.stack([np.asarray(Image.open(io.BytesIO(z.read(f'foreground/{i:04d}.png'))).convert('L'),dtype=np.float32)/255 for i in range(17)])
+                    ref_fg=np.asarray(Image.open(io.BytesIO(z.read('reference-foreground.png'))).convert('L'))>0
+                expected,normalization=reference_luma_control(rgb,masks.astype(np.float32),reference,fg,ref_fg)
+                checks['executed_normalization_gain_matches']=abs(read(root/'inputs/runtime-luma-normalization.json')['gain']-normalization['gain'])<=1e-7
+                checks['executed_control_matches_original_source_luma']=bool(np.allclose(actual['source'],expected,rtol=0,atol=2e-7))
+            else:
+                checks['executed_control_matches_original_source_luma']=bool(np.array_equal(actual['source'],expected))
             checks['outside_control_rgb_exact']=bool(np.array_equal(actual['source'][~masks],rgb[~masks]))
         if contrast=='luminance-prompt':
             with zipfile.ZipFile(root.parent/'object-luminance/inputs.zip') as other,zipfile.ZipFile(root/'inputs.zip') as current:
@@ -82,6 +99,7 @@ def audit(root,contrast='reference'):
            'encoded_preservation':encoded_preservation['mae_255']<=3 and encoded_preservation['p95_255']<=10,
            'composite_preservation':composite_preservation['max_255']==0}
     return {'contrast':contrast,'invariants_pass':all(checks.values()),'checks':checks,'diagnostic_gates':gates,
+            'prepared_vs_executed_control_max_delta':source_delta if is_luminance else None,
             'diagnostic_gates_pass':all(gates.values()),'raw_green_reference_frames':green,
             'composite_green_reference_frames':sum(r['composite_green'] is not None for r in rows),
             'median_area_ratio':ratio,'mean_centroid_error_diagonal':distance,
@@ -91,6 +109,6 @@ def audit(root,contrast='reference'):
 
 
 if __name__=='__main__':
-    contrast='luminance-prompt' if '--luminance-prompt' in sys.argv else 'luminance' if '--luminance' in sys.argv else 'prompt' if '--prompt-only' in sys.argv else 'reference'
+    contrast='reference-luma' if '--reference-luma' in sys.argv else 'luminance-prompt' if '--luminance-prompt' in sys.argv else 'luminance' if '--luminance' in sys.argv else 'prompt' if '--prompt-only' in sys.argv else 'reference'
     result=audit(Path(sys.argv[1]),contrast);print(json.dumps(result,indent=2))
     raise SystemExit(0 if result['invariants_pass'] and result['diagnostic_gates_pass'] else 1)

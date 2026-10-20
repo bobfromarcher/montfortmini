@@ -1,0 +1,5 @@
+{
+  "opencv_to_numpy_control_max_delta": 5.960464477539063e-08,
+  "gain_unchanged": 0.7415660134430985,
+  "reason": "Missing cv2 in inference image; NumPy replacement plus actual-container CPU preflight. No quality output in failed call."
+}

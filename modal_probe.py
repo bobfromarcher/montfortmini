@@ -109,7 +109,7 @@ def masked_replacement(graph_override=None, model_info=None, deadline_seconds=56
         sdk_result = run_with_sdk(graph, "/tmp/openjutsu-sdk-output", timeout=max(1,int(deadline-time.monotonic())))
         raw = sorted(Path(p) for p in sdk_result["files"] if Path(p).suffix.lower() == ".png")
         if len(raw) != frame_count:
-            raise RuntimeError(f"Expected {frame_count} frames, received {len(raw)}")
+            raise missing_output_error(frame_count,len(raw),log_path.read_text())
         fixture = Path("/tmp/openjutsu-fixture")
         result = Path("/tmp/openjutsu-result")
         for folder in ("raw", "composite"):
@@ -196,3 +196,9 @@ def main(confirm_credits_only: bool = False):
                 raise ValueError("Archive member escaped result directory")
         archive.extractall(destination)
     print(f"Saved real generation for visual review: {destination}")
+def missing_output_error(expected,received,comfy_log):
+    """Keep the last bounded Comfy execution cause when a job has no images."""
+    marker='Exception during processing !!!'
+    causes=[line.split(marker,1)[1].strip() for line in comfy_log.splitlines() if marker in line]
+    detail=' Comfy error: '+causes[-1][:240] if causes and causes[-1] else ''
+    return RuntimeError(f'Expected {expected} frames, received {received}.{detail}')

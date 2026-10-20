@@ -9,6 +9,7 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output',type=Path,required=True)
     parser.add_argument('--factorial',action='store_true',help='Source/reference plus the four neutral/luma and instruction/description cells')
+    parser.add_argument('--reference-luma',action='store_true',help='Source/reference plus old and normalized foreground-luma videos')
     args=parser.parse_args();args.output.mkdir(parents=True,exist_ok=True)
     root=Path(__file__).parent
     baseline=root/'quality/samples/new-real-object__candidate__s42'
@@ -24,10 +25,15 @@ def main():
             cases=[('Source recording',baseline/'inputs/source'),('Reference',baseline/'inputs/reference.png'),
                    ('Neutral control + instruction',baseline/stage),('Neutral control + description',root/'object-prompt'/stage),
                    ('Luma control + instruction',root/'object-luminance'/stage),('Luma control + description',root/'object-luminance-prompt'/stage)]
+        if args.reference_luma:
+            cases=[('Source recording',baseline/'inputs/source'),('Original reference',baseline/'inputs/reference.png'),
+                   ('Previous luma + description',root/'object-luminance-prompt'/stage),
+                   ('Foreground reference-luma normalization',root/'object-reference-luma'/stage)]
         columns=3 if args.factorial else 2
         for i in range(17):
             canvas=Image.new('RGB',(480*columns,700),'#101820');draw=ImageDraw.Draw(canvas)
             status='four fixed-seed conditions; quality verdict in review.json' if args.factorial else 'all candidates rejected'
+            if args.reference_luma:status='foreground normalization; material gate remains unmet'
             draw.text((10,8),f'montfortmini | {stage.upper()} | known development footage | frame{i}/16 | {status}',font=font,fill='white')
             for j,(label,frames) in enumerate(cases):
                 x=(j%columns)*480;y=40+(j//columns)*304

@@ -19,3 +19,7 @@ evaluation/object-prompt/*.json -text
 
 evaluation/object-luminance/*.json -text
 evaluation/object-luminance-prompt/*.json -text
+
+evaluation/object-reference-luma/*.json -text
+evaluation/object-reference-luma-failed/*.json -text
+evaluation/object-reference-luma-failed/result/*.json -text

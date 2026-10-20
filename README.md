@@ -48,6 +48,8 @@ and all technical failures remain retained.
 The studies below describe earlier decisions at their dates; the native release
 above supersedes their former production-status statements.
 
+The [reference-luma correction](evaluation/object-reference-luma/FINDINGS.md) reduces the raw target brightness mismatch while retaining green in17/17 frames and a0.96x area proxy. Full material/appearance quality still fails; diagnostic foreground annotations are not generic segmentation. The first missing-dependency failure is retained, and container preflight plus clearer render-error reporting are implemented.
+
 The [object conditioning correction cycle](evaluation/object-reference/FINDINGS.md) rejects reference registration and a descriptive-prompt-only video. Registration loses green in17/17 frames; the descriptive prompt retains green but regresses scale to2.83x the source color-area proxy and adds a hole-like shape defect. Both raw/composited outputs and bounded replay commands are retained. The [source-luma follow-up](evaluation/object-luminance/FINDINGS.md) now produces green in17/17 frames at1.11x the source area proxy with accurate trajectory and passing numerical gates. Material/lighting remains below the frozen visual threshold; this actual video improvement is research-only.
 
 The [object-mask oracle](evaluation/object-mask/FINDINGS.md) tests tighter
