@@ -11,6 +11,7 @@ def main():
     parser.add_argument('--factorial',action='store_true',help='Source/reference plus the four neutral/luma and instruction/description cells')
     parser.add_argument('--reference-luma',action='store_true',help='Source/reference plus old and normalized foreground-luma videos')
     parser.add_argument('--reference-chroma',action='store_true',help='Source/reference plus prior luma and reference-chromaticity videos')
+    parser.add_argument('--color-prompt',action='store_true',help='Source/reference plus fixed-control two-word prompt ablation')
     args=parser.parse_args();args.output.mkdir(parents=True,exist_ok=True)
     root=Path(__file__).parent
     baseline=root/'quality/samples/new-real-object__candidate__s42'
@@ -34,12 +35,17 @@ def main():
             cases=[('Source recording',baseline/'inputs/source'),('Original reference',baseline/'inputs/reference.png'),
                    ('Prior reference-luma control',root/'object-reference-luma'/stage),
                    ('Reference chromaticity control',root/'object-reference-chroma'/stage)]
+        if args.color_prompt:
+            cases=[('Source recording',baseline/'inputs/source'),('Original reference',baseline/'inputs/reference.png'),
+                   ('Reference-chroma baseline: two green words',root/'object-reference-chroma'/stage),
+                   ('Same control: two green words removed',root/'object-color-prompt'/stage)]
         columns=3 if args.factorial else 2
         for i in range(17):
             canvas=Image.new('RGB',(480*columns,700),'#101820');draw=ImageDraw.Draw(canvas)
             status='four fixed-seed conditions; quality verdict in review.json' if args.factorial else 'all candidates rejected'
             if args.reference_luma:status='foreground normalization; material gate remains unmet'
             if args.reference_chroma:status='fixed-seed chromaticity contrast; verdict in review.json'
+            if args.color_prompt:status='only two color words removed; verdict in review.json'
             draw.text((10,8),f'montfortmini | {stage.upper()} | known development footage | frame{i}/16 | {status}',font=font,fill='white')
             for j,(label,frames) in enumerate(cases):
                 x=(j%columns)*480;y=40+(j//columns)*304

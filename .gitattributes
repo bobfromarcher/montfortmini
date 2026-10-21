@@ -26,3 +26,5 @@ evaluation/object-reference-luma-failed/result/*.json -text
 
 evaluation/object-reference-chroma/*.json -text
 evaluation/object-reference-chroma/** -text
+
+evaluation/object-color-prompt/** -text

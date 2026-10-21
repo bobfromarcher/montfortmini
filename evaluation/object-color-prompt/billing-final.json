@@ -1,0 +1,11 @@
+{
+  "observed_utc": "2026-10-21T14:35:33.253976+00:00",
+  "usage": 8.59,
+  "remaining": 21.41,
+  "cash_charges": 0,
+  "cash_cap": 0,
+  "baseline_usage": 8.56,
+  "account_delta_rounded": 0.03,
+  "source": "Live Modal billing UI",
+  "limits": "Rounded account delta includes associated CPU/builds; not isolated invoice attribution."
+}

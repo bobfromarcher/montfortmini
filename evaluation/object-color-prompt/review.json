@@ -1,0 +1,27 @@
+{
+  "gate_pass": false,
+  "numerical_gate_pass": false,
+  "artifact_invariants_pass": true,
+  "reference_attribute_frames": 0,
+  "raw_scores_0_to_4": {
+    "coarse_reference_attributes": 1,
+    "motion": 3,
+    "temporal_stability": 3,
+    "shape": 3,
+    "scene_material_lighting": 2
+  },
+  "composite_scores_0_to_4": {
+    "coarse_reference_attributes": 1,
+    "motion": 3,
+    "temporal_stability": 3,
+    "shape": 3,
+    "scene_material_lighting": 2
+  },
+  "observations": "All17 raw frames inspected. Stable beige/brown target with visibly different material and no green reference identity. Strong color-word sensitivity in this matched pair; reference/control imagery alone did not retain green. Raw/composite target pixels exact. Motion score refers only to simple image-space target trajectory, not contact/occlusion or character motion.",
+  "raw_composite_target_pixels_exact": true,
+  "decision": "Reject and close after one GPU attempt. No further prompt sweep, held-out generation or production promotion under this protocol.",
+  "proxy_interpretation": "Green-area scale and centroid values are unavailable because green is absent; failed numerical proxies do not demonstrate a size/motion collapse. Independent visual review remains pending.",
+  "diagnostic_trap": "Chromaticity distance improves in15/17 frames although target is beige. Saturation/color distances cannot certify reference identity; no acceptance thresholds changed.",
+  "metadata_correction": "Unmodified runtime manifest target_erased_in_control=true is a generic inherited field; source geometry/luma and reference chroma are retained. Exact control tensors/graph are authoritative.",
+  "limits": "One development recording/seed; foreground oracle; GPU repeatability not calibrated; no independent normal-speed/professional review."
+}

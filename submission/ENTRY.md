@@ -1,5 +1,7 @@
 # montfortmini — entry materials
 
+October 21: the [two-color-word ablation](../evaluation/object-color-prompt/FINDINGS.md) loses the green reference in17/17 frames despite identical image/control inputs. Expanded all-frame diagnostics improve some color scores on this wrong beige target, demonstrating why visual identity gates remain mandatory. Candidate rejected; no production promotion.
+
 October 21: the [reference-chromaticity test](../evaluation/object-reference-chroma/FINDINGS.md) preserves scale and trajectory but fails the full material gate; raw output is brighter than the prior candidate. One generation, no production visual change or unseen test. Included account delta approximately $0.04, cash $0.
 
 Status: prepared experimental entry; not formally submitted. Realistic quality

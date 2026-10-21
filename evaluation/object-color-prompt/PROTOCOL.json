@@ -1,0 +1,15 @@
+{
+  "hypothesis": "Explicit green descriptors favor canonical saturated green over reference appearance. Removing only those descriptors may permit reference/control color to determine output.",
+  "primary_pair": "Latest retained object-reference-chroma run versus color-word-removed candidate; not a comparison selected after new output.",
+  "rejected_design": "Removing smooth/solid too would confound color wording with material/shape wording. First-frame/generated-green-only color summaries would miss temporal drift and select only desired-color pixels.",
+  "added_data": "Source-anchored 2px-eroded foreground and reference ROIs; all17 frames, raw and composite separately: RGB medians, encoded-luma quantiles, saturation, RGB/sum chromaticity distance and adjacent-frame median-color variation. Per-frame CSV plus paired differences. Record actual preflight client time. No extra GPU call, new model, output-selected ROI or post-output color correction.",
+  "diagnostic_predictions": "If color-word pressure is a removable contributor, chromaticity distance should decrease across most frames and material appearance improve without shape/motion/preservation regression. Color-only improvement remains partial if visual gate fails.",
+  "decision_table": {
+    "full_visual_pass": "Freeze recipe before selecting independent licensed unseen footage; not a population/parity claim.",
+    "color_improves_visual_fails": "Partial color response, insufficient material/reference quality; stop this protocol.",
+    "color_presence_or_shape_regresses": "Color descriptors were useful for target disambiguation at these settings; do not infer that reference conditioning is wholly absent.",
+    "no_material_improvement": "Removing two green words is insufficient here. Does not separate remaining smooth/solid semantics, reference attention or capacity."
+  },
+  "limits": "One matched seed/recording, correlated frames, GPU repeatability not calibrated. Diagnostics not new acceptance gates. Fixed source ROI may include background on shape/position drift. Existing visual criteria and presence/shape/motion/preservation gates take precedence. No prompt implies exact reference-object identity.",
+  "stopping_rule": "One attempt <=660seconds/$0.75 included, no retry. Close on technical or full-quality failure. Only a full pass permits separately bounded verification from a$1.50 included reserve; total<=2.25, cash0 and at least$2 remaining."
+}
