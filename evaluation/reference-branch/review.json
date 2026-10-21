@@ -1,0 +1,41 @@
+{
+  "quality_gate_pass": false,
+  "diagnostic_sensitivity_detected": true,
+  "repeatability_pass": true,
+  "raw_scores_0_to_4": {
+    "repeat": {
+      "reference": 1,
+      "motion": 3,
+      "stability": 3,
+      "shape": 3,
+      "material_lighting": 2
+    },
+    "counterfactual": {
+      "reference": 1,
+      "motion": 3,
+      "stability": 3,
+      "shape": 3,
+      "material_lighting": 2
+    }
+  },
+  "composite_scores_0_to_4": {
+    "repeat": {
+      "reference": 1,
+      "motion": 3,
+      "stability": 3,
+      "shape": 3,
+      "material_lighting": 2
+    },
+    "counterfactual": {
+      "reference": 1,
+      "motion": 3,
+      "stability": 3,
+      "shape": 3,
+      "material_lighting": 2
+    }
+  },
+  "observations": "Both outputs remain beige despite green versus magenta references; reference transfer still fails. Small directional response meets predeclared diagnostic threshold, not visual quality. All17 counterfactual raw frames and repeat-equivalent baseline inspected; independent professional normal-speed review pending.",
+  "decision": "Close planned two-arm protocol. Reference path is measurably active, but influence is weak under this setup. No production promotion, retry or unseen generation.",
+  "limits": "One seed/development recording; correlated frames; green reactive control intentionally fixed against changed magenta reference. Cannot attribute weak influence uniquely to model capacity, text binding or control competition. Actual sampler noise not independently captured.",
+  "metadata_correction": "Generic target_erased_in_control=true in original runtime manifest is inaccurate for frozen research control. Original manifest preserved; NPZ tensors authoritative."
+}

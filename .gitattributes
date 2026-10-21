@@ -28,3 +28,5 @@ evaluation/object-reference-chroma/*.json -text
 evaluation/object-reference-chroma/** -text
 
 evaluation/object-color-prompt/** -text
+
+evaluation/reference-branch/** -text

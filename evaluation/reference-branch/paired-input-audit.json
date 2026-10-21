@@ -1,0 +1,18 @@
+{
+  "arms": 2,
+  "parent_actual_tensors_match": {
+    "source": true,
+    "mask": true,
+    "reference": true
+  },
+  "paired_tensors_equal": {
+    "source": true,
+    "mask": true,
+    "reference": false
+  },
+  "paired_archive_entry_changes": [
+    "conditioning.npz",
+    "branch-reference.png"
+  ],
+  "reference_luma_max_delta": 5.960464477539063e-08
+}

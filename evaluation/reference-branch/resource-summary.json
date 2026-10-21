@@ -1,0 +1,40 @@
+{
+  "repeat": {
+    "worker_seconds": 46.291539555,
+    "gpu_samples": 45,
+    "sampled_peak_vram_MiB": 11905.0,
+    "comfy_graph_seconds": 23.67,
+    "sdk_job_id": "9daf0b72-33f4-464e-8f6f-b8bf492a48b8",
+    "cpu_preflight_client_elapsed_seconds": 13.163587599992752,
+    "native_conditioning_dtypes": {
+      "positive_text": "torch.float32",
+      "negative_text": "torch.float32",
+      "vace_frames": "torch.float32",
+      "vace_mask": "torch.float32",
+      "initial_latent": "torch.float32"
+    },
+    "raw_preservation_MAE_255": 2.3737120628356934,
+    "raw_preservation_p95_255": 7.0,
+    "composite_outside_png_max_error": 0,
+    "raw_composite_target_pixels_exact": true
+  },
+  "counterfactual": {
+    "worker_seconds": 45.345536278999994,
+    "gpu_samples": 44,
+    "sampled_peak_vram_MiB": 11905.0,
+    "comfy_graph_seconds": 21.68,
+    "sdk_job_id": "15617417-fbb0-41c3-b59a-656fb5b7669a",
+    "cpu_preflight_client_elapsed_seconds": 10.595550299971364,
+    "native_conditioning_dtypes": {
+      "positive_text": "torch.float32",
+      "negative_text": "torch.float32",
+      "vace_frames": "torch.float32",
+      "vace_mask": "torch.float32",
+      "initial_latent": "torch.float32"
+    },
+    "raw_preservation_MAE_255": 2.2491981983184814,
+    "raw_preservation_p95_255": 7.0,
+    "composite_outside_png_max_error": 0,
+    "raw_composite_target_pixels_exact": true
+  }
+}

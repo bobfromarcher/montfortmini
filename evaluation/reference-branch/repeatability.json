@@ -1,0 +1,23 @@
+{
+  "pass": true,
+  "checks": {
+    "technical_success": true,
+    "frozen_artifacts_match": true,
+    "runtime_sources_match": true,
+    "executed_input_tensors_exact": true,
+    "conditioning_receipt_hashes_match": true,
+    "packing": true,
+    "seed_and_trim": true,
+    "frames_dimensions": true,
+    "parent_inputs_exact": true
+  },
+  "global_raw_mae_255": 0.0,
+  "foreground_raw_mae_255": 0.0,
+  "max_raw_error_255": 0.0,
+  "raw_pixels_exact": true,
+  "thresholds": {
+    "global_mae_max_255": 0.5,
+    "foreground_mae_max_255": 1
+  },
+  "limits": "One same-seed repeat of known development footage; not a distributional GPU repeatability estimate."
+}

@@ -1,5 +1,7 @@
 # Submission checklist — checked October19,2026
 
+October 21: the [reference-branch sensitivity pair](../evaluation/reference-branch/FINDINGS.md) confirms a small output response with text/control fixed. The repeat is pixel-exact to the prior baseline; only the encoded reference prefix changes at the sampler. Both targets remain beige and fail reference fidelity. Diagnostic isolation passes; video quality remains unmet.
+
 October 21: the [two-color-word ablation](../evaluation/object-color-prompt/FINDINGS.md) loses the green reference in17/17 frames despite identical image/control inputs. Expanded all-frame diagnostics improve some color scores on this wrong beige target, demonstrating why visual identity gates remain mandatory. Candidate rejected; no production promotion.
 
 October 21: the [reference-chromaticity test](../evaluation/object-reference-chroma/FINDINGS.md) preserves scale and trajectory but fails the full material gate; raw output is brighter than the prior candidate. One generation, no production visual change or unseen test. Included account delta approximately $0.04, cash $0.
@@ -7,7 +9,7 @@ October 21: the [reference-chromaticity test](../evaluation/object-reference-chr
 Current: [native motion recovery and app integration](../evaluation/native-motion-service/FINDINGS.md)
 provisionally retain reference attributes and4/4 principal events on the
 independent recording, then repeat through the app. Native motion is deployed;
-56 CPU tests pass from a fresh Git extraction using existing dependencies. Fine fingers, broader generalization and realistic object
+61 CPU tests pass from a fresh Git extraction using existing dependencies. Fine fingers, broader generalization and realistic object
 quality remain inadequate or unverified. Exact local native GPU reproduction,
 independent normal-speed/professional review and an updated cleared public demo
 remain pending. The [foreground reference-luma correction](../evaluation/object-reference-luma/FINDINGS.md) improves shade but still fails material/appearance; only error reporting is deployed. The [source-luma combination](../evaluation/object-luminance/FINDINGS.md) improves object color/scale/trajectory but fails the full lighting/material gate. The [object reference/prompt cycle](../evaluation/object-reference/FINDINGS.md) rejects both new videos; no quality promotion follows. Earlier diagnostic decisions below are historical.

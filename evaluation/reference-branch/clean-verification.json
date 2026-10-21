@@ -1,0 +1,12 @@
+{
+  "source_tree": "f0324437642839d0e758bc47a9f6a5d4ac8852e3",
+  "cpu_tests": 61,
+  "tests_seconds": 19.568,
+  "tests_pass": true,
+  "isolation_pass": true,
+  "repeat_pixel_exact": true,
+  "raw_detected_directional_response": true,
+  "quality_gate_pass": false,
+  "total_verification_seconds": 51.52440019999631,
+  "limits": "Fresh Git source extraction, same machine/existing dependencies; not clean dependency installation, independent professional review or GPU reproduction. Only report/status metadata changed after this check."
+}

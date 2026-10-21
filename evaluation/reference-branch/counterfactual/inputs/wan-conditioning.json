@@ -1,0 +1,71 @@
+{
+  "normalization": "Float32 CPU snapshots; no sampler input modification",
+  "native_dtypes": {
+    "positive_text": "torch.float32",
+    "negative_text": "torch.float32",
+    "vace_frames": "torch.float32",
+    "vace_mask": "torch.float32",
+    "initial_latent": "torch.float32"
+  },
+  "trim_latent": 1,
+  "sampler_seed": 42,
+  "tensors": {
+    "positive_text": {
+      "shape": [
+        1,
+        512,
+        4096
+      ],
+      "sha256": "8f3f01faac6353d1b6aab4c49033b0b61e83415cdb1c2e111f86479124d33e93"
+    },
+    "negative_text": {
+      "shape": [
+        1,
+        512,
+        4096
+      ],
+      "sha256": "b97b49601c5a7956c69eb4644a3bf5739d6653111f447b19477acecc7b79b3fc"
+    },
+    "reference_prefix": {
+      "shape": [
+        1,
+        32,
+        1,
+        34,
+        60
+      ],
+      "sha256": "ef8d0ec83c294e7d148c489b8c9e59770a21fb2e708e632865ac2c689053f7bf"
+    },
+    "control_tail": {
+      "shape": [
+        1,
+        32,
+        5,
+        34,
+        60
+      ],
+      "sha256": "a7acb87927b14c56c5783664ca78f90c9fec66cf8e1178041130cdf7d28603f9"
+    },
+    "vace_mask": {
+      "shape": [
+        1,
+        64,
+        6,
+        34,
+        60
+      ],
+      "sha256": "5bb09cfe0e6caf0288583896288413f78c607f33efab6985fe98a6530c6ae775"
+    },
+    "initial_latent": {
+      "shape": [
+        1,
+        16,
+        6,
+        34,
+        60
+      ],
+      "sha256": "d8d630ede91cd1513b2c7e803c171f6da5c6c137785c4b36518f14c8c4bd4a08"
+    }
+  },
+  "limits": "Seed and latent shape/values recorded; actual generated sampler noise is not separately captured."
+}

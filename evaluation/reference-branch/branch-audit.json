@@ -1,0 +1,123 @@
+{
+  "isolation_pass": true,
+  "checks": {
+    "repeatability_pass": true,
+    "both_arm_invariants": true,
+    "graph_byte_exact": true,
+    "controls_and_masks_exact": true,
+    "reference_tensor_changed": true,
+    "sampler_inputs_isolated": true
+  },
+  "repeatability": {
+    "pass": true,
+    "checks": {
+      "technical_success": true,
+      "frozen_artifacts_match": true,
+      "runtime_sources_match": true,
+      "executed_input_tensors_exact": true,
+      "conditioning_receipt_hashes_match": true,
+      "packing": true,
+      "seed_and_trim": true,
+      "frames_dimensions": true,
+      "parent_inputs_exact": true
+    },
+    "global_raw_mae_255": 0.0,
+    "foreground_raw_mae_255": 0.0,
+    "max_raw_error_255": 0.0,
+    "raw_pixels_exact": true,
+    "thresholds": {
+      "global_mae_max_255": 0.5,
+      "foreground_mae_max_255": 1
+    },
+    "limits": "One same-seed repeat of known development footage; not a distributional GPU repeatability estimate."
+  },
+  "sampler_receipt_tensors_equal": {
+    "positive_text": true,
+    "negative_text": true,
+    "reference_prefix": false,
+    "control_tail": true,
+    "vace_mask": true,
+    "initial_latent": true
+  },
+  "sampler_receipt_tensor_max_deltas": {
+    "positive_text": 0.0,
+    "negative_text": 0.0,
+    "reference_prefix": 8.390625,
+    "control_tail": 0.0,
+    "vace_mask": 0.0,
+    "initial_latent": 0.0
+  },
+  "reference_chromaticities": {
+    "original": [
+      0.15021459388449424,
+      0.6351931361268586,
+      0.21459226998864725
+    ],
+    "counterfactual": [
+      0.4117647119028167,
+      0.20588235595140836,
+      0.3823529321457749
+    ]
+  },
+  "stages": {
+    "raw": {
+      "foreground_mean_absolute_rgb_change_255": 1.9119844436645508,
+      "whole_frame_mean_absolute_rgb_change_255": 0.5078200101852417,
+      "outside_edit_mean_absolute_rgb_change_255": 0.40407729148864746,
+      "output_pixels_exact": false,
+      "reference_direction_projection_by_frame": [
+        0.00021048478536551957,
+        0.0017114337345922877,
+        0.0012547032867467976,
+        0.0012643370019800623,
+        0.0012698024903652304,
+        -0.001576283401956231,
+        0.0012129845369416678,
+        0.003255913861221195,
+        0.0019662193612652945,
+        0.0010400002510073778,
+        -0.0003281384402804685,
+        0.0022574669309784333,
+        0.0026803085031140016,
+        0.0018399595268776612,
+        0.0018552098079691588,
+        0.0005742766928488238,
+        0.0018533304025907776
+      ],
+      "frames_positive_direction": 15,
+      "change_threshold_255": 1.0,
+      "detected_directional_response": true,
+      "classification": "directional reference response"
+    },
+    "composite": {
+      "foreground_mean_absolute_rgb_change_255": 1.9119844436645508,
+      "whole_frame_mean_absolute_rgb_change_255": 0.1428196132183075,
+      "outside_edit_mean_absolute_rgb_change_255": 0.0,
+      "output_pixels_exact": false,
+      "reference_direction_projection_by_frame": [
+        0.00021048478536551957,
+        0.0017114337345922877,
+        0.0012547032867467976,
+        0.0012643370019800623,
+        0.0012698024903652304,
+        -0.001576283401956231,
+        0.0012129845369416678,
+        0.003255913861221195,
+        0.0019662193612652945,
+        0.0010400002510073778,
+        -0.0003281384402804685,
+        0.0022574669309784333,
+        0.0026803085031140016,
+        0.0018399595268776612,
+        0.0018552098079691588,
+        0.0005742766928488238,
+        0.0018533304025907776
+      ],
+      "frames_positive_direction": 15,
+      "change_threshold_255": 1.0,
+      "detected_directional_response": true,
+      "classification": "directional reference response"
+    }
+  },
+  "limits": "Diagnostic sensitivity is not a video-quality pass. One seed/recording; correlated frames. A null result cannot prove a disconnected reference branch. Noise values not separately captured; same seed/initial latent and packing verified."
+}
