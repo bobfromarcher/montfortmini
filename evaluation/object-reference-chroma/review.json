@@ -1,0 +1,23 @@
+{
+  "gate_pass": false,
+  "numerical_gate_pass": true,
+  "reference_attribute_frames": 17,
+  "raw_scores_0_to_4": {
+    "coarse_reference_attributes": 3,
+    "motion": 3,
+    "temporal_stability": 3,
+    "shape": 3,
+    "scene_material_lighting": 2
+  },
+  "composite_scores_0_to_4": {
+    "coarse_reference_attributes": 3,
+    "motion": 3,
+    "temporal_stability": 3,
+    "shape": 3,
+    "scene_material_lighting": 2
+  },
+  "observations": "All17 raw frames inspected. Persistent vivid/neon green versus shaded original reference; no convincing material-fidelity improvement. Coherent spherical target and trajectory remain. Raw and composite target pixels exact; no output recoloring. Independent normal-speed/professional review pending.",
+  "decision": "REJECT; close this cycle after one development generation. No held-out generation or production visual promotion. Remaining credit allocation unspent.",
+  "product_limit": "Inherited color-oracle masks, one known development clip/seed. Bee pushes another object; edited target mostly image-space drift, not contact/occlusion test.",
+  "metadata_correction": "Retained unmodified runtime manifest target_erased_in_control=true is an inherited generic field and is inaccurate for this research loader: source-derived geometry/luma and reference chroma are explicitly retained. Exact runtime tensors and graph take precedence."
+}

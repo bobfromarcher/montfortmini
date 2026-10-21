@@ -1,0 +1,13 @@
+{
+  "changed_old_input_entries": [
+    "conditioning.npz"
+  ],
+  "same_archive_entry_names": true,
+  "changed_graph_nodes": [
+    "6"
+  ],
+  "outside_control_exact": true,
+  "luma_delta_vs_prior_max": 1.7881393432617188e-07,
+  "clipped_values": 0,
+  "unchanged": "All source/reference/edit/foreground PNGs, prompt, model, seed and sampling settings"
+}

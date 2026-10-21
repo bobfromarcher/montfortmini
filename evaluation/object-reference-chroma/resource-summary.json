@@ -1,0 +1,12 @@
+{
+  "worker_seconds": 47.634559947,
+  "comfy_graph_seconds": 23.88,
+  "gpu_sample_count": 47,
+  "sampled_peak_vram_MiB": 12929.0,
+  "gpu": "L40S",
+  "host_peak_ram": "unavailable: cgroup path missing",
+  "cpu_preflight_seconds": "not separately measured",
+  "sdk_job_id": "0e0ada8f-e14f-46c4-ad7b-c67e941d10a0",
+  "modal_call_id": "fc-01M5FC4PW05KY5GYXTRK6RS7GD",
+  "limits": "Sampled metrics, not continuous allocator peak; graph time includes loading/startup, not kernel-only time."
+}

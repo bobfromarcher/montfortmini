@@ -1,0 +1,37 @@
+{
+  "status": "generated-unreviewed",
+  "model": "Comfy-Org/Wan_2.1_ComfyUI_repackaged",
+  "model_revision": "123acf1cc74bccbb9bfff8ac1ee72edc08c2341d",
+  "mode": "object-swap",
+  "comfy_commit": "5cc4b870094c89090db54bd8d12649dcaf89f2ba",
+  "gpu": "L40S",
+  "elapsed_seconds": 45.88,
+  "comfy_sdk": "0.5.0",
+  "comfy_api_proxy": "0.1.6",
+  "sdk_job_id": "0e0ada8f-e14f-46c4-ad7b-c67e941d10a0",
+  "requested_unet_precision": "auto",
+  "comfy_command": [
+    "python",
+    "main.py",
+    "--listen",
+    "127.0.0.1",
+    "--port",
+    "8188",
+    "--disable-auto-launch",
+    "--preview-method",
+    "none"
+  ],
+  "frames": 17,
+  "fps": 8,
+  "width": 480,
+  "height": 272,
+  "seed": 42,
+  "steps": 20,
+  "input_provenance": "Retained CC-BY development recording; original reference/wide masks/prompt; foreground-only reference chromaticity on the retained reference-luma control",
+  "target_erased_in_control": true,
+  "limitations": [
+    "Feasibility test; visual quality has not yet been reviewed.",
+    "Outside-mask pixel preservation in composite.mp4 comes from explicit compositing.",
+    "Does not prove general input quality or Genjutsu parity."
+  ]
+}

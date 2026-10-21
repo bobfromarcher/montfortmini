@@ -1,0 +1,12 @@
+[
+  {
+    "status": "succeeded",
+    "max_gpu_calls": 1,
+    "max_gpu_seconds": 660,
+    "call_id": "fc-01M5FC4PW05KY5GYXTRK6RS7GD",
+    "worker_seconds": 47.634559947,
+    "protocol_closed": true,
+    "quality_gate_pass": false,
+    "closure_reason": "Material gate fails; stop after single development inference; no verification or retry."
+  }
+]

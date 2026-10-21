@@ -1,0 +1,26 @@
+{
+  "gain": 0.7415660134430985,
+  "source_first_frame_median_luma": 0.605344295501709,
+  "reference_median_luma": 0.44890275597572327,
+  "feather_kernel": 5,
+  "feather_sigma": 1.0,
+  "method": "Existing reference-luma control plus one fixed reference-median RGB/luma ratio, same 5x5 sigma1 foreground feather. Original source geometry, relative shading and luma retained; no generated pixels.",
+  "limits": "Encoded RGB chromaticity is not reflectance or physical relighting. Explicit foreground annotations required; fixture oracle is not generic segmentation.",
+  "reference_median_rgb": [
+    0.13333334028720856,
+    0.5686274766921997,
+    0.1921568661928177
+  ],
+  "reference_rgb_per_unit_luma": [
+    0.2970205545425415,
+    1.2667052745819092,
+    0.42805901169776917
+  ],
+  "luma_delta_vs_prior_max": 1.7881393432617188e-07,
+  "clipped_values": 0,
+  "intervention": "Reference chromaticity only versus retained reference-luma development case. No new annotations, prompt/model/seed/steps/size/motion or brightness changes.",
+  "product_limit": "Fixture-specific foreground color oracle inherited byte-exact. Not a generic object editor; no output pixels used.",
+  "hypothesis": "Gray reactive control underspecifies reference chromaticity. Injecting fixed median reference RGB/luma may reduce canonical neon green while preserving shade and motion.",
+  "competing_explanations": "The descriptive green prompt, weak reference attention, or denoiser capacity may dominate regardless of control chromaticity. This test does not distinguish those alternatives if it fails.",
+  "prediction": "Raw output less saturated and closer to reference RGB ratios, without regressions in frozen visual or preservation gates. Input luma equality is an isolation check, not evidence of output quality."
+}

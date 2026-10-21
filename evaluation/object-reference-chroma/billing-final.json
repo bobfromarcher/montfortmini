@@ -1,0 +1,11 @@
+{
+  "observed_utc": "2026-10-21T14:06:17.751137+00:00",
+  "usage": 8.56,
+  "remaining": 21.44,
+  "cash_charges": 0,
+  "cash_cap": 0,
+  "baseline_usage": 8.52,
+  "account_delta_rounded": 0.04,
+  "source": "Live Modal Usage & billing UI",
+  "limits": "Rounded account-level change includes this call and associated CPU/builds; not an isolated invoice. No running containers at final CLI observation."
+}

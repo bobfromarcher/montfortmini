@@ -1,9 +1,11 @@
 # Submission checklist — checked October19,2026
 
+October 21: the [reference-chromaticity test](../evaluation/object-reference-chroma/FINDINGS.md) preserves scale and trajectory but fails the full material gate; raw output is brighter than the prior candidate. One generation, no production visual change or unseen test. Included account delta approximately $0.04, cash $0.
+
 Current: [native motion recovery and app integration](../evaluation/native-motion-service/FINDINGS.md)
 provisionally retain reference attributes and4/4 principal events on the
 independent recording, then repeat through the app. Native motion is deployed;
-51 CPU tests pass from a fresh Git extraction using existing dependencies. Fine fingers, broader generalization and realistic object
+54 CPU tests pass from a fresh Git extraction using existing dependencies. Fine fingers, broader generalization and realistic object
 quality remain inadequate or unverified. Exact local native GPU reproduction,
 independent normal-speed/professional review and an updated cleared public demo
 remain pending. The [foreground reference-luma correction](../evaluation/object-reference-luma/FINDINGS.md) improves shade but still fails material/appearance; only error reporting is deployed. The [source-luma combination](../evaluation/object-luminance/FINDINGS.md) improves object color/scale/trajectory but fails the full lighting/material gate. The [object reference/prompt cycle](../evaluation/object-reference/FINDINGS.md) rejects both new videos; no quality promotion follows. Earlier diagnostic decisions below are historical.

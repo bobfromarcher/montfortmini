@@ -1,5 +1,7 @@
 # montfortmini
 
+October 21: the [reference-chromaticity test](evaluation/object-reference-chroma/FINDINGS.md) preserves scale and trajectory but fails the full material gate; raw output is brighter than the prior candidate. One generation, no production visual change or unseen test. Included account delta approximately $0.04, cash $0.
+
 An independent, experimental video-editing workbench using open models and the official Comfy SDK. Upload a short video and one reference image, then replace a selected object or animate the reference character from the source motion.
 
 It never calls Higgsfield's backend and does not contain their implementation, branding, assets, or weights. This is a functional alternative, not a claim of Genjutsu quality or feature parity.
