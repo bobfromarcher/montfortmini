@@ -1,0 +1,13 @@
+{
+  "source_tree": "0d6bbd6b3ad6de76b62b3d50ca0190dc3467209f",
+  "cpu_tests": 56,
+  "tests_seconds": 18.263,
+  "tests_pass": true,
+  "new_case_artifact_invariants_pass": true,
+  "new_case_quality_proxies_pass": false,
+  "expected_quality_failure": true,
+  "prior_case_artifact_and_numerical_regression_pass": true,
+  "full_visual_gate_pass": false,
+  "audit_script_sha256": "0a1d0aa4ae7b28503307e35e219e57f63f5d6e8d81f2ea90cb0d1508b4e5a664",
+  "limits": "Fresh Git source extraction, same machine/existing dependencies; not independent professional review, clean dependency installation or GPU reproduction. Only report/status metadata changed afterward."
+}

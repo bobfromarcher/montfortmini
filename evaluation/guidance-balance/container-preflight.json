@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "custom_node_sha256": "6a02be76454d8e10e55a581c302c024315cba8a6e18a60a0f3ddbd146210e3a1",
+  "root_matches_loaded_custom_node": true,
+  "tensor_sha256": {
+    "source": "3c6e2dc6e6dd4d48aa0e5aa5f32cecc834eefb64bcd5d3944df8c180a7e70e22",
+    "mask": "8e5f19a7bf772b2ac136fcc0f29030f11a6cbb301d16327afb6c583d7469c94f",
+    "reference": "417ad4a47badda72175ef4d2f67af187fa73baeabba3b566ed691b09c2747c7b"
+  },
+  "receipt_node_available": true,
+  "gpu_used": false,
+  "client_elapsed_seconds": 8.903900399978738
+}

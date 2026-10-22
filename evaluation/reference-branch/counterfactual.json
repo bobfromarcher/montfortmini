@@ -1,0 +1,15 @@
+{
+  "method": "Fixed magenta RGB/luma ratios on original reference foreground, preserving encoded luma/shading and all outside pixels; no clipping.",
+  "target_rgb": [
+    0.699999988079071,
+    0.3499999940395355,
+    0.6499999761581421
+  ],
+  "ratios": [
+    1.5692604780197144,
+    0.7846302390098572,
+    1.4571703672409058
+  ],
+  "encoded_luma_max_delta": 5.960464477539063e-08,
+  "limits": "Encoded RGB luma is not calibrated reflectance. PNG preview quantized; float32 NPZ tensor is authoritative."
+}

@@ -1,0 +1,12 @@
+{
+  "changed_old_input_entries": [
+    "conditioning.npz"
+  ],
+  "added_annotation_entries": 18,
+  "changed_graph_nodes": [
+    "6"
+  ],
+  "source_reference_edit_masks_prompt_sampler_unchanged": true,
+  "gain": 0.7415660134430985,
+  "outside_control_exact": true
+}

@@ -1,0 +1,2093 @@
+{
+  "method": "Median RGB, encoded luma quantiles, HSV saturation, RGB/sum chromaticity distance; all17 frames. Fixed original source foreground eroded2px, original reference foreground eroded2px. No generated-color thresholding.",
+  "reference": {
+    "pixels": 12879,
+    "median_rgb_255": [
+      35.0,
+      148.0,
+      50.0
+    ],
+    "chromaticity_rgb_sum1": [
+      0.15021459227467812,
+      0.6351931330472103,
+      0.2145922746781116
+    ],
+    "chromaticity_distance": 0.0,
+    "encoded_luma_p10_median_p90": [
+      0.30898980392156855,
+      0.45843372549019606,
+      0.5447992156862745
+    ],
+    "median_saturation_255": 195.0
+  },
+  "source_core_areas": [
+    1900,
+    1889,
+    1895,
+    1904,
+    1928,
+    1910,
+    1934,
+    1936,
+    1929,
+    1958,
+    1959,
+    1988,
+    1999,
+    1974,
+    2013,
+    2014,
+    2027
+  ],
+  "source_trajectory_stats": [
+    {
+      "pixels": 1900,
+      "median_rgb_255": [
+        219.0,
+        143.0,
+        27.0
+      ],
+      "chromaticity_rgb_sum1": [
+        0.5629820051413882,
+        0.3676092544987147,
+        0.06940874035989718
+      ],
+      "chromaticity_distance": 0.5128901713045994,
+      "encoded_luma_p10_median_p90": [
+        0.5304602352941177,
+        0.5914529411764706,
+        0.6998949019607843
+      ],
+      "median_saturation_255": 224.0
+    },
+    {
+      "pixels": 1889,
+      "median_rgb_255": [
+        219.0,
+        143.0,
+        28.0
+      ],
+      "chromaticity_rgb_sum1": [
+        0.5615384615384615,
+        0.36666666666666664,
+        0.07179487179487179
+      ],
+      "chromaticity_distance": 0.5115514508269422,
+      "encoded_luma_p10_median_p90": [
+        0.5314007843137254,
+        0.5913301960784314,
+        0.7010007843137255
+      ],
+      "median_saturation_255": 222.0
+    },
+    {
+      "pixels": 1895,
+      "median_rgb_255": [
+        219.0,
+        143.0,
+        28.0
+      ],
+      "chromaticity_rgb_sum1": [
+        0.5615384615384615,
+        0.36666666666666664,
+        0.07179487179487179
+      ],
+      "chromaticity_distance": 0.5115514508269422,
+      "encoded_luma_p10_median_p90": [
+        0.5323305098039216,
+        0.5919278431372549,
+        0.7004298039215685
+      ],
+      "median_saturation_255": 222.0
+    },
+    {
+      "pixels": 1904,
+      "median_rgb_255": [
+        218.5,
+        143.0,
+        27.0
+      ],
+      "chromaticity_rgb_sum1": [
+        0.5624195624195624,
+        0.3680823680823681,
+        0.0694980694980695
+      ],
+      "chromaticity_distance": 0.5121654288890223,
+      "encoded_luma_p10_median_p90": [
+        0.5325380392156863,
+        0.5911282352941176,
+        0.6976454901960784
+      ],
+      "median_saturation_255": 223.0
+    },
+    {
+      "pixels": 1928,
+      "median_rgb_255": [
+        219.0,
+        143.0,
+        27.0
+      ],
+      "chromaticity_rgb_sum1": [
+        0.5629820051413882,
+        0.3676092544987147,
+        0.06940874035989718
+      ],
+      "chromaticity_distance": 0.5128901713045994,
+      "encoded_luma_p10_median_p90": [
+        0.5316149803921568,
+        0.5913301960784314,
+        0.6989854901960784
+      ],
+      "median_saturation_255": 223.0
+    },
+    {
+      "pixels": 1910,
+      "median_rgb_255": [
+        219.0,
+        143.0,
+        29.0
+      ],
+      "chromaticity_rgb_sum1": [
+        0.5601023017902813,
+        0.3657289002557545,
+        0.0741687979539642
+      ],
+      "chromaticity_distance": 0.5102329467813035,
+      "encoded_luma_p10_median_p90": [
+        0.5330258823529412,
+        0.5921482352941176,
+        0.6989444705882352
+      ],
+      "median_saturation_255": 221.0
+    },
+    {
+      "pixels": 1934,
+      "median_rgb_255": [
+        219.0,
+        143.0,
+        28.0
+      ],
+      "chromaticity_rgb_sum1": [
+        0.5615384615384615,
+        0.36666666666666664,
+        0.07179487179487179
+      ],
+      "chromaticity_distance": 0.5115514508269422,
+      "encoded_luma_p10_median_p90": [
+        0.5321921568627451,
+        0.5924156862745097,
+        0.7019818039215686
+      ],
+      "median_saturation_255": 222.0
+    },
+    {
+      "pixels": 1936,
+      "median_rgb_255": [
+        219.0,
+        143.0,
+        29.0
+      ],
+      "chromaticity_rgb_sum1": [
+        0.5601023017902813,
+        0.3657289002557545,
+        0.0741687979539642
+      ],
+      "chromaticity_distance": 0.5102329467813035,
+      "encoded_luma_p10_median_p90": [
+        0.5336211764705883,
+        0.592621568627451,
+        0.7016643137254902
+      ],
+      "median_saturation_255": 221.0
+    },
+    {
+      "pixels": 1929,
+      "median_rgb_255": [
+        219.0,
+        144.0,
+        27.0
+      ],
+      "chromaticity_rgb_sum1": [
+        0.5615384615384615,
+        0.36923076923076925,
+        0.06923076923076923
+      ],
+      "chromaticity_distance": 0.510933725309728,
+      "encoded_luma_p10_median_p90": [
+        0.5331043137254902,
+        0.5921529411764705,
+        0.7032983529411765
+      ],
+      "median_saturation_255": 223.0
+    },
+    {
+      "pixels": 1958,
+      "median_rgb_255": [
+        219.0,
+        144.0,
+        29.0
+      ],
+      "chromaticity_rgb_sum1": [
+        0.5586734693877551,
+        0.3673469387755102,
+        0.07397959183673469
+      ],
+      "chromaticity_distance": 0.5082835474950558,
+      "encoded_luma_p10_median_p90": [
+        0.5347874509803922,
+        0.5921482352941176,
+        0.7034106666666667
+      ],
+      "median_saturation_255": 221.0
+    },
+    {
+      "pixels": 1959,
+      "median_rgb_255": [
+        219.0,
+        144.0,
+        27.0
+      ],
+      "chromaticity_rgb_sum1": [
+        0.5615384615384615,
+        0.36923076923076925,
+        0.06923076923076923
+      ],
+      "chromaticity_distance": 0.510933725309728,
+      "encoded_luma_p10_median_p90": [
+        0.5349587450980391,
+        0.5923466666666666,
+        0.700676862745098
+      ],
+      "median_saturation_255": 223.0
+    },
+    {
+      "pixels": 1988,
+      "median_rgb_255": [
+        220.0,
+        144.0,
+        29.0
+      ],
+      "chromaticity_rgb_sum1": [
+        0.5597964376590331,
+        0.366412213740458,
+        0.0737913486005089
+      ],
+      "chromaticity_distance": 0.5097306852016533,
+      "encoded_luma_p10_median_p90": [
+        0.5364282352941177,
+        0.5929631372549019,
+        0.7036198431372549
+      ],
+      "median_saturation_255": 221.0
+    },
+    {
+      "pixels": 1999,
+      "median_rgb_255": [
+        220.0,
+        145.0,
+        29.0
+      ],
+      "chromaticity_rgb_sum1": [
+        0.5583756345177665,
+        0.3680203045685279,
+        0.07360406091370558
+      ],
+      "chromaticity_distance": 0.5077936914759196,
+      "encoded_luma_p10_median_p90": [
+        0.5394894117647059,
+        0.5989686274509805,
+        0.7025129411764706
+      ],
+      "median_saturation_255": 221.0
+    },
+    {
+      "pixels": 1974,
+      "median_rgb_255": [
+        220.0,
+        145.0,
+        28.0
+      ],
+      "chromaticity_rgb_sum1": [
+        0.5597964376590331,
+        0.36895674300254455,
+        0.07124681933842239
+      ],
+      "chromaticity_distance": 0.5091041376958273,
+      "encoded_luma_p10_median_p90": [
+        0.5394894117647059,
+        0.5988101960784313,
+        0.7020609411764706
+      ],
+      "median_saturation_255": 222.0
+    },
+    {
+      "pixels": 2013,
+      "median_rgb_255": [
+        221.0,
+        145.0,
+        29.0
+      ],
+      "chromaticity_rgb_sum1": [
+        0.5594936708860759,
+        0.3670886075949367,
+        0.07341772151898734
+      ],
+      "chromaticity_distance": 0.5092343814165162,
+      "encoded_luma_p10_median_p90": [
+        0.5421424313725489,
+        0.599204705882353,
+        0.7028680784313724
+      ],
+      "median_saturation_255": 221.0
+    },
+    {
+      "pixels": 2014,
+      "median_rgb_255": [
+        221.0,
+        145.0,
+        29.0
+      ],
+      "chromaticity_rgb_sum1": [
+        0.5594936708860759,
+        0.3670886075949367,
+        0.07341772151898734
+      ],
+      "chromaticity_distance": 0.5092343814165162,
+      "encoded_luma_p10_median_p90": [
+        0.5421981176470588,
+        0.5997396078431372,
+        0.705661568627451
+      ],
+      "median_saturation_255": 221.0
+    },
+    {
+      "pixels": 2027,
+      "median_rgb_255": [
+        220.0,
+        145.0,
+        27.0
+      ],
+      "chromaticity_rgb_sum1": [
+        0.5612244897959183,
+        0.36989795918367346,
+        0.06887755102040816
+      ],
+      "chromaticity_distance": 0.5104345656657133,
+      "encoded_luma_p10_median_p90": [
+        0.537617725490196,
+        0.5981349019607843,
+        0.7040869019607843
+      ],
+      "median_saturation_255": 222.0
+    }
+  ],
+  "cases": {
+    "baseline": {
+      "raw": {
+        "summary": {
+          "frames": 17,
+          "median_chromaticity_distance": 0.44910835915142383,
+          "median_encoded_luma": 0.5441129411764706,
+          "median_saturation_255": 255.0,
+          "median_adjacent_rgb_step_255": 1.8660254037844386,
+          "max_adjacent_rgb_step_255": 4.242640687119285,
+          "median_adjacent_chromaticity_step": 0.003485637473643167
+        },
+        "rows": [
+          {
+            "frame": 0,
+            "pixels": 1900,
+            "median_rgb_255": [
+              8.0,
+              203.0,
+              3.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.037383177570093455,
+              0.9485981308411215,
+              0.014018691588785047
+            ],
+            "chromaticity_distance": 0.38882307418635853,
+            "encoded_luma_p10_median_p90": [
+              0.5090156862745098,
+              0.5781454901960783,
+              0.6525328627450979
+            ],
+            "median_saturation_255": 251.0
+          },
+          {
+            "frame": 1,
+            "pixels": 1889,
+            "median_rgb_255": [
+              6.0,
+              200.0,
+              1.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.028985507246376812,
+              0.966183574879227,
+              0.004830917874396135
+            ],
+            "chromaticity_distance": 0.4101840933642947,
+            "encoded_luma_p10_median_p90": [
+              0.5039929411764705,
+              0.5673074509803921,
+              0.6587218823529412
+            ],
+            "median_saturation_255": 254.0
+          },
+          {
+            "frame": 2,
+            "pixels": 1895,
+            "median_rgb_255": [
+              2.0,
+              199.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.009950248756218905,
+              0.9900497512437811,
+              0.0
+            ],
+            "chromaticity_distance": 0.43777522759070925,
+            "encoded_luma_p10_median_p90": [
+              0.49923764705882345,
+              0.5612243137254902,
+              0.6331723921568628
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 3,
+            "pixels": 1904,
+            "median_rgb_255": [
+              3.0,
+              198.0,
+              1.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.01485148514851485,
+              0.9801980198019802,
+              0.0049504950495049506
+            ],
+            "chromaticity_distance": 0.42579480788446683,
+            "encoded_luma_p10_median_p90": [
+              0.4880188235294117,
+              0.5578329411764705,
+              0.6274921568627451
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 4,
+            "pixels": 1928,
+            "median_rgb_255": [
+              4.0,
+              199.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.019704433497536946,
+              0.9802955665024631,
+              0.0
+            ],
+            "chromaticity_distance": 0.42682365851988324,
+            "encoded_luma_p10_median_p90": [
+              0.4964329411764705,
+              0.5631388235294117,
+              0.6254658039215685
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 5,
+            "pixels": 1910,
+            "median_rgb_255": [
+              1.0,
+              196.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.005076142131979695,
+              0.9949238578680203,
+              0.0
+            ],
+            "chromaticity_distance": 0.4433071265403433,
+            "encoded_luma_p10_median_p90": [
+              0.4880188235294117,
+              0.5532090196078432,
+              0.6262098823529412
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 6,
+            "pixels": 1934,
+            "median_rgb_255": [
+              0.0,
+              194.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.4796047058823529,
+              0.5449466666666667,
+              0.6247085490196077
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 7,
+            "pixels": 1936,
+            "median_rgb_255": [
+              0.0,
+              192.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.47679999999999995,
+              0.5413082352941175,
+              0.6217611764705882
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 8,
+            "pixels": 1929,
+            "median_rgb_255": [
+              0.0,
+              191.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.473995294117647,
+              0.5393372549019608,
+              0.6231979607843138
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 9,
+            "pixels": 1958,
+            "median_rgb_255": [
+              0.0,
+              193.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.4796047058823529,
+              0.5421419607843136,
+              0.6306525490196078
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 10,
+            "pixels": 1959,
+            "median_rgb_255": [
+              0.0,
+              194.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.4796047058823529,
+              0.5441129411764706,
+              0.6329901176470588
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 11,
+            "pixels": 1988,
+            "median_rgb_255": [
+              0.0,
+              192.0,
+              1.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              0.9948186528497409,
+              0.0051813471502590676
+            ],
+            "chromaticity_distance": 0.4424340343978565,
+            "encoded_luma_p10_median_p90": [
+              0.47679999999999995,
+              0.5413082352941175,
+              0.6312941176470588
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 12,
+            "pixels": 1999,
+            "median_rgb_255": [
+              0.0,
+              191.0,
+              1.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              0.9947916666666666,
+              0.005208333333333333
+            ],
+            "chromaticity_distance": 0.44239932640837576,
+            "encoded_luma_p10_median_p90": [
+              0.473995294117647,
+              0.5385035294117647,
+              0.6324730980392156
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 13,
+            "pixels": 1974,
+            "median_rgb_255": [
+              0.0,
+              194.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.47679999999999995,
+              0.5441129411764706,
+              0.6490769411764705
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 14,
+            "pixels": 2013,
+            "median_rgb_255": [
+              0.0,
+              193.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.47175152941176474,
+              0.5421419607843136,
+              0.6496810980392157
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 15,
+            "pixels": 2014,
+            "median_rgb_255": [
+              0.0,
+              192.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.4655811764705882,
+              0.5385035294117647,
+              0.6418774901960783
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 16,
+            "pixels": 2027,
+            "median_rgb_255": [
+              0.0,
+              191.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.4627764705882353,
+              0.5356988235294117,
+              0.6321866666666666
+            ],
+            "median_saturation_255": 255.0
+          }
+        ]
+      },
+      "composite": {
+        "summary": {
+          "frames": 17,
+          "median_chromaticity_distance": 0.44910835915142383,
+          "median_encoded_luma": 0.5441129411764706,
+          "median_saturation_255": 255.0,
+          "median_adjacent_rgb_step_255": 1.8660254037844386,
+          "max_adjacent_rgb_step_255": 4.242640687119285,
+          "median_adjacent_chromaticity_step": 0.003485637473643167
+        },
+        "rows": [
+          {
+            "frame": 0,
+            "pixels": 1900,
+            "median_rgb_255": [
+              8.0,
+              203.0,
+              3.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.037383177570093455,
+              0.9485981308411215,
+              0.014018691588785047
+            ],
+            "chromaticity_distance": 0.38882307418635853,
+            "encoded_luma_p10_median_p90": [
+              0.5090156862745098,
+              0.5781454901960783,
+              0.6525328627450979
+            ],
+            "median_saturation_255": 251.0
+          },
+          {
+            "frame": 1,
+            "pixels": 1889,
+            "median_rgb_255": [
+              6.0,
+              200.0,
+              1.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.028985507246376812,
+              0.966183574879227,
+              0.004830917874396135
+            ],
+            "chromaticity_distance": 0.4101840933642947,
+            "encoded_luma_p10_median_p90": [
+              0.5039929411764705,
+              0.5673074509803921,
+              0.6587218823529412
+            ],
+            "median_saturation_255": 254.0
+          },
+          {
+            "frame": 2,
+            "pixels": 1895,
+            "median_rgb_255": [
+              2.0,
+              199.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.009950248756218905,
+              0.9900497512437811,
+              0.0
+            ],
+            "chromaticity_distance": 0.43777522759070925,
+            "encoded_luma_p10_median_p90": [
+              0.49923764705882345,
+              0.5612243137254902,
+              0.6331723921568628
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 3,
+            "pixels": 1904,
+            "median_rgb_255": [
+              3.0,
+              198.0,
+              1.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.01485148514851485,
+              0.9801980198019802,
+              0.0049504950495049506
+            ],
+            "chromaticity_distance": 0.42579480788446683,
+            "encoded_luma_p10_median_p90": [
+              0.4880188235294117,
+              0.5578329411764705,
+              0.6274921568627451
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 4,
+            "pixels": 1928,
+            "median_rgb_255": [
+              4.0,
+              199.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.019704433497536946,
+              0.9802955665024631,
+              0.0
+            ],
+            "chromaticity_distance": 0.42682365851988324,
+            "encoded_luma_p10_median_p90": [
+              0.4964329411764705,
+              0.5631388235294117,
+              0.6254658039215685
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 5,
+            "pixels": 1910,
+            "median_rgb_255": [
+              1.0,
+              196.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.005076142131979695,
+              0.9949238578680203,
+              0.0
+            ],
+            "chromaticity_distance": 0.4433071265403433,
+            "encoded_luma_p10_median_p90": [
+              0.4880188235294117,
+              0.5532090196078432,
+              0.6262098823529412
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 6,
+            "pixels": 1934,
+            "median_rgb_255": [
+              0.0,
+              194.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.4796047058823529,
+              0.5449466666666667,
+              0.6247085490196077
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 7,
+            "pixels": 1936,
+            "median_rgb_255": [
+              0.0,
+              192.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.47679999999999995,
+              0.5413082352941175,
+              0.6217611764705882
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 8,
+            "pixels": 1929,
+            "median_rgb_255": [
+              0.0,
+              191.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.473995294117647,
+              0.5393372549019608,
+              0.6231979607843138
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 9,
+            "pixels": 1958,
+            "median_rgb_255": [
+              0.0,
+              193.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.4796047058823529,
+              0.5421419607843136,
+              0.6306525490196078
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 10,
+            "pixels": 1959,
+            "median_rgb_255": [
+              0.0,
+              194.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.4796047058823529,
+              0.5441129411764706,
+              0.6329901176470588
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 11,
+            "pixels": 1988,
+            "median_rgb_255": [
+              0.0,
+              192.0,
+              1.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              0.9948186528497409,
+              0.0051813471502590676
+            ],
+            "chromaticity_distance": 0.4424340343978565,
+            "encoded_luma_p10_median_p90": [
+              0.47679999999999995,
+              0.5413082352941175,
+              0.6312941176470588
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 12,
+            "pixels": 1999,
+            "median_rgb_255": [
+              0.0,
+              191.0,
+              1.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              0.9947916666666666,
+              0.005208333333333333
+            ],
+            "chromaticity_distance": 0.44239932640837576,
+            "encoded_luma_p10_median_p90": [
+              0.473995294117647,
+              0.5385035294117647,
+              0.6324730980392156
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 13,
+            "pixels": 1974,
+            "median_rgb_255": [
+              0.0,
+              194.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.47679999999999995,
+              0.5441129411764706,
+              0.6490769411764705
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 14,
+            "pixels": 2013,
+            "median_rgb_255": [
+              0.0,
+              193.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.47175152941176474,
+              0.5421419607843136,
+              0.6496810980392157
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 15,
+            "pixels": 2014,
+            "median_rgb_255": [
+              0.0,
+              192.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.4655811764705882,
+              0.5385035294117647,
+              0.6418774901960783
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 16,
+            "pixels": 2027,
+            "median_rgb_255": [
+              0.0,
+              191.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.4627764705882353,
+              0.5356988235294117,
+              0.6321866666666666
+            ],
+            "median_saturation_255": 255.0
+          }
+        ]
+      }
+    },
+    "candidate": {
+      "raw": {
+        "summary": {
+          "frames": 17,
+          "median_chromaticity_distance": 0.44910835915142383,
+          "median_encoded_luma": 0.5441129411764706,
+          "median_saturation_255": 255.0,
+          "median_adjacent_rgb_step_255": 1.8660254037844386,
+          "max_adjacent_rgb_step_255": 4.242640687119285,
+          "median_adjacent_chromaticity_step": 0.003485637473643167
+        },
+        "rows": [
+          {
+            "frame": 0,
+            "pixels": 1900,
+            "median_rgb_255": [
+              8.0,
+              203.0,
+              3.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.037383177570093455,
+              0.9485981308411215,
+              0.014018691588785047
+            ],
+            "chromaticity_distance": 0.38882307418635853,
+            "encoded_luma_p10_median_p90": [
+              0.5090156862745098,
+              0.5781454901960783,
+              0.6525328627450979
+            ],
+            "median_saturation_255": 251.0
+          },
+          {
+            "frame": 1,
+            "pixels": 1889,
+            "median_rgb_255": [
+              6.0,
+              200.0,
+              1.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.028985507246376812,
+              0.966183574879227,
+              0.004830917874396135
+            ],
+            "chromaticity_distance": 0.4101840933642947,
+            "encoded_luma_p10_median_p90": [
+              0.5039929411764705,
+              0.5673074509803921,
+              0.6587218823529412
+            ],
+            "median_saturation_255": 254.0
+          },
+          {
+            "frame": 2,
+            "pixels": 1895,
+            "median_rgb_255": [
+              2.0,
+              199.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.009950248756218905,
+              0.9900497512437811,
+              0.0
+            ],
+            "chromaticity_distance": 0.43777522759070925,
+            "encoded_luma_p10_median_p90": [
+              0.49923764705882345,
+              0.5612243137254902,
+              0.6331723921568628
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 3,
+            "pixels": 1904,
+            "median_rgb_255": [
+              3.0,
+              198.0,
+              1.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.01485148514851485,
+              0.9801980198019802,
+              0.0049504950495049506
+            ],
+            "chromaticity_distance": 0.42579480788446683,
+            "encoded_luma_p10_median_p90": [
+              0.4880188235294117,
+              0.5578329411764705,
+              0.6274921568627451
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 4,
+            "pixels": 1928,
+            "median_rgb_255": [
+              4.0,
+              199.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.019704433497536946,
+              0.9802955665024631,
+              0.0
+            ],
+            "chromaticity_distance": 0.42682365851988324,
+            "encoded_luma_p10_median_p90": [
+              0.4964329411764705,
+              0.5631388235294117,
+              0.6254658039215685
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 5,
+            "pixels": 1910,
+            "median_rgb_255": [
+              1.0,
+              196.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.005076142131979695,
+              0.9949238578680203,
+              0.0
+            ],
+            "chromaticity_distance": 0.4433071265403433,
+            "encoded_luma_p10_median_p90": [
+              0.4880188235294117,
+              0.5532090196078432,
+              0.6262098823529412
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 6,
+            "pixels": 1934,
+            "median_rgb_255": [
+              0.0,
+              194.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.4796047058823529,
+              0.5449466666666667,
+              0.6247085490196077
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 7,
+            "pixels": 1936,
+            "median_rgb_255": [
+              0.0,
+              192.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.47679999999999995,
+              0.5413082352941175,
+              0.6217611764705882
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 8,
+            "pixels": 1929,
+            "median_rgb_255": [
+              0.0,
+              191.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.473995294117647,
+              0.5393372549019608,
+              0.6231979607843138
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 9,
+            "pixels": 1958,
+            "median_rgb_255": [
+              0.0,
+              193.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.4796047058823529,
+              0.5421419607843136,
+              0.6306525490196078
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 10,
+            "pixels": 1959,
+            "median_rgb_255": [
+              0.0,
+              194.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.4796047058823529,
+              0.5441129411764706,
+              0.6329901176470588
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 11,
+            "pixels": 1988,
+            "median_rgb_255": [
+              0.0,
+              192.0,
+              1.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              0.9948186528497409,
+              0.0051813471502590676
+            ],
+            "chromaticity_distance": 0.4424340343978565,
+            "encoded_luma_p10_median_p90": [
+              0.47679999999999995,
+              0.5413082352941175,
+              0.6312941176470588
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 12,
+            "pixels": 1999,
+            "median_rgb_255": [
+              0.0,
+              191.0,
+              1.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              0.9947916666666666,
+              0.005208333333333333
+            ],
+            "chromaticity_distance": 0.44239932640837576,
+            "encoded_luma_p10_median_p90": [
+              0.473995294117647,
+              0.5385035294117647,
+              0.6324730980392156
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 13,
+            "pixels": 1974,
+            "median_rgb_255": [
+              0.0,
+              194.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.47679999999999995,
+              0.5441129411764706,
+              0.6490769411764705
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 14,
+            "pixels": 2013,
+            "median_rgb_255": [
+              0.0,
+              193.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.47175152941176474,
+              0.5421419607843136,
+              0.6496810980392157
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 15,
+            "pixels": 2014,
+            "median_rgb_255": [
+              0.0,
+              192.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.4655811764705882,
+              0.5385035294117647,
+              0.6418774901960783
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 16,
+            "pixels": 2027,
+            "median_rgb_255": [
+              0.0,
+              191.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.4627764705882353,
+              0.5356988235294117,
+              0.6321866666666666
+            ],
+            "median_saturation_255": 255.0
+          }
+        ]
+      },
+      "composite": {
+        "summary": {
+          "frames": 17,
+          "median_chromaticity_distance": 0.44910835915142383,
+          "median_encoded_luma": 0.5441129411764706,
+          "median_saturation_255": 255.0,
+          "median_adjacent_rgb_step_255": 1.8660254037844386,
+          "max_adjacent_rgb_step_255": 4.242640687119285,
+          "median_adjacent_chromaticity_step": 0.003485637473643167
+        },
+        "rows": [
+          {
+            "frame": 0,
+            "pixels": 1900,
+            "median_rgb_255": [
+              8.0,
+              203.0,
+              3.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.037383177570093455,
+              0.9485981308411215,
+              0.014018691588785047
+            ],
+            "chromaticity_distance": 0.38882307418635853,
+            "encoded_luma_p10_median_p90": [
+              0.5090156862745098,
+              0.5781454901960783,
+              0.6525328627450979
+            ],
+            "median_saturation_255": 251.0
+          },
+          {
+            "frame": 1,
+            "pixels": 1889,
+            "median_rgb_255": [
+              6.0,
+              200.0,
+              1.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.028985507246376812,
+              0.966183574879227,
+              0.004830917874396135
+            ],
+            "chromaticity_distance": 0.4101840933642947,
+            "encoded_luma_p10_median_p90": [
+              0.5039929411764705,
+              0.5673074509803921,
+              0.6587218823529412
+            ],
+            "median_saturation_255": 254.0
+          },
+          {
+            "frame": 2,
+            "pixels": 1895,
+            "median_rgb_255": [
+              2.0,
+              199.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.009950248756218905,
+              0.9900497512437811,
+              0.0
+            ],
+            "chromaticity_distance": 0.43777522759070925,
+            "encoded_luma_p10_median_p90": [
+              0.49923764705882345,
+              0.5612243137254902,
+              0.6331723921568628
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 3,
+            "pixels": 1904,
+            "median_rgb_255": [
+              3.0,
+              198.0,
+              1.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.01485148514851485,
+              0.9801980198019802,
+              0.0049504950495049506
+            ],
+            "chromaticity_distance": 0.42579480788446683,
+            "encoded_luma_p10_median_p90": [
+              0.4880188235294117,
+              0.5578329411764705,
+              0.6274921568627451
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 4,
+            "pixels": 1928,
+            "median_rgb_255": [
+              4.0,
+              199.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.019704433497536946,
+              0.9802955665024631,
+              0.0
+            ],
+            "chromaticity_distance": 0.42682365851988324,
+            "encoded_luma_p10_median_p90": [
+              0.4964329411764705,
+              0.5631388235294117,
+              0.6254658039215685
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 5,
+            "pixels": 1910,
+            "median_rgb_255": [
+              1.0,
+              196.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.005076142131979695,
+              0.9949238578680203,
+              0.0
+            ],
+            "chromaticity_distance": 0.4433071265403433,
+            "encoded_luma_p10_median_p90": [
+              0.4880188235294117,
+              0.5532090196078432,
+              0.6262098823529412
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 6,
+            "pixels": 1934,
+            "median_rgb_255": [
+              0.0,
+              194.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.4796047058823529,
+              0.5449466666666667,
+              0.6247085490196077
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 7,
+            "pixels": 1936,
+            "median_rgb_255": [
+              0.0,
+              192.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.47679999999999995,
+              0.5413082352941175,
+              0.6217611764705882
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 8,
+            "pixels": 1929,
+            "median_rgb_255": [
+              0.0,
+              191.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.473995294117647,
+              0.5393372549019608,
+              0.6231979607843138
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 9,
+            "pixels": 1958,
+            "median_rgb_255": [
+              0.0,
+              193.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.4796047058823529,
+              0.5421419607843136,
+              0.6306525490196078
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 10,
+            "pixels": 1959,
+            "median_rgb_255": [
+              0.0,
+              194.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.4796047058823529,
+              0.5441129411764706,
+              0.6329901176470588
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 11,
+            "pixels": 1988,
+            "median_rgb_255": [
+              0.0,
+              192.0,
+              1.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              0.9948186528497409,
+              0.0051813471502590676
+            ],
+            "chromaticity_distance": 0.4424340343978565,
+            "encoded_luma_p10_median_p90": [
+              0.47679999999999995,
+              0.5413082352941175,
+              0.6312941176470588
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 12,
+            "pixels": 1999,
+            "median_rgb_255": [
+              0.0,
+              191.0,
+              1.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              0.9947916666666666,
+              0.005208333333333333
+            ],
+            "chromaticity_distance": 0.44239932640837576,
+            "encoded_luma_p10_median_p90": [
+              0.473995294117647,
+              0.5385035294117647,
+              0.6324730980392156
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 13,
+            "pixels": 1974,
+            "median_rgb_255": [
+              0.0,
+              194.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.47679999999999995,
+              0.5441129411764706,
+              0.6490769411764705
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 14,
+            "pixels": 2013,
+            "median_rgb_255": [
+              0.0,
+              193.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.47175152941176474,
+              0.5421419607843136,
+              0.6496810980392157
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 15,
+            "pixels": 2014,
+            "median_rgb_255": [
+              0.0,
+              192.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.4655811764705882,
+              0.5385035294117647,
+              0.6418774901960783
+            ],
+            "median_saturation_255": 255.0
+          },
+          {
+            "frame": 16,
+            "pixels": 2027,
+            "median_rgb_255": [
+              0.0,
+              191.0,
+              0.0
+            ],
+            "chromaticity_rgb_sum1": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "chromaticity_distance": 0.44910835915142383,
+            "encoded_luma_p10_median_p90": [
+              0.4627764705882353,
+              0.5356988235294117,
+              0.6321866666666666
+            ],
+            "median_saturation_255": 255.0
+          }
+        ]
+      }
+    }
+  },
+  "limits": "One seed/recording; frames are correlated, not independent trials. Source masks can include background if generated geometry drifts. Color statistics can improve on a missing/wrong object and cannot override presence/shape/motion/material gates. Different lighting/materials confound reference distances. Encoded RGB luma is not linear-light reflectance. Adjacent-frame changes include source motion/illumination; no claim of motion-compensated flicker or statistical significance.",
+  "paired": {
+    "raw": {
+      "baseline": "baseline",
+      "candidate": "candidate",
+      "rows": [
+        {
+          "frame": 0,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        },
+        {
+          "frame": 1,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        },
+        {
+          "frame": 2,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        },
+        {
+          "frame": 3,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        },
+        {
+          "frame": 4,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        },
+        {
+          "frame": 5,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        },
+        {
+          "frame": 6,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        },
+        {
+          "frame": 7,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        },
+        {
+          "frame": 8,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        },
+        {
+          "frame": 9,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        },
+        {
+          "frame": 10,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        },
+        {
+          "frame": 11,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        },
+        {
+          "frame": 12,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        },
+        {
+          "frame": 13,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        },
+        {
+          "frame": 14,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        },
+        {
+          "frame": 15,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        },
+        {
+          "frame": 16,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        }
+      ],
+      "frames_chromaticity_closer": 0,
+      "median_chromaticity_distance_delta": 0.0
+    },
+    "composite": {
+      "baseline": "baseline",
+      "candidate": "candidate",
+      "rows": [
+        {
+          "frame": 0,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        },
+        {
+          "frame": 1,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        },
+        {
+          "frame": 2,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        },
+        {
+          "frame": 3,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        },
+        {
+          "frame": 4,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        },
+        {
+          "frame": 5,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        },
+        {
+          "frame": 6,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        },
+        {
+          "frame": 7,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        },
+        {
+          "frame": 8,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        },
+        {
+          "frame": 9,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        },
+        {
+          "frame": 10,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        },
+        {
+          "frame": 11,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        },
+        {
+          "frame": 12,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        },
+        {
+          "frame": 13,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        },
+        {
+          "frame": 14,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        },
+        {
+          "frame": 15,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        },
+        {
+          "frame": 16,
+          "chromaticity_distance_delta": 0.0,
+          "median_luma_delta": 0.0,
+          "saturation_delta": 0.0
+        }
+      ],
+      "frames_chromaticity_closer": 0,
+      "median_chromaticity_distance_delta": 0.0
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "low_detail_input_controls": [
+    {
+      "input": "outputs/fidelity/private-inputs/reference-frontal.png",
+      "original_dimensions": [
+        511,
+        477
+      ],
+      "control_dimensions": [
+        512,
+        480
+      ],
+      "corrected_dimensions": [
+        512,
+        480
+      ],
+      "prepared_pixels_identical": true
+    },
+    {
+      "input": "outputs/fidelity/private-inputs/reference-fullbody.png",
+      "original_dimensions": [
+        304,
+        547
+      ],
+      "control_dimensions": [
+        288,
+        512
+      ],
+      "corrected_dimensions": [
+        288,
+        512
+      ],
+      "prepared_pixels_identical": true
+    },
+    {
+      "input": "outputs/fidelity/new-tests/new-synthetic-motion/reference.png",
+      "original_dimensions": [
+        384,
+        320
+      ],
+      "control_dimensions": [
+        512,
+        432
+      ],
+      "corrected_dimensions": [
+        512,
+        432
+      ],
+      "prepared_pixels_identical": true
+    }
+  ],
+  "production_runtime_bytes_unchanged": {
+    "service.py": true,
+    "media_pipeline.py": true,
+    "workflow.py": true,
+    "model_config.py": true,
+    "modal_probe.py": true,
+    "motion_workflow.py": true,
+    "sdk_runner.py": true
+  },
+  "all_pass": true,
+  "scope": "CPU null controls and source-byte noninterference. Not a fresh GPU quality regression or a claim to fix real object insertion."
+}

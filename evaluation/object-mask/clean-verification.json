@@ -1,0 +1,9 @@
+{
+  "git_tree": "0e8f8fca550b53bc8f0cbd18849de3b758bf19dc",
+  "cpu_tests_exit_code": 0,
+  "seconds": 21.172672499989858,
+  "scanned_public_files": 1106,
+  "known_secret_or_current_private_human_media_findings": [],
+  "scope": "Fresh Git extraction, same machine/existing dependencies. Not independent installation or GPU reproduction. Targeted privacy scan only.",
+  "subsequent_offline_audit": "Added audit_object_mask.py, executed on actual retained media: invariants pass, green reference gate fails0/17 with expected exit1. No runtime-source or test changes after clean check."
+}

@@ -1,0 +1,10 @@
+{
+  "kind": "video",
+  "status": "dispatched",
+  "output": "outputs\\protected-completion\\motion",
+  "ceiling_seconds": 660,
+  "started_utc": "2026-10-18T22:53:04.205043+00:00",
+  "observed_usage": 7.49,
+  "observed_remaining": 22.51,
+  "call_id": "fc-01M58KG16VDR3NZ0X0WSXDSHW3"
+}

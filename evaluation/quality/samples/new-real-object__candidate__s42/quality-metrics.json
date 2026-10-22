@@ -1,0 +1,39 @@
+{
+  "run": "new-real-object__candidate__s42",
+  "case": "new-real-object",
+  "profile": "candidate",
+  "seed": 42,
+  "mode": "object-swap",
+  "width": 480,
+  "height": 272,
+  "frames": 17,
+  "fps": 8.0,
+  "technical_pass": true,
+  "worker_seconds": 37.712686678000004,
+  "composite_png_outside": {
+    "mae_255": 0.0,
+    "p95_255": 0.0,
+    "max_255": 0.0
+  },
+  "raw_outside_dilated_mask": {
+    "mae_255": 1.9589910507202148,
+    "p95_255": 7.0,
+    "max_255": 107.0
+  },
+  "encoded_outside_dilated_mask": {
+    "mae_255": 1.7709918022155762,
+    "p95_255": 4.0,
+    "max_255": 48.0
+  },
+  "outside_png_pass": true,
+  "raw_preservation_pass": true,
+  "encoded_preservation_pass": true,
+  "visual_scores_are_separate": true,
+  "sampled_peak_vram_MiB": 11910.0,
+  "mean_gpu_utilization_percent": 17.972972972972972,
+  "mean_power_W": 110.892972972973,
+  "sampled_peak_process_tree_rss_MiB": 29897.74,
+  "resource_samples": 37,
+  "target_color_fraction": 1.0,
+  "centroid_mean_error_diagonal": 0.050596829457739696
+}

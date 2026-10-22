@@ -1,0 +1,12 @@
+{
+  "worker_seconds": 47.366523120000004,
+  "comfy_graph_seconds": 24.38,
+  "gpu": "L40S",
+  "gpu_sample_count": 46,
+  "sampled_peak_vram_MiB": 11905.0,
+  "host_peak_ram": "Unavailable: cgroup path missing",
+  "cpu_preflight_client_elapsed_seconds": 10.376656400039792,
+  "modal_call_id": "fc-01M5FDTW89Q891P0075SBTE7NS",
+  "sdk_job_id": "e6fe3015-0751-4589-a5a3-ae678cce4041",
+  "limits": "Preflight client interval includes remote startup/transfer. Graph time includes loading, not kernel-only. GPU memory sampled, not continuous allocator peak."
+}

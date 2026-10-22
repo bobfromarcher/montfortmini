@@ -1,0 +1,12 @@
+{
+  "declared_utc": "2026-10-18T23:15:52.029893+00:00",
+  "cash_cap": 0,
+  "max_gpu_attempts": 3,
+  "max_worker_seconds": 2700,
+  "max_included_credit_delta": 3,
+  "baseline_usage_displayed": 7.59,
+  "baseline_remaining_displayed": 22.41,
+  "stopping_usage": 10.59,
+  "stopping_remaining": 19.41,
+  "stop": "One development900s. If motion fails stop. Face-off900s only if motion passes and identity leak demonstrated. Verification900s reserved for frozen passing candidate on genuinely independent footage. Any GPU technical failure stops. No seed/model rerolls or amendments after output."
+}

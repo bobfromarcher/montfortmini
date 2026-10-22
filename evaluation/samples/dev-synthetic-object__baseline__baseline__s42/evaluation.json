@@ -1,0 +1,109 @@
+{
+  "case": {
+    "id": "dev-synthetic-object",
+    "split": "development",
+    "kind": "synthetic-object",
+    "mode": "object-swap",
+    "video": "dev-synthetic-object/input.mp4",
+    "reference": "dev-synthetic-object/reference.png",
+    "frames": 17,
+    "prompt": "A single smooth solid blue sphere moves from left to right on a gray floor. Fixed camera.",
+    "bbox": [
+      0.15,
+      0.36,
+      0.35,
+      0.38
+    ],
+    "end_bbox": [
+      0.51,
+      0.36,
+      0.35,
+      0.38
+    ],
+    "rotation_metadata": false,
+    "annotations": {
+      "expected_centers": [
+        [
+          0.32,
+          0.56
+        ],
+        [
+          0.3425,
+          0.56
+        ],
+        [
+          0.365,
+          0.56
+        ],
+        [
+          0.3875,
+          0.56
+        ],
+        [
+          0.41000000000000003,
+          0.56
+        ],
+        [
+          0.4325,
+          0.56
+        ],
+        [
+          0.455,
+          0.56
+        ],
+        [
+          0.47750000000000004,
+          0.56
+        ],
+        [
+          0.5,
+          0.56
+        ],
+        [
+          0.5225,
+          0.56
+        ],
+        [
+          0.5449999999999999,
+          0.56
+        ],
+        [
+          0.5675,
+          0.56
+        ],
+        [
+          0.5900000000000001,
+          0.56
+        ],
+        [
+          0.6125,
+          0.56
+        ],
+        [
+          0.635,
+          0.56
+        ],
+        [
+          0.6575,
+          0.56
+        ],
+        [
+          0.6799999999999999,
+          0.56
+        ]
+      ],
+      "target_color": "blue"
+    },
+    "notes": [],
+    "source_provenance": "dev-synthetic-object/source-provenance.json"
+  },
+  "profile": "baseline",
+  "variant": "baseline",
+  "started_utc": "2026-10-17T17:36:45.784709+00:00",
+  "ended_utc": "2026-10-17T17:37:36.306603+00:00",
+  "worker_elapsed_seconds": 50.521891507999996,
+  "seed": 42,
+  "gpu_monitor_samples": 49,
+  "input_video_sha256": "cf1fbaa88becd2ac0cb899e967cfab266b6322c6070b094b606a90788dd72eeb",
+  "input_reference_sha256": "bfb0c5a5ad3073bcd6a7c317255905d25fb82ce7c6b4f938cb2af1506d63a22e"
+}

@@ -1,0 +1,8 @@
+{
+  "ok": true,
+  "control_max_delta": 5.960464477539063e-08,
+  "gain": 0.7415660134430985,
+  "custom_node_sha256": "567b6ac0a433b13495ebbefd3589f1b6136d61ec3158c8739130c56672efad50",
+  "root_matches_loaded_custom_node": true,
+  "gpu_used": false
+}

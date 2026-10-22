@@ -1,0 +1,17 @@
+{
+  "gpu_calls": 1,
+  "worker_elapsed_seconds": 388.598963069,
+  "sampled_peak_vram_MiB": 30622.0,
+  "gpu": "L40S",
+  "allocated_RAM_MiB": 65536,
+  "measured_RAM_peak": null,
+  "included_remaining_before": 23.83,
+  "included_remaining_after_displayed": 23.55,
+  "usage_before_displayed": 6.17,
+  "usage_after_displayed": 6.45,
+  "displayed_credit_delta": 0.28,
+  "cash_spent_displayed": 0,
+  "cash_cap": 0,
+  "active_containers": 0,
+  "limits": "Asynchronous dashboard delta, not exact per-job settled billing. Animated breakdown6.818659 differs. CPU preflight/build/idle overhead and failed CPU import attempt may be included. Full time/call caps were reserved, not exhausted."
+}

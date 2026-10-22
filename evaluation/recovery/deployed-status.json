@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-18T08:53:49.828899+00:00",
+  "authorized_status": 200,
+  "response": {
+    "configured": true,
+    "features": {
+      "objectSwap": true,
+      "motionTransfer": true
+    },
+    "limits": {
+      "maxVideoBytes": 12582912,
+      "maxImageBytes": 4194304,
+      "maxFrames": 33,
+      "maxSide": 480
+    }
+  },
+  "unauthorized_status": 401
+}

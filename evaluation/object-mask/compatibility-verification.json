@@ -1,0 +1,6 @@
+{
+  "native_orchestrator_AST_identical_to_successful_run": true,
+  "native_backend_bytes_identical_to_successful_snapshot": true,
+  "historical_evaluators_use_generate_legacy_local": true,
+  "no_additional_native_gpu_run": true
+}

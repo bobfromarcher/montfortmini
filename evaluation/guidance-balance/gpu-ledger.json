@@ -1,0 +1,9 @@
+[
+  {
+    "status": "succeeded",
+    "max_gpu_calls": 1,
+    "max_gpu_seconds": 660,
+    "call_id": "fc-01M5GTFP7ZBVDB63KJ791R37RV",
+    "worker_seconds": 39.478565118000006
+  }
+]

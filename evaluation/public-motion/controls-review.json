@@ -1,0 +1,14 @@
+{
+  "gate_pass": true,
+  "inputs_sha256": "36fb562f2a6b714b77c0d9995c4086e977fbea06914b24a34b96f8abecd4e289",
+  "review": "Prepared source/pose/face sheets at frames0,8,16,24,32 visually inspected; skeleton visibly preserves arm raising, continuous single body and source-face crops. All33 control arrays finite/nonempty.",
+  "finite_tensors": {
+    "source": true,
+    "mask": true,
+    "reference": true,
+    "pose": true,
+    "face": true
+  },
+  "controls_cpu_seconds": 78.293649515,
+  "limits": "Illustrated face lacks photographic detail; hand landmarks/face expression not validated against ground truth. This gate permits one public example, not a quality or identity pass."
+}

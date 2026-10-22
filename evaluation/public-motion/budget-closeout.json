@@ -1,0 +1,11 @@
+{
+  "status": "closed-example-complete-quality-limitations-retained",
+  "cpu_calls": 1,
+  "gpu_calls": 1,
+  "included_cap": 1,
+  "rounded_account_delta": 0.06,
+  "cash": 0,
+  "further_calls_allowed": false,
+  "decision": "Publish current synthetic-motion example with defects; no claim of exact identity or new held-out success.",
+  "independent_tester": "No tester available; packet prepared, simulated local user only."
+}

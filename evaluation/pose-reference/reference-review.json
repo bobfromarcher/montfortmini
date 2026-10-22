@@ -1,0 +1,19 @@
+{
+  "assessor": "coding agent; independent professional review outstanding",
+  "scope": "One development reference image, not video or unseen evidence",
+  "retained": [
+    "Gray curls",
+    "Beard",
+    "Two-lens glasses and bridge",
+    "More coherent photorealistic facial appearance than historical cartoon control"
+  ],
+  "failures": [
+    "Blue blazer and ivory shirt replaced with closed blue garment",
+    "Source downward head direction not preserved",
+    "Visible source hand replaced by a hand behind the body; torso orientation changes"
+  ],
+  "reference_gate_pass": false,
+  "video_gate": "Not reached; no new video generated",
+  "causal_limits": "No matched RGB-guide control was run because first candidate failed. Old baseline also differs in prompt/cascade. Cannot isolate the improvement to skeleton extraction, or prove a universal model limitation.",
+  "decision": "Reject production promotion; stop under declared rule. No seed/prompt rerolls."
+}

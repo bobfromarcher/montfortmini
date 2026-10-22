@@ -1,0 +1,10 @@
+[
+  {
+    "status": "failed",
+    "max_gpu_calls": 1,
+    "max_gpu_seconds": 900,
+    "max_controls_seconds": 900,
+    "orchestrator_call_id": "fc-01M5AR93H26RSKHNG9GD965109",
+    "exception_type": "RuntimeError"
+  }
+]

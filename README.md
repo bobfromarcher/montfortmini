@@ -1,36 +1,71 @@
 # montfortmini
 
-An independent, experimental video-editing workbench using open models and the official Comfy SDK. Upload a short video and one reference image, then replace a selected object or animate the reference character from the source motion.
+**Open-source video workbench · developer-alpha candidate.** Reference-guided
+object replacement and character motion transfer with ComfyUI and the official
+Comfy SDK. The current candidate is on [`codex/validation`](https://github.com/bobfromarcher/montfortmini/tree/codex/validation);
+the default branch currently contains an older pipeline. No alpha release tag
+has been published yet.
 
-It never calls Higgsfield's backend and does not contain their implementation, branding, assets, or weights. This is a functional alternative, not a claim of Genjutsu quality or feature parity.
+Our development priority is **identity consistency**: preserving a character's
+facial features and an object's defining appearance through motion. Exact facial
+likeness, turns/occlusion and consistency across separate shots remain unproved.
+This independent implementation does not call Higgsfield or contain its backend
+code. No Genjutsu parity or superiority is claimed.
 
-## Features and limits
+## Who can use this today
 
-- **Object swap:** Wan2.1 VACE 1.3B, reference-guided inpainting, a drawn rectangle, and optional first/end rectangles interpolated along a straight path.
-- **Motion transfer:** Wan Animate2 distilled int8 with source motion and a character reference.
-- File uploads, prompt and seed controls, synchronized comparison, MP4 and exact workflow downloads.
-- 17/33 frames at 8fps (2.125/4.125 seconds), up to 480px, one reference. Audio is omitted.
-- 12MiB video, 4MiB reference, 16 megapixels per decoded image/frame. Short videos repeat their last frame.
-- Official `comfy-sdk==0.5.0` workflow execution through `comfy-api-proxy==0.1.6` beside self-hosted ComfyUI.
-- Modal backend: one GPU container maximum, zero warm GPU containers, no automatic generation retries, no persistent volumes.
-- Optional local NVIDIA Docker backend using the same inference code.
+Technical users can run short experiments on their own GPU or their own Modal
+account. The measured native-motion allocation was an L40S48GB with64GB requested
+system memory. That is a successful allocation, not a proven minimum. The full
+local Docker GPU path has not been independently executed. A4GB laptop cannot
+reproduce the measured workload.
 
-The region is **manual and linear, not AI tracking**. Both modes remain experimental; motion tests can show color/background artifacts. Realistic footage, multiple subjects and long-term identity consistency have not been benchmarked.
+The hosted studio is currently owner-private. There is no public free-generation
+service, and repository access does not grant access to the maintainer's compute.
+Use the setup below with your own backend and credentials. Public announcement
+and alpha-release drafts are in [submission/RELEASE-PLAN.md](submission/RELEASE-PLAN.md).
 
-## Actual generation evidence
+## Capabilities and current limits
 
-Original procedural fixtures and real generated clips are in [webapp/public/examples](webapp/public/examples). They are labeled as recorded proofs in the interface.
+| Capability | Working path | Evidence and limits |
+|---|---|---|
+| Character motion transfer | Native Wan2.2-Animate14B, pinned whole-body/hand pose and face controls, Lightx2v/relighting adapters | Actual app-path video completed. Broad reference attributes and4/4 motion events provisionally retained on one recording. Face/glasses proportions and fingers remain imperfect; exact identity/generalization unproved. |
+| Reference-guided object replacement | Wan2.1 VACE1.3B, manual rectangular region and optional linear start/end positions | Simple synthetic replacements run. Realistic reference fidelity/material/lighting still fail the full quality gate. No AI object tracking. |
+| Inspection/export | Source, raw and composited video; exact executed workflow and run details | Composite background preservation comes from the compositor. Evaluate the raw output separately. |
 
-| Run | Size / frames | Inference-wrapper elapsed | Result |
-| --- | --- | --- | --- |
-| Corrected VACE SDK proof | 320x320 / 17 | 38.58s | Moving blue sphere replaces red cube |
-| Animate2 SDK proof | 320x320 / 17 | 146.86s | New appearance and recognizable arm wave; background artifacts |
-| Real-upload API object test | 480x480 / 17 | 70.10s | Uploaded clip/reference produce a blue sphere |
-| Browser motion test | 480x480 / 17 | 92.44s | New character follows arm wave; downloads verified |
+Inputs: one reference;17/33frames at8fps (2.125/4.125s); motion up to480x560,
+objects up to480x480;12MiB video/4MiB reference; no audio. Use a single clear
+performer and a complete character reference for motion. Automatic portrait
+completion, long clips and multi-person handling are not validated.
 
-These ran on Modal L40S. Timings exclude some scheduling/build overhead and are not cost quotes.
+## Start here
 
-Outside-mask preservation in the object **Finished** result comes from explicit compositing. Inspect **Raw result** to judge the model. Target pixels are erased to gray before VACE conditioning to prevent source identity leaking through its reactive branch. Region coordinates are mapped through letterboxing.
+```sh
+git clone --branch codex/validation https://github.com/bobfromarcher/montfortmini.git
+cd montfortmini
+```
+
+Choose **Run with Modal** below for your own cloud account, or **Fully local GPU
+option** for the provided Docker path. Generation consumes your compute; model
+build/download and CPU preparation also have costs. The local UI uses a mock
+sign-in during development. Production Sites hosting uses its access gate and
+requires separate configuration.
+
+## Watch and assess the actual evidence
+
+- [Current cleared motion example](evaluation/public-motion/FINDINGS.md): original illustration to fictional character, current native recipe, raw/finished comparison; exact face quality remains unproved.
+- [Fresh-user setup and tester packet](submission/TESTER-INSTRUCTIONS.md): clean dependencies verified on the maintainer machine; independent tester/account pending.
+
+- [Native motion app integration](evaluation/native-motion-service/FINDINGS.md): current app recipe and retained limitations. Human-source research footage is private because public promotional likeness clearance is outstanding.
+- [Reference-only sensitivity](evaluation/reference-branch/FINDINGS.md): active but weak reference response with text/control fixed; both outputs fail appearance.
+- [Latest guidance contrast](evaluation/guidance-balance/FINDINGS.md): CFG1 rejected; beige becomes red despite identical conditioning. Includes public licensed raw/composite comparisons.
+- [Earlier procedural examples](webapp/public/examples): actual recorded synthetic proofs from the older recipes, not current native-face validation.
+- [Earlier108-second demo](submission/montfortmini-demo.mp4): archival demonstration predating the native motion integration. An updated cleared demo remains a release/submission gate.
+- [Alpha notes](submission/ALPHA-RELEASE-NOTES.md), [launch plan](submission/RELEASE-PLAN.md), [competition checklist](submission/REQUIREMENTS-AUDIT.md).
+
+All earlier failed studies remain under `evaluation/`. Current measured quality
+is experimental. A runnable technical alpha and a passing realistic-quality
+candidate are separate milestones.
 
 ## Run with Modal
 
@@ -53,7 +88,7 @@ cd webapp
 npm install
 ```
 
-Copy `.dev.vars.example` to ignored `.dev.vars`. Set `OPENJUTSU_BACKEND_URL` to the URL printed by Modal, and `OPENJUTSU_API_KEY` to the same random key. Never prefix it with `NEXT_PUBLIC_` or commit it.
+Copy `.dev.vars.example` to ignored `.dev.vars`. Set `OPENJUTSU_BACKEND_URL` to the URL printed by Modal, and `OPENJUTSU_API_KEY` to the same random key. For `npm run dev`, also copy those two settings into ignored `.env.local` before starting the server; Vinext's Node development runtime reads this file. `.dev.vars` supplies the Worker preview. Restart after changes. Never prefix secrets with `NEXT_PUBLIC_` or commit either file.
 
 ```sh
 npm run dev
@@ -69,7 +104,12 @@ The backend requires its bearer key. `POST /jobs` accepts `mode`, `video_b64`, `
 
 Use Linux, or Windows with WSL2/Docker and NVIDIA Container Toolkit. Allow at least 60GB free disk, 32GB system RAM, and a 48GB GPU for the tested class of workload. Smaller cards may need changes; a 4GB laptop GPU is insufficient.
 
-This Docker path is provided but **has not been executed on the available laptop**. Modal inference uses the same Python preparation and graph code.
+These Docker paths **have not been executed on the available laptop**. The base
+image retains the older Animate2 motion recipe. Add the native extension below
+to use the same native preparation and graph functions as the current Modal app.
+Allow additional disk space for approximately23GB of native/pose weights,
+their download cache and image layers, and64GB system RAM for the measured
+cloud allocation; local hardware requirements are not independently established.
 
 ```sh
 docker build -f Dockerfile.local -t openjutsu-local .
@@ -77,11 +117,27 @@ docker build -f Dockerfile.local -t openjutsu-local .
 docker run --rm --gpus all -p 127.0.0.1:8000:8000 -e OPENJUTSU_API_KEY openjutsu-local
 ```
 
-Set the webapp's ignored `.dev.vars` backend URL to `http://127.0.0.1:8000` and its matching key, then run `npm install` and `npm run dev`. Loopback HTTP is allowed only in development. The local API permits one render at a time and keeps four results in memory. No Modal token or cloud inference is needed. Building downloads ComfyUI and model weights from official upstream repositories.
+For the native motion recipe, after building `openjutsu-local`:
+
+```sh
+docker build -f Dockerfile.native -t montfortmini-native .
+docker run --rm --gpus all -p 127.0.0.1:8000:8000 -e OPENJUTSU_API_KEY montfortmini-native
+```
+
+The extension installs pinned ONNX preprocessing dependencies, verifies native
+model downloads, and installs the explicit pose/face input node. Local execution
+uses `.local()` calls and requires no Modal account. This is a provided
+reproduction path, not a claimed independently tested GPU installation.
+
+Set the webapp's ignored `.env.local` (and `.dev.vars` for Worker preview) backend URL to `http://127.0.0.1:8000` and its matching key, then run `npm install` and `npm run dev`. Loopback HTTP is allowed only in development. The local API permits one render at a time and keeps four results in memory. No Modal token or cloud inference is needed. Building downloads ComfyUI and model weights from official upstream repositories.
 
 ## Workflows and validation
 
+The CPU evaluation suite also needs the pinned evaluation dependencies (including
+OpenCV); the minimal root requirements alone do not install them.
+
 ```sh
+python -m pip install -r evaluation/requirements.txt
 python workflow.py > workflow-api.json
 python -m unittest discover -s tests
 cd webapp
@@ -89,7 +145,7 @@ npx tsc --noEmit
 npm run build
 ```
 
-Exports are Comfy API graphs, not standalone drag-and-drop UI workflows. They use bundled custom input nodes. Install the relevant `proof_inputs.py`, `motion_inputs.py`, or `media_pipeline.py` under ComfyUI `custom_nodes/` and provide the fixture folder described in their source to reuse them. The app downloads the exact graph with each generated result.
+Exports are Comfy API graphs, not standalone drag-and-drop UI workflows. They use bundled custom input nodes. Native motion needs `explicit_motion_inputs.py` and its prepared `conditioning.npz` containing source, mask, reference, pose and face arrays; raw RGB is not its pose input. Other recipes use `proof_inputs.py`, `motion_inputs.py`, or `media_pipeline.py`. The app downloads the exact graph with each result. See the native findings for executable offline audits and controlled replay.
 
 Standalone procedural proofs, after verifying credit/billing limits:
 
@@ -100,7 +156,7 @@ python -m modal run motion_probe.py --confirm-credits-only
 
 These save full source/raw/composite videos, frames, graph, manifest, package versions and execution log under ignored `results/`.
 
-Six local checks cover workload bounds, masks, reference-latent trimming, input validation and target erasure. Live checks verified authorization, invalid workloads, signed job identifiers and real-upload inference. Browser QA verified motion generation and MP4/workflow/provenance downloads.
+The current61-test CPU suite covers workload bounds, masks, reference-latent trimming, rotation, input validation, receipt retention and research-conditioning regressions. It passes from a fresh Git extraction using existing dependencies; this is not an independent GPU reproduction. Live checks verified authorization, invalid workloads, signed job identifiers and real-upload inference. Browser QA verified motion generation and MP4/workflow/provenance downloads; a later clean checkout verified installation, build, local sign-in and authenticated backend status.
 
 ## Licensing and provenance
 
@@ -110,6 +166,7 @@ Original application code and procedural fixtures: **MIT**, see [LICENSE](LICENS
 - [VACE weights](https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged), revision `123acf1cc74bccbb9bfff8ac1ee72edc08c2341d`.
 - [Wan Animate2 weights](https://huggingface.co/Comfy-Org/Wan-Animate-2), revision `e7181fe1896b7f2ce34120d1a3663413548240d7`.
 - Model filenames are pinned in `model_config.py` and `motion_model_config.py`. No weights are bundled. Review upstream Apache-2.0 notices and component terms.
+- Current native-motion model revisions, sizes and SHA256 are in `native_recipe_models.py`; pinned pose source/weights and Apache notices are in `vendor/wan_animate/provenance.json`. The converted checkpoint card declares Apache2; the generic conversion repository lacks a global license declaration. The adapter README attributes its Apache upstreams; this declaration gap remains disclosed. No converted weights are redistributed.
 - PyTorch/CUDA and SDK versions are pinned. Upstream Comfy requirements are resolved at build; full dependency locking remains future work.
 
 Built toward the [Comfy open-source challenge](https://comfy.org/open-source-higgsfield). This app uses the official SDK's documented self-hosted integration. Organizer acceptance and prize eligibility are not guaranteed. A public social post and formal entry submission are separate steps.

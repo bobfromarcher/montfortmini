@@ -1,0 +1,13 @@
+{
+  "public_case_ids": ["new-synthetic-object", "new-synthetic-motion", "new-real-object"],
+  "basis": {
+    "new-synthetic-object": "Original procedural art, MIT code and fixtures",
+    "new-synthetic-motion": "Original procedural art, MIT code and fixtures",
+    "new-real-object": "Bee footage CC BY 4.0, attribution retained; original MIT reference"
+  },
+  "excluded": {
+    "portrait": "Original media and likeness publication permission not established",
+    "new-real-motion": "US public-domain copyright status is recorded, but no model release is established; keep human-source media out of the public submission",
+    "walk": "Research comparator retained privately; public demo uses original procedural media only"
+  }
+}

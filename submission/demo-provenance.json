@@ -1,0 +1,20 @@
+{
+  "duration_seconds": 108.0,
+  "decoded_video_frames": 2592,
+  "sha256": "a8f48e5bd01d09101067741f225573944b54e77c13bed04a7a1b748d5ad63230",
+  "changed_segments": [
+    "04: frozen synthetic regression",
+    "06: recovery-study finding"
+  ],
+  "unchanged_assets": "Original 108-second demo; see prior-demo-provenance.json",
+  "candidate_assets": {
+    "original-reference.png": "664f359d2c47e4f773769ae58abea87ed4f89c5a267a2911bfbc28297149fb41",
+    "source.mp4": "09c9b27a43a4b18bc41a0414b1c9b93fd25c667e736f4dc035842b065f806369",
+    "generated.mp4": "972bf42abf80d318833a2be4a261780910fd8cbdfa75cb91f38f8e899c5beb61",
+    "composite.mp4": "972bf42abf80d318833a2be4a261780910fd8cbdfa75cb91f38f8e899c5beb61",
+    "manifest.json": "69cd71362744c14bb7fde10ff1cb617120c6dea078d49c19ec141b19e28e0634"
+  },
+  "rights": "Original MIT procedural art/interface and its generated derivatives only. No human research footage, private likenesses or Genjutsu media.",
+  "processing": "Contain resizing, layout, repeated 8fps playback displayed at24fps and H264 encoding. No frame interpolation or repair.",
+  "audio": "none; captioned"
+}

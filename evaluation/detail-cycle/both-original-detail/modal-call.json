@@ -1,0 +1,9 @@
+{
+  "output": "outputs\\adversarial-cycle\\both-original-detail",
+  "kind": "reference",
+  "placement": "both",
+  "ceiling_seconds": 660,
+  "status": "dispatched",
+  "started_utc": "2026-10-18T18:02:06.026464+00:00",
+  "call_id": "fc-01M582V6G2KEWFDZJG7WS5F9P0"
+}

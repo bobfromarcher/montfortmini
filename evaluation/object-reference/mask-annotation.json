@@ -1,0 +1,38 @@
+{
+  "original_crop_xyxy": [
+    170,
+    66,
+    310,
+    206
+  ],
+  "new_patch_size": [
+    54,
+    54
+  ],
+  "new_patch_position": [
+    149,
+    123
+  ],
+  "source_annotation": {
+    "frame": 0,
+    "source_color_area": 2281,
+    "source_center": [
+      176.32047347654537,
+      149.94344585708023
+    ],
+    "source_color_bbox": [
+      151,
+      122,
+      51,
+      57
+    ],
+    "diagnostic_mask_bbox": [
+      145,
+      116,
+      63,
+      69
+    ]
+  },
+  "method": "Green sphere crop plus2px; isotropic resize to first-source high-saturation equivalent-area diameter and translate to its centroid. Uniform original background restored; sidebars unchanged. No source RGB copied.",
+  "limits": "Source high-saturation area excludes shadows and some material pixels. Placement and scale change together. Subject pixel resampling is part of the intervention. Synthetic reference cannot establish realistic likeness."
+}

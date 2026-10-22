@@ -1,0 +1,12 @@
+{
+  "declared_utc": "2026-10-18T22:38:45.378220+00:00",
+  "max_gpu_attempts": 3,
+  "max_worker_seconds": 2220,
+  "max_included_credit_delta": 2,
+  "baseline_usage_displayed": 7.21,
+  "baseline_remaining_displayed": 22.79,
+  "stopping_usage": 9.21,
+  "stopping_remaining": 20.79,
+  "cash_cap": 0,
+  "stop": "Exactly one reference660, one video660 only after reference pass, one new independent full pipeline900 only after video pass. Any technical or quality failure stops; no amendments, rerolls or alternate candidates in this cycle."
+}

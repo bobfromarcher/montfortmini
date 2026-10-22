@@ -1,0 +1,10 @@
+{
+  "git_tree": "e2cb423ff5b3b9070fe2cd3445cdd8a8c3ed44a3",
+  "cpu_tests_exit": 0,
+  "elapsed_seconds": 39.85091690000263,
+  "artifact_invariants_pass": true,
+  "case_inventory_exact": true,
+  "numerical_gates_pass": true,
+  "full_visual_gate_pass": false,
+  "limits": "Fresh Git source extraction using existing dependencies/same machine; not independent professional scoring, clean dependency installation or local GPU reproduction."
+}

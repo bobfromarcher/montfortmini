@@ -1,0 +1,20 @@
+{
+  "placement": "qwen",
+  "scope": "Qwen refinement of an already retained Klein frame",
+  "original_identity_dimensions": [
+    1024,
+    1536
+  ],
+  "corrected_conditioning_dimensions": [
+    672,
+    1024
+  ],
+  "original_identity_sha256": "8eca434015252d1403214e2faf2f88a1147db884b0a0ecc1758db243c36bfc96",
+  "source_sha256": "3c29df1787d8c1e90772f7b9457352390d9628a32d2bb7679e16072c240ba6b1",
+  "policy": "Resize original pixels directly. Integer multiple of legacy canvas preserves native Qwen aspect/token geometry; at most1024x1024 pixels. Low-detail inputs retain the legacy path. No nearest-neighbor fabrication of added detail.",
+  "source_sha256_by_file": {
+    "identity_detail.py": "90468f78d5bd04f17786195df558382514587649522a693fe68cdb83184a5cf5",
+    "detail_reference_alignment.py": "3b8b2e64c8d37533618fdef1df8813f9e2542a444e0f81d60db5ff7b1378d6db"
+  },
+  "limits": "Preserves input information; does not itself establish likeness, motion quality or native model capability."
+}

@@ -1,0 +1,6 @@
+{
+  "active_containers": [],
+  "observed_after_deployment_smoke": true,
+  "source": "modal container list --json",
+  "no_additional_gpu_jobs": true
+}

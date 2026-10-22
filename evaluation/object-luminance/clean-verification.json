@@ -1,0 +1,20 @@
+{
+  "git_tree": "6374c7afca2975d146261c0ee65f6db2bc53c771",
+  "cpu_tests_exit": 0,
+  "elapsed_seconds": 25.195031700015534,
+  "audits": {
+    "object-luminance": {
+      "artifact_invariants_pass": true,
+      "numerical_gates_pass": false,
+      "inventory_bytes_exact": true,
+      "full_visual_gate_pass": false
+    },
+    "object-luminance-prompt": {
+      "artifact_invariants_pass": true,
+      "numerical_gates_pass": true,
+      "inventory_bytes_exact": true,
+      "full_visual_gate_pass": false
+    }
+  },
+  "limits": "Fresh Git source extraction, existing dependencies on same machine; not clean installation, independent professional review or local GPU reproduction."
+}

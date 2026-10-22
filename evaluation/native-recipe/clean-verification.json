@@ -1,0 +1,12 @@
+{
+  "archive_commit": "4b46cdfcee27df2f90a2e123da2348eead8cf9a0",
+  "archive_sha256": "cf95190a5a3dd0746af4054e73efb4f8bc1be75b1ade8fc71e0782acabc3526d",
+  "python_files_byte_identical_to_clean_tested_tree": 106,
+  "clean_source_tests": 30,
+  "clean_source_test_seconds": 20.612,
+  "local_source_tests": 30,
+  "local_source_test_seconds": 20.401,
+  "frozen_metadata_original_bytes_verified": true,
+  "independent_gpu_reproduction": false,
+  "limitations": "Fresh Git source extraction, same machine and existing Python environment; not fresh dependency installation, fresh GPU setup or professional review."
+}

@@ -1,0 +1,14 @@
+{
+  "status": "succeeded",
+  "failure": null,
+  "kind": "reference",
+  "placement": "both",
+  "started_utc": "2026-10-18T18:02:15.579105+00:00",
+  "ended_utc": "2026-10-18T18:09:03.096004+00:00",
+  "worker_elapsed_seconds": 407.516919208,
+  "source_sha256": {
+    "detail_cycle.py": "05c706241b53d70c0c4de839a878c382ad2e61abd430c2124d8d8cb5fa811c9c",
+    "identity_detail.py": "90468f78d5bd04f17786195df558382514587649522a693fe68cdb83184a5cf5",
+    "detail_reference_alignment.py": "3b8b2e64c8d37533618fdef1df8813f9e2542a444e0f81d60db5ff7b1378d6db"
+  }
+}

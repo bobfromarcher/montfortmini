@@ -1,0 +1,12 @@
+{
+  "changed_archive_entries": [
+    "conditioning.npz"
+  ],
+  "changed_graph_nodes": [
+    "4",
+    "6"
+  ],
+  "mask_and_reference_tensors_exact": true,
+  "outside_control_exact": true,
+  "inside_control_achromatic": true
+}

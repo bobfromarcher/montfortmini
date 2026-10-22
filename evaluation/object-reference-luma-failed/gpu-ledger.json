@@ -1,0 +1,10 @@
+[
+  {
+    "status": "failed",
+    "max_gpu_calls": 1,
+    "max_gpu_seconds": 660,
+    "call_id": "fc-01M5B98GG813SAE967YHJFMPRR",
+    "worker_seconds": 13.336556283,
+    "exception_type": "RuntimeError"
+  }
+]

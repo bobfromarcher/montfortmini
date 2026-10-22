@@ -1,0 +1,9 @@
+# First build: docker build -f Dockerfile.local -t openjutsu-local .
+# This adds the native recipe and exact CPU control assets; no Modal account.
+# Full local GPU execution remains unverified on the available 4GB laptop.
+FROM openjutsu-local
+COPY vendor/wan_animate ./vendor/wan_animate
+RUN pip install onnxruntime==1.23.2 matplotlib==3.10.7 opencv-python-headless==4.13.0.92 numpy==2.4.6 Pillow==13.0.0
+RUN timeout 900 python upstream_motion_controls.py && timeout 900 python native_recipe_models.py
+RUN cp explicit_motion_inputs.py /opt/ComfyUI/custom_nodes/explicit_motion_inputs.py
+ENV OPENJUTSU_NATIVE_MOTION=1

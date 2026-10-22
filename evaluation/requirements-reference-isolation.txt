@@ -1,0 +1,5 @@
+# Optional CPU preparation only; install in a separate Python3.11 environment.
+# Does not change the production/Comfy GPU dependency environment.
+mediapipe==0.10.35
+numpy==2.4.6
+Pillow==13.0.0

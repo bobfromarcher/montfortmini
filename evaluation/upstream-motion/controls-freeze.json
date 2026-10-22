@@ -1,0 +1,12 @@
+{
+  "frozen_utc": "2026-10-19T05:13:34.312692+00:00",
+  "input_archive_sha256": "76357a642ba932c3ff0374a662edff72143d911168e6fdc18198520469b28905",
+  "exact_tensor_pairing": {
+    "source": true,
+    "mask": true,
+    "reference": true
+  },
+  "pose_and_face_changed": true,
+  "original_cpu_seconds": 112.512189577,
+  "method": "pinned upstream ViTPose133 CPU/full-image detector=None; official v2 body+hands renderer and face-landmark crop; no retargeting"
+}

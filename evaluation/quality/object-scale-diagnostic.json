@@ -1,0 +1,109 @@
+{
+  "method": "Exploratory source-yellow/target-green component area inside registered mask; thresholds and lighting bias area. Not a preregistered scale gate.",
+  "median_area_ratio": 2.53072625698324,
+  "equivalent_diameter_ratio": 1.5908256526040936,
+  "frames": [
+    {
+      "frame": 0,
+      "source_area": 3240,
+      "generated_area": 8220,
+      "area_ratio": 2.537037037037037
+    },
+    {
+      "frame": 1,
+      "source_area": 3224,
+      "generated_area": 8238,
+      "area_ratio": 2.555210918114144
+    },
+    {
+      "frame": 2,
+      "source_area": 3245,
+      "generated_area": 8329,
+      "area_ratio": 2.566718027734977
+    },
+    {
+      "frame": 3,
+      "source_area": 3255,
+      "generated_area": 8285,
+      "area_ratio": 2.5453149001536097
+    },
+    {
+      "frame": 4,
+      "source_area": 3263,
+      "generated_area": 8292,
+      "area_ratio": 2.54121973643886
+    },
+    {
+      "frame": 5,
+      "source_area": 3268,
+      "generated_area": 8339,
+      "area_ratio": 2.5517135862913096
+    },
+    {
+      "frame": 6,
+      "source_area": 3304,
+      "generated_area": 8356,
+      "area_ratio": 2.529055690072639
+    },
+    {
+      "frame": 7,
+      "source_area": 3312,
+      "generated_area": 8318,
+      "area_ratio": 2.5114734299516908
+    },
+    {
+      "frame": 8,
+      "source_area": 3309,
+      "generated_area": 8333,
+      "area_ratio": 2.5182834693260805
+    },
+    {
+      "frame": 9,
+      "source_area": 3313,
+      "generated_area": 8408,
+      "area_ratio": 2.537881074554784
+    },
+    {
+      "frame": 10,
+      "source_area": 3342,
+      "generated_area": 8448,
+      "area_ratio": 2.527827648114901
+    },
+    {
+      "frame": 11,
+      "source_area": 3360,
+      "generated_area": 8449,
+      "area_ratio": 2.5145833333333334
+    },
+    {
+      "frame": 12,
+      "source_area": 3353,
+      "generated_area": 8455,
+      "area_ratio": 2.5216224276767076
+    },
+    {
+      "frame": 13,
+      "source_area": 3366,
+      "generated_area": 8538,
+      "area_ratio": 2.536541889483066
+    },
+    {
+      "frame": 14,
+      "source_area": 3401,
+      "generated_area": 8607,
+      "area_ratio": 2.53072625698324
+    },
+    {
+      "frame": 15,
+      "source_area": 3424,
+      "generated_area": 8598,
+      "area_ratio": 2.5110981308411215
+    },
+    {
+      "frame": 16,
+      "source_area": 3447,
+      "generated_area": 8599,
+      "area_ratio": 2.4946330142152595
+    }
+  ]
+}

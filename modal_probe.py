@@ -49,11 +49,15 @@ def request_json(path, data=None):
 @app.function(image=image, gpu="L40S", cpu=2, memory=16384,
               timeout=600, startup_timeout=180, max_containers=1,
               min_containers=0, scaledown_window=2, retries=0)
-def masked_replacement(graph_override=None, model_info=None):
+def masked_replacement(graph_override=None, model_info=None, deadline_seconds=560, unet_precision='auto'):
     import subprocess
     import time
     from PIL import Image, ImageDraw
 
+    if type(deadline_seconds) is not int or not 60 <= deadline_seconds <= 840:
+        raise ValueError('SDK worker deadline must stay within60–840seconds')
+    if unet_precision not in ('auto','bf16','fp16'):
+        raise ValueError('Unknown diffusion precision')
     start = time.monotonic()
     import shutil
     for old_output in ("/tmp/openjutsu-result","/tmp/openjutsu-sdk-output"):
@@ -65,12 +69,14 @@ def masked_replacement(graph_override=None, model_info=None):
     height = graph["7"]["inputs"]["height"]
     log_path = Path("/tmp/comfy.log")
     log = log_path.open("w")
-    proc = subprocess.Popen(["python", "main.py", "--listen", "127.0.0.1", "--port", "8188",
-                             "--disable-auto-launch", "--preview-method", "none"], cwd=REMOTE,
+    command=["python", "main.py", "--listen", "127.0.0.1", "--port", "8188",
+             "--disable-auto-launch", "--preview-method", "none"]
+    if unet_precision != 'auto':command.append('--'+unet_precision+'-unet')
+    proc = subprocess.Popen(command, cwd=REMOTE,
                             stdout=log, stderr=subprocess.STDOUT)
     proxy = None
     try:
-        deadline = start + 560
+        deadline = start + deadline_seconds
         while True:
             if proc.poll() is not None:
                 raise RuntimeError("Comfy startup failed:\n" + log_path.read_text()[-7000:])
@@ -103,7 +109,7 @@ def masked_replacement(graph_override=None, model_info=None):
         sdk_result = run_with_sdk(graph, "/tmp/openjutsu-sdk-output", timeout=max(1,int(deadline-time.monotonic())))
         raw = sorted(Path(p) for p in sdk_result["files"] if Path(p).suffix.lower() == ".png")
         if len(raw) != frame_count:
-            raise RuntimeError(f"Expected {frame_count} frames, received {len(raw)}")
+            raise missing_output_error(frame_count,len(raw),log_path.read_text())
         fixture = Path("/tmp/openjutsu-fixture")
         result = Path("/tmp/openjutsu-result")
         for folder in ("raw", "composite"):
@@ -135,6 +141,7 @@ def masked_replacement(graph_override=None, model_info=None):
             "mode":model_info["mode"],
             "comfy_commit":COMFY_COMMIT,"gpu":"L40S", "elapsed_seconds":round(time.monotonic()-start,2),
             "comfy_sdk":"0.5.0", "comfy_api_proxy":"0.1.6", "sdk_job_id":sdk_result["job_id"],
+            "requested_unet_precision":unet_precision,"comfy_command":command,
             "frames":frame_count,"fps":8,"width":width,"height":height,
             "seed":graph["9"]["inputs"]["seed"],"steps":graph["9"]["inputs"]["steps"],
             "input_provenance":model_info.get("input_provenance","original procedural drawings"),
@@ -189,3 +196,9 @@ def main(confirm_credits_only: bool = False):
                 raise ValueError("Archive member escaped result directory")
         archive.extractall(destination)
     print(f"Saved real generation for visual review: {destination}")
+def missing_output_error(expected,received,comfy_log):
+    """Keep the last bounded Comfy execution cause when a job has no images."""
+    marker='Exception during processing !!!'
+    causes=[line.split(marker,1)[1].strip() for line in comfy_log.splitlines() if marker in line]
+    detail=' Comfy error: '+causes[-1][:240] if causes and causes[-1] else ''
+    return RuntimeError(f'Expected {expected} frames, received {received}.{detail}')

@@ -1,0 +1,7 @@
+{
+  "worker_seconds": 13.336556283,
+  "gpu_samples": 13,
+  "peak_sampled_gpu_MiB": 440.0,
+  "host_peak_memory_available": false,
+  "monitor_error_count": 13
+}

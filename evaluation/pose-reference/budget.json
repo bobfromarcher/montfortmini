@@ -1,0 +1,14 @@
+{
+  "declared_utc": "2026-10-18T19:15:15.868548+00:00",
+  "max_gpu_attempts": 4,
+  "max_worker_seconds": 3000,
+  "max_included_credit_delta": 4,
+  "baseline_usage_displayed": 6.17,
+  "baseline_included_remaining": 23.83,
+  "stopping_usage": 10.17,
+  "stopping_remaining": 19.83,
+  "cash_cap": 0,
+  "reserved_verification_calls": 2,
+  "reserved_verification_worker_seconds": 1560,
+  "stop": "Stop if candidate reference fails, a technical GPU failure occurs, cash is nonzero, $0 cap absent, or call/time/credit bound reached. No retries or seed rerolls. If reference passes, matched RGB-guide control, development video, and only after video passes one new independent recording. No model switching within this experiment."
+}

@@ -1,0 +1,32 @@
+{
+  "selection_frozen_utc": "2026-10-18T07:24:40.364072+00:00",
+  "case": {
+    "source_page": "https://commons.wikimedia.org/wiki/File:Bicycle_in_Ghanaian_sign_language_interpretation.webm",
+    "recording": "signer-original.webm",
+    "video": "signer-input-frozen.mp4",
+    "reference": "reference-original.png",
+    "frames": 33,
+    "mode": "motion-transfer",
+    "seed": 42,
+    "prompt": "A realistic adult man with short salt-and-pepper curls, a neatly trimmed beard, clear round tortoiseshell eyeglasses, a cobalt-blue blazer and ivory crewneck T-shirt follows the source movements. Stable appearance, natural hand and body movement.",
+    "derivation": {
+      "start_seconds": 8,
+      "duration_seconds": 4.125,
+      "crop_xywh": [
+        850,
+        80,
+        650,
+        750
+      ],
+      "encoding": "FFmpeg libx264 CRF18 yuv420p, audio omitted",
+      "rejected_source_selection": "5..9.125 second uncropped interval contained a long static lead-in; rejected before candidate inference."
+    },
+    "split": "Independent-recording confirmation/held-out. Source inspected to select a continuous moving upper-body interval; no generated candidate output for this recording has been seen. Single crop counts as one recording.",
+    "sha256": {
+      "video": "f0a536c347ec25117cf271d375844e0497577d9e429290850969dc3ed36cc24a",
+      "reference": "8eca434015252d1403214e2faf2f88a1147db884b0a0ecc1758db243c36bfc96"
+    }
+  },
+  "candidate_frozen": false,
+  "note": "Candidate recipe will be frozen separately after development-only editor comparison, before this case is run."
+}

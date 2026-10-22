@@ -1,0 +1,4 @@
+{
+  "all_input_entries_exact_vs_luma_only": true,
+  "only_changed_graph_path": "4.inputs.text"
+}

@@ -1,0 +1,8 @@
+{
+  "changed_path": "4.inputs.text",
+  "before": "Replace only the yellow ball inside the selected region with the single smooth solid green sphere in the reference. Keep the scene lighting, size, and position. Fixed camera.",
+  "after": "A small smooth solid green sphere rests on the pale tabletop in the left foreground. The green sphere is the same compact size as the beige ball on the right. A bumblebee rolls the beige ball. Two purple balls sit behind them. Soft overhead indoor light, subtle contact shadows, fixed camera, realistic macro footage.",
+  "rationale": "Reference-only registration lost target green. Before attributing this to model capacity, test the official VACE recommendation for descriptive output prompts instead of edit instructions. No claim that mentioning yellow caused the failure.",
+  "guide_url": "https://github.com/ali-vilab/VACE/blob/main/UserGuide.md#31-vace-recognizable-inputs",
+  "limits": "One tailored scene caption; cannot establish generic captioning or reference identity control. More descriptive content and removal of edit language change together."
+}

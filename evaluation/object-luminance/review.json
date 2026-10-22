@@ -1,0 +1,8 @@
+{
+  "gate_pass": false,
+  "reference_color_frames": 0,
+  "reference_score_0_4": 0,
+  "decision": "Reject luma-only: all17 frames yellow, with unnaturally bright material. No deployment/held-out test.",
+  "observation": "Target visibly smaller than original neutral-fill baseline; yellow/source area proxy1.22061. This is a secondary diagnostic, not a passing green-reference gate.",
+  "raw_and_composite_object_pixels_exact": true
+}

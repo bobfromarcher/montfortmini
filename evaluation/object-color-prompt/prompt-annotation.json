@@ -1,0 +1,6 @@
+{
+  "before": "A small smooth solid green sphere rests on the pale tabletop in the left foreground. The green sphere is the same compact size as the beige ball on the right. A bumblebee rolls the beige ball. Two purple balls sit behind them. Soft overhead indoor light, subtle contact shadows, fixed camera, realistic macro footage.",
+  "after": "A small smooth solid sphere rests on the pale tabletop in the left foreground. The sphere is the same compact size as the beige ball on the right. A bumblebee rolls the beige ball. Two purple balls sit behind them. Soft overhead indoor light, subtle contact shadows, fixed camera, realistic macro footage.",
+  "removed": "Two occurrences of the word green only; smooth/solid/size/lighting/motion words remain.",
+  "unchanged": "Full input archive and all graph fields except node4.inputs.text, including negative prompt and control node"
+}

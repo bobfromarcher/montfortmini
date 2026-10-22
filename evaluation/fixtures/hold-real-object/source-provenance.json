@@ -1,0 +1,93 @@
+{
+  "title": "File:Bouncy ball 240fps.webm",
+  "source_page": "https://commons.wikimedia.org/wiki/File%3ABouncy_ball_240fps.webm",
+  "retrieved_utc": "2026-10-17T17:28:41.257674+00:00",
+  "path": "C:\\Users\\igues\\Documents\\Codex\\2026-10-16\\https-blog-comfy-org-p-higgsfield\\work\\evaluation\\raw\\bounce.webm",
+  "sha256": "b01267b754d5a861fa5b9119761654933763ae2197d96b514da5482b9729969b",
+  "bytes": 75465750,
+  "imageinfo": {
+    "size": 75465750,
+    "width": 1280,
+    "height": 720,
+    "duration": 41.443,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Bouncy_ball_240fps.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "descriptionurl": "https://commons.wikimedia.org/wiki/File:Bouncy_ball_240fps.webm",
+    "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=151426243",
+    "sha1": "10a795ac3403164b3cd830478d164ad53fb1b59f",
+    "extmetadata": {
+      "DateTime": {
+        "value": "2024-08-12 20:07:16",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+      },
+      "ObjectName": {
+        "value": "Bouncy ball 240fps",
+        "source": "mediawiki-metadata"
+      },
+      "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+      },
+      "Categories": {
+        "value": "Self-published work|Pink balls",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "ImageDescription": {
+        "value": "high-speed video of a bouncing ball",
+        "source": "commons-desc-page"
+      },
+      "DateTimeOriginal": {
+        "value": "2016-07-02",
+        "source": "commons-desc-page"
+      },
+      "Credit": {
+        "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+        "source": "commons-desc-page"
+      },
+      "Artist": {
+        "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:GolhaMedia&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:GolhaMedia (page does not exist)\">GolhaMedia</a>",
+        "source": "commons-desc-page"
+      },
+      "LicenseShortName": {
+        "value": "CC BY-SA 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "UsageTerms": {
+        "value": "Creative Commons Attribution-Share Alike 4.0",
+        "source": "commons-desc-page"
+      },
+      "AttributionRequired": {
+        "value": "true",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "LicenseUrl": {
+        "value": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "commons-desc-page"
+      },
+      "Copyrighted": {
+        "value": "True",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "License": {
+        "value": "cc-by-sa-4.0",
+        "source": "commons-templates",
+        "hidden": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "queried_url": "https://huggingface.co/api/models/Comfy-Org/Wan_2.1_ComfyUI_repackaged/tree/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d/split_files/diffusion_models?expand=false&limit=100",
+  "revision": "123acf1cc74bccbb9bfff8ac1ee72edc08c2341d",
+  "files": [
+    {
+      "type": "file",
+      "oid": "38bb2c5328d52e63371098fc10f737254889d957",
+      "size": 34675323640,
+      "lfs": {
+        "oid": "f202a5c59b8a91ada1862c46a038214f1f7f216c61ec8350d25f69b919da4307",
+        "size": 34675323640,
+        "pointerSize": 136
+      },
+      "xetHash": "44d1ccdcbb307c850e080749a7e30a23d3c1234171bc70368fe900677cb60ec3",
+      "path": "split_files/diffusion_models/wan2.1_vace_14B_fp16.safetensors"
+    }
+  ],
+  "weights_downloaded": false
+}

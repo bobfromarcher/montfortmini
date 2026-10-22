@@ -5,6 +5,7 @@ Optional until the initial native API proof succeeds. Run the proxy beside Comfy
 Install comfy-api-proxy==0.1.6 and comfy-sdk==0.5.0 in that environment.
 """
 import os
+import json
 from pathlib import Path
 
 
@@ -15,9 +16,14 @@ def run_with_sdk(graph, output_directory, timeout=480):
     os.environ.pop("COMFY_API_KEY", None)
     output_directory = Path(output_directory)
     output_directory.mkdir(parents=True, exist_ok=True)
-    with Comfy(timeout=30) as client:
+    # Individual HTTP reads can stall during a cold model load. Keep the read
+    # bounded by the caller's job deadline; never retry a generation submission.
+    with Comfy(timeout=max(1,min(120,timeout))) as client:
         workflow = client.workflows.from_json(graph)
-        job = client.run(workflow, timeout=timeout)
+        job = client.submit(workflow)
+        print(f"Comfy SDK confirmed job: {job.id}",flush=True)
+        (output_directory/'job-receipt.json').write_text(json.dumps({'job_id':job.id,'submission_confirmed':True}))
+        job.wait(timeout=timeout)
         files = []
         for output in job.outputs:
             name = Path(output.name).name

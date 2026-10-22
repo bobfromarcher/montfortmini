@@ -1,0 +1,13 @@
+{
+  "baseline_usage": 8.14,
+  "final_usage": 8.29,
+  "baseline_remaining": 21.86,
+  "final_remaining": 21.71,
+  "observed_account_credit_delta": 0.15,
+  "cash_spend": 0,
+  "cash_cap": 0,
+  "recovery_worker_seconds": 86.128782455,
+  "failed_integration_worker_seconds": 0.257397662,
+  "corrected_integration_worker_seconds": 96.468664018,
+  "scope": "Account-level displayed observations include CPU/build/account activity; not isolated invoices. Separate one-attempt $1 protocols; original failures/ledgers retained."
+}

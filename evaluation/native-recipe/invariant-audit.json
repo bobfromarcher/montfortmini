@@ -1,0 +1,65 @@
+{
+  "scope": "Artifact invariants only; does not certify video quality.",
+  "paired_control_tensors_equal": {
+    "source": true,
+    "mask": true,
+    "pose": true,
+    "face": true
+  },
+  "oracle_reference_equals_first_source_frame": true,
+  "reference_pixels_changed": true,
+  "runs": {
+    "oracle": {
+      "technical_status": "succeeded",
+      "worker_seconds": 78.508653023,
+      "comfy_graph_seconds": 53.81,
+      "gpu_samples": 77,
+      "peak_sampled_gpu_MiB": 29082.0,
+      "source_hashes_match_freeze": true,
+      "graph_matches_freeze": true,
+      "failure": null,
+      "output_retrieved": true,
+      "raw_composite_equal_frames": 33,
+      "frames": 33,
+      "sdk_job_id": "1aab0a5c-4509-4d12-a852-3cc2374f5293",
+      "input_archive_matches_freeze": true,
+      "worker_input_matches_freeze": true
+    },
+    "reference": {
+      "technical_status": "succeeded",
+      "worker_seconds": 82.232400561,
+      "comfy_graph_seconds": 55.5,
+      "gpu_samples": 80,
+      "peak_sampled_gpu_MiB": 29109.0,
+      "source_hashes_match_freeze": true,
+      "graph_matches_freeze": true,
+      "failure": null,
+      "output_retrieved": true,
+      "raw_composite_equal_frames": 33,
+      "frames": 33,
+      "sdk_job_id": "1a4bf61c-4bcd-4610-a726-318492534ef9",
+      "input_archive_matches_freeze": true,
+      "worker_input_matches_freeze": true
+    },
+    "verification": {
+      "technical_status": "failed",
+      "worker_seconds": 80.741236645,
+      "comfy_graph_seconds": 54.45,
+      "gpu_samples": 78,
+      "peak_sampled_gpu_MiB": 29114.0,
+      "source_hashes_match_freeze": true,
+      "graph_matches_freeze": true,
+      "failure": {
+        "type": "FileNotFoundError",
+        "message": "[Errno 2] No such file or directory: '/tmp/openjutsu-fixture/masks/0000.png'"
+      },
+      "output_retrieved": false,
+      "raw_composite_equal_frames": null,
+      "frames": null,
+      "limitation": "No scored video retained; failure is not a perceptual-quality result.",
+      "input_archive_matches_freeze": true,
+      "worker_input_matches_freeze": true
+    }
+  },
+  "invariants_pass": false
+}

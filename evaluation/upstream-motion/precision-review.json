@@ -1,0 +1,14 @@
+{
+  "gate_pass": false,
+  "reviewed_native_frames": [
+    8,
+    16,
+    24,
+    28
+  ],
+  "reason": "Early rejection: large blue head extrusion at24 and severe face/hand/jacket defects at all four frozen event frames; no full33frame subjective pass claimed.",
+  "precision_confirmed": "torch.bfloat16 in actual Comfy log",
+  "paired_graph_and_all_conditioning_tensors": true,
+  "mean_raw_pixel_MAE_vs_FP16_0_255": 1.0458893623737375,
+  "decision": "Precision change alone is not an adequate quality correction. Planned wholebody branch allowed."
+}

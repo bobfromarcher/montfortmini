@@ -1,0 +1,11 @@
+{
+  "observed_utc": "2026-10-22T03:38:40.277444+00:00",
+  "usage": 8.69,
+  "remaining": 21.31,
+  "cash_charges": 0,
+  "cash_cap": 0,
+  "source": "Live Modal usage UI after completion; rounded account totals",
+  "account_usage_delta": 0.04,
+  "attribution": "Includes CPU/builds/rounding; not isolated invoice cost",
+  "active_containers": []
+}

@@ -1,0 +1,17 @@
+{
+  "frozen_utc": "2026-10-18T20:20:30.944768+00:00",
+  "exploratory_protocol_amendment": "protocol-amendment.json",
+  "source_sha256": {
+    "depth_identity_alignment.py": "d3547d9808569221c504a47606f8a673eb41cd4c7904f0b0a4bbd159e8858fb0",
+    "depth_identity_candidate.py": "fad08755051d3114bd7a9ded6b68e1d93bd039e407a89066185c2f30fdc249c5",
+    "depth_preprocessing.py": "f15e83cbd5eb01e745e791c24efe260361276d0352f151892e97baa98f058b89",
+    "depth_prepare_candidate.py": "3a8b8c0df832c27ed0613390c2f3d11ab96195b5cc412715c30a6634c649ef0f"
+  },
+  "depth_input_sha256": {
+    "guide-bundle.zip": "7db03f63278fc0993032bda08b565f1aa47a190569eade1fa07a1b4dff1bbfe7",
+    "depth.png": "63aa85057ae05e3163f49231f618f8d7213098036464d652b234e8630d41679f",
+    "provenance.json": "590ccd24d1973ab3e6a8d9586aff642f205f531fb732d3632801e3c81f4c3017"
+  },
+  "changes": "Add estimated inverse-depth as image3 and text describing its orientation-only role. Same first2 conditioning pixels, seed, generator, sampler and output canvas. Job wait600s within unchanged660s worker ceiling; one submission/no retry.",
+  "gate": "All original reference criteria still required before video. Invisible identity/clothing is unassessable, not a pass. Stop after any remaining failure; no third reference test."
+}

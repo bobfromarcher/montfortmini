@@ -1,0 +1,13 @@
+{
+  "changed_archive_entries": [
+    "conditioning.npz",
+    "reference.png"
+  ],
+  "all_source_masks_settings_identical": true,
+  "graph_bytes_identical": true,
+  "conditioning_equal": {
+    "source": true,
+    "mask": true,
+    "reference": false
+  }
+}

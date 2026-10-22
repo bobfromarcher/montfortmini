@@ -1,0 +1,19 @@
+{
+  "billing-observation.json": "32ba7500ea6306555142c1ead53685a452708c9a1ebdb70f25540fbc8b3629fd",
+  "control-workflow.json": "27f22cacbda1ed4fb83a7c2efd353f86709310822917a61a4f72dd6acc386573",
+  "executed-source.zip": "428aa276ad13e43a2415720363cab4bbbdc779cc0c47a455a347991cac5a5a3d",
+  "foreground-annotation.json": "da3c0de4d47c92353dde1723073d3c88d8812a6a5653c40062f6f58c190a7b06",
+  "freeze.json": "c5ca6be18c42d0899a2f27ae1dd833364368ef8ba59524ba640c3f9185bb1eaf",
+  "gpu-ledger.json": "7a3dab5a0503d1bdd930da15a28fcfdfd85f2fed091f4d727c9423aebe4c2a64",
+  "implementation-correction.json": "a3bfe6ef80f5088ebc022e8b891adb3b90e900cf0b6e5fd080e1f02cee4b72c4",
+  "inputs.zip": "a54a287b4afcf918d70def9deaba6f86670fcb9b799a694f3006732f88975179",
+  "paired-input-audit.json": "ccd8c97588e2c937189ce4d6d66bfb212d1805602666ca23f80deb2e94daf697",
+  "resource-summary.json": "aa4f7a323d6b51c1fc06af518a42d36c8133336af825936f8e4394cbc06f5205",
+  "result/candidate-gpu.csv": "81c0d4a59c232858a3e40250a2c5081ba67b54650b7d77c361a41c6377926e2e",
+  "result/candidate.json": "52b54214a0dead7feb03521037ec30b68f64baa45348454e0588a0900909f1b1",
+  "result/object-runtime.json": "642c5fef30306cbfae8fb31e67a8a45daa27a72dd105605a9c00087007743f48",
+  "result/workflow-api.json": "ae8aa4fc4913c6b47c9330340e44d4202fdf92216533c2445d9242ebd725c6ab",
+  "result/failure/comfy.log": "6e886497020c2e694e8a195d6282b89ae947f956ff103c8fa78c0ae104bd62d6",
+  "result/failure/job-receipt.json": "46932a4d1429dbf3e764897c659f46a341bbea8cc555cd87882b69fe9e5a5529",
+  "result/failure/recovered-sdk/job-receipt.json": "46932a4d1429dbf3e764897c659f46a341bbea8cc555cd87882b69fe9e5a5529"
+}

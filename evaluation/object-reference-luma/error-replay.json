@@ -1,0 +1,6 @@
+{
+  "retained_failure_replayed_offline": true,
+  "diagnostic": "Expected 17 frames, received 0. Comfy error: No module named 'cv2'",
+  "api_message": "The render worker is missing a software dependency. This is a server configuration error; no automatic retry was started.",
+  "generation_resubmitted": false
+}

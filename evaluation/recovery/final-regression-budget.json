@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-18T08:31:17.686724+00:00",
+  "attempt": 8,
+  "observed_worker_seconds_through_7": 2480.576538,
+  "last_worker_timeout_seconds": 660,
+  "reserved_total": 3140.576538,
+  "worker_cap": 3600,
+  "cash_cap": 0,
+  "billing_summary_used": 5.26,
+  "billing_breakdown_used": 5.701966285705566,
+  "stopping_usage_revised": 6.23,
+  "original_overall_allowance": "2.23 + 4.00 = 6.23; not increased",
+  "reserve_estimate": 0.4687848,
+  "reason": "Finish the predeclared 17-frame synthetic regression with unchanged frozen inference and tighter timeout. Reconcile contradictory lagging UI totals conservatively using higher breakdown. No further GPU calls after this attempt."
+}

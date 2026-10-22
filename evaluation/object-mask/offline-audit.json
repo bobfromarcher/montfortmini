@@ -1,0 +1,31 @@
+{
+  "invariants_pass": true,
+  "checks": {
+    "technical_success": true,
+    "graph_matches_control": true,
+    "worker_input_matches_freeze": true,
+    "input_archive_matches_freeze": true,
+    "runtime_source_matches_freeze": true,
+    "size_frames_fps": true,
+    "executed_source_snapshot_hashes_match": true
+  },
+  "green_reference_frames": 0,
+  "yellow_source_color_frames": 17,
+  "color_reference_gate_pass": false,
+  "raw_preservation": {
+    "mae_255": 1.784458041191101,
+    "p95_255": 6.0,
+    "max_255": 118.0
+  },
+  "encoded_preservation": {
+    "mae_255": 1.7711538076400757,
+    "p95_255": 4.0,
+    "max_255": 52.0
+  },
+  "composite_preservation": {
+    "mae_255": 0.0,
+    "p95_255": 0.0,
+    "max_255": 0.0
+  },
+  "scope": "Fixture-specific color and artifact checks; cannot certify overall visual quality. Known rejected case should fail the green-reference gate."
+}

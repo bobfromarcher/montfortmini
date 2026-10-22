@@ -1,0 +1,26 @@
+[
+  {
+    "case": "new-synthetic-object",
+    "baseline_reference_pixels_equal_candidate": true,
+    "saved_pixels_equal_recipe": true,
+    "baseline_reference_sha256": "46a1a7474032e105666ba3b6157eab1ac329254539709597f33c825b23486398",
+    "candidate_reference_sha256": "46a1a7474032e105666ba3b6157eab1ac329254539709597f33c825b23486398",
+    "evidence_limit": "Input identity plus unchanged video/mask command and graph; no separate baseline inference was run."
+  },
+  {
+    "case": "new-real-object",
+    "baseline_reference_pixels_equal_candidate": true,
+    "saved_pixels_equal_recipe": true,
+    "baseline_reference_sha256": "293e799bd48a7199ca479969d2d20552a8ad458bc66b446c015702bcb210d4e8",
+    "candidate_reference_sha256": "293e799bd48a7199ca479969d2d20552a8ad458bc66b446c015702bcb210d4e8",
+    "evidence_limit": "Input identity plus unchanged video/mask command and graph; no separate baseline inference was run."
+  },
+  {
+    "case": "new-synthetic-motion",
+    "baseline_reference_pixels_equal_candidate": true,
+    "saved_pixels_equal_recipe": true,
+    "baseline_reference_sha256": "356b7477f268a563d9f0a42ca072b73c5631cb6bd4d533f1137c36e428252b5c",
+    "candidate_reference_sha256": "356b7477f268a563d9f0a42ca072b73c5631cb6bd4d533f1137c36e428252b5c",
+    "evidence_limit": "Input identity plus unchanged video/mask command and graph; no separate baseline inference was run."
+  }
+]

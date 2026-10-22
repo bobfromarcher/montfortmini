@@ -1,0 +1,18 @@
+{
+  "declared_utc": "2026-10-18T17:54:13.580193+00:00",
+  "max_gpu_attempts": 4,
+  "max_worker_seconds": 3000,
+  "max_included_credit_delta": 2.5,
+  "baseline_usage_displayed": 5.62,
+  "baseline_included_remaining": 24.38,
+  "stopping_usage": 8.12,
+  "stopping_remaining": 21.88,
+  "cash_cap": 0,
+  "cash_spend_observed": 0,
+  "ceilings": {
+    "reference": 660,
+    "cached-reference video": 660,
+    "fresh full pipeline": 900
+  },
+  "stop": "Stop on failed final quality gate, any new technical GPU failure, insufficient reservation, cash>0, absent0cash cap, credit threshold, or four attempts. No rerolls or model changes."
+}

@@ -1,0 +1,10 @@
+{
+  "output": "outputs\\identity-first\\anchor",
+  "kind": "reference",
+  "status": "dispatched",
+  "ceiling_seconds": 660,
+  "started_utc": "2026-10-18T20:07:03.073122+00:00",
+  "observed_usage": 6.45,
+  "observed_remaining": 23.55,
+  "call_id": "fc-01M589ZZJ11GN49KDT16QQQHW9"
+}

@@ -17,9 +17,26 @@ VRAM, but kernel and node compatibility still require a separate test.
 
 Source review confirms safe-load gate loading, 50-block H3 model checks,
 gate-shape validation, and rejection of conflicting attention patches.
-The bundled API graph is a useful integration reference for a future separate
-character-video mode. It does not establish exact driving-video transfer or
+The bundled API graph does not establish exact driving-video transfer or
 masked object preservation.
+
+## Specific weakness assessed in the validation
+
+Animate2 preserves the development illustration but produces background
+ghosting at the end of the live-action walking clip; on the mirrored held-out
+arm movement it produces duplicated/ghost arms. These are observed failures,
+not evidence that sparse attention fixes them. The VSA patch changes H3's
+attention implementation; it does not add a pose/motion signal to our existing
+Animate2 graph. Its supplied reference-image generation graph lacks an
+equivalent driving-video and mask experiment. Replacing the base model would
+confound attention, model family, conditioning and sampling at once.
+
+The appropriate isolated test, if authorized and compatible, would compare
+the same H3 weights, seed, prompt, reference, supported driving conditioning,
+resolution and frame count with dense attention versus VSA. Score the same
+motion phases, reference attributes and ghost/collapse frames, then compare
+runtime and VRAM. No such compatible, licensed test is available on this US
+deployment, so neither an improvement nor a measured speedup is claimed.
 
 ## Licensing and current decision
 
@@ -34,5 +51,5 @@ does not replace the base-model terms.
 The current demonstration runs on a US Modal endpoint. H3 weights were not
 downloaded and this plugin was not installed or enabled in the app. Suitable
 model authorization must be established before adopting it for that deployment.
-Retain the functioning Wan workflows while evaluating H3 separately. This is a
-deployment decision based on the published terms, not a legal opinion.
+Do not install it in this validation. This is a deployment decision based on
+the published terms, not a legal opinion.

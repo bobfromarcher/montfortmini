@@ -1,0 +1,13 @@
+[
+  {
+    "phase": "evaluation container import",
+    "case": "dev-synthetic-object",
+    "observed_error": "ModuleNotFoundError: No module named 'service'",
+    "inference_started": false,
+    "cause": "The evaluation image mounted helper modules but omitted service.py, normally supplied by the service deployment's automatic source mount.",
+    "repair": "Explicitly mount service.py in the evaluation image.",
+    "duration_seconds": null,
+    "credit_consumption": "Included in account-level billing delta; not separately attributable from available billing evidence.",
+    "note": "Initial CLI log was overwritten during restart; the error and repair are preserved here. Do not count this as a model-quality failure."
+  }
+]

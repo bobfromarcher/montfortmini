@@ -1,0 +1,37 @@
+{
+  "status": "generated-unreviewed",
+  "model": "Kijai/WanVideo_comfy_fp8_scaled",
+  "model_revision": "033a4e487f60220b3d6e469599a6aebc46e13cee",
+  "mode": "motion-transfer",
+  "comfy_commit": "5cc4b870094c89090db54bd8d12649dcaf89f2ba",
+  "gpu": "L40S",
+  "elapsed_seconds": 82.47,
+  "comfy_sdk": "0.5.0",
+  "comfy_api_proxy": "0.1.6",
+  "sdk_job_id": "b2e39644-3ae0-4a54-9ada-3898d13bc1ad",
+  "requested_unet_precision": "auto",
+  "comfy_command": [
+    "python",
+    "main.py",
+    "--listen",
+    "127.0.0.1",
+    "--port",
+    "8188",
+    "--disable-auto-launch",
+    "--preview-method",
+    "none"
+  ],
+  "frames": 33,
+  "fps": 8,
+  "width": 480,
+  "height": 560,
+  "seed": 42,
+  "steps": 6,
+  "input_provenance": "Frozen development media; see recipe-runtime.json for oracle/reference role",
+  "target_erased_in_control": false,
+  "limitations": [
+    "Feasibility test; visual quality has not yet been reviewed.",
+    "Outside-mask pixel preservation in composite.mp4 comes from explicit compositing.",
+    "Does not prove general input quality or Genjutsu parity."
+  ]
+}

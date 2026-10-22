@@ -1,0 +1,93 @@
+{
+  "gate_pass": true,
+  "reviewer": "agent provisional visual review; independent review outstanding",
+  "reviewed_raw_frames": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "dimensions_0_to_4": {
+    "reference_attributes": 3,
+    "recognizable_motion": 3,
+    "temporal_stability": 3,
+    "anatomy": 3
+  },
+  "clear_reference_attributes_frames": 30,
+  "ambiguous_face_frames": [
+    6,
+    7,
+    28
+  ],
+  "reference_attributes": [
+    "short curls",
+    "beard",
+    "eyeglasses",
+    "blue blazer",
+    "white crewneck shirt",
+    "dark trousers"
+  ],
+  "events": [
+    {
+      "source_frame": 8,
+      "recognized_output_frame": 8,
+      "event": "cross-torso",
+      "pass": true
+    },
+    {
+      "source_frame": 16,
+      "recognized_output_frame": 16,
+      "event": "shoulder/waist",
+      "pass": true
+    },
+    {
+      "source_frame": 24,
+      "recognized_output_frame": 24,
+      "event": "hands down",
+      "pass": true
+    },
+    {
+      "source_frame": 28,
+      "recognized_output_frame": 28,
+      "event": "hand at mouth",
+      "pass": true
+    }
+  ],
+  "hard_failures_observed": [],
+  "limitations": [
+    "Hand blur during rapid movements.",
+    "Facial detail and exact glasses/hair characteristics drift; not a perfect likeness.",
+    "8fps and33frames only; agent ratings provisional.",
+    "No exact-background-preservation claim: full-frame transfer."
+  ],
+  "raw_composite_equal_frames": 33
+}

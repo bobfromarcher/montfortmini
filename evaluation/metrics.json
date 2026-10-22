@@ -1,0 +1,798 @@
+[
+  {
+    "run": "dev-real-motion__baseline__baseline__s42",
+    "case": "dev-real-motion",
+    "split": "development",
+    "mode": "motion-transfer",
+    "profile": "baseline",
+    "variant": "baseline",
+    "seed": 42,
+    "worker_seconds": 74.09418961799999,
+    "frames": 17,
+    "width": 480,
+    "height": 352,
+    "technical_frames_pass": true,
+    "target_color_presence_fraction": 1.0,
+    "target_circularity_median": 0.28944445378236333,
+    "object_centroid_mean_error_diagonal": null,
+    "composite_png_outside_mask": null,
+    "raw_outside_dilated_mask": null,
+    "mp4_outside_dilated_mask": null,
+    "source_flow_aligned_temporal_residual_mean": 0.03848863625898957,
+    "manual_review_required": true,
+    "overall_pass": null,
+    "metric_caveats": [
+      "Color presence is not identity or silhouette fidelity.",
+      "Source-flow residual is confounded by intended appearance changes and is diagnostic only.",
+      "No automatic pass without the registered visual gates."
+    ]
+  },
+  {
+    "run": "dev-real-object__baseline__baseline__s42",
+    "case": "dev-real-object",
+    "split": "development",
+    "mode": "object-swap",
+    "profile": "baseline",
+    "variant": "baseline",
+    "seed": 42,
+    "worker_seconds": 59.997768847,
+    "frames": 17,
+    "width": 352,
+    "height": 480,
+    "technical_frames_pass": true,
+    "target_color_presence_fraction": 1.0,
+    "target_circularity_median": 0.6237687484842129,
+    "object_centroid_mean_error_diagonal": null,
+    "composite_png_outside_mask": {
+      "mae_255": 0.0,
+      "p95_255": 0.0,
+      "max_255": 0.0
+    },
+    "raw_outside_dilated_mask": {
+      "mae_255": 1.9827191829681396,
+      "p95_255": 5.0,
+      "max_255": 88.0
+    },
+    "mp4_outside_dilated_mask": {
+      "mae_255": 1.5042275190353394,
+      "p95_255": 4.0,
+      "max_255": 26.0
+    },
+    "source_flow_aligned_temporal_residual_mean": 0.017484899202827364,
+    "manual_review_required": true,
+    "overall_pass": null,
+    "metric_caveats": [
+      "Color presence is not identity or silhouette fidelity.",
+      "Source-flow residual is confounded by intended appearance changes and is diagnostic only.",
+      "No automatic pass without the registered visual gates."
+    ]
+  },
+  {
+    "run": "dev-real-object__baseline__mask-coverage__s42",
+    "case": "dev-real-object",
+    "split": "development",
+    "mode": "object-swap",
+    "profile": "baseline",
+    "variant": "mask-coverage",
+    "seed": 42,
+    "worker_seconds": 39.828391941,
+    "frames": 17,
+    "width": 352,
+    "height": 480,
+    "technical_frames_pass": true,
+    "target_color_presence_fraction": 1.0,
+    "target_circularity_median": 0.8550780729305552,
+    "object_centroid_mean_error_diagonal": null,
+    "composite_png_outside_mask": {
+      "mae_255": 0.0,
+      "p95_255": 0.0,
+      "max_255": 0.0
+    },
+    "raw_outside_dilated_mask": {
+      "mae_255": 2.0756030082702637,
+      "p95_255": 5.0,
+      "max_255": 88.0
+    },
+    "mp4_outside_dilated_mask": {
+      "mae_255": 1.493838906288147,
+      "p95_255": 4.0,
+      "max_255": 30.0
+    },
+    "source_flow_aligned_temporal_residual_mean": 0.010598872526315972,
+    "manual_review_required": true,
+    "overall_pass": null,
+    "metric_caveats": [
+      "Color presence is not identity or silhouette fidelity.",
+      "Source-flow residual is confounded by intended appearance changes and is diagnostic only.",
+      "No automatic pass without the registered visual gates."
+    ]
+  },
+  {
+    "run": "dev-real-object__candidate__baseline__s42",
+    "case": "dev-real-object",
+    "split": "development",
+    "mode": "object-swap",
+    "profile": "candidate",
+    "variant": "baseline",
+    "seed": 42,
+    "worker_seconds": 46.853473572,
+    "frames": 17,
+    "width": 480,
+    "height": 352,
+    "technical_frames_pass": true,
+    "target_color_presence_fraction": 1.0,
+    "target_circularity_median": 0.8957589064449887,
+    "object_centroid_mean_error_diagonal": null,
+    "composite_png_outside_mask": {
+      "mae_255": 0.0,
+      "p95_255": 0.0,
+      "max_255": 0.0
+    },
+    "raw_outside_dilated_mask": {
+      "mae_255": 2.079648494720459,
+      "p95_255": 6.0,
+      "max_255": 74.0
+    },
+    "mp4_outside_dilated_mask": {
+      "mae_255": 1.5227603912353516,
+      "p95_255": 4.0,
+      "max_255": 27.0
+    },
+    "source_flow_aligned_temporal_residual_mean": 0.015132564323721454,
+    "manual_review_required": true,
+    "overall_pass": null,
+    "metric_caveats": [
+      "Color presence is not identity or silhouette fidelity.",
+      "Source-flow residual is confounded by intended appearance changes and is diagnostic only.",
+      "No automatic pass without the registered visual gates."
+    ]
+  },
+  {
+    "run": "dev-real-object__candidate__mask-coverage__s42",
+    "case": "dev-real-object",
+    "split": "development",
+    "mode": "object-swap",
+    "profile": "candidate",
+    "variant": "mask-coverage",
+    "seed": 42,
+    "worker_seconds": 36.602802733000004,
+    "frames": 17,
+    "width": 480,
+    "height": 352,
+    "technical_frames_pass": true,
+    "target_color_presence_fraction": 1.0,
+    "target_circularity_median": 0.8934695662606028,
+    "object_centroid_mean_error_diagonal": null,
+    "composite_png_outside_mask": {
+      "mae_255": 0.0,
+      "p95_255": 0.0,
+      "max_255": 0.0
+    },
+    "raw_outside_dilated_mask": {
+      "mae_255": 1.9592105150222778,
+      "p95_255": 5.0,
+      "max_255": 78.0
+    },
+    "mp4_outside_dilated_mask": {
+      "mae_255": 1.5119527578353882,
+      "p95_255": 4.0,
+      "max_255": 25.0
+    },
+    "source_flow_aligned_temporal_residual_mean": 0.014346213749377057,
+    "manual_review_required": true,
+    "overall_pass": null,
+    "metric_caveats": [
+      "Color presence is not identity or silhouette fidelity.",
+      "Source-flow residual is confounded by intended appearance changes and is diagnostic only.",
+      "No automatic pass without the registered visual gates."
+    ]
+  },
+  {
+    "run": "dev-synthetic-motion__baseline__baseline__s42",
+    "case": "dev-synthetic-motion",
+    "split": "development",
+    "mode": "motion-transfer",
+    "profile": "baseline",
+    "variant": "baseline",
+    "seed": 42,
+    "worker_seconds": 139.56444721199998,
+    "frames": 17,
+    "width": 480,
+    "height": 480,
+    "technical_frames_pass": true,
+    "target_color_presence_fraction": 1.0,
+    "target_circularity_median": 0.5085250965418568,
+    "object_centroid_mean_error_diagonal": null,
+    "composite_png_outside_mask": null,
+    "raw_outside_dilated_mask": null,
+    "mp4_outside_dilated_mask": null,
+    "source_flow_aligned_temporal_residual_mean": 0.0024445043891319074,
+    "manual_review_required": true,
+    "overall_pass": null,
+    "metric_caveats": [
+      "Color presence is not identity or silhouette fidelity.",
+      "Source-flow residual is confounded by intended appearance changes and is diagnostic only.",
+      "No automatic pass without the registered visual gates."
+    ]
+  },
+  {
+    "run": "dev-synthetic-motion__baseline__frozen-motion__s42",
+    "case": "dev-synthetic-motion",
+    "split": "development",
+    "mode": "motion-transfer",
+    "profile": "baseline",
+    "variant": "frozen-motion",
+    "seed": 42,
+    "worker_seconds": 81.036445593,
+    "frames": 17,
+    "width": 480,
+    "height": 480,
+    "technical_frames_pass": true,
+    "target_color_presence_fraction": 1.0,
+    "target_circularity_median": 0.4509887554308295,
+    "object_centroid_mean_error_diagonal": null,
+    "composite_png_outside_mask": null,
+    "raw_outside_dilated_mask": null,
+    "mp4_outside_dilated_mask": null,
+    "source_flow_aligned_temporal_residual_mean": 0.001840382035879884,
+    "manual_review_required": true,
+    "overall_pass": null,
+    "metric_caveats": [
+      "Color presence is not identity or silhouette fidelity.",
+      "Source-flow residual is confounded by intended appearance changes and is diagnostic only.",
+      "No automatic pass without the registered visual gates."
+    ]
+  },
+  {
+    "run": "dev-synthetic-object__baseline__baseline__s123",
+    "case": "dev-synthetic-object",
+    "split": "development",
+    "mode": "object-swap",
+    "profile": "baseline",
+    "variant": "baseline",
+    "seed": 123,
+    "worker_seconds": 46.74334749,
+    "frames": 17,
+    "width": 480,
+    "height": 480,
+    "technical_frames_pass": true,
+    "target_color_presence_fraction": 1.0,
+    "target_circularity_median": 0.6158473996433869,
+    "object_centroid_mean_error_diagonal": 0.009870333112762211,
+    "composite_png_outside_mask": {
+      "mae_255": 0.0,
+      "p95_255": 0.0,
+      "max_255": 0.0
+    },
+    "raw_outside_dilated_mask": {
+      "mae_255": 0.9437723755836487,
+      "p95_255": 2.0,
+      "max_255": 49.0
+    },
+    "mp4_outside_dilated_mask": {
+      "mae_255": 0.5454573035240173,
+      "p95_255": 1.0,
+      "max_255": 9.0
+    },
+    "source_flow_aligned_temporal_residual_mean": 0.05683273123577237,
+    "manual_review_required": true,
+    "overall_pass": null,
+    "metric_caveats": [
+      "Color presence is not identity or silhouette fidelity.",
+      "Source-flow residual is confounded by intended appearance changes and is diagnostic only.",
+      "No automatic pass without the registered visual gates."
+    ]
+  },
+  {
+    "run": "dev-synthetic-object__baseline__baseline__s42",
+    "case": "dev-synthetic-object",
+    "split": "development",
+    "mode": "object-swap",
+    "profile": "baseline",
+    "variant": "baseline",
+    "seed": 42,
+    "worker_seconds": 50.521891507999996,
+    "frames": 17,
+    "width": 480,
+    "height": 480,
+    "technical_frames_pass": true,
+    "target_color_presence_fraction": 1.0,
+    "target_circularity_median": 0.6328504813695618,
+    "object_centroid_mean_error_diagonal": 0.00794050178892301,
+    "composite_png_outside_mask": {
+      "mae_255": 0.0,
+      "p95_255": 0.0,
+      "max_255": 0.0
+    },
+    "raw_outside_dilated_mask": {
+      "mae_255": 0.7249065637588501,
+      "p95_255": 2.0,
+      "max_255": 65.0
+    },
+    "mp4_outside_dilated_mask": {
+      "mae_255": 0.5438517928123474,
+      "p95_255": 1.0,
+      "max_255": 8.0
+    },
+    "source_flow_aligned_temporal_residual_mean": 0.06713682599365711,
+    "manual_review_required": true,
+    "overall_pass": null,
+    "metric_caveats": [
+      "Color presence is not identity or silhouette fidelity.",
+      "Source-flow residual is confounded by intended appearance changes and is diagnostic only.",
+      "No automatic pass without the registered visual gates."
+    ]
+  },
+  {
+    "run": "dev-synthetic-object__baseline__reference-alternate__s42",
+    "case": "dev-synthetic-object",
+    "split": "development",
+    "mode": "object-swap",
+    "profile": "baseline",
+    "variant": "reference-alternate",
+    "seed": 42,
+    "worker_seconds": 54.820662818,
+    "frames": 17,
+    "width": 480,
+    "height": 480,
+    "technical_frames_pass": true,
+    "target_color_presence_fraction": 0.0,
+    "target_circularity_median": null,
+    "object_centroid_mean_error_diagonal": null,
+    "composite_png_outside_mask": {
+      "mae_255": 0.0,
+      "p95_255": 0.0,
+      "max_255": 0.0
+    },
+    "raw_outside_dilated_mask": {
+      "mae_255": 1.027491569519043,
+      "p95_255": 3.0,
+      "max_255": 48.0
+    },
+    "mp4_outside_dilated_mask": {
+      "mae_255": 0.5447413921356201,
+      "p95_255": 1.0,
+      "max_255": 9.0
+    },
+    "source_flow_aligned_temporal_residual_mean": 0.031165915657766163,
+    "manual_review_required": true,
+    "overall_pass": null,
+    "metric_caveats": [
+      "Color presence is not identity or silhouette fidelity.",
+      "Source-flow residual is confounded by intended appearance changes and is diagnostic only.",
+      "No automatic pass without the registered visual gates."
+    ]
+  },
+  {
+    "run": "dev-synthetic-object__baseline__reference-control__s42",
+    "case": "dev-synthetic-object",
+    "split": "development",
+    "mode": "object-swap",
+    "profile": "baseline",
+    "variant": "reference-control",
+    "seed": 42,
+    "worker_seconds": 41.070518604,
+    "frames": 17,
+    "width": 480,
+    "height": 480,
+    "technical_frames_pass": true,
+    "target_color_presence_fraction": 1.0,
+    "target_circularity_median": 0.1609980632630788,
+    "object_centroid_mean_error_diagonal": 0.09605486686621247,
+    "composite_png_outside_mask": {
+      "mae_255": 0.0,
+      "p95_255": 0.0,
+      "max_255": 0.0
+    },
+    "raw_outside_dilated_mask": {
+      "mae_255": 0.9947056770324707,
+      "p95_255": 2.0,
+      "max_255": 49.0
+    },
+    "mp4_outside_dilated_mask": {
+      "mae_255": 0.5451049208641052,
+      "p95_255": 1.0,
+      "max_255": 8.0
+    },
+    "source_flow_aligned_temporal_residual_mean": 0.037820126046426594,
+    "manual_review_required": true,
+    "overall_pass": null,
+    "metric_caveats": [
+      "Color presence is not identity or silhouette fidelity.",
+      "Source-flow residual is confounded by intended appearance changes and is diagnostic only.",
+      "No automatic pass without the registered visual gates."
+    ]
+  },
+  {
+    "run": "dev-synthetic-object__baseline__reference-neutral__s42",
+    "case": "dev-synthetic-object",
+    "split": "development",
+    "mode": "object-swap",
+    "profile": "baseline",
+    "variant": "reference-neutral",
+    "seed": 42,
+    "worker_seconds": 58.63846740699999,
+    "frames": 17,
+    "width": 480,
+    "height": 480,
+    "technical_frames_pass": true,
+    "target_color_presence_fraction": 0.8823529411764706,
+    "target_circularity_median": 0.17313934401379227,
+    "object_centroid_mean_error_diagonal": 0.10350203755760484,
+    "composite_png_outside_mask": {
+      "mae_255": 0.0,
+      "p95_255": 0.0,
+      "max_255": 0.0
+    },
+    "raw_outside_dilated_mask": {
+      "mae_255": 1.408095359802246,
+      "p95_255": 4.0,
+      "max_255": 50.0
+    },
+    "mp4_outside_dilated_mask": {
+      "mae_255": 0.5454842448234558,
+      "p95_255": 1.0,
+      "max_255": 14.0
+    },
+    "source_flow_aligned_temporal_residual_mean": 0.06267631170339882,
+    "manual_review_required": true,
+    "overall_pass": null,
+    "metric_caveats": [
+      "Color presence is not identity or silhouette fidelity.",
+      "Source-flow residual is confounded by intended appearance changes and is diagnostic only.",
+      "No automatic pass without the registered visual gates."
+    ]
+  },
+  {
+    "run": "dev-synthetic-object__baseline__repeat__s42",
+    "case": "dev-synthetic-object",
+    "split": "development",
+    "mode": "object-swap",
+    "profile": "baseline",
+    "variant": "repeat",
+    "seed": 42,
+    "worker_seconds": 52.18595197,
+    "frames": 17,
+    "width": 480,
+    "height": 480,
+    "technical_frames_pass": true,
+    "target_color_presence_fraction": 1.0,
+    "target_circularity_median": 0.6328504813695618,
+    "object_centroid_mean_error_diagonal": 0.00794050178892301,
+    "composite_png_outside_mask": {
+      "mae_255": 0.0,
+      "p95_255": 0.0,
+      "max_255": 0.0
+    },
+    "raw_outside_dilated_mask": {
+      "mae_255": 0.7249065637588501,
+      "p95_255": 2.0,
+      "max_255": 65.0
+    },
+    "mp4_outside_dilated_mask": {
+      "mae_255": 0.5438517928123474,
+      "p95_255": 1.0,
+      "max_255": 8.0
+    },
+    "source_flow_aligned_temporal_residual_mean": 0.06713682599365711,
+    "manual_review_required": true,
+    "overall_pass": null,
+    "metric_caveats": [
+      "Color presence is not identity or silhouette fidelity.",
+      "Source-flow residual is confounded by intended appearance changes and is diagnostic only.",
+      "No automatic pass without the registered visual gates."
+    ]
+  },
+  {
+    "run": "dev-synthetic-object__baseline__source-retained__s42",
+    "case": "dev-synthetic-object",
+    "split": "development",
+    "mode": "object-swap",
+    "profile": "baseline",
+    "variant": "source-retained",
+    "seed": 42,
+    "worker_seconds": 34.95542456,
+    "frames": 17,
+    "width": 480,
+    "height": 480,
+    "technical_frames_pass": true,
+    "target_color_presence_fraction": 1.0,
+    "target_circularity_median": 0.718826246216033,
+    "object_centroid_mean_error_diagonal": 0.015975733075754957,
+    "composite_png_outside_mask": {
+      "mae_255": 0.0,
+      "p95_255": 0.0,
+      "max_255": 0.0
+    },
+    "raw_outside_dilated_mask": {
+      "mae_255": 0.7142481207847595,
+      "p95_255": 2.0,
+      "max_255": 58.0
+    },
+    "mp4_outside_dilated_mask": {
+      "mae_255": 0.544918954372406,
+      "p95_255": 1.0,
+      "max_255": 7.0
+    },
+    "source_flow_aligned_temporal_residual_mean": 0.04168220702558756,
+    "manual_review_required": true,
+    "overall_pass": null,
+    "metric_caveats": [
+      "Color presence is not identity or silhouette fidelity.",
+      "Source-flow residual is confounded by intended appearance changes and is diagnostic only.",
+      "No automatic pass without the registered visual gates."
+    ]
+  },
+  {
+    "run": "hold-real-motion__baseline__baseline__s42",
+    "case": "hold-real-motion",
+    "split": "held-out",
+    "mode": "motion-transfer",
+    "profile": "baseline",
+    "variant": "baseline",
+    "seed": 42,
+    "worker_seconds": 61.494349636,
+    "frames": 17,
+    "width": 352,
+    "height": 480,
+    "technical_frames_pass": true,
+    "target_color_presence_fraction": 1.0,
+    "target_circularity_median": 0.13738461409481842,
+    "object_centroid_mean_error_diagonal": null,
+    "composite_png_outside_mask": null,
+    "raw_outside_dilated_mask": null,
+    "mp4_outside_dilated_mask": null,
+    "source_flow_aligned_temporal_residual_mean": 0.00898687647713814,
+    "manual_review_required": true,
+    "overall_pass": null,
+    "metric_caveats": [
+      "Color presence is not identity or silhouette fidelity.",
+      "Source-flow residual is confounded by intended appearance changes and is diagnostic only.",
+      "No automatic pass without the registered visual gates."
+    ]
+  },
+  {
+    "run": "hold-real-motion__candidate__baseline__s42",
+    "case": "hold-real-motion",
+    "split": "held-out",
+    "mode": "motion-transfer",
+    "profile": "candidate",
+    "variant": "baseline",
+    "seed": 42,
+    "worker_seconds": 62.632372668,
+    "frames": 17,
+    "width": 480,
+    "height": 352,
+    "technical_frames_pass": true,
+    "target_color_presence_fraction": 1.0,
+    "target_circularity_median": 0.12558353297414626,
+    "object_centroid_mean_error_diagonal": null,
+    "composite_png_outside_mask": null,
+    "raw_outside_dilated_mask": null,
+    "mp4_outside_dilated_mask": null,
+    "source_flow_aligned_temporal_residual_mean": 0.007747256720904261,
+    "manual_review_required": true,
+    "overall_pass": null,
+    "metric_caveats": [
+      "Color presence is not identity or silhouette fidelity.",
+      "Source-flow residual is confounded by intended appearance changes and is diagnostic only.",
+      "No automatic pass without the registered visual gates."
+    ]
+  },
+  {
+    "run": "hold-real-object__baseline__baseline__s42",
+    "case": "hold-real-object",
+    "split": "held-out",
+    "mode": "object-swap",
+    "profile": "baseline",
+    "variant": "baseline",
+    "seed": 42,
+    "worker_seconds": 31.169202925000004,
+    "frames": 17,
+    "width": 480,
+    "height": 272,
+    "technical_frames_pass": true,
+    "target_color_presence_fraction": 1.0,
+    "target_circularity_median": 0.8063575949686792,
+    "object_centroid_mean_error_diagonal": null,
+    "composite_png_outside_mask": {
+      "mae_255": 0.0,
+      "p95_255": 0.0,
+      "max_255": 0.0
+    },
+    "raw_outside_dilated_mask": {
+      "mae_255": 5.005060195922852,
+      "p95_255": 20.0,
+      "max_255": 215.0
+    },
+    "mp4_outside_dilated_mask": {
+      "mae_255": 1.8643708229064941,
+      "p95_255": 6.0,
+      "max_255": 50.0
+    },
+    "source_flow_aligned_temporal_residual_mean": 0.06178637780249119,
+    "manual_review_required": true,
+    "overall_pass": null,
+    "metric_caveats": [
+      "Color presence is not identity or silhouette fidelity.",
+      "Source-flow residual is confounded by intended appearance changes and is diagnostic only.",
+      "No automatic pass without the registered visual gates."
+    ]
+  },
+  {
+    "run": "hold-real-object__candidate__baseline__s42",
+    "case": "hold-real-object",
+    "split": "held-out",
+    "mode": "object-swap",
+    "profile": "candidate",
+    "variant": "baseline",
+    "seed": 42,
+    "worker_seconds": 29.713459961,
+    "frames": 17,
+    "width": 480,
+    "height": 272,
+    "technical_frames_pass": true,
+    "target_color_presence_fraction": 1.0,
+    "target_circularity_median": 0.8063575949686792,
+    "object_centroid_mean_error_diagonal": null,
+    "composite_png_outside_mask": {
+      "mae_255": 0.0,
+      "p95_255": 0.0,
+      "max_255": 0.0
+    },
+    "raw_outside_dilated_mask": {
+      "mae_255": 5.005060195922852,
+      "p95_255": 20.0,
+      "max_255": 215.0
+    },
+    "mp4_outside_dilated_mask": {
+      "mae_255": 1.8643708229064941,
+      "p95_255": 6.0,
+      "max_255": 50.0
+    },
+    "source_flow_aligned_temporal_residual_mean": 0.06178637780249119,
+    "manual_review_required": true,
+    "overall_pass": null,
+    "metric_caveats": [
+      "Color presence is not identity or silhouette fidelity.",
+      "Source-flow residual is confounded by intended appearance changes and is diagnostic only.",
+      "No automatic pass without the registered visual gates."
+    ]
+  },
+  {
+    "run": "hold-synthetic-motion__baseline__baseline__s42",
+    "case": "hold-synthetic-motion",
+    "split": "held-out",
+    "mode": "motion-transfer",
+    "profile": "baseline",
+    "variant": "baseline",
+    "seed": 42,
+    "worker_seconds": 75.71618153,
+    "frames": 17,
+    "width": 480,
+    "height": 480,
+    "technical_frames_pass": true,
+    "target_color_presence_fraction": 1.0,
+    "target_circularity_median": 0.2942132016942293,
+    "object_centroid_mean_error_diagonal": null,
+    "composite_png_outside_mask": null,
+    "raw_outside_dilated_mask": null,
+    "mp4_outside_dilated_mask": null,
+    "source_flow_aligned_temporal_residual_mean": 0.0020901836178381927,
+    "manual_review_required": true,
+    "overall_pass": null,
+    "metric_caveats": [
+      "Color presence is not identity or silhouette fidelity.",
+      "Source-flow residual is confounded by intended appearance changes and is diagnostic only.",
+      "No automatic pass without the registered visual gates."
+    ]
+  },
+  {
+    "run": "hold-synthetic-motion__candidate__baseline__s42",
+    "case": "hold-synthetic-motion",
+    "split": "held-out",
+    "mode": "motion-transfer",
+    "profile": "candidate",
+    "variant": "baseline",
+    "seed": 42,
+    "worker_seconds": 100.09745489400001,
+    "frames": 17,
+    "width": 480,
+    "height": 480,
+    "technical_frames_pass": true,
+    "target_color_presence_fraction": 1.0,
+    "target_circularity_median": 0.2942132016942293,
+    "object_centroid_mean_error_diagonal": null,
+    "composite_png_outside_mask": null,
+    "raw_outside_dilated_mask": null,
+    "mp4_outside_dilated_mask": null,
+    "source_flow_aligned_temporal_residual_mean": 0.0020901836178381927,
+    "manual_review_required": true,
+    "overall_pass": null,
+    "metric_caveats": [
+      "Color presence is not identity or silhouette fidelity.",
+      "Source-flow residual is confounded by intended appearance changes and is diagnostic only.",
+      "No automatic pass without the registered visual gates."
+    ]
+  },
+  {
+    "run": "hold-synthetic-object__baseline__baseline__s42",
+    "case": "hold-synthetic-object",
+    "split": "held-out",
+    "mode": "object-swap",
+    "profile": "baseline",
+    "variant": "baseline",
+    "seed": 42,
+    "worker_seconds": 44.246668231,
+    "frames": 17,
+    "width": 480,
+    "height": 480,
+    "technical_frames_pass": true,
+    "target_color_presence_fraction": 1.0,
+    "target_circularity_median": 0.6471346270181383,
+    "object_centroid_mean_error_diagonal": 0.005203401248785349,
+    "composite_png_outside_mask": {
+      "mae_255": 0.0,
+      "p95_255": 0.0,
+      "max_255": 0.0
+    },
+    "raw_outside_dilated_mask": {
+      "mae_255": 0.6186686754226685,
+      "p95_255": 2.0,
+      "max_255": 83.0
+    },
+    "mp4_outside_dilated_mask": {
+      "mae_255": 0.5438250303268433,
+      "p95_255": 1.0,
+      "max_255": 11.0
+    },
+    "source_flow_aligned_temporal_residual_mean": 0.04771476471796632,
+    "manual_review_required": true,
+    "overall_pass": null,
+    "metric_caveats": [
+      "Color presence is not identity or silhouette fidelity.",
+      "Source-flow residual is confounded by intended appearance changes and is diagnostic only.",
+      "No automatic pass without the registered visual gates."
+    ]
+  },
+  {
+    "run": "hold-synthetic-object__candidate__baseline__s42",
+    "case": "hold-synthetic-object",
+    "split": "held-out",
+    "mode": "object-swap",
+    "profile": "candidate",
+    "variant": "baseline",
+    "seed": 42,
+    "worker_seconds": 51.804030952,
+    "frames": 17,
+    "width": 480,
+    "height": 480,
+    "technical_frames_pass": true,
+    "target_color_presence_fraction": 1.0,
+    "target_circularity_median": 0.6471346270181383,
+    "object_centroid_mean_error_diagonal": 0.005203401248785349,
+    "composite_png_outside_mask": {
+      "mae_255": 0.0,
+      "p95_255": 0.0,
+      "max_255": 0.0
+    },
+    "raw_outside_dilated_mask": {
+      "mae_255": 0.6186686754226685,
+      "p95_255": 2.0,
+      "max_255": 83.0
+    },
+    "mp4_outside_dilated_mask": {
+      "mae_255": 0.5438250303268433,
+      "p95_255": 1.0,
+      "max_255": 11.0
+    },
+    "source_flow_aligned_temporal_residual_mean": 0.04771476471796632,
+    "manual_review_required": true,
+    "overall_pass": null,
+    "metric_caveats": [
+      "Color presence is not identity or silhouette fidelity.",
+      "Source-flow residual is confounded by intended appearance changes and is diagnostic only.",
+      "No automatic pass without the registered visual gates."
+    ]
+  }
+]

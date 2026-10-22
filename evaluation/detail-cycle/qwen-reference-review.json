@@ -1,0 +1,18 @@
+{
+  "assessor": "coding agent, not independent professional review",
+  "scope": "One paired reference-only experiment",
+  "control": "512px identity preprocessing",
+  "candidate": "Direct original pixels at672x1024, same native token geometry",
+  "technical_pair_pass": true,
+  "observed_improvements": [
+    "Two visible glasses lenses/bridge restored",
+    "Beard visible; face less cartoon-like"
+  ],
+  "remaining_failures": [
+    "Source headwrap retained; target curls absent",
+    "Reference hand pose changed relative to source/Klein reference",
+    "Glasses shape/face not a close original match"
+  ],
+  "reference_gate_pass": false,
+  "next": "Predeclared both-editor placement ablation only; no video until reference gate passes."
+}

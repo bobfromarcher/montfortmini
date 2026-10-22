@@ -1,0 +1,12 @@
+[
+  {
+    "status": "succeeded",
+    "max_gpu_calls": 1,
+    "max_gpu_seconds": 660,
+    "call_id": "fc-01M5FDTW89Q891P0075SBTE7NS",
+    "worker_seconds": 47.366523120000004,
+    "protocol_closed": true,
+    "quality_gate_pass": false,
+    "closure_reason": "Reference color lost17/17; frozen quality failure. No verification or retry."
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "checks": {
+    "klein": {
+      "identity_original_bytes_equal": true,
+      "workflow_equal": true,
+      "prompt_equal": true,
+      "seed_equal": true,
+      "models_equal": true,
+      "source_original_bytes_equal": true,
+      "identity_dimensions": [
+        672,
+        1024
+      ]
+    },
+    "qwen": {
+      "identity_original_bytes_equal": true,
+      "workflow_equal": true,
+      "prompt_equal": true,
+      "seed_equal": true,
+      "models_equal": true,
+      "source_original_bytes_equal": false,
+      "identity_dimensions": [
+        672,
+        1024
+      ]
+    }
+  },
+  "limits": "Predeclared placement ablation, not another pure pixel-detail isolation. Klein reference latent/token geometry changes with its canvas, and its changed output becomes Qwen source conditioning. Qwen native geometry itself stays fixed. No attribution to one of these mechanisms is established."
+}

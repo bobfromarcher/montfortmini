@@ -1,0 +1,119 @@
+{
+  "case": {
+    "id": "hold-synthetic-motion",
+    "split": "held-out",
+    "kind": "synthetic-motion",
+    "mode": "motion-transfer",
+    "video": "hold-synthetic-motion/input.mp4",
+    "reference": "hold-synthetic-motion/reference.png",
+    "frames": 17,
+    "prompt": "An illustrated orange-haired character in a purple shirt follows the lowering arm movement in the source clip. Full body, stable appearance.",
+    "bbox": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "end_bbox": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "rotation_metadata": false,
+    "annotations": {
+      "moving_endpoint": [
+        [
+          0.38274652149449295,
+          0.22721037655706203
+        ],
+        [
+          0.36319598702043077,
+          0.23210483052290126
+        ],
+        [
+          0.3442317538473576,
+          0.23892662925948996
+        ],
+        [
+          0.32604330632439665,
+          0.2476076116088392
+        ],
+        [
+          0.30881237740689615,
+          0.2580610400648654
+        ],
+        [
+          0.29271113284081174,
+          0.27018246742588004
+        ],
+        [
+          0.27790045093948407,
+          0.283850780396503
+        ],
+        [
+          0.2645283151407106,
+          0.2989294097116754
+        ],
+        [
+          0.2527283354051524,
+          0.31526769469161225
+        ],
+        [
+          0.24261841322977223,
+          0.33270238859351287
+        ],
+        [
+          0.23429956361505067,
+          0.3510592897190531
+        ],
+        [
+          0.2278549057564918,
+          0.3701549819801714
+        ],
+        [
+          0.22334883254509794,
+          0.3897986675319912
+        ],
+        [
+          0.2208263671748874,
+          0.4097940731618179
+        ],
+        [
+          0.22031271328602306,
+          0.42994141138620046
+        ],
+        [
+          0.2218130031383712,
+          0.45003937666142557
+        ],
+        [
+          0.22531224633165703,
+          0.46988715676196735
+        ]
+      ],
+      "target_color": "purple"
+    },
+    "notes": [],
+    "source_provenance": "hold-synthetic-motion/source-provenance.json"
+  },
+  "profile": "candidate",
+  "variant": "baseline",
+  "started_utc": "2026-10-17T18:01:21.502665+00:00",
+  "ended_utc": "2026-10-17T18:03:01.600120+00:00",
+  "worker_elapsed_seconds": 100.09745489400001,
+  "seed": 42,
+  "gpu_monitor_samples": 97,
+  "input_video_sha256": "35360820e797651337d458ef5203ec9d9b1f8a1b15907b8000d719d8291ed720",
+  "input_reference_sha256": "37f5b025f62c7a8d01a1e9aa3d1f5f77ab792597bc268daf46c20cd73596e9b4",
+  "runtime_source_sha256": {
+    "service.py": "f53f0402c8063424cbd49c57d6a002e4112ce016ea9b667a819ceae633af2f0e",
+    "workflow.py": "babd4432c111f92283a4d92ffb49dfe5f83fa79654f724d80c6a2939b5dfc150",
+    "motion_workflow.py": "43adfab664bd3d637aba96b87c5cc9e25c812623e93c5553fce0820e7b1ae0de",
+    "media_pipeline.py": "1b205eea634e7831b5cff266ecbeb53771e5b8f79177bc5aaa4b6d8c11c9aaa3",
+    "baseline_media_pipeline.py": "e8f9520e76a0561415dff5a576d00a1889e31bf238129a675a0f17b0dd41f3fd",
+    "model_config.py": "c7467de0c834698f25b78cfc69d000de40f4d93ecd2c26cdd764ed10ec4ba5a1",
+    "motion_model_config.py": "1a41713ecfea0ea848ca231e1e8d6376935e660746c06bcb27a559abf1d75e9d",
+    "evaluation_runner.py": "c1f458464e918e27afce1afcf1f9b1dbf4c21d98919412dcadb55a215a6c7911"
+  }
+}

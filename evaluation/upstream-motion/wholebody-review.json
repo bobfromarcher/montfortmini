@@ -1,0 +1,13 @@
+{
+  "gate_pass": false,
+  "reviewed_native_frames": [
+    8,
+    16,
+    24,
+    28
+  ],
+  "reason": "Early rejection: helmet-like headwear absent from reference, large head/body protrusions and severe blurred hands/face. No full-frame-count identity or motion pass claimed.",
+  "raw_composite_png_exact_equal": true,
+  "decision": "Reject and stop GPU cycle. No candidate frozen as passing; no unseen run.",
+  "causal_limits": "Control bundle changes rendered body/hands,face cropping and resize together; cannot attribute regression to a single component. Exact upstream diffusion sampling path was not executed; checkpoint incapacity is not established."
+}

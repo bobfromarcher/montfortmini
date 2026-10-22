@@ -1,0 +1,14 @@
+{
+  "declared_utc": "2026-10-18T20:06:50.304273+00:00",
+  "max_gpu_attempts": 4,
+  "max_worker_seconds": 3000,
+  "max_included_credit_delta": 3,
+  "baseline_usage_displayed": 6.45,
+  "baseline_included_remaining": 23.55,
+  "stopping_usage": 9.45,
+  "stopping_remaining": 20.55,
+  "cash_cap": 0,
+  "reserved_verification_calls": 2,
+  "reserved_verification_worker_seconds": 1560,
+  "stop": "Stop on technical GPU failure, cash>0/cap absent, call/time/credit threshold, or failed identity/clothing gate. If identity/clothing pass but only posture/orientation fails, allow one preregistered depth-guidance reference test; no other changes. Video and genuinely independent source require prior gates to pass. No rerolls."
+}

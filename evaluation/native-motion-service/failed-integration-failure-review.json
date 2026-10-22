@@ -1,0 +1,12 @@
+{
+  "status": "technical failure before Comfy startup/inference",
+  "failure": {
+    "type": "TypeError",
+    "message": "render.<locals>.Native.local() takes 3 positional arguments but 4 were given"
+  },
+  "worker_seconds": 0.25739766200000025,
+  "source_quality_verdict": null,
+  "evidence_recovery": "Retained successful child FunctionCall results fetched after orchestration error. No new compute invoked.",
+  "old_ledger_closed": true,
+  "next_change": "Four-argument nested precision forwarding; failed evidence returned to private verification caller."
+}

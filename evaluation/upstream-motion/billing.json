@@ -1,0 +1,9 @@
+{
+  "baseline_usage_displayed": 7.72,
+  "final_usage_displayed": 7.93,
+  "final_remaining_displayed": 22.07,
+  "displayed_included_credit_delta": 0.21,
+  "cash_spend": 0,
+  "cash_cap": 0,
+  "limits": "Rounded asynchronous account totals include CPU build/preparation and other account activity; not an isolated invoice."
+}

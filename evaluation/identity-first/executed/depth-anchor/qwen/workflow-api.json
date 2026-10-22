@@ -1,0 +1,197 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_edit_2511_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+      "type": "qwen_image",
+      "device": "default"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_vae.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "recovery-source.png"
+    }
+  },
+  "5": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "recovery-identity.png"
+    }
+  },
+  "6": {
+    "class_type": "TextEncodeQwenImageEditPlus",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "image1": [
+        "5",
+        0
+      ],
+      "image2": [
+        "4",
+        0
+      ],
+      "prompt": "Render exactly one character from image 1 in the body pose shown in image 2. Image 2 supplies only body posture, joint positions, head direction, scale and framing; it may be a photograph or a colored skeleton keypoint map. Image 1 is the sole source of character appearance: preserve the face, hairstyle, beard, eyeglasses or other accessories, every clothing item, garment colors and materials. Do not copy the source performer's face, hair, headwear or clothing from image 2. Keep the shoulders, elbows, wrists, hips and knees at the positions shown in image 2. Keep the hands in those positions and turn the head in the shown direction. Use the visual rendering style of image 1 with plausible anatomy, on a plain neutral studio background. No text, extra subject, unrelated props or extra limbs. Image 3 is an estimated depth map of the source, brighter nearer the camera. Use it only for three-dimensional body orientation and limb placement, including which side of the torso faces the camera. Preserve the character appearance and clothes from the appearance reference. Do not copy the source performer's headwear or clothing from the depth silhouette.",
+      "image3": [
+        "18",
+        0
+      ]
+    }
+  },
+  "7": {
+    "class_type": "TextEncodeQwenImageEditPlus",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "image1": [
+        "5",
+        0
+      ],
+      "image2": [
+        "4",
+        0
+      ],
+      "prompt": "",
+      "image3": [
+        "18",
+        0
+      ]
+    }
+  },
+  "8": {
+    "class_type": "FluxKontextMultiReferenceLatentMethod",
+    "inputs": {
+      "conditioning": [
+        "6",
+        0
+      ],
+      "reference_latents_method": "index_timestep_zero"
+    }
+  },
+  "9": {
+    "class_type": "FluxKontextMultiReferenceLatentMethod",
+    "inputs": {
+      "conditioning": [
+        "7",
+        0
+      ],
+      "reference_latents_method": "index_timestep_zero"
+    }
+  },
+  "10": {
+    "class_type": "ModelSamplingAuraFlow",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "shift": 3.1
+    }
+  },
+  "11": {
+    "class_type": "CFGNorm",
+    "inputs": {
+      "model": [
+        "10",
+        0
+      ],
+      "strength": 1.0,
+      "preserve_direction": false
+    }
+  },
+  "12": {
+    "class_type": "VAEEncode",
+    "inputs": {
+      "pixels": [
+        "4",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "13": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "11",
+        0
+      ],
+      "seed": 42,
+      "steps": 40,
+      "cfg": 4.0,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "positive": [
+        "8",
+        0
+      ],
+      "negative": [
+        "9",
+        0
+      ],
+      "latent_image": [
+        "12",
+        0
+      ],
+      "denoise": 1.0
+    }
+  },
+  "14": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "13",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "15": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "14",
+        0
+      ],
+      "filename_prefix": "recovery-anchor"
+    }
+  },
+  "18": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "identity-body-depth.png"
+    }
+  }
+}

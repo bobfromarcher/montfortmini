@@ -1,0 +1,25 @@
+{
+  "status": "generated-unreviewed",
+  "model": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged",
+  "model_revision": "ee6f4a40737a995bf5818954cfce6d59443b0f04",
+  "mode": "motion-transfer",
+  "comfy_commit": "5cc4b870094c89090db54bd8d12649dcaf89f2ba",
+  "gpu": "L40S",
+  "elapsed_seconds": 116.29,
+  "comfy_sdk": "0.5.0",
+  "comfy_api_proxy": "0.1.6",
+  "sdk_job_id": "bdeedff1-11f2-4a3a-8618-1cdde5c32d9c",
+  "frames": 33,
+  "fps": 8,
+  "width": 480,
+  "height": 560,
+  "seed": 42,
+  "steps": 20,
+  "input_provenance": "same CC0 development frames and protected fictional-reference pixels",
+  "target_erased_in_control": false,
+  "limitations": [
+    "Feasibility test; visual quality has not yet been reviewed.",
+    "Outside-mask pixel preservation in composite.mp4 comes from explicit compositing.",
+    "Does not prove general input quality or Genjutsu parity."
+  ]
+}

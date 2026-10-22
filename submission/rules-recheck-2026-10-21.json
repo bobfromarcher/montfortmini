@@ -1,0 +1,16 @@
+{
+  "checked_utc": "2026-10-22T03:58:00.541189+00:00",
+  "rules_url": "https://comfy.org/open-source-higgsfield",
+  "method": "Live page and expanded App requirements, Prepare submission and Submit accordions",
+  "deadline": "2026-10-30T09:00:00-07:00",
+  "deadline_eastern": "2026-10-30T12:00:00-04:00",
+  "findings": [
+    "ComfyUI required; entirely local execution explicitly allowed; SDK/Router/cloud optional paths.",
+    "Open-source app/workflows/license/local setup, lawful SFW cleared media; one entry per person.",
+    "Demo at most2minutes; social demo post using competition hashtag; hosted try link optional.",
+    "Entrant must review organizer/partner featuring terms when submitting."
+  ],
+  "registration_receipt_verified": false,
+  "submission_sent": false,
+  "social_post_sent": false
+}

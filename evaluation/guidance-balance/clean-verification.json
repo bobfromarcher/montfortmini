@@ -1,0 +1,12 @@
+{
+  "source_tree": "b2e71a1aacd3a080b27ded3889b1921f03ad10ce",
+  "cpu_tests": 61,
+  "tests_pass": true,
+  "tests_seconds": 16.801,
+  "isolation_pass": true,
+  "quality_gate_pass": false,
+  "quality_exit_1_expected": true,
+  "color_diagnostics_exact": true,
+  "documentation_command_correction": "Initial documented --inputs directory failed; corrected to inputs.zip and successfully recomputed identical diagnostics. No inference or implementation change.",
+  "limits": "Fresh Git source extraction; same machine/existing dependencies. Not clean dependency installation, independent GPU reproduction or professional review. Only report/status metadata changed afterward."
+}

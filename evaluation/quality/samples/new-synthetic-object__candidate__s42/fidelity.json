@@ -1,0 +1,129 @@
+{
+  "case": {
+    "id": "new-synthetic-object",
+    "split": "prospective-held-out",
+    "kind": "synthetic-object",
+    "mode": "object-swap",
+    "video": "new-tests/new-synthetic-object/input.mp4",
+    "reference": "new-tests/new-synthetic-object/reference.png",
+    "frames": 17,
+    "prompt": "A single smooth solid green sphere shown in the reference moves straight downward over a pale gray grid. Preserve its vertical trajectory and size. Fixed camera.",
+    "bbox": [
+      0.39,
+      0.24,
+      0.22,
+      0.26
+    ],
+    "end_bbox": [
+      0.39,
+      0.505625,
+      0.22,
+      0.26
+    ],
+    "annotations": {
+      "target_color": "green",
+      "expected_centers": [
+        [
+          0.4895833333333333,
+          0.35
+        ],
+        [
+          0.4895833333333333,
+          0.3666015625
+        ],
+        [
+          0.4895833333333333,
+          0.383203125
+        ],
+        [
+          0.4895833333333333,
+          0.3998046875
+        ],
+        [
+          0.4895833333333333,
+          0.41640625
+        ],
+        [
+          0.4895833333333333,
+          0.4330078125
+        ],
+        [
+          0.4895833333333333,
+          0.449609375
+        ],
+        [
+          0.4895833333333333,
+          0.4662109375
+        ],
+        [
+          0.4895833333333333,
+          0.4828125
+        ],
+        [
+          0.4895833333333333,
+          0.4994140625
+        ],
+        [
+          0.4895833333333333,
+          0.516015625
+        ],
+        [
+          0.4895833333333333,
+          0.5326171875
+        ],
+        [
+          0.4895833333333333,
+          0.54921875
+        ],
+        [
+          0.4895833333333333,
+          0.5658203125
+        ],
+        [
+          0.4895833333333333,
+          0.582421875
+        ],
+        [
+          0.4895833333333333,
+          0.5990234375
+        ],
+        [
+          0.4895833333333333,
+          0.615625
+        ]
+      ]
+    },
+    "notes": [],
+    "sha256": {
+      "video": "a24fe8dcad346d496e6e64ddab53073c2b7045eae7d3860bfe15d00418a8e055",
+      "reference": "334a4aaf1a643b201062a0be3bfd9aacdc3b78812f83eb7891cdd7cc8e93fd54"
+    },
+    "_client_runner_sha256": "f161390ae82bf3f45b3d66b0cbae336ca0e107d4a5b08b0d0eafad1c6c0d84fb"
+  },
+  "profile": "candidate",
+  "seed": 42,
+  "started_utc": "2026-10-17T21:55:54.285392+00:00",
+  "status": "succeeded",
+  "failure": null,
+  "ended_utc": "2026-10-17T21:56:37.042556+00:00",
+  "worker_elapsed_seconds": 42.757192286,
+  "input_video_sha256": "a24fe8dcad346d496e6e64ddab53073c2b7045eae7d3860bfe15d00418a8e055",
+  "input_reference_sha256": "334a4aaf1a643b201062a0be3bfd9aacdc3b78812f83eb7891cdd7cc8e93fd54",
+  "source_sha256": {
+    "media_pipeline.py": "59e55b3640c7efc4cc88774e087ec554164d319f40b2051ca24a54ad82b7ba39",
+    "motion_workflow.py": "43adfab664bd3d637aba96b87c5cc9e25c812623e93c5553fce0820e7b1ae0de",
+    "service.py": "f53f0402c8063424cbd49c57d6a002e4112ce016ea9b667a819ceae633af2f0e",
+    "sdk_runner.py": "d76f20f0bdf4af242d9f6b03b499097ea2775198356acb6572e0ee59d5ad1f72",
+    "fidelity_baseline_media_pipeline.py": "1b205eea634e7831b5cff266ecbeb53771e5b8f79177bc5aaa4b6d8c11c9aaa3",
+    "fidelity_baseline_motion_workflow.py": "43adfab664bd3d637aba96b87c5cc9e25c812623e93c5553fce0820e7b1ae0de",
+    "fidelity_precover_media_pipeline.py": "d00b2d0841cbe922ab73e73222d3a4cdcc47787ac91dc7abc157496f793b815a",
+    "fidelity_runner.py": "f161390ae82bf3f45b3d66b0cbae336ca0e107d4a5b08b0d0eafad1c6c0d84fb",
+    "model_config.py": "c7467de0c834698f25b78cfc69d000de40f4d93ecd2c26cdd764ed10ec4ba5a1",
+    "motion_model_config.py": "1a41713ecfea0ea848ca231e1e8d6376935e660746c06bcb27a559abf1d75e9d"
+  },
+  "client_runner_sha256": "f161390ae82bf3f45b3d66b0cbae336ca0e107d4a5b08b0d0eafad1c6c0d84fb",
+  "limits": [
+    "Agent visual assessment, not an independent professional score.",
+    "Process-tree RSS sums may count shared pages twice; GPU peaks are sampled at 1 Hz."
+  ]
+}

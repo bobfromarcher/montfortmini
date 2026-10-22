@@ -1,4 +1,4 @@
-"""Optional local NVIDIA GPU backend, using the same inference code as Modal.
+"""Optional local NVIDIA backend; native motion selected by Dockerfile.native.
 
 Run through Dockerfile.local. No Modal credentials or cloud calls are required.
 """
@@ -28,14 +28,17 @@ async def authenticate(request,call_next):
 async def status():
     return {"configured":True,"features":{"objectSwap":True,"motionTransfer":True},
             "limits":{"maxVideoBytes":MAX_VIDEO_BYTES,"maxImageBytes":MAX_IMAGE_BYTES,
-                      "maxFrames":33,"maxSide":480}}
+                      "maxFrames":33,"maxSide":560 if os.environ.get('OPENJUTSU_NATIVE_MOTION')=='1' else 480}}
 
 
 async def render(job_id,data):
     global busy
     try:
-        from service import generate
-        result = await asyncio.to_thread(generate.local,data)
+        if os.environ.get('OPENJUTSU_NATIVE_MOTION') == '1':
+            from native_local_inference import generate
+        else:
+            from legacy_local_inference import generate
+        result = await asyncio.to_thread(generate,data)
         jobs[job_id] = {"status":"succeeded","result":result}
     except Exception:
         jobs[job_id] = {"status":"failed","error":"Render failed. Check the local server log and GPU memory, then adjust the clip."}

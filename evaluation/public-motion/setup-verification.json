@@ -1,0 +1,59 @@
+{
+  "python": {
+    "source_commit": "29b13bd5f51ea33acafa0fd88234995abac9749d",
+    "fresh_clone": true,
+    "fresh_virtual_environment": true,
+    "system_site_packages": false,
+    "runtime_requirements_only_tests_returncode": 1,
+    "runtime_plus_evaluation_requirements_tests_pass": true,
+    "pip_check_pass": true,
+    "elapsed_seconds": 401.4521092000068,
+    "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+    "limits": "Same Windows machine/operator; not another user or GPU reproduction. No Modal sign-in or inference in this checkout."
+  },
+  "frontend": {
+    "fresh_clone_commit": "29b13bd5f51ea33acafa0fd88234995abac9749d",
+    "npm_ci_pass": true,
+    "isolated_empty_npm_cache": true,
+    "fresh_types_pass": true,
+    "fresh_production_build_pass": true,
+    "node": "v24.14.1",
+    "npm": "11.11.0",
+    "checks_elapsed_seconds": 51.56604940001853,
+    "limits": "Same Windows machine/operator, new node_modules/cache. Not another person or new GPU account."
+  },
+  "simulated_user": {
+    "simulated_fresh_user": true,
+    "browser_session": "fresh local mock sign-in after sign-out; fixed development identity, same IAB/machine/operator",
+    "fixture_backend": "Loopback recorded-output replay; no fresh GPU request, production credentials or deployed account used",
+    "source_reference_settings_match": true,
+    "mp4_download_bytes_exact": true,
+    "workflow_download_json_exact": true,
+    "details_download_json_exact": true,
+    "passed_flows": [
+      "local sign-in",
+      "source upload",
+      "reference upload",
+      "33frames/seed42 selection",
+      "submit/queued/result rendering",
+      "raw/finished switch",
+      "linked video playback",
+      "MP4/workflow/run-detail downloads"
+    ],
+    "video_metadata": {
+      "source_duration": 4.125,
+      "result_duration": 4.125,
+      "both_readyState": 4,
+      "observed_end_time_delta_seconds": 0.021231
+    },
+    "independent_user_verified": false,
+    "independent_account_GPU_verified": false,
+    "limits": "Fixture-backed UI QA plus earlier actual current-native backend run; not one fresh end-to-end browser-to-GPU generation. No external tester yet."
+  },
+  "cpu_tests": 61,
+  "cpu_tests_seconds": 41.525,
+  "independent_tester_available": false,
+  "independent_user_verified": false,
+  "documentation_fix": "Install evaluation/requirements.txt before the CPU test suite; root requirements omit OpenCV.",
+  "limits": "Actual clean dependency installation and simulated UI session on same machine/operator; fixture-backed UI response, separate real GPU example. No independent person/account or local GPU reproduction."
+}

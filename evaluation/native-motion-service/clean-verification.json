@@ -1,0 +1,8 @@
+{
+  "git_tree": "fbdea3aa50a32b1cec9337b92cd2ab0c172639c3",
+  "cpu_tests_exit_code": 0,
+  "seconds": 15.55166409999947,
+  "scanned_files": 1044,
+  "known_credentials_or_current_private_media_findings": [],
+  "scope": "Fresh extraction of staged Git tree; same machine and existing dependencies. No independent installation or GPU reproduction. Scan is targeted, not universal proof."
+}

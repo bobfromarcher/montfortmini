@@ -1,0 +1,10 @@
+{
+  "output": "outputs\\identity-first\\registered-motion",
+  "kind": "video",
+  "status": "dispatched",
+  "ceiling_seconds": 660,
+  "started_utc": "2026-10-18T20:39:29.976985+00:00",
+  "observed_usage": 7.11,
+  "observed_remaining": 22.89,
+  "call_id": "fc-01M58BVEGMYSZ0QGPJYA0ANV79"
+}

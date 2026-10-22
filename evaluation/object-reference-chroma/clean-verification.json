@@ -1,0 +1,12 @@
+{
+  "source_tree": "1f38c3c54906356db95e285c7cedb85495cb8fc4",
+  "cpu_tests": 54,
+  "tests_seconds": 17.229,
+  "tests_pass": true,
+  "new_case_artifact_and_numerical_audit_pass": true,
+  "prior_case_artifact_and_numerical_regression_pass": true,
+  "full_visual_gate_pass": false,
+  "command": "python -m unittest discover -s tests",
+  "limits": "Fresh Git tree extraction on same machine and existing dependencies, not clean dependency install, independent professional review or GPU reproduction. Only report/status metadata updated after this verification.",
+  "audit_script_sha256": "8ae9f5b681f3afdee7cc0cf7b889d4319336d3e27285c615e9d037de93363a61"
+}

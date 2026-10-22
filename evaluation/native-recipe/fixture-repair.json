@@ -1,0 +1,14 @@
+{
+  "original_failed_fixture_sha256": "7c9bd6e47bbda5f2a4556170e55f5dfd9bade48f18b7913713c067cc55482b44",
+  "corrected_fixture_sha256": "ec332a8740ce1843255968c4709cbb8f0a48006c9f9428f7306a05d8fa809049",
+  "validation": {
+    "frames": 33,
+    "width": 480,
+    "height": 560,
+    "required_files_present": 135,
+    "postprocess_masks_present": true
+  },
+  "inference_on_corrected_fixture": false,
+  "original_freezes_and_outputs_preserved": true,
+  "reason": "Added only missing full-white PNG masks required by compositor. The npz already contains full-white masks. No model, reference, control or seed change."
+}

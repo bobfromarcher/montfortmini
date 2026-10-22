@@ -1,0 +1,18 @@
+{
+  "status": "succeeded",
+  "failure": null,
+  "kind": "identity-first + depth reference",
+  "worker_elapsed_seconds": 525.316902396,
+  "ended_utc": "2026-10-18T20:30:27.045673+00:00",
+  "source_sha256": {
+    "pose_reference_candidate.py": "1dcb57dbe5cf5a925583c6748ee6fd3cc0cd5276fbe4f7f992df05d86776300d",
+    "pose_reference_alignment.py": "12f1a1d500e02072ca63b9edbab3e288f59aa0569ff5cb72195486dc682ed0ca",
+    "identity_detail.py": "90468f78d5bd04f17786195df558382514587649522a693fe68cdb83184a5cf5",
+    "detail_reference_alignment.py": "3b8b2e64c8d37533618fdef1df8813f9e2542a444e0f81d60db5ff7b1378d6db",
+    "identity_first_candidate.py": "a3b7aca5d198d7217f30cde0fc3252e63bc795144851c8df2b8cf1aa11ed8c05",
+    "identity_first_alignment.py": "0958495d6919c416e86255a07f0eb49f21e00d94e7d3c38cb443665d3a164da4",
+    "depth_identity_candidate.py": "fad08755051d3114bd7a9ded6b68e1d93bd039e407a89066185c2f30fdc249c5",
+    "depth_identity_alignment.py": "d3547d9808569221c504a47606f8a673eb41cd4c7904f0b0a4bbd159e8858fb0",
+    "depth_preprocessing.py": "f15e83cbd5eb01e745e791c24efe260361276d0352f151892e97baa98f058b89"
+  }
+}

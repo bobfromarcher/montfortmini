@@ -1,0 +1,23 @@
+{
+  "frozen_utc": "2026-10-17T21:55:44.367425+00:00",
+  "change": "Motion reference center-cover fitting only; production remains 480px long-side / 8fps, same graph, models, captions, sampler and seed.",
+  "source_sha256": {
+    "media_pipeline.py": "59e55b3640c7efc4cc88774e087ec554164d319f40b2051ca24a54ad82b7ba39",
+    "motion_workflow.py": "43adfab664bd3d637aba96b87c5cc9e25c812623e93c5553fce0820e7b1ae0de",
+    "service.py": "f53f0402c8063424cbd49c57d6a002e4112ce016ea9b667a819ceae633af2f0e",
+    "sdk_runner.py": "d76f20f0bdf4af242d9f6b03b499097ea2775198356acb6572e0ee59d5ad1f72",
+    "fidelity_runner.py": "f161390ae82bf3f45b3d66b0cbae336ca0e107d4a5b08b0d0eafad1c6c0d84fb",
+    "model_config.py": "c7467de0c834698f25b78cfc69d000de40f4d93ecd2c26cdd764ed10ec4ba5a1",
+    "motion_model_config.py": "1a41713ecfea0ea848ca231e1e8d6376935e660746c06bcb27a559abf1d75e9d"
+  },
+  "test_inputs_sha256": "4c26a2dee502afd12f641fb796c161d9ba991380d08349ecec813c378d3a5242",
+  "selection_evidence": [
+    "portrait crop vs production: same default prompt, same source, same seed42, same 272x480; reference fitting changes only",
+    "native vs cover high-resolution descriptive-caption development contrast"
+  ],
+  "limits": [
+    "No hands can be inferred from a cropped portrait; headshot motion is not full performance transfer.",
+    "Public test set has cross-domain illustrated targets, not a new photorealistic identity benchmark.",
+    "No external professional review yet."
+  ]
+}

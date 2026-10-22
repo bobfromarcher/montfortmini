@@ -1,0 +1,65 @@
+{
+  "source": "https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_wan2_2_14B_animate.json",
+  "git_blob": "ee96a29cbac97c89d961ba7a95f219b2326c2063",
+  "unique_reference_settings": [
+    {
+      "type": "LoraLoaderModelOnly",
+      "widgets": [
+        "WanAnimate_relight_lora_fp16.safetensors",
+        1
+      ],
+      "mode": 0
+    },
+    {
+      "type": "ModelSamplingSD3",
+      "widgets": [
+        8
+      ],
+      "mode": 0
+    },
+    {
+      "type": "LoraLoaderModelOnly",
+      "widgets": [
+        "lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.safetensors",
+        1
+      ],
+      "mode": 0
+    },
+    {
+      "type": "UNETLoader",
+      "widgets": [
+        "Wan2_2-Animate-14B_fp8_e4m3fn_scaled_KJ.safetensors",
+        "default"
+      ],
+      "mode": 0
+    },
+    {
+      "type": "KSampler",
+      "widgets": [
+        1106558644923357,
+        "randomize",
+        6,
+        1,
+        "euler",
+        "simple",
+        1
+      ],
+      "mode": 0
+    },
+    {
+      "type": "KSampler",
+      "widgets": [
+        387378783691198,
+        "fixed",
+        6,
+        1,
+        "euler",
+        "simple",
+        1
+      ],
+      "mode": 0
+    }
+  ],
+  "current": "Comfy repack BF16 checkpoint, no LoRA,20dpmpp2m/simple CFG1 shift5; confirmed runtimeBF16",
+  "limitation": "Base-model sampling approximates upstream Wan; it is not a reproduced native Comfy reference template. Template uses distinct converted weights and acceleration adapter. Differences observed,not proved causal."
+}

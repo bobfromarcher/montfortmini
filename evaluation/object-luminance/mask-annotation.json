@@ -1,0 +1,6 @@
+{
+  "changed_graph_path": "6.class_type",
+  "change": "Neutral0.5 fill replaced by source luma within the original binary masks. Original outside RGB, reference, prompt, sampler and masks stay fixed.",
+  "rationale": "Prior reference-only and prompt-only video corrections failed scale/shape. Neutral fill deletes source target geometry; test achromatic geometry/shading as reactive control before changing models.",
+  "limits": "A geometry-retaining control can preserve unwanted source shape and constrain arbitrary shape replacement. This case is a sphere-to-sphere development edit, not general replacement evidence. Luma on encoded RGB is not physical luminance."
+}

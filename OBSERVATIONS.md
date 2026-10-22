@@ -1,5 +1,11 @@
 # Genjutsu interface observations — October 17, 2026
 
+October18 follow-up: [client/runtime reconstruction findings](evaluation/GENJUTSU-RECONSTRUCTION.md)
+add source-bound public-client request roles, model-selector aliases, official
+API contracts and a generic draft-tool/UI readiness mismatch. They do not
+identify Genjutsu's hidden server model. The notes below retain their original
+October17 inspection scope.
+
 Source: the signed-in UI at `https://higgsfield.ai/ai/video?model=genjutsu`,
 opened through `https://higgsfield.ai/start/genjutsu`.
 

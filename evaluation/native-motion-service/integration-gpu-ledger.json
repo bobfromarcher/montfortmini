@@ -1,0 +1,12 @@
+[
+  {
+    "status": "succeeded",
+    "max_gpu_calls": 1,
+    "max_gpu_seconds": 900,
+    "max_controls_seconds": 900,
+    "orchestrator_call_id": "fc-01M5ARFGYQYBZNTMWQT78SC2KA",
+    "prepare_call_id": "fc-01M5ARFSHY1A02ES3W7JD2ZAQP",
+    "render_call_id": "fc-01M5ARH6SYTWPRWGAP27TTVRV6",
+    "service_sha256": "10711b79c6358cdd9c336662cfa525bf223ede85c88850ea8286e680a81a893c"
+  }
+]

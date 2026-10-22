@@ -1,0 +1,12 @@
+{
+  "tensor_pairing": {
+    "source": true,
+    "mask": true,
+    "pose": true,
+    "face": true,
+    "reference": true
+  },
+  "graph_exact": true,
+  "gpu_samples": 131,
+  "peak_MiB": 44382.0
+}

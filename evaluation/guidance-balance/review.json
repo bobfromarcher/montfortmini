@@ -1,0 +1,22 @@
+{
+  "quality_gate_pass": false,
+  "isolation_pass": true,
+  "raw_scores_0_to_4": {
+    "reference": 1,
+    "motion": 3,
+    "stability": 3,
+    "shape": 3,
+    "material_lighting": 2
+  },
+  "composite_scores_0_to_4": {
+    "reference": 1,
+    "motion": 3,
+    "stability": 3,
+    "shape": 3,
+    "material_lighting": 2
+  },
+  "observations": "Target red/orange in all17 raw frames versus beige baseline. Green reference/control unchanged. All17 raw frames and paired selected frames inspected; independent normal-speed professional review pending.",
+  "decision": "Reject CFG1; no promotion or verification generation. Close protocol.",
+  "limits": "One known development recording and seed; correlated frames; edited ball mostly drifts while bee pushes a different ball. No independent generalization or backend inference.",
+  "metadata_correction": "Generic target_erased_in_control=true is inaccurate for frozen research control. Original manifests retained; actual NPZ and graph authoritative."
+}

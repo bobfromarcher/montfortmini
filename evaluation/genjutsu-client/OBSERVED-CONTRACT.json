@@ -1,0 +1,90 @@
+{
+  "recorded_utc": "2026-10-18T22:31:21.775401+00:00",
+  "target": "https://higgsfield.ai/ai/video?model=genjutsu",
+  "download_scope": "125 modulepreload URLs explicitly present in captured public HTML, plus one builder module explicitly imported by a retained component.",
+  "module_count": 125,
+  "module_bytes": 6642481,
+  "claims": [
+    {
+      "claim": "Public client maps its motion-control identifier to the Genjutsu URL alias.",
+      "type": "observed static syntax; not runtime/server attribution",
+      "asset_filename": "868a8dba-tTLIooIHIiI8L9qS.js",
+      "source_url": "https://assets.higgsfield.ai/tanstack/assets/868a8dba-tTLIooIHIiI8L9qS.js",
+      "sha256": "570d562851b11f64f1c2242c4f9194b137b934610648314924f9041df8c33029",
+      "byte_offset": 56669,
+      "matched_literal": "Rg={\"hf-mult-motion-control\":`genjutsu`}",
+      "limit": "An application identifier does not identify a model architecture, checkpoint or weights."
+    },
+    {
+      "claim": "The client maps distinct motion-transfer and object-replacement job types into the Genjutsu model selector.",
+      "type": "observed static syntax; not runtime/server attribution",
+      "asset_filename": "868a8dba-ieEozljLhfTC2YnY.js",
+      "source_url": "https://assets.higgsfield.ai/tanstack/assets/868a8dba-ieEozljLhfTC2YnY.js",
+      "sha256": "9e059b3123bb66c4082ead77160037bb58e04687dd4f7c1795ce684c305d259c",
+      "byte_offset": 990,
+      "matched_literal": "o.HF_MULT_MOTION_CONTROL||e.jobSetType===o.HF_MULT_REPLACE_OBJECT",
+      "limit": "Distinct job types do not prove separate neural models, or establish which weights either uses."
+    },
+    {
+      "claim": "Motion request builder constructs reference-image/location media roles followed by one source-video role.",
+      "type": "observed static syntax; not runtime/server attribution",
+      "asset_filename": "868a8dba-37YST0HdAuzENEzQ.js",
+      "source_url": "https://assets.higgsfield.ai/tanstack/assets/868a8dba-37YST0HdAuzENEzQ.js",
+      "sha256": "fa8d1bdeb515d5ee68fb5b8bdae56ff628e133f402efdab81c6d85c4ee21553e",
+      "byte_offset": 942,
+      "matched_literal": "medias:[...o,{role:`video`,data:{id:e.sourceVideo.id,type:e.sourceVideo.type}}]",
+      "limit": "Asset IDs are references, not neural conditioning tensors. Server preprocessing and the effect of list order are unknown."
+    },
+    {
+      "claim": "Object request builder constructs source-video and reference-image media roles with optional prompt/resolution/size fields.",
+      "type": "observed static syntax; not runtime/server attribution",
+      "asset_filename": "868a8dba-37YST0HdAuzENEzQ.js",
+      "source_url": "https://assets.higgsfield.ai/tanstack/assets/868a8dba-37YST0HdAuzENEzQ.js",
+      "sha256": "fa8d1bdeb515d5ee68fb5b8bdae56ff628e133f402efdab81c6d85c4ee21553e",
+      "byte_offset": 1656,
+      "matched_literal": "medias:[{role:`video`,data:{id:e.sourceVideo.id,type:e.sourceVideo.type}},{role:`image`,data:{id:n.id,type:n.type}}",
+      "limit": "No mask field is explicitly constructed in this isolated function; helper spreads and server-internal segmentation remain unresolved."
+    },
+    {
+      "claim": "This client build validates source duration4\u201330seconds before submission.",
+      "type": "observed static syntax; not runtime/server attribution",
+      "asset_filename": "868a8dba-BVw4jjrt75ON-Lgt.js",
+      "source_url": "https://assets.higgsfield.ai/tanstack/assets/868a8dba-BVw4jjrt75ON-Lgt.js",
+      "sha256": "55ac29e4351445b4bf974eca66ba3eed61eac5d65fc1e29732432cf6f8ccc6f1",
+      "byte_offset": 16305,
+      "matched_literal": "maxDuration:30,medias:pe,minDuration:4,referenceCount:N.length",
+      "limit": "Other marketing/API surfaces report different limits. This is a client-build observation, not a universal backend limit."
+    }
+  ],
+  "REA": {
+    "parent_evidence_id": "ev_baa46c256ff4e22a0364a3e1c829b38410a9dd5955f3561649bffeafb08a513c",
+    "summary_evidence_id": "ev_c39cad2df71be30d3c5ff723c8d2969f08e9c4c543cd2bdd8d8a8387395fb177",
+    "scope": "Three selected local client modules,33753bytes;3parsed,0parse failures; semantic coverage unknown with1734unknowns. Not whole-application or runtime coverage."
+  },
+  "unknown": [
+    "Genjutsu backbone/checkpoint and exact weights",
+    "Training/fine-tuning data and recipe",
+    "Server-side reference preparation or attention/identity mechanism",
+    "Server-side segmentation/tracking/occlusion and relighting",
+    "Sampler/scheduler/seed, temporal windowing and postprocessing",
+    "Whether multiple reference images are fused, assigned by role, or expanded into output variations"
+  ],
+  "gpu_runs_this_investigation": 0,
+  "paid_API_calls": 0,
+  "runtime_mismatch": {
+    "observed_model": "hf-mult-motion-control",
+    "read_tool_ready": true,
+    "read_tool_blockers": [],
+    "visible_generate_disabled": true,
+    "visible_inputs_empty": true,
+    "read_tool_supported_fields": [
+      "prompt",
+      "model",
+      "seed",
+      "enhance"
+    ],
+    "conclusion": "Generic read-tool readiness does not establish readiness of this Genjutsu form; no submission attempted.",
+    "limit": "Does not explain or retroactively establish the cause of earlier submission timeouts."
+  },
+  "publication_boundary": "Captured proprietary client assets and full REA bundle remain local. Publish independent observations/provenance only, not the client source under our MIT license."
+}

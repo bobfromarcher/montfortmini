@@ -1,0 +1,13 @@
+{
+  "raw_composite_exact_frames": 33,
+  "frames": 33,
+  "fps": 8,
+  "duration_seconds": 4.125,
+  "worker_seconds": 71.74523086800001,
+  "graph_seconds": 47.22,
+  "cpu_controls_seconds": 78.293649515,
+  "sampled_peak_vram_MiB": 28981.0,
+  "gpu_samples": 70,
+  "sdk_job_id": "7d41fbc7-73d3-4b81-9860-13e3f9daf343",
+  "limits": "Direct current backend functions; full-frame mask, sampled VRAM, host cgroup unavailable. Not browser or independent-user reproduction."
+}

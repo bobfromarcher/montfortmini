@@ -1,0 +1,12 @@
+{
+  "final_reference_outside_mask_max_error": 0,
+  "reference_conditioning_upper400_rows_exact": true,
+  "first_changed_reference_conditioning_row": 424,
+  "last_changed_reference_conditioning_row": 559,
+  "conditioning_shape": [
+    560,
+    480,
+    3
+  ],
+  "limits": "Upper reference pixels remain exact; raw model video is generated anew, not extended by pasting legs."
+}

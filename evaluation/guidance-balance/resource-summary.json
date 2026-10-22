@@ -1,0 +1,28 @@
+{
+  "call_id": "fc-01M5GTFP7ZBVDB63KJ791R37RV",
+  "sdk_job_id": "e1058dcc-bb51-4f2a-a244-26b72308280e",
+  "worker_seconds": 39.478565118,
+  "comfy_graph_seconds": 19.98,
+  "cpu_preflight_client_elapsed_seconds": 8.903900399978738,
+  "gpu_samples": 39,
+  "sampled_peak_vram_MiB": 11653,
+  "host_peak_RAM": null,
+  "host_RAM_unavailable_reason": "Missing cgroup memory.current path",
+  "raw_preservation": {
+    "mae_255": 2.094484806060791,
+    "p95_255": 6.0,
+    "max_255": 112.0
+  },
+  "encoded_preservation": {
+    "mae_255": 1.7697279453277588,
+    "p95_255": 4.0,
+    "max_255": 49.0
+  },
+  "composite_preservation": {
+    "mae_255": 0.0,
+    "p95_255": 0.0,
+    "max_255": 0.0
+  },
+  "raw_composite_target_pixels_exact": true,
+  "limits": "Graph includes loading; sampled VRAM not continuous allocator peak; native conditioning float32 not whole-model precision."
+}

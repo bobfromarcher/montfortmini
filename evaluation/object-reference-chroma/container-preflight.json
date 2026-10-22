@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "control_max_delta": 0.0,
+  "gain": 0.7415660134430985,
+  "custom_node_sha256": "75577cb820832a7ce425195bb4ae368226967249305276317ea5e18c25bbe6cd",
+  "root_matches_loaded_custom_node": true,
+  "gpu_used": false,
+  "luma_delta_vs_prior_max": 1.7881393432617188e-07,
+  "clipped_values": 0
+}

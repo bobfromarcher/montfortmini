@@ -1,0 +1,98 @@
+{
+  "title": "File:Bouncing Ball.webm",
+  "source_page": "https://commons.wikimedia.org/wiki/File%3ABouncing_Ball.webm",
+  "retrieved_utc": "2026-10-17T17:28:33.520284+00:00",
+  "path": "C:\\Users\\igues\\Documents\\Codex\\2026-10-16\\https-blog-comfy-org-p-higgsfield\\work\\evaluation\\raw\\ball.webm",
+  "sha256": "0aed92a1d1fb670cd085eeeff73256c1462db76d2a77dffeddd3b8843e9e285c",
+  "bytes": 1081689,
+  "imageinfo": {
+    "size": 1081689,
+    "width": 640,
+    "height": 480,
+    "duration": 26.427,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Bouncing_Ball.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "descriptionurl": "https://commons.wikimedia.org/wiki/File:Bouncing_Ball.webm",
+    "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=69361952",
+    "sha1": "63a7d2d42be52bfc13fcf3643605b39841ae52d5",
+    "extmetadata": {
+      "DateTime": {
+        "value": "2018-05-22 12:16:56",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+      },
+      "ObjectName": {
+        "value": "Bouncing Ball",
+        "source": "mediawiki-metadata"
+      },
+      "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+      },
+      "Categories": {
+        "value": "Media from YouTube|Wimshurst machines|Files from external sources with reviewed licenses|Videos of 2013|Uploaded with video2commons|Videos of physics|Videos of unsolved problems in physics",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "ImageDescription": {
+        "value": "Bouncing Ball",
+        "source": "commons-desc-page"
+      },
+      "DateTimeOriginal": {
+        "value": "2013-01-03",
+        "source": "commons-desc-page"
+      },
+      "Credit": {
+        "value": "<bdi lang=\"en\" dir=\"ltr\"><a href=\"//commons.wikimedia.org/wiki/Commons:YouTube_files\" title=\"Commons:YouTube files\">YouTube</a>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.youtube.com/watch?v=A5z0i2SdqDk\"><bdi lang=\"\">Bouncing Ball</bdi></a> \u2013 View/save archived versions on <a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/*/https://www.youtube.com/watch?v=A5z0i2SdqDk\">archive.org</a></bdi>",
+        "source": "commons-desc-page"
+      },
+      "Artist": {
+        "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.youtube.com/user/ScienceCOLA\">ScienceCOLA</a>",
+        "source": "commons-desc-page"
+      },
+      "LicenseShortName": {
+        "value": "CC BY 3.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "UsageTerms": {
+        "value": "Creative Commons Attribution 3.0",
+        "source": "commons-desc-page"
+      },
+      "AttributionRequired": {
+        "value": "true",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Attribution": {
+        "value": "ScienceCOLA",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "LicenseUrl": {
+        "value": "https://creativecommons.org/licenses/by/3.0",
+        "source": "commons-desc-page"
+      },
+      "Copyrighted": {
+        "value": "True",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "License": {
+        "value": "cc-by-3.0",
+        "source": "commons-templates",
+        "hidden": ""
+      }
+    }
+  }
+}

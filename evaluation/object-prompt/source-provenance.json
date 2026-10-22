@@ -1,0 +1,93 @@
+{
+  "name": "bee",
+  "title": "File:Bombus terrestris rolling ball.webm",
+  "source_page": "https://commons.wikimedia.org/wiki/File%3ABombus_terrestris_rolling_ball.webm",
+  "retrieved_utc": "2026-10-17T21:38:53.223095+00:00",
+  "sha256": "feeac2c143cfbf5b9d77034980881892dfad328f88dbc5c8e4e541c3992c0949",
+  "bytes": 1966353,
+  "imageinfo": {
+    "size": 1966353,
+    "width": 1280,
+    "height": 720,
+    "duration": 20.687,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Bombus_terrestris_rolling_ball.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "descriptionurl": "https://commons.wikimedia.org/wiki/File:Bombus_terrestris_rolling_ball.webm",
+    "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=159987433",
+    "sha1": "00fb1acc4e09f50991d1d27dd990f924ed928487",
+    "extmetadata": {
+      "DateTime": {
+        "value": "2025-02-18 15:03:04",
+        "source": "mediawiki-metadata",
+        "hidden": ""
+      },
+      "ObjectName": {
+        "value": "Bombus terrestris rolling ball",
+        "source": "mediawiki-metadata"
+      },
+      "CommonsMetadataExtension": {
+        "value": 1.2,
+        "source": "extension",
+        "hidden": ""
+      },
+      "Categories": {
+        "value": "Uploaded with video2commons|Videos of Bombus terrestris",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "Assessments": {
+        "value": "",
+        "source": "commons-categories",
+        "hidden": ""
+      },
+      "ImageDescription": {
+        "value": "An example of ball rolling by a bumble bee, <i>Bombus terrestris</i>, at speed \u00d70.5. The bee approaches a wooden coloured ball while facing it, touches the ball with her forelegs, holds onto the ball using all of her legs, rolls the ball, detaches from and leaves the ball. The bee approaches a second ball, rolls it and detaches.",
+        "source": "commons-desc-page"
+      },
+      "DateTimeOriginal": {
+        "value": "2022",
+        "source": "commons-desc-page"
+      },
+      "Credit": {
+        "value": "<i>Do bumble bees play?</i>, Animal Behaviour, Volume 194, 2022, Pages 239-251, ISSN 0003-3472, DOI\u00a0: <a rel=\"nofollow\" class=\"external text\" href=\"https://doi.org/10.1016/j.anbehav.2022.08.013\">10.1016/j.anbehav.2022.08.013</a>.",
+        "source": "commons-desc-page"
+      },
+      "Artist": {
+        "value": "Hiruni Samadi Galpayage Dona, Cwyn Solvi, Amelia Kowalewska, Kaarle M\u00e4kel\u00e4, HaDi MaBouDi, Lars Chittka",
+        "source": "commons-desc-page"
+      },
+      "LicenseShortName": {
+        "value": "CC BY 4.0",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "UsageTerms": {
+        "value": "Creative Commons Attribution 4.0",
+        "source": "commons-desc-page"
+      },
+      "AttributionRequired": {
+        "value": "true",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "LicenseUrl": {
+        "value": "https://creativecommons.org/licenses/by/4.0",
+        "source": "commons-desc-page"
+      },
+      "Copyrighted": {
+        "value": "True",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "Restrictions": {
+        "value": "",
+        "source": "commons-desc-page",
+        "hidden": ""
+      },
+      "License": {
+        "value": "cc-by-4.0",
+        "source": "commons-templates",
+        "hidden": ""
+      }
+    }
+  }
+}

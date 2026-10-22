@@ -1,0 +1,26 @@
+{
+  "all_frozen_sources_match": true,
+  "checks": {
+    "pose_reference_candidate.py": true,
+    "pose_reference_alignment.py": true,
+    "pose_guide.py": true,
+    "detail_reference_alignment.py": true,
+    "identity_detail.py": true,
+    "detail_cycle.py": true,
+    "cascade_candidate.py": true,
+    "cascade_reference_alignment.py": true,
+    "qwen_reference_alignment.py": true,
+    "qwen_anchor_workflow.py": true,
+    "motion_workflow.py": true,
+    "service.py": true,
+    "media_pipeline.py": true,
+    "sdk_runner.py": true,
+    "identity_first_alignment.py": true,
+    "identity_first_candidate.py": true,
+    "depth_identity_alignment.py": true,
+    "depth_identity_candidate.py": true,
+    "depth_preprocessing.py": true,
+    "depth_prepare_candidate.py": true,
+    "registered_reference.py": true
+  }
+}

@@ -1,0 +1,36 @@
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.mp4 binary
+*.npz binary
+*.zip binary
+
+# Preserve byte-exact line endings in runtime-hashed Python evidence sources.
+*.py -text
+
+# These files cross-reference hashes of their original frozen bytes.
+evaluation/native-recipe/*.json -text
+evaluation/native-recipe/PROTOCOL.md -text
+evaluation/native-motion-service/*.json -text
+evaluation/object-mask/*.json -text
+
+evaluation/object-reference/*.json -text
+evaluation/object-prompt/*.json -text
+
+evaluation/object-luminance/*.json -text
+evaluation/object-luminance-prompt/*.json -text
+
+evaluation/object-reference-luma/*.json -text
+evaluation/object-reference-luma-failed/*.json -text
+evaluation/object-reference-luma-failed/result/*.json -text
+
+evaluation/object-reference-chroma/*.json -text
+evaluation/object-reference-chroma/** -text
+
+evaluation/object-color-prompt/** -text
+
+evaluation/reference-branch/** -text
+
+evaluation/guidance-balance/** -text
+
+evaluation/public-motion/** -text

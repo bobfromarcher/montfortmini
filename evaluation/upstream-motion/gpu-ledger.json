@@ -1,0 +1,20 @@
+[
+  {
+    "kind": "precision",
+    "status": "succeeded",
+    "ceiling_seconds": 900,
+    "usage_observed": 7.72,
+    "remaining_observed": 22.28,
+    "call_id": "fc-01M599A740QK31XK16YC7NC378",
+    "worker_elapsed_seconds": 135.376586488
+  },
+  {
+    "kind": "wholebody",
+    "status": "succeeded",
+    "ceiling_seconds": 900,
+    "usage_observed": 7.84,
+    "remaining_observed": 22.16,
+    "call_id": "fc-01M599H9KJDZ7GCW969MWHH710",
+    "worker_elapsed_seconds": 123.794094168
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "frozen_utc": "2026-10-18T19:20:32.951131+00:00",
+  "split": "Development only, source frames inspected before this candidate video output; former signer already observed in previous studies. Not retrospective repair of prior held-out timing claim.",
+  "fps": 8,
+  "tolerance_frames": 2,
+  "required_matches": 3,
+  "anchors": [
+    {
+      "source_frame": 8,
+      "time_seconds": 1.0,
+      "event": "Screen-left forearm crosses horizontally across torso, other arm bent across upper torso."
+    },
+    {
+      "source_frame": 16,
+      "time_seconds": 2.0,
+      "event": "Screen-right hand raised beside shoulder, screen-left hand down near waist."
+    },
+    {
+      "source_frame": 24,
+      "time_seconds": 3.0,
+      "event": "Both hands lowered near front of hips."
+    },
+    {
+      "source_frame": 28,
+      "time_seconds": 3.5,
+      "event": "Screen-left hand raised near mouth, screen-right hand near waist."
+    }
+  ]
+}

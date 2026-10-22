@@ -1,0 +1,554 @@
+{
+  "protocol": "PROTOCOL.md v1",
+  "dataset_revision": 2,
+  "cases": [
+    {
+      "id": "dev-synthetic-object",
+      "split": "development",
+      "kind": "synthetic-object",
+      "mode": "object-swap",
+      "video": "dev-synthetic-object/input.mp4",
+      "reference": "dev-synthetic-object/reference.png",
+      "frames": 17,
+      "prompt": "A single smooth solid blue sphere moves from left to right on a gray floor. Fixed camera.",
+      "bbox": [
+        0.15,
+        0.36,
+        0.35,
+        0.38
+      ],
+      "end_bbox": [
+        0.51,
+        0.36,
+        0.35,
+        0.38
+      ],
+      "rotation_metadata": false,
+      "annotations": {
+        "expected_centers": [
+          [
+            0.32,
+            0.56
+          ],
+          [
+            0.3425,
+            0.56
+          ],
+          [
+            0.365,
+            0.56
+          ],
+          [
+            0.3875,
+            0.56
+          ],
+          [
+            0.41000000000000003,
+            0.56
+          ],
+          [
+            0.4325,
+            0.56
+          ],
+          [
+            0.455,
+            0.56
+          ],
+          [
+            0.47750000000000004,
+            0.56
+          ],
+          [
+            0.5,
+            0.56
+          ],
+          [
+            0.5225,
+            0.56
+          ],
+          [
+            0.5449999999999999,
+            0.56
+          ],
+          [
+            0.5675,
+            0.56
+          ],
+          [
+            0.5900000000000001,
+            0.56
+          ],
+          [
+            0.6125,
+            0.56
+          ],
+          [
+            0.635,
+            0.56
+          ],
+          [
+            0.6575,
+            0.56
+          ],
+          [
+            0.6799999999999999,
+            0.56
+          ]
+        ],
+        "target_color": "blue"
+      },
+      "notes": [],
+      "source_provenance": "dev-synthetic-object/source-provenance.json",
+      "sha256": {
+        "video": "cf1fbaa88becd2ac0cb899e967cfab266b6322c6070b094b606a90788dd72eeb",
+        "reference": "bfb0c5a5ad3073bcd6a7c317255905d25fb82ce7c6b4f938cb2af1506d63a22e"
+      }
+    },
+    {
+      "id": "dev-synthetic-motion",
+      "split": "development",
+      "kind": "synthetic-motion",
+      "mode": "motion-transfer",
+      "video": "dev-synthetic-motion/input.mp4",
+      "reference": "dev-synthetic-motion/reference.png",
+      "frames": 17,
+      "prompt": "An illustrated orange-haired character in a blue shirt follows the arm movement in the source clip. Full body, stable appearance.",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "end_bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "rotation_metadata": false,
+      "annotations": {
+        "moving_endpoint": [
+          [
+            0.7416914031005144,
+            0.5428889509182907
+          ],
+          [
+            0.7563063254800699,
+            0.5193567073504608
+          ],
+          [
+            0.7675578113521839,
+            0.49404334113484805
+          ],
+          [
+            0.7752334722510997,
+            0.4674266795624238
+          ],
+          [
+            0.7791884187052823,
+            0.44000915155494924
+          ],
+          [
+            0.7793479952408593,
+            0.4123083035746906
+          ],
+          [
+            0.775709189614297,
+            0.3848470301681604
+          ],
+          [
+            0.7683406896729604,
+            0.35814370355684416
+          ],
+          [
+            0.7573815867702278,
+            0.33270238859351287
+          ],
+          [
+            0.7430387502101217,
+            0.3090033277913168
+          ],
+          [
+            0.7255829222827027,
+            0.28749387603483434
+          ],
+          [
+            0.7053436076022199,
+            0.268580056093836
+          ],
+          [
+            0.6827028532193313,
+            0.25261889434195195
+          ],
+          [
+            0.65808803691699,
+            0.23991168135490773
+          ],
+          [
+            0.6319637998216007,
+            0.23069828460452352
+          ],
+          [
+            0.6048232756133565,
+            0.22515262060480157
+          ],
+          [
+            0.5771787818974111,
+            0.22337937198005395
+          ]
+        ],
+        "target_color": "blue"
+      },
+      "notes": [],
+      "source_provenance": "dev-synthetic-motion/source-provenance.json",
+      "sha256": {
+        "video": "efc29f9e000d5ba814c2169242bfbe6d47a4df972394d4f5b94a224bb35f8482",
+        "reference": "4f3764e899b6313be4246e0ead13c5c5891f6dd43315760207d4597da1606109"
+      }
+    },
+    {
+      "id": "dev-real-object",
+      "split": "development",
+      "kind": "real-object",
+      "mode": "object-swap",
+      "video": "dev-real-object/input.mp4",
+      "reference": "dev-real-object/reference.png",
+      "frames": 17,
+      "prompt": "Replace only the selected ball with a single smooth solid blue sphere shown in the reference. Preserve its motion and natural lighting.",
+      "bbox": [
+        0.32,
+        0.22,
+        0.4,
+        0.46
+      ],
+      "end_bbox": [
+        0.32,
+        0.22,
+        0.4,
+        0.46
+      ],
+      "rotation_metadata": true,
+      "annotations": {
+        "target_color": "blue"
+      },
+      "notes": [
+        "Original recording ball, start 18.0s, 8fps, first 17 frames; resized to 480px long side.",
+        "Rotation-metadata robustness case: stored pixels transposed, display rotation restores original orientation."
+      ],
+      "source_provenance": "dev-real-object/source-provenance.json",
+      "sha256": {
+        "video": "32031adcb92fb54a9a411647e5f8768e10e78680ea4c83dba141d2580bed49c6",
+        "reference": "bfb0c5a5ad3073bcd6a7c317255905d25fb82ce7c6b4f938cb2af1506d63a22e"
+      }
+    },
+    {
+      "id": "dev-real-motion",
+      "split": "development",
+      "kind": "real-motion",
+      "mode": "motion-transfer",
+      "video": "dev-real-motion/input.mp4",
+      "reference": "dev-real-motion/reference.png",
+      "frames": 17,
+      "prompt": "An illustrated orange-haired character in a blue shirt walks away with the same gait as the source person. Full body, fixed framing.",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "end_bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "rotation_metadata": false,
+      "annotations": {
+        "target_color": "blue"
+      },
+      "notes": [
+        "Original recording walk, start 15.8s, 8fps, first 17 frames; resized to 480px long side.",
+        "Live-action driving clip to an illustrated reference: a cross-domain transfer test, not a photorealistic identity benchmark."
+      ],
+      "source_provenance": "dev-real-motion/source-provenance.json",
+      "sha256": {
+        "video": "558cb3f9e4c483972038a0cfffd7282daf2fa5dabfb0b191c8194514c9558b43",
+        "reference": "4f3764e899b6313be4246e0ead13c5c5891f6dd43315760207d4597da1606109"
+      }
+    },
+    {
+      "id": "hold-synthetic-object",
+      "split": "held-out",
+      "kind": "synthetic-object",
+      "mode": "object-swap",
+      "video": "hold-synthetic-object/input.mp4",
+      "reference": "hold-synthetic-object/reference.png",
+      "frames": 17,
+      "prompt": "A single smooth solid green sphere moves from right to left on a gray floor. Fixed camera.",
+      "bbox": [
+        0.5,
+        0.36,
+        0.35,
+        0.38
+      ],
+      "end_bbox": [
+        0.14,
+        0.36,
+        0.35,
+        0.38
+      ],
+      "rotation_metadata": false,
+      "annotations": {
+        "expected_centers": [
+          [
+            0.68,
+            0.56
+          ],
+          [
+            0.6575000000000001,
+            0.56
+          ],
+          [
+            0.635,
+            0.56
+          ],
+          [
+            0.6125,
+            0.56
+          ],
+          [
+            0.5900000000000001,
+            0.56
+          ],
+          [
+            0.5675000000000001,
+            0.56
+          ],
+          [
+            0.545,
+            0.56
+          ],
+          [
+            0.5225000000000001,
+            0.56
+          ],
+          [
+            0.5,
+            0.56
+          ],
+          [
+            0.47750000000000004,
+            0.56
+          ],
+          [
+            0.45500000000000007,
+            0.56
+          ],
+          [
+            0.43250000000000005,
+            0.56
+          ],
+          [
+            0.41000000000000003,
+            0.56
+          ],
+          [
+            0.38750000000000007,
+            0.56
+          ],
+          [
+            0.36500000000000005,
+            0.56
+          ],
+          [
+            0.3425000000000001,
+            0.56
+          ],
+          [
+            0.32000000000000006,
+            0.56
+          ]
+        ],
+        "target_color": "green"
+      },
+      "notes": [],
+      "source_provenance": "hold-synthetic-object/source-provenance.json",
+      "sha256": {
+        "video": "51862909b192b4be6c4b4513eeaf267462831bade8f08c9fc8f50776171ade8c",
+        "reference": "ffc06722f9454d338d28dac352ca2d78b44319f921e91a333c103718341c3a96"
+      }
+    },
+    {
+      "id": "hold-synthetic-motion",
+      "split": "held-out",
+      "kind": "synthetic-motion",
+      "mode": "motion-transfer",
+      "video": "hold-synthetic-motion/input.mp4",
+      "reference": "hold-synthetic-motion/reference.png",
+      "frames": 17,
+      "prompt": "An illustrated orange-haired character in a purple shirt follows the lowering arm movement in the source clip. Full body, stable appearance.",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "end_bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "rotation_metadata": false,
+      "annotations": {
+        "moving_endpoint": [
+          [
+            0.38274652149449295,
+            0.22721037655706203
+          ],
+          [
+            0.36319598702043077,
+            0.23210483052290126
+          ],
+          [
+            0.3442317538473576,
+            0.23892662925948996
+          ],
+          [
+            0.32604330632439665,
+            0.2476076116088392
+          ],
+          [
+            0.30881237740689615,
+            0.2580610400648654
+          ],
+          [
+            0.29271113284081174,
+            0.27018246742588004
+          ],
+          [
+            0.27790045093948407,
+            0.283850780396503
+          ],
+          [
+            0.2645283151407106,
+            0.2989294097116754
+          ],
+          [
+            0.2527283354051524,
+            0.31526769469161225
+          ],
+          [
+            0.24261841322977223,
+            0.33270238859351287
+          ],
+          [
+            0.23429956361505067,
+            0.3510592897190531
+          ],
+          [
+            0.2278549057564918,
+            0.3701549819801714
+          ],
+          [
+            0.22334883254509794,
+            0.3897986675319912
+          ],
+          [
+            0.2208263671748874,
+            0.4097940731618179
+          ],
+          [
+            0.22031271328602306,
+            0.42994141138620046
+          ],
+          [
+            0.2218130031383712,
+            0.45003937666142557
+          ],
+          [
+            0.22531224633165703,
+            0.46988715676196735
+          ]
+        ],
+        "target_color": "purple"
+      },
+      "notes": [],
+      "source_provenance": "hold-synthetic-motion/source-provenance.json",
+      "sha256": {
+        "video": "35360820e797651337d458ef5203ec9d9b1f8a1b15907b8000d719d8291ed720",
+        "reference": "37f5b025f62c7a8d01a1e9aa3d1f5f77ab792597bc268daf46c20cd73596e9b4"
+      }
+    },
+    {
+      "id": "hold-real-object",
+      "split": "held-out",
+      "kind": "real-object",
+      "mode": "object-swap",
+      "video": "hold-real-object/input.mp4",
+      "reference": "hold-real-object/reference.png",
+      "frames": 17,
+      "prompt": "Replace only the selected ball with a single smooth solid green sphere shown in the reference. Preserve its motion and natural lighting.",
+      "bbox": [
+        0.21,
+        0.02,
+        0.32,
+        0.84
+      ],
+      "end_bbox": [
+        0.21,
+        0.02,
+        0.32,
+        0.84
+      ],
+      "rotation_metadata": false,
+      "annotations": {
+        "target_color": "green"
+      },
+      "notes": [
+        "Original recording bounce, start 4.0s, 8fps, first 17 frames; resized to 480px long side."
+      ],
+      "source_provenance": "hold-real-object/source-provenance.json",
+      "sha256": {
+        "video": "e5892757c5376eea5298ef3c5b5003dcf282558819a665f4a1fa59a49a858279",
+        "reference": "ffc06722f9454d338d28dac352ca2d78b44319f921e91a333c103718341c3a96"
+      }
+    },
+    {
+      "id": "hold-real-motion",
+      "split": "held-out",
+      "kind": "real-motion",
+      "mode": "motion-transfer",
+      "video": "hold-real-motion/input.mp4",
+      "reference": "hold-real-motion/reference.png",
+      "frames": 17,
+      "prompt": "An illustrated orange-haired character in a purple shirt performs the jumping jacks from the source clip. Full body, stable appearance.",
+      "bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "end_bbox": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "rotation_metadata": true,
+      "annotations": {
+        "target_color": "purple"
+      },
+      "notes": [
+        "Original recording jacks, start 6.0s, 8fps, first 17 frames; resized to 480px long side.",
+        "Held-out camera-metadata case, independent recording.",
+        "Live-action driving clip to an illustrated reference: a cross-domain transfer test, not a photorealistic identity benchmark."
+      ],
+      "source_provenance": "hold-real-motion/source-provenance.json",
+      "sha256": {
+        "video": "43a7c67b2ad05d1970bd4cb9040ce5b916a9a882f01587d0239a76dfdbe51b4e",
+        "reference": "410980cb8f1b37918978628d6304ce082675bd24f2fad6f2bdf879f0ce0f287e"
+      }
+    }
+  ]
+}

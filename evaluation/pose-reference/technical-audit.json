@@ -1,0 +1,23 @@
+{
+  "technical_pass": true,
+  "checks": {
+    "completed": true,
+    "original_source_digest": true,
+    "original_identity_digest": true,
+    "guide_digest": true,
+    "sdk_receipt_confirmed": true,
+    "native_seed": true,
+    "direct_original_identity_pixels": true,
+    "anchor_stage_bytes_equal": true
+  },
+  "guide_dimensions": [
+    944,
+    1104
+  ],
+  "identity_dimensions": [
+    672,
+    1024
+  ],
+  "worker_seconds": 388.598963069,
+  "limits": "Provenance/recipe checks only. Estimated pose, likeness, motion, anatomy, realism and temporal quality need separate review. No video was audited here."
+}

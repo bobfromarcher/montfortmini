@@ -1,0 +1,19 @@
+{
+  "annotation_status": "Agent source-only sparse inspection; held-out labels written after inference began but before held-out generated-frame inspection; development labels post hoc. Approximate pixels on original dataset frames, not pose-estimator ground truth.",
+  "frames": [0, 4, 8, 12, 16],
+  "hold-real-object": {
+    "size": [480, 270],
+    "ball_center_px": [[235, 88], null, [315, 95], [332, 75], [230, 82]],
+    "missing_reason_frame4": "ball not confidently visible in sampled source frame",
+    "selection_coverage": [true, null, false, false, true],
+    "notes": "Object leaves the static manual rectangle; do not interpret omitted regions as model erasure failure."
+  },
+  "hold-real-motion": {
+    "size": [480, 360],
+    "head_center_px": [[228, 206], [230, 208], [226, 205], [228, 116], [228, 115]],
+    "left_hand_px": [[202, 268], [205, 270], [196, 272], [202, 192], [200, 180]],
+    "right_hand_px": [[253, 268], [253, 269], [253, 274], [253, 190], [250, 176]],
+    "observed_phase": ["hands-floor", "hands-floor", "folded-hands-floor", "standing-arms-low", "standing-arms-low"],
+    "notes": "Burpee transition, not jumping jacks. Prompt/action mismatch is a fixture confound."
+  }
+}

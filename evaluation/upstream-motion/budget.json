@@ -1,0 +1,12 @@
+{
+  "declared_utc": "2026-10-19T05:09:46.472375+00:00",
+  "cash_cap": 0,
+  "baseline_usage_displayed": 7.72,
+  "baseline_remaining_displayed": 22.28,
+  "max_included_credit_delta": 2,
+  "stopping_usage": 9.72,
+  "stopping_remaining": 20.28,
+  "max_gpu_attempts": 3,
+  "max_worker_seconds": 2700,
+  "stop": "One precision-only900s. If visual gate fails, one upstream-wholebody-control900s comparison at same BF16 precision allowed as preregistered diagnostic branch. Then stop if no pass. Technical failure stops. One900s verification reserved for frozen passing candidate, no seeds/models rerolls. CPU controls max900s plus image build, within same credit delta."
+}

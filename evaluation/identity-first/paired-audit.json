@@ -1,0 +1,23 @@
+{
+  "technical_pair_pass": true,
+  "checks": {
+    "control_technical_pass": true,
+    "candidate_technical_pass": true,
+    "graph_diff_exactly_role_assignment": true,
+    "prompt_semantics_relabel_only": true,
+    "models_equal": true,
+    "seed_equal": true,
+    "original_source_equal": true,
+    "source-original.png_bytes_equal": true,
+    "identity-original.png_bytes_equal": true,
+    "source-conditioning.png_pixels_equal": true,
+    "identity-conditioning.png_pixels_equal": true
+  },
+  "changed_graph_nodes": [
+    "6",
+    "7"
+  ],
+  "control": "outputs\\pose-reference\\keypoint-anchor",
+  "candidate": "outputs\\identity-first\\anchor",
+  "limits": "Reference slot order plus necessary image-number prompt relabeling. No slot-only causal estimate, visual pass, video result or independent review follows from this audit."
+}

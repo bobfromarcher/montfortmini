@@ -1,0 +1,13 @@
+[
+  {
+    "status": "succeeded",
+    "max_gpu_calls": 1,
+    "max_gpu_seconds": 660,
+    "call_id": "fc-01M5FGS5AADZ7QZR89MP4JPFXA",
+    "worker_seconds": 46.291539555,
+    "protocol_closed": true,
+    "quality_gate_pass": false,
+    "diagnostic_sensitivity_evaluated": true,
+    "closure_reason": "Planned diagnostic pair complete; reference-quality target unmet. No further inference in this protocol."
+  }
+]

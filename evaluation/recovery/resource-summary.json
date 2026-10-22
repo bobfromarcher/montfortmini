@@ -1,0 +1,83 @@
+{
+  "runs": [
+    {
+      "run": "qwen-base",
+      "status": "succeeded",
+      "worker_seconds": 396.286065004,
+      "scope": "reference-image only"
+    },
+    {
+      "run": "qwen-caption",
+      "status": "succeeded",
+      "worker_seconds": 389.063141942,
+      "scope": "reference-image only"
+    },
+    {
+      "run": "qwen-refine-klein",
+      "status": "succeeded",
+      "worker_seconds": 387.007452151,
+      "scope": "reference-image only"
+    },
+    {
+      "run": "cascade-motion-33-v1",
+      "status": "succeeded",
+      "worker_seconds": 261.143349898,
+      "scope": "video only; reference archive reused"
+    },
+    {
+      "run": "original-appearance-33",
+      "status": "succeeded",
+      "worker_seconds": 260.642053932,
+      "scope": "video only; reference archive reused"
+    },
+    {
+      "run": "reference-strength-33",
+      "status": "succeeded",
+      "worker_seconds": 206.480351609,
+      "scope": "video only; reference archive reused"
+    },
+    {
+      "run": "signer-cascade-v1",
+      "status": "succeeded",
+      "worker_seconds": 579.954723023,
+      "scope": "fresh full3-stage pipeline"
+    },
+    {
+      "run": "synthetic-regression-cascade-v1",
+      "status": "succeeded",
+      "worker_seconds": 506.222320095,
+      "scope": "fresh full3-stage pipeline"
+    }
+  ],
+  "GPU_attempts": 8,
+  "measured_worker_seconds": 2986.799457654,
+  "worker_cap": 3600,
+  "original_frozen_runtime_sources_unchanged": {
+    "cascade_candidate.py": true,
+    "cascade_reference_alignment.py": true,
+    "reference_alignment.py": true,
+    "qwen_reference_alignment.py": true,
+    "anchor_workflow.py": true,
+    "qwen_anchor_workflow.py": true,
+    "service.py": true,
+    "media_pipeline.py": true,
+    "motion_workflow.py": true,
+    "sdk_runner.py": true,
+    "evaluation/fidelity_precover_media_pipeline.py": true
+  },
+  "future_GPU_calls_permitted": 0,
+  "no_active_containers": true,
+  "billing_snapshot": {
+    "summary_total_used": 5.62,
+    "breakdown_total_used": 6.1995673179626465,
+    "phase_start_summary_used": 3.38,
+    "observed_summary_delta": 2.24,
+    "conservative_upper_delta": 2.8196,
+    "out_of_pocket": 0,
+    "cash_cap": 0,
+    "limitations": "Rounded/delayed UI totals disagree; not a settled invoice or exact per-run charge. Breakdown is recorded conservatively.",
+    "followup_summary_total_used": 5.62,
+    "followup_breakdown_total_used": 5.9618635177612305,
+    "conservative_policy": "Retain highest observed breakdown6.199567 for budgeting; raw UI snapshots retained privately. Cause of transient readout differences not established."
+  }
+}

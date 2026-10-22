@@ -1,0 +1,24 @@
+[
+  {
+    "kind": "reference",
+    "status": "succeeded",
+    "output": "outputs\\protected-completion\\reference",
+    "ceiling_seconds": 660,
+    "started_utc": "2026-10-18T22:40:01.966429+00:00",
+    "observed_usage": 7.21,
+    "observed_remaining": 22.79,
+    "call_id": "fc-01M58JR55YD2AXEZ7A3YB34NXE",
+    "worker_seconds": 388.823912141
+  },
+  {
+    "kind": "video",
+    "status": "succeeded",
+    "output": "outputs\\protected-completion\\motion",
+    "ceiling_seconds": 660,
+    "started_utc": "2026-10-18T22:53:04.205043+00:00",
+    "observed_usage": 7.49,
+    "observed_remaining": 22.51,
+    "call_id": "fc-01M58KG16VDR3NZ0X0WSXDSHW3",
+    "worker_seconds": 137.653357611
+  }
+]

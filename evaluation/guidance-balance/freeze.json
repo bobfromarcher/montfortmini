@@ -1,0 +1,71 @@
+{
+  "frozen_utc": "2026-10-22T03:26:21.047198+00:00",
+  "scope": "CFG5-to1 only, original green reference and text/control fixed; known development footage",
+  "budget": {
+    "cash_cap": 0,
+    "included_cap": 0.75,
+    "baseline_usage": 8.65,
+    "baseline_remaining": 21.35,
+    "stopping_usage": 9.4,
+    "stopping_remaining": 20.6,
+    "max_gpu_calls": 1,
+    "max_gpu_seconds": 660,
+    "stopping_rule": "One development attempt<=660seconds/$0.75 included. Stop on technical/full-quality failure. At most$1.50 reserved for separately bounded verification only after full pass, cycle ceiling$2.25, cash0, at least$2 remaining. No retry or intermediate CFG sweep.",
+    "cycle_included_cap": 2.25
+  },
+  "source_sha256": {
+    "native_recipe_candidate.py": "510175060d84545d31c91bf3dbafe863c8010efc74c26d6844835c5d5a311505",
+    "native_recipe_workflow.py": "5d97cf78cf3abe6b099bfc94c15f38213f4dc7d13983f513366f40dd43d07fff",
+    "native_recipe_models.py": "c5a79559040f0abaca0a7cde76f43e1753058ef13420f17e6367f18983c36579",
+    "native_recipe_fixture.py": "eb01c1decea58a3d98a13e235952c5e5724025d18e0a77f60af268db03401df2",
+    "explicit_motion_candidate.py": "0c81a2ecfb3a49fabd6578bc63f6d94fb46e19a74336313c38e35ccf4fb4266f",
+    "explicit_motion_workflow.py": "be10b48e2b0be5eddb66029170f8cb8f728078a3ade32c151e6f70174c621161",
+    "explicit_motion_inputs.py": "3413712fe5d96d75c4fb17373b5f9a3ebc6b5ec5cbc5e1dbadd7d3c089206d10",
+    "workflow.py": "babd4432c111f92283a4d92ffb49dfe5f83fa79654f724d80c6a2939b5dfc150",
+    "model_config.py": "c7467de0c834698f25b78cfc69d000de40f4d93ecd2c26cdd764ed10ec4ba5a1",
+    "motion_probe.py": "f329f9ead7c36305ce0e650ee91dff755f502fd19086d88865effebdb2863786",
+    "modal_probe.py": "0040def77de529c03b3b231ed0fc4504ac3a0e6185c37f1b983fbd4feca272dd",
+    "motion_workflow.py": "43adfab664bd3d637aba96b87c5cc9e25c812623e93c5553fce0820e7b1ae0de",
+    "motion_model_config.py": "1a41713ecfea0ea848ca231e1e8d6376935e660746c06bcb27a559abf1d75e9d",
+    "sdk_runner.py": "0410aae8bacdd6641055eb60db487eab1d3325c418ff22a07439a6919fba3eed",
+    "download_models.py": "3dec78188c3699a717987f55e48faaced65bf8ffed3b120d3aab4aee5f135397",
+    "download_motion_models.py": "c61bdb9132330d8c6e71e4e479df70f5adddcfebb99a121cec387038e01e5b81",
+    "proof_inputs.py": "b8e3da17dfbc9bb0306e12c90163636af8f068eee781eadc040aa3e0482a1764",
+    "motion_inputs.py": "775f10a3b880a2241bbfc42fb9357d9ec3c86030acf9bef654c3bfc9bd94f8ad",
+    "upstream_motion_candidate.py": "1cf3a063ed284ba523975118f49753556584768437754803c86fd59a5dfaa12a",
+    "upstream_motion_controls.py": "efa6fb91463d4c40b19d5fa2ea417b50da52bf57e14c738ce2a8885acf28d84a",
+    "media_pipeline.py": "9b9daa938743212cbbdacd6836d5fdc169c51160b4fe019062bcd61fe3d55d33",
+    "native_motion_backend.py": "64a1f4b095eb563eb2c3974e1c9d255671d49c06fd8d60e083552b7e4b6ac90c",
+    "service.py": "1333da8a02d0ab31a8a1613d8a7addfaa1a04271e29127280b57316b7fa44f63",
+    "legacy_local_inference.py": "11320f84f38039a2e5e11b9866b54343b50f292f152778ac530bdd26b40dbeff",
+    "guidance_candidate.py": "f053d5bdb69123fc51b18d2d9dc6cf37c47028ea920682584f6437c072026809",
+    "object_luminance_inputs.py": "2eee7ed3ec9036847a7ca7c7fce1f925f073f4db23be2da8bc78bdb05e361d33",
+    "object_reference_luma_inputs.py": "567b6ac0a433b13495ebbefd3589f1b6136d61ec3158c8739130c56672efad50",
+    "object_reference_chroma_inputs.py": "75577cb820832a7ce425195bb4ae368226967249305276317ea5e18c25bbe6cd",
+    "reference_branch_inputs.py": "6a02be76454d8e10e55a581c302c024315cba8a6e18a60a0f3ddbd146210e3a1"
+  },
+  "artifact_sha256": {
+    "inputs.zip": "9762f4071ab75bfc6fb1ff8078b29cf73aa474e246cded9b087f9b9c45373313",
+    "control-workflow.json": "7d71ed0d15e7b55da4c9efd26ddfaa23fd257d488bee15353ce6eb13beac6ec3",
+    "PROTOCOL.json": "b1ecc9d5c0d2617d6ea70df1307ed0fa62c0a49c551348edcdd5f9d153f2f89f",
+    "billing-observation.json": "43f786ece0213d6cf8ec05a8a38a1816a393a5322ac154f7722299686af1e162",
+    "executed-source.zip": "97b0858b56b34f3d01d6af03258bdf6508f7afa863e9868b1d2e578e5c3543e4"
+  },
+  "acceptance": {
+    "visual_dimensions": "reference,source motion,temporal stability,object shape and realistic scene lighting each>=3/4;>=15/17 clear reference frames; no doubled object/collapse. Agent ratings provisional.",
+    "scale_area_ratio": [
+      0.8,
+      1.25
+    ],
+    "centroid_mean_error_diagonal_max": 0.1,
+    "raw_preservation_MAE_max_255": 3,
+    "raw_preservation_p95_max_255": 10,
+    "composite_outside_mask_max_error": 0,
+    "limits": "HSV source/generated area is an exploratory proxy, not true projected3D size; cannot override visual failure. Composite preservation is not model preservation."
+  },
+  "analysis_sha256": {
+    "evaluation/prepare_guidance.py": "759e71964f9861f055caceba691882d055d89b155d9d9496b6193c30e6a9b5d6",
+    "evaluation/object_color_diagnostics.py": "395ea8e2c0d6b75b82ce37df6a570699f015432688f25fa4524f5fe50964735a"
+  },
+  "arm": "development"
+}

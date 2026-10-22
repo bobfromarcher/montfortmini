@@ -1,0 +1,289 @@
+{
+  "isolation_pass": true,
+  "checks": {
+    "technical_success": true,
+    "frozen_artifacts_match": true,
+    "runtime_sources_match": true,
+    "executed_input_tensors_exact": true,
+    "conditioning_receipt_hashes_match": true,
+    "packing": true,
+    "seed_and_trim": true,
+    "frames_dimensions": true,
+    "parent_invariants": true,
+    "full_input_zip_byte_exact": true,
+    "only_sampler_cfg_changed": true,
+    "all_executed_input_tensors_exact": true,
+    "all_sampler_boundary_tensors_exact": true,
+    "encoded_size_fps": true
+  },
+  "diagnostic_gates": {
+    "reference_color": false,
+    "scale_proxy": false,
+    "centroid": false,
+    "raw_preservation": true,
+    "encoded_preservation": true,
+    "composite_preservation": true
+  },
+  "numerical_gates_pass": false,
+  "green_raw_frames": 0,
+  "green_composite_frames": 0,
+  "median_area_ratio": null,
+  "mean_centroid_error_diagonal": null,
+  "raw_preservation": {
+    "mae_255": 2.094484806060791,
+    "p95_255": 6.0,
+    "max_255": 112.0
+  },
+  "encoded_preservation": {
+    "mae_255": 1.7697279453277588,
+    "p95_255": 4.0,
+    "max_255": 49.0
+  },
+  "composite_preservation": {
+    "mae_255": 0.0,
+    "p95_255": 0.0,
+    "max_255": 0.0
+  },
+  "raw_composite_target_pixels_exact": true,
+  "rows": [
+    {
+      "frame": 0,
+      "source_yellow": {
+        "center": [
+          175.99660493827162,
+          156.3972222222222
+        ],
+        "area": 3240
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    },
+    {
+      "frame": 1,
+      "source_yellow": {
+        "center": [
+          174.16129032258064,
+          156.8991935483871
+        ],
+        "area": 3224
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    },
+    {
+      "frame": 2,
+      "source_yellow": {
+        "center": [
+          172.21232665639445,
+          156.88875192604007
+        ],
+        "area": 3245
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    },
+    {
+      "frame": 3,
+      "source_yellow": {
+        "center": [
+          170.87711213517665,
+          156.01566820276497
+        ],
+        "area": 3255
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    },
+    {
+      "frame": 4,
+      "source_yellow": {
+        "center": [
+          168.28256205945448,
+          155.75635917866992
+        ],
+        "area": 3263
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    },
+    {
+      "frame": 5,
+      "source_yellow": {
+        "center": [
+          166.53794369645044,
+          156.33231334149326
+        ],
+        "area": 3268
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    },
+    {
+      "frame": 6,
+      "source_yellow": {
+        "center": [
+          163.43886198547216,
+          157.84594430992735
+        ],
+        "area": 3304
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    },
+    {
+      "frame": 7,
+      "source_yellow": {
+        "center": [
+          161.53472222222223,
+          159.11805555555554
+        ],
+        "area": 3312
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    },
+    {
+      "frame": 8,
+      "source_yellow": {
+        "center": [
+          160.68902991840434,
+          159.12269567845271
+        ],
+        "area": 3309
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    },
+    {
+      "frame": 9,
+      "source_yellow": {
+        "center": [
+          159.77452460006037,
+          157.56746151524297
+        ],
+        "area": 3313
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    },
+    {
+      "frame": 10,
+      "source_yellow": {
+        "center": [
+          159.9135248354279,
+          157.1244763614602
+        ],
+        "area": 3342
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    },
+    {
+      "frame": 11,
+      "source_yellow": {
+        "center": [
+          160.11666666666667,
+          157.3982142857143
+        ],
+        "area": 3360
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    },
+    {
+      "frame": 12,
+      "source_yellow": {
+        "center": [
+          161.18669847897405,
+          158.12585744109754
+        ],
+        "area": 3353
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    },
+    {
+      "frame": 13,
+      "source_yellow": {
+        "center": [
+          162.0790255496138,
+          158.7192513368984
+        ],
+        "area": 3366
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    },
+    {
+      "frame": 14,
+      "source_yellow": {
+        "center": [
+          163.8500441046751,
+          159.1646574536901
+        ],
+        "area": 3401
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    },
+    {
+      "frame": 15,
+      "source_yellow": {
+        "center": [
+          165.14515186915887,
+          159.20940420560748
+        ],
+        "area": 3424
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    },
+    {
+      "frame": 16,
+      "source_yellow": {
+        "center": [
+          165.9831737742965,
+          159.30954453147663
+        ],
+        "area": 3447
+      },
+      "raw_green": null,
+      "composite_green": null,
+      "area_ratio": null,
+      "centroid_error_diagonal": null
+    }
+  ],
+  "limits": "One known development clip/seed. Numerical gates and exact conditioning do not certify visual fidelity. At CFG1 the default sampler may skip unconditional prediction although its conditioning was captured. Actual prediction count not independently traced."
+}

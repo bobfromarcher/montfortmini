@@ -1,0 +1,29 @@
+[
+  {
+    "kind": "oracle",
+    "status": "succeeded",
+    "ceiling_seconds": 900,
+    "usage_observed": 7.93,
+    "remaining_observed": 22.07,
+    "call_id": "fc-01M5AH06S0K72NS31T1WWY8XKM",
+    "worker_elapsed_seconds": 78.508653023
+  },
+  {
+    "kind": "reference",
+    "status": "succeeded",
+    "ceiling_seconds": 900,
+    "usage_observed": 8.01,
+    "remaining_observed": 21.99,
+    "call_id": "fc-01M5AH639F8PKSWJZ4Y1F6GNCK",
+    "worker_elapsed_seconds": 82.232400561
+  },
+  {
+    "kind": "verification",
+    "status": "failed",
+    "ceiling_seconds": 900,
+    "usage_observed": 8.08,
+    "remaining_observed": 21.92,
+    "call_id": "fc-01M5AHRWM8AKV9215NQH9ET3F2",
+    "worker_elapsed_seconds": 80.741236645
+  }
+]
