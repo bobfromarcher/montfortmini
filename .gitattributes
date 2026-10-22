@@ -30,3 +30,5 @@ evaluation/object-reference-chroma/** -text
 evaluation/object-color-prompt/** -text
 
 evaluation/reference-branch/** -text
+
+evaluation/guidance-balance/** -text

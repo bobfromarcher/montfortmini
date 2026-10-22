@@ -1,0 +1,13 @@
+{
+  "status": "closed-quality-failure",
+  "gpu_calls": 1,
+  "max_gpu_calls": 1,
+  "worker_seconds": 39.478565118,
+  "included_development_cap": 0.75,
+  "conditional_verification_reserve": 1.5,
+  "verification_spent": 0,
+  "account_delta_rounded": 0.04,
+  "cash": 0,
+  "allow_further_inference": false,
+  "authentication": "Initial expiry before CPU preflight/GPU reservation; same-scope12h refresh then one GPU call. No GPU retry."
+}

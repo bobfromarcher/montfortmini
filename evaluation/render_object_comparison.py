@@ -12,6 +12,7 @@ def main():
     parser.add_argument('--reference-luma',action='store_true',help='Source/reference plus old and normalized foreground-luma videos')
     parser.add_argument('--reference-chroma',action='store_true',help='Source/reference plus prior luma and reference-chromaticity videos')
     parser.add_argument('--color-prompt',action='store_true',help='Source/reference plus fixed-control two-word prompt ablation')
+    parser.add_argument('--guidance',action='store_true',help='Source/reference plus CFG5 and CFG1 with identical conditioning')
     args=parser.parse_args();args.output.mkdir(parents=True,exist_ok=True)
     root=Path(__file__).parent
     baseline=root/'quality/samples/new-real-object__candidate__s42'
@@ -39,6 +40,10 @@ def main():
             cases=[('Source recording',baseline/'inputs/source'),('Original reference',baseline/'inputs/reference.png'),
                    ('Reference-chroma baseline: two green words',root/'object-reference-chroma'/stage),
                    ('Same control: two green words removed',root/'object-color-prompt'/stage)]
+        if args.guidance:
+            cases=[('Source recording',baseline/'inputs/source'),('Original green reference',baseline/'inputs/reference.png'),
+                   ('CFG5 baseline: FAIL beige target',root/'reference-branch/repeat'/stage),
+                   ('CFG1: FAIL red target; conditioning fixed',root/'guidance-balance'/stage)]
         columns=3 if args.factorial else 2
         for i in range(17):
             canvas=Image.new('RGB',(480*columns,700),'#101820');draw=ImageDraw.Draw(canvas)
@@ -46,6 +51,7 @@ def main():
             if args.reference_luma:status='foreground normalization; material gate remains unmet'
             if args.reference_chroma:status='fixed-seed chromaticity contrast; verdict in review.json'
             if args.color_prompt:status='only two color words removed; verdict in review.json'
+            if args.guidance:status='CFG5 to1 only; both fail reference fidelity'
             draw.text((10,8),f'montfortmini | {stage.upper()} | known development footage | frame{i}/16 | {status}',font=font,fill='white')
             for j,(label,frames) in enumerate(cases):
                 x=(j%columns)*480;y=40+(j//columns)*304

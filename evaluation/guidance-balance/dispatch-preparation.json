@@ -1,0 +1,5 @@
+{
+  "event": "Initial CLI connection expired before app/preflight/GPU dispatch; no GPU ledger existed. Same authorized12h connection refreshed. Frozen inputs/source unchanged.",
+  "observed_utc": "2026-10-22T03:28:54.243258+00:00",
+  "gpu_attempts_before_refresh": 0
+}

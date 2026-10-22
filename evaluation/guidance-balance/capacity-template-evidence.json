@@ -1,0 +1,88 @@
+{
+  "template_revision": "e7cd011d4ded3411c2f481200544f0be6fdc962e",
+  "url": "https://raw.githubusercontent.com/Comfy-Org/workflow_templates/e7cd011d4ded3411c2f481200544f0be6fdc962e/templates/video_wan_vace_14B_t2v.json",
+  "sha256": "5618e4122802ff070c0f94009215b477220c2520e729793a4d3d89a9ae263c2b",
+  "selected_nodes": [
+    {
+      "type": "KSampler",
+      "widgets_values": [
+        675909971186865,
+        "randomize",
+        4,
+        1,
+        "uni_pc",
+        "simple",
+        1
+      ]
+    },
+    {
+      "type": "WanVaceToVideo",
+      "widgets_values": [
+        1280,
+        720,
+        81,
+        1,
+        1
+      ]
+    },
+    {
+      "type": "ModelSamplingSD3",
+      "widgets_values": [
+        8.000000000000002
+      ]
+    },
+    {
+      "type": "VAELoader",
+      "widgets_values": [
+        "wan_2.1_vae.safetensors"
+      ]
+    },
+    {
+      "type": "UNETLoader",
+      "widgets_values": [
+        "wan2.1_vace_1.3B_fp16.safetensors",
+        "default"
+      ]
+    },
+    {
+      "type": "LoraLoader",
+      "widgets_values": [
+        "Wan21_CausVid_bidirect2_T2V_1_3B_lora_rank32.safetensors",
+        0.7000000000000002,
+        1
+      ]
+    },
+    {
+      "type": "CLIPLoader",
+      "widgets_values": [
+        "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+        "wan",
+        "default"
+      ]
+    },
+    {
+      "type": "CLIPLoader",
+      "widgets_values": [
+        "umt5_xxl_fp16.safetensors",
+        "wan",
+        "default"
+      ]
+    },
+    {
+      "type": "LoraLoader",
+      "widgets_values": [
+        "Wan21_CausVid_14B_T2V_lora_rank32.safetensors",
+        0.7000000000000002,
+        1
+      ]
+    },
+    {
+      "type": "UNETLoader",
+      "widgets_values": [
+        "wan2.1_vace_14B_fp16.safetensors",
+        "default"
+      ]
+    }
+  ],
+  "limits": "Template evidence only; our pinned Comfy loader and memory still need preflight before any paid capacity run."
+}
