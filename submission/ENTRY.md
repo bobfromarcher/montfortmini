@@ -1,5 +1,7 @@
 # montfortmini — entry materials
 
+Release plan: [developer alpha and October29 submission target](RELEASE-PLAN.md). Current expanded rules explicitly allow local ComfyUI and make a hosted try link optional. Exact facial consistency remains the primary development goal, not an established claim.
+
 October 21: the [CFG5-to1 contrast](../evaluation/guidance-balance/FINDINGS.md) changes the target from beige to red in all17 frames despite bit-identical conditioning. Reference fidelity still fails; CFG1 rejected, one attempt closed. Included account delta approximately $0.04; cash $0.
 
 October 21: the [reference-branch sensitivity pair](../evaluation/reference-branch/FINDINGS.md) confirms a small output response with text/control fixed. The repeat is pixel-exact to the prior baseline; only the encoded reference prefix changes at the sampler. Both targets remain beige and fail reference fidelity. Diagnostic isolation passes; video quality remains unmet.

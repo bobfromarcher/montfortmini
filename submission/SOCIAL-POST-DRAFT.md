@@ -1,10 +1,11 @@
-# Social post draft — not posted
+# Social drafts — not posted
 
-Attach `montfortmini-demo.mp4` to the post:
+Use [ANNOUNCEMENT-DRAFT.md](ANNOUNCEMENT-DRAFT.md) for the immediate code-preview
+announcement and separate limits reply. Both proposed X posts are<=280literal
+characters. The link targets the current candidate branch while main is older.
 
-montfortmini: open-source object replacement + character motion transfer with Comfy SDK and Wan. Real outputs, retained failures, reproducible evaluation. Experimental quality.
-https://github.com/bobfromarcher/montfortmini/tree/codex/validation
-#OpenSourceHiggsfield
-
-After publishing, put the actual post URL in the competition submission. This
-file is a draft and is not proof that a social post exists.
+For the competition, prepare the current cleared<=2minute video first. The
+existing108-second demo predates native motion integration. Do not attach it
+as evidence of the current face/motion recipe. The final post must link or
+attach the actual demo and include #OpenSourceHiggsfield; save its published
+URL for the entry. No social post or URL exists from this draft.

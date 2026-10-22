@@ -1,4 +1,4 @@
-# Submission checklist — checked October19,2026
+# Submission checklist — rechecked October21,2026
 
 October 21: the [CFG5-to1 contrast](../evaluation/guidance-balance/FINDINGS.md) changes the target from beige to red in all17 frames despite bit-identical conditioning. Reference fidelity still fails; CFG1 rejected, one attempt closed. Included account delta approximately $0.04; cash $0.
 
@@ -16,8 +16,7 @@ quality remain inadequate or unverified. Exact local native GPU reproduction,
 independent normal-speed/professional review and an updated cleared public demo
 remain pending. The [foreground reference-luma correction](../evaluation/object-reference-luma/FINDINGS.md) improves shade but still fails material/appearance; only error reporting is deployed. The [source-luma combination](../evaluation/object-luminance/FINDINGS.md) improves object color/scale/trajectory but fails the full lighting/material gate. The [object reference/prompt cycle](../evaluation/object-reference/FINDINGS.md) rejects both new videos; no quality promotion follows. Earlier diagnostic decisions below are historical.
 
-Official app/submission accordions were expanded again October19. The required
-SDK, license, workflows and local instructions remain in scope. The existing
+Official app/submission accordions were expanded again October21; see rules-recheck-2026-10-21.json. The license, workflows and local instructions remain in scope; the October21 recheck explicitly permits entirely local ComfyUI execution. The existing
 108-second demo predates the native app and must not be presented as showing
 its current quality. Social/form publication has not been performed.
 
@@ -45,9 +44,9 @@ completion bounty. The deadline is October 30, 2026, 9am Pacific / noon Eastern.
 
 | Published requirement | Evidence/status |
 |---|---|
-| Comfy Developer Platform via Router and/or SDK | Real official SDK → self-hosted proxy execution, saved jobs/graphs. Self-hosting is documented in the official SDK guide. Organizer interpretation is not pre-approved. |
+| Built with ComfyUI; local/cloud/Router/SDK execution allowed | Current expanded rules explicitly permit entirely local ComfyUI. This app executes official SDK → self-hosted proxy with retained jobs/graphs. Public GPU hosting is not required. |
 | Open-source app code, workflows, license and local instructions | Public repository/branch, MIT app license, custom input nodes and setup. Clean frontend/Python checks passed; full GPU Docker and independent reproduction pending. |
-| Demo no longer than two minutes | Updated108-second MP4;2592 decoded frames, ffprobe duration and asset hashes retained. |
+| Demo no longer than two minutes | Archival108-second MP4 meets duration only. Updated cleared current-native demo is pending; do not submit the archival film as current performance. |
 | Social demo post with competition hashtag | Exact draft prepared; publication and URL pending. |
 | Hosted try link | Optional; existing deployment is owner-private, so no anonymous-access claim. |
 | Lawful/SFW media and licensed IP/likenesses | Public demo uses original procedural art/interface. Public research samples add attributed CC-BY bee footage. Private portraits and human-source test clips are excluded. |
@@ -62,3 +61,5 @@ SDK self-hosting reference:
 https://docs.comfy.org/development/api-development/sdks
 
 October18 recheck expanded the official app/submission accordions. Current production still uses the SDK. Rejected research code is explicitly separate. New CC0 human research media and derived outputs are excluded from public submission media because promotional likeness permission is not established. Original fictional reference and procedural regression derivatives are cleared public assets. Full independent GPU reproduction, professional ratings, registration confirmation, social publication and formal submission remain pending.
+
+Release-readiness audit: the public default branch still points to the older pipeline. Latest source is on codex/validation; no release tag exists. Live backend status returns200 with owner key and401 without it; this verifies availability/authentication, not a new generation. Sites remains owner-private. See RELEASE-PLAN.md for the bounded public-alpha path.

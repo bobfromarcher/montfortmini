@@ -1,89 +1,68 @@
 # montfortmini
 
-October 21: the [CFG5-to1 contrast](evaluation/guidance-balance/FINDINGS.md) changes the target from beige to red in all17 frames despite bit-identical conditioning. Reference fidelity still fails; CFG1 rejected, one attempt closed. Included account delta approximately $0.04; cash $0.
+**Open-source video workbench · developer-alpha candidate.** Reference-guided
+object replacement and character motion transfer with ComfyUI and the official
+Comfy SDK. The current candidate is on [`codex/validation`](https://github.com/bobfromarcher/montfortmini/tree/codex/validation);
+the default branch currently contains an older pipeline. No alpha release tag
+has been published yet.
 
-October 21: the [reference-branch sensitivity pair](evaluation/reference-branch/FINDINGS.md) confirms a small output response with text/control fixed. The repeat is pixel-exact to the prior baseline; only the encoded reference prefix changes at the sampler. Both targets remain beige and fail reference fidelity. Diagnostic isolation passes; video quality remains unmet.
+Our development priority is **identity consistency**: preserving a character's
+facial features and an object's defining appearance through motion. Exact facial
+likeness, turns/occlusion and consistency across separate shots remain unproved.
+This independent implementation does not call Higgsfield or contain its backend
+code. No Genjutsu parity or superiority is claimed.
 
-October 21: the [two-color-word ablation](evaluation/object-color-prompt/FINDINGS.md) loses the green reference in17/17 frames despite identical image/control inputs. Expanded all-frame diagnostics improve some color scores on this wrong beige target, demonstrating why visual identity gates remain mandatory. Candidate rejected; no production promotion.
+## Who can use this today
 
-October 21: the [reference-chromaticity test](evaluation/object-reference-chroma/FINDINGS.md) preserves scale and trajectory but fails the full material gate; raw output is brighter than the prior candidate. One generation, no production visual change or unseen test. Included account delta approximately $0.04, cash $0.
+Technical users can run short experiments on their own GPU or their own Modal
+account. The measured native-motion allocation was an L40S48GB with64GB requested
+system memory. That is a successful allocation, not a proven minimum. The full
+local Docker GPU path has not been independently executed. A4GB laptop cannot
+reproduce the measured workload.
 
-An independent, experimental video-editing workbench using open models and the official Comfy SDK. Upload a short video and one reference image, then replace a selected object or animate the reference character from the source motion.
+The hosted studio is currently owner-private. There is no public free-generation
+service, and repository access does not grant access to the maintainer's compute.
+Use the setup below with your own backend and credentials. Public announcement
+and alpha-release drafts are in [submission/RELEASE-PLAN.md](submission/RELEASE-PLAN.md).
 
-It never calls Higgsfield's backend and does not contain their implementation, branding, assets, or weights. This is a functional alternative, not a claim of Genjutsu quality or feature parity.
+## Capabilities and current limits
 
-## Features and limits
+| Capability | Working path | Evidence and limits |
+|---|---|---|
+| Character motion transfer | Native Wan2.2-Animate14B, pinned whole-body/hand pose and face controls, Lightx2v/relighting adapters | Actual app-path video completed. Broad reference attributes and4/4 motion events provisionally retained on one recording. Face/glasses proportions and fingers remain imperfect; exact identity/generalization unproved. |
+| Reference-guided object replacement | Wan2.1 VACE1.3B, manual rectangular region and optional linear start/end positions | Simple synthetic replacements run. Realistic reference fidelity/material/lighting still fail the full quality gate. No AI object tracking. |
+| Inspection/export | Source, raw and composited video; exact executed workflow and run details | Composite background preservation comes from the compositor. Evaluate the raw output separately. |
 
-- **Object swap:** Wan2.1 VACE 1.3B, reference-guided inpainting, a drawn rectangle, and optional first/end rectangles interpolated along a straight path.
-- **Motion transfer:** native Wan2.2-Animate14B with pinned whole-body/hand pose and face controls, converted checkpoint, Lightx2v acceleration and relighting adapters. Use single-person footage and a complete character reference. Portrait completion is not automatic.
-- File uploads, prompt and seed controls, synchronized comparison, MP4 and exact workflow downloads.
-- 17/33 frames at 8fps (2.125/4.125 seconds), motion up to480×560, objects up to480×480, one reference. Audio is omitted.
-- 12MiB video, 4MiB reference, 16 megapixels per decoded image/frame. Short videos repeat their last frame.
-- Official `comfy-sdk==0.5.0` workflow execution through `comfy-api-proxy==0.1.6` beside self-hosted ComfyUI.
-- Modal backend: one GPU container maximum, zero warm GPU containers, no automatic generation retries, no persistent volumes.
-- Optional local NVIDIA Docker recipes, including a native-motion extension; full local GPU execution remains unverified.
+Inputs: one reference;17/33frames at8fps (2.125/4.125s); motion up to480x560,
+objects up to480x480;12MiB video/4MiB reference; no audio. Use a single clear
+performer and a complete character reference for motion. Automatic portrait
+completion, long clips and multi-person handling are not validated.
 
-The region uses a manual rectangle with linear interpolation. Both modes remain experimental. The [validation study](evaluation/FINDINGS.md) includes eight development/held-out synthetic and realistic clips, paired controls, and retained failures. Mirrored motion can produce duplicate arms; reference color, shading, and real-footage motion remain unreliable. Multiple subjects and long-term identity consistency are unvalidated.
+## Start here
 
-The [evaluation harness](evaluation/README.md) records exact model/workflow provenance, raw versus composited outputs, resource use and a blinded review packet. The only production repair in that study honors display-rotation metadata before sizing frames and mapping masks.
+```sh
+git clone --branch codex/validation https://github.com/bobfromarcher/montfortmini.git
+cd montfortmini
+```
 
-The [quality follow-up](evaluation/quality/FINDINGS.md) adds controlled reference/framing experiments and four new prospective cases. The realistic fidelity/motion target remains unmet: object scale/lighting and side-view body motion still fail. Global center-cover fitting was rejected because it crops full-body references. The shipped follow-up repair saves confirmed SDK job receipts and allows bounded longer status reads, without automatic generation retries. [Reproduce the follow-up](evaluation/QUALITY.md), inspect its label-blinded packet, or watch the [108-second demonstration](submission/montfortmini-demo.mp4).
+Choose **Run with Modal** below for your own cloud account, or **Fully local GPU
+option** for the provided Docker path. Generation consumes your compute; model
+build/download and CPU preparation also have costs. The local UI uses a mock
+sign-in during development. Production Sites hosting uses its access gate and
+requires separate configuration.
 
-The [reference-preparation recovery study](evaluation/RECOVERY.md) implements and tests a pinned Klein → Qwen → Animate2 candidate. It improved a difficult development clip but failed identity on a new independent recording, so it was rejected for production. Exact stage provenance, frozen protocols and offline audit commands are included. The deployed inference path above remains the documented default.
+## Watch and assess the actual evidence
 
-The [focused correction cycle](evaluation/detail-cycle/FINDINGS.md) fixes loss of original reference detail in an optional research helper. Paired stills restore facial attributes but fail identity/clothing/pose gates. Both failures are retained; no new video claim or production promotion follows.
+- [Native motion app integration](evaluation/native-motion-service/FINDINGS.md): current app recipe and retained limitations. Human-source research footage is private because public promotional likeness clearance is outstanding.
+- [Reference-only sensitivity](evaluation/reference-branch/FINDINGS.md): active but weak reference response with text/control fixed; both outputs fail appearance.
+- [Latest guidance contrast](evaluation/guidance-balance/FINDINGS.md): CFG1 rejected; beige becomes red despite identical conditioning. Includes public licensed raw/composite comparisons.
+- [Earlier procedural examples](webapp/public/examples): actual recorded synthetic proofs from the older recipes, not current native-face validation.
+- [Earlier108-second demo](submission/montfortmini-demo.mp4): archival demonstration predating the native motion integration. An updated cleared demo remains a release/submission gate.
+- [Alpha notes](submission/ALPHA-RELEASE-NOTES.md), [launch plan](submission/RELEASE-PLAN.md), [competition checklist](submission/REQUIREMENTS-AUDIT.md).
 
-A subsequent [pose-only alternative](evaluation/pose-reference/FINDINGS.md) removes the two-editor cascade and source-person appearance from reference preparation. Native Qwen editing receives an estimated skeleton and the original identity. Its reference still loses required clothing and posture, so it also stops before video and remains research-only. The documented next conditioning experiment is untested.
-
-The [identity-first continuation](evaluation/identity-first/FINDINGS.md) tests reference ordering, depth conditioning and CPU registration of the original subject pixels. A new actual video retains defining appearance in conservatively31/33 frames, but remains a floating, truncated figure with unverified motion timing. It fails the frozen video criteria; three GPU calls are retained, two exploratory protocol deviations are disclosed, and no production promotion or unseen-test success is claimed.
-
-Use one clear reference view with framing suited to the intended performance. Contact sheets can animate as multiple panels; tested headshots did not recover the source hand performance. Reference fitting and source framing are material limitations, not automatic subject tracking or pose reconstruction guarantees.
-
-## Actual generation evidence
-
-The [native motion integration](evaluation/native-motion-service/FINDINGS.md)
-recovers the previously unscored independent-recording test:4/4 principal events,
-33/33 recognizable reference-attribute frames, provisionally. The app's actual
-upload/preparation/orchestration path repeats that result and is now deployed.
-Raw/composite frames are identical under the full-frame mask; returned videos
-match retained artifacts byte for byte. Fingers remain malformed, exact facial
-likeness is not established, and normal-speed independent human/professional
-review is outstanding. This is one recording and one fictional reference,
-not population generalization or Genjutsu parity. Realistic object-swap quality
-still fails. The earlier [diagnostic](evaluation/native-recipe/FINDINGS.md)
-and all technical failures remain retained.
-
-The studies below describe earlier decisions at their dates; the native release
-above supersedes their former production-status statements.
-
-The [reference-luma correction](evaluation/object-reference-luma/FINDINGS.md) reduces the raw target brightness mismatch while retaining green in17/17 frames and a0.96x area proxy. Full material/appearance quality still fails; diagnostic foreground annotations are not generic segmentation. The first missing-dependency failure is retained, and container preflight plus clearer render-error reporting are implemented.
-
-The [object conditioning correction cycle](evaluation/object-reference/FINDINGS.md) rejects reference registration and a descriptive-prompt-only video. Registration loses green in17/17 frames; the descriptive prompt retains green but regresses scale to2.83x the source color-area proxy and adds a hole-like shape defect. Both raw/composited outputs and bounded replay commands are retained. The [source-luma follow-up](evaluation/object-luminance/FINDINGS.md) now produces green in17/17 frames at1.11x the source area proxy with accurate trajectory and passing numerical gates. Material/lighting remains below the frozen visual threshold; this actual video improvement is research-only.
-
-The [object-mask oracle](evaluation/object-mask/FINDINGS.md) tests tighter
-source-annotated masks with the model/reference/graph fixed. It loses the green
-reference in17/17 frames, so it is rejected. Public licensed inputs, raw results
-and a fresh-budget replay initializer are retained. Historical evaluator hooks
-are explicitly kept on local legacy recipes rather than the new orchestrator.
-
-The [precision and upstream-control diagnostic](evaluation/upstream-motion/FINDINGS.md) rejects both a BF16-only correction and pinned whole-body/hand/face preprocessing. Exact paired inputs isolate the precision contrast; both actual videos retain severe defects. GPU telemetry now works despite unavailable cgroup readings. These research paths remain outside production; no passing candidate or unseen verification is claimed.
-
-The latest [explicit-motion experiment](evaluation/explicit-motion/FINDINGS.md) keeps the corrected reference fixed and tests a pinned Wan2.2-Animate model with CPU body/face controls. Its actual33-frame video regresses appearance and anatomy and matches only1/4 source events provisionally. It is rejected. The source, paired audit and retained failure are research evidence; the production model and realistic-quality limitation remain unchanged.
-
-The [protected completion study](evaluation/protected-completion/FINDINGS.md) fixes the missing lower body in all33 frames of a new actual raw video while retaining the defining reference appearance. It still fails the frozen motion criterion at2/4 source events. One exploratory CPU-isolation amendment and all failures are disclosed; this research path is not promoted to production or claimed submission-ready.
-
-Original procedural fixtures and real generated clips are in [webapp/public/examples](webapp/public/examples). They are labeled as recorded proofs in the interface.
-
-| Run | Size / frames | Inference-wrapper elapsed | Result |
-| --- | --- | --- | --- |
-| Corrected VACE SDK proof | 320x320 / 17 | 38.58s | Moving blue sphere replaces red cube |
-| Animate2 SDK proof | 320x320 / 17 | 146.86s | New appearance and recognizable arm wave; background artifacts |
-| Real-upload API object test | 480x480 / 17 | 70.10s | Uploaded clip/reference produce a blue sphere |
-| Browser motion test | 480x480 / 17 | 92.44s | New character follows arm wave; downloads verified |
-
-These ran on Modal L40S. Timings exclude some scheduling/build overhead and are not cost quotes.
-
-Outside-mask preservation in the object **Finished** result comes from explicit compositing. Inspect **Raw result** to judge the model. Target pixels are erased to gray before VACE conditioning to prevent source identity leaking through its reactive branch. Region coordinates are mapped through letterboxing.
+All earlier failed studies remain under `evaluation/`. Current measured quality
+is experimental. A runnable technical alpha and a passing realistic-quality
+candidate are separate milestones.
 
 ## Run with Modal
 
@@ -170,7 +149,7 @@ python -m modal run motion_probe.py --confirm-credits-only
 
 These save full source/raw/composite videos, frames, graph, manifest, package versions and execution log under ignored `results/`.
 
-Ten production tests cover workload bounds, masks, reference-latent trimming, rotation, input validation, target erasure and receipt retention without resubmission on a polling failure. One separately labeled experimental-reference test covers the rejected crop candidate. Live checks verified authorization, invalid workloads, signed job identifiers and real-upload inference. Browser QA verified motion generation and MP4/workflow/provenance downloads; a later clean checkout verified installation, build, local sign-in and authenticated backend status.
+The current61-test CPU suite covers workload bounds, masks, reference-latent trimming, rotation, input validation, receipt retention and research-conditioning regressions. It passes from a fresh Git extraction using existing dependencies; this is not an independent GPU reproduction. Live checks verified authorization, invalid workloads, signed job identifiers and real-upload inference. Browser QA verified motion generation and MP4/workflow/provenance downloads; a later clean checkout verified installation, build, local sign-in and authenticated backend status.
 
 ## Licensing and provenance
 
