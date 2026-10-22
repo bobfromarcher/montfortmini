@@ -1,0 +1,12 @@
+{
+  "artifact_invariants_pass": true,
+  "checks": {
+    "runtime_sources_match_freeze": true,
+    "graph_matches_freeze": true,
+    "worker_input_matches_review": true,
+    "all_initial_artifacts_exact": true,
+    "one_cpu_and_one_gpu": true
+  },
+  "quality_gate_pass": false,
+  "limits": "Invariants do not establish exact facial likeness or independent reproduction."
+}

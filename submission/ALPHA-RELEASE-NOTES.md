@@ -1,4 +1,4 @@
-# montfortmini v0.1.0-alpha.1 — developer preview candidate
+# montfortmini v0.1.0-alpha.1 â€” developer preview candidate
 
 Draft release notes. No version tag or public alpha release is claimed here.
 
@@ -26,10 +26,16 @@ hardware specification. The local Docker GPU route is documented but not
 independently reproduced; smaller hardware may require changes. Source setup,
 current frontend checks and the61-test CPU suite do not certify video quality.
 
-The existing108-second demo is archival and shows earlier recipes. A current
-cleared native-motion sample, fresh-user setup verification, exact release
-commit and final checks are still needed before calling this a verified
-public-alpha video release. Private human-source research media is excluded.
+A current publicly cleared4.125-second native-motion example now includes
+source/reference/raw/finished views and exact provenance in evaluation/public-motion.
+It demonstrates an illustrated arm raise with visible face/hand limitations;
+it is not an exact facial-memory pass. A fresh clone/dependency installation
+passes61CPU tests and frontend types/build after correcting the documented
+OpenCV prerequisite. Simulated fresh-user UI uploads, polling, playback and
+byte-exact exports pass using a recorded-output adapter, separate from the
+actual GPU run. Another person's GPU account/reproduction remains pending.
+The existing108-second competition film is archival; an updated<=2minute film
+and the final release decision remain outstanding.
 
 Code is MIT; upstream components/models and CC BY sample media retain their
 own terms and notices. Model weights are downloaded, not redistributed.

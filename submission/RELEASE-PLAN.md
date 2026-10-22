@@ -1,6 +1,6 @@
 # Public alpha and competition release plan
 
-Prepared across October21–22,2026. Release target October22–23; submission target
+Prepared across October21â€“22,2026. Release target October22â€“23; submission target
 October29 at6p.m. Eastern. The [official deadline](https://comfy.org/open-source-higgsfield)
 is October30 at9a.m. Pacific / noon Eastern. Dates below are targets, not
 scheduled jobs or promises of a passing model.
@@ -32,9 +32,9 @@ queue service, public GPU pool or subscription work.
 | Date (Eastern) | Deliverable | Gate / fallback |
 |---|---|---|
 | Oct22 | Building-in-public announcement linking the exact candidate branch; concise current README and roadmap | Use ANNOUNCEMENT-DRAFT.md. Describe an early build, not a completed clone, free public app or proven facial-memory system. Older media must retain its recipe/date label. |
-| Oct22–23 | Versioned v0.1.0-alpha.1 developer preview with exact source, setup, limitations and one current cleared motion sample | Re-run relevant source/build checks; have a fresh-checkout user follow the documented route. A failed GPU reproduction stays disclosed. Show the actual source/reference/raw/finished clip with settings. If current public media is not ready, announce the code preview and defer the video/quality launch. |
-| Oct23–26 | One focused facial-control comparison, then verification only if it passes | Preserve reference/body controls/model/recipe. Score facial proportions/accessories and motion separately. No seed/model sweep. A failed ablation closes its protocol; choose a next test only from new evidence. |
-| Oct24–27 | Outside users try their own licensed clips and report setup/identity failures | Request permission to use submitted media. Record hardware, source commit, recipe, reference, source/raw output, settings and failure timecodes. No extra feature work. Agent ratings remain provisional. |
+| Oct22â€“23 | Versioned v0.1.0-alpha.1 developer preview with exact source, setup, limitations and one current cleared motion sample | Re-run relevant source/build checks; have a fresh-checkout user follow the documented route. A failed GPU reproduction stays disclosed. Show the actual source/reference/raw/finished clip with settings. If current public media is not ready, announce the code preview and defer the video/quality launch. |
+| Oct23â€“26 | One focused facial-control comparison, then verification only if it passes | Preserve reference/body controls/model/recipe. Score facial proportions/accessories and motion separately. No seed/model sweep. A failed ablation closes its protocol; choose a next test only from new evidence. |
+| Oct24â€“27 | Outside users try their own licensed clips and report setup/identity failures | Request permission to use submitted media. Record hardware, source commit, recipe, reference, source/raw output, settings and failure timecodes. No extra feature work. Agent ratings remain provisional. |
 | Oct27 | Freeze the competition candidate | Remaining work is blocking defects, reproducibility and demonstration. Do not silently replace the candidate after filming. If quality still fails, represent an experimental entry with demonstrated limits. |
 | Oct28 | Final cleared demo, at most2minutes; submission fields and social draft checked | Source/reference/result at native playback; clearly explain build and limitations. No private human-derived research footage or unsupported comparison claim. Verify links without owner-only access. |
 | Oct29 by6p.m. | Entrant publishes the final demo post and submits; retain post URL and receipt | Verify registration/one-entry requirement. Entrant reviews submission terms. Keep18hours before the official cutoff for broken links/form issues. |
@@ -97,10 +97,12 @@ still unresolved. The current two modes suffice for this submission.
   submitted. This is not a new video or anonymous try-link verification.
 - Last fresh-source CPU suite:61 pass. Current frontend checks recorded in the
   adjacent release-readiness report when complete.
-- Current cleared native-motion public sample: pending. Historical108s demo
-  remains labeled archival. Original procedural proofs are available now.
+- Current cleared native-motion public sample: completed; see evaluation/public-motion.
+  Motion example retains imperfect hands/face and fails the full realistic-quality gate.
+  Historical108s demo remains archival; final competition film pending.
 - Release notes and social copy: prepared drafts, not proof of publication.
-- Independent install/GPU reproduction and external review: pending.
+- Clean install and simulated fresh-user UI: pass on maintainer machine; missing evaluation dependency instruction corrected.
+  Independent person/account/GPU reproduction and external review: pending.
 - Public consumer app: deferred. Existing Sites access remains owner-private.
 - Registration receipt, final social URL and submission receipt: unverified/
   pending; never fabricate them.

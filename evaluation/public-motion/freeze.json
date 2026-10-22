@@ -1,0 +1,250 @@
+{
+  "frozen_utc": "2026-10-22T04:13:36.374586+00:00",
+  "budget": {
+    "cash_cap": 0,
+    "included_cap": 1,
+    "baseline_usage": 8.69,
+    "baseline_remaining": 21.31,
+    "stopping_usage": 9.69,
+    "stopping_remaining": 20.31,
+    "verification_reserve_remaining": 2,
+    "max_gpu_calls": 1,
+    "max_cpu_calls": 1,
+    "max_gpu_seconds": 900,
+    "max_cpu_seconds": 900
+  },
+  "source_sha256": {
+    "native_recipe_candidate.py": "510175060d84545d31c91bf3dbafe863c8010efc74c26d6844835c5d5a311505",
+    "native_recipe_workflow.py": "5d97cf78cf3abe6b099bfc94c15f38213f4dc7d13983f513366f40dd43d07fff",
+    "native_recipe_models.py": "c5a79559040f0abaca0a7cde76f43e1753058ef13420f17e6367f18983c36579",
+    "native_recipe_fixture.py": "eb01c1decea58a3d98a13e235952c5e5724025d18e0a77f60af268db03401df2",
+    "explicit_motion_candidate.py": "0c81a2ecfb3a49fabd6578bc63f6d94fb46e19a74336313c38e35ccf4fb4266f",
+    "explicit_motion_workflow.py": "be10b48e2b0be5eddb66029170f8cb8f728078a3ade32c151e6f70174c621161",
+    "explicit_motion_inputs.py": "3413712fe5d96d75c4fb17373b5f9a3ebc6b5ec5cbc5e1dbadd7d3c089206d10",
+    "workflow.py": "babd4432c111f92283a4d92ffb49dfe5f83fa79654f724d80c6a2939b5dfc150",
+    "model_config.py": "c7467de0c834698f25b78cfc69d000de40f4d93ecd2c26cdd764ed10ec4ba5a1",
+    "motion_probe.py": "f329f9ead7c36305ce0e650ee91dff755f502fd19086d88865effebdb2863786",
+    "modal_probe.py": "0040def77de529c03b3b231ed0fc4504ac3a0e6185c37f1b983fbd4feca272dd",
+    "motion_workflow.py": "43adfab664bd3d637aba96b87c5cc9e25c812623e93c5553fce0820e7b1ae0de",
+    "motion_model_config.py": "1a41713ecfea0ea848ca231e1e8d6376935e660746c06bcb27a559abf1d75e9d",
+    "sdk_runner.py": "0410aae8bacdd6641055eb60db487eab1d3325c418ff22a07439a6919fba3eed",
+    "download_models.py": "3dec78188c3699a717987f55e48faaced65bf8ffed3b120d3aab4aee5f135397",
+    "download_motion_models.py": "c61bdb9132330d8c6e71e4e479df70f5adddcfebb99a121cec387038e01e5b81",
+    "proof_inputs.py": "b8e3da17dfbc9bb0306e12c90163636af8f068eee781eadc040aa3e0482a1764",
+    "motion_inputs.py": "775f10a3b880a2241bbfc42fb9357d9ec3c86030acf9bef654c3bfc9bd94f8ad",
+    "upstream_motion_candidate.py": "1cf3a063ed284ba523975118f49753556584768437754803c86fd59a5dfaa12a",
+    "upstream_motion_controls.py": "efa6fb91463d4c40b19d5fa2ea417b50da52bf57e14c738ce2a8885acf28d84a",
+    "media_pipeline.py": "9b9daa938743212cbbdacd6836d5fdc169c51160b4fe019062bcd61fe3d55d33",
+    "native_motion_backend.py": "64a1f4b095eb563eb2c3974e1c9d255671d49c06fd8d60e083552b7e4b6ac90c",
+    "evaluation/run_public_motion.py": "94fc7a9feaef2ceaeb4c3218b35bb19ef6aa29a92b5cc48200c582765572b622"
+  },
+  "artifact_sha256": {
+    "request.json": "7deedf834791f7c966ef3bdf7c631571c98c63235d528fbb39a8437123b5c0c7",
+    "rights.json": "9f8201720051aa8da26f90ab8505cbfe7552932bc5de4c1e0555bae2fa8095d8",
+    "PROTOCOL.json": "c2075feb11ce3f4ef2e907c3b1e415fa1180488d46408698dc75f15818107a0d",
+    "executed-source.zip": "92c3b3e82055bb9b3a28a25599c55e38748706b00369df377b9ba432908156fa",
+    "original-source.mp4": "3abc77752cd6738f8ba00555819c82debf6eb8c32b740ef7161d2450722881dc",
+    "original-reference.png": "33804cbfffaab88d7695084c7f0c253abf0a437c41c34c8a92c8c33f19afa7e4"
+  },
+  "expected_graph": {
+    "1": {
+      "class_type": "UNETLoader",
+      "inputs": {
+        "unet_name": "Wan2_2-Animate-14B_fp8_e4m3fn_scaled_KJ.safetensors",
+        "weight_dtype": "default"
+      }
+    },
+    "2": {
+      "class_type": "CLIPLoader",
+      "inputs": {
+        "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+        "type": "wan",
+        "device": "default"
+      }
+    },
+    "3": {
+      "class_type": "VAELoader",
+      "inputs": {
+        "vae_name": "wan_2.1_vae.safetensors"
+      }
+    },
+    "4": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "text": "The person in the reference image performs the movements from the source video. Stable appearance, natural hand and body movement, fixed camera."
+      }
+    },
+    "5": {
+      "class_type": "CLIPTextEncode",
+      "inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "text": "text, watermark, flicker, distorted shapes, extra limbs, duplicate subjects"
+      }
+    },
+    "6": {
+      "class_type": "OpenJutsuExplicitInputs",
+      "inputs": {}
+    },
+    "7": {
+      "class_type": "WanAnimateToVideo",
+      "inputs": {
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "5",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "width": 480,
+        "height": 480,
+        "length": 33,
+        "batch_size": 1,
+        "reference_image": [
+          "6",
+          2
+        ],
+        "clip_vision_output": [
+          "14",
+          0
+        ],
+        "pose_video": [
+          "6",
+          3
+        ],
+        "continue_motion_max_frames": 5,
+        "video_frame_offset": 0,
+        "face_video": [
+          "6",
+          4
+        ]
+      }
+    },
+    "8": {
+      "class_type": "ModelSamplingSD3",
+      "inputs": {
+        "model": [
+          "16",
+          0
+        ],
+        "shift": 8.0
+      }
+    },
+    "9": {
+      "class_type": "KSampler",
+      "inputs": {
+        "model": [
+          "8",
+          0
+        ],
+        "seed": 42,
+        "steps": 6,
+        "cfg": 1.0,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "positive": [
+          "7",
+          0
+        ],
+        "negative": [
+          "7",
+          1
+        ],
+        "latent_image": [
+          "7",
+          2
+        ],
+        "denoise": 1.0
+      }
+    },
+    "10": {
+      "class_type": "TrimVideoLatent",
+      "inputs": {
+        "samples": [
+          "9",
+          0
+        ],
+        "trim_amount": [
+          "7",
+          3
+        ]
+      }
+    },
+    "11": {
+      "class_type": "VAEDecode",
+      "inputs": {
+        "samples": [
+          "10",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ]
+      }
+    },
+    "12": {
+      "class_type": "SaveImage",
+      "inputs": {
+        "images": [
+          "11",
+          0
+        ],
+        "filename_prefix": "openjutsu-proof/raw"
+      }
+    },
+    "13": {
+      "class_type": "CLIPVisionLoader",
+      "inputs": {
+        "clip_name": "clip_vision_h.safetensors"
+      }
+    },
+    "14": {
+      "class_type": "CLIPVisionEncode",
+      "inputs": {
+        "clip_vision": [
+          "13",
+          0
+        ],
+        "image": [
+          "6",
+          2
+        ],
+        "crop": "none"
+      }
+    },
+    "15": {
+      "class_type": "LoraLoaderModelOnly",
+      "inputs": {
+        "model": [
+          "1",
+          0
+        ],
+        "lora_name": "lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.safetensors",
+        "strength_model": 1.0
+      }
+    },
+    "16": {
+      "class_type": "LoraLoaderModelOnly",
+      "inputs": {
+        "model": [
+          "15",
+          0
+        ],
+        "lora_name": "WanAnimate_relight_lora_fp16.safetensors",
+        "strength_model": 1.0
+      }
+    }
+  }
+}

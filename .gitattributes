@@ -32,3 +32,5 @@ evaluation/object-color-prompt/** -text
 evaluation/reference-branch/** -text
 
 evaluation/guidance-balance/** -text
+
+evaluation/public-motion/** -text

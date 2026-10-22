@@ -1,0 +1,21 @@
+{
+  "purpose": "Publicly cleared current-native motion example, not a quality-tuning comparison or independent-user verification.",
+  "pipeline": "Unchanged native_motion_backend.prepare/render called directly, same current app modules; not an HTTP/browser test.",
+  "pre_gpu_gate": "Inspect actual prepared pose/face crops. Require one continuous recognizable body, visibly plausible raising-arm control and usable face crop. No parameter repairs/retry after failure.",
+  "quality_review": "Retain every raw frame and composite separately, compare original/prepared reference and source. Existing broad motion/reference/stability/shape/rendering anchors>=3 and no collapse. Additional exact-face judgement remains unproved if resolution/view insufficient; do not declare memory or realistic generalization.",
+  "events": [
+    {
+      "source_frame": 0,
+      "event": "arm begins below shoulder"
+    },
+    {
+      "source_frame": 16,
+      "event": "arm has risen outward"
+    },
+    {
+      "source_frame": 32,
+      "event": "arm raised above shoulder"
+    }
+  ],
+  "stopping_rule": "One CPU call<=900s; one GPU call<=900s only after controls pass. $1 included total; cash0. Stop technical or quality failure; no automatic retries, model changes, seed searches or held-out claim."
+}

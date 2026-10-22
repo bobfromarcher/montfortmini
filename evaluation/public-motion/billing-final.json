@@ -1,0 +1,13 @@
+{
+  "observed_utc": "2026-10-22T05:05:27.629899+00:00",
+  "baseline_usage": 8.69,
+  "final_usage": 8.75,
+  "baseline_remaining": 21.31,
+  "final_remaining": 21.25,
+  "rounded_account_usage_delta": 0.06,
+  "cash_charges": 0,
+  "cash_cap": 0,
+  "containers_running": [],
+  "source": "Live Modal usage UI after completion, rounded account totals; CLI empty container list.",
+  "limits": "Includes CPU/build/rounding and account activity, not isolated invoice attribution."
+}

@@ -1,0 +1,41 @@
+{
+  "current_motion_example_completed": true,
+  "quality_gate_pass": false,
+  "scope": "Public cleared synthetic development example, not unseen realism or identity validation. Direct current native backend functions; not a fresh HTTP/browser-to-GPU run.",
+  "reviewer": "Agent provisional all33 raw-frame review; independent professional review pending.",
+  "raw_scores_0_to_4": {
+    "broad_reference_attributes": 3,
+    "recognizable_motion": 3,
+    "temporal_stability": 3,
+    "major_anatomy": 3,
+    "photorealism": 2
+  },
+  "composite_scores_same_as_raw": true,
+  "raw_composite_exact_frames": 33,
+  "events": [
+    {
+      "source_frame": 0,
+      "output_frame": 0,
+      "event": "arm below shoulder",
+      "provisional_match": true
+    },
+    {
+      "source_frame": 16,
+      "output_frame": 16,
+      "event": "arm raised outward",
+      "provisional_match": true
+    },
+    {
+      "source_frame": 32,
+      "output_frame": 32,
+      "event": "arm above shoulder",
+      "provisional_match": true
+    }
+  ],
+  "defects": [
+    "Pointing/merged fingers and shoe/foot details differ from reference.",
+    "Head held downward with coarse face/eyewear details; exact reference likeness cannot be established.",
+    "No realistic expression, head-turn, occlusion or cross-shot identity test."
+  ],
+  "decision": "Publish as honestly labeled current motion example; retain full realistic-quality failure. No retry, candidate promotion or claim of improved facial memory."
+}

@@ -53,6 +53,9 @@ requires separate configuration.
 
 ## Watch and assess the actual evidence
 
+- [Current cleared motion example](evaluation/public-motion/FINDINGS.md): original illustration to fictional character, current native recipe, raw/finished comparison; exact face quality remains unproved.
+- [Fresh-user setup and tester packet](submission/TESTER-INSTRUCTIONS.md): clean dependencies verified on the maintainer machine; independent tester/account pending.
+
 - [Native motion app integration](evaluation/native-motion-service/FINDINGS.md): current app recipe and retained limitations. Human-source research footage is private because public promotional likeness clearance is outstanding.
 - [Reference-only sensitivity](evaluation/reference-branch/FINDINGS.md): active but weak reference response with text/control fixed; both outputs fail appearance.
 - [Latest guidance contrast](evaluation/guidance-balance/FINDINGS.md): CFG1 rejected; beige becomes red despite identical conditioning. Includes public licensed raw/composite comparisons.
@@ -130,7 +133,11 @@ Set the webapp's ignored `.env.local` (and `.dev.vars` for Worker preview) backe
 
 ## Workflows and validation
 
+The CPU evaluation suite also needs the pinned evaluation dependencies (including
+OpenCV); the minimal root requirements alone do not install them.
+
 ```sh
+python -m pip install -r evaluation/requirements.txt
 python workflow.py > workflow-api.json
 python -m unittest discover -s tests
 cd webapp
